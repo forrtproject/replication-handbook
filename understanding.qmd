@@ -2,13 +2,81 @@
 title: "Understanding Replications and Reproductions"
 ---
 
-In this guide, we focus on studies that re-examine a previously tested hypothesis and refer to them as repetitions (i.e., reproductions and replications) with the general field being called repetitive research as suggested by Schöch [-@Schoch2023]. However, it is important to note from the outset, that there is no overarching terminology or consensus [e.g., @VoelklEtAl2025], as the formal development of replication methods has begun relatively late in the social, behavioral, and cognitive sciences. For example, empirical psychology is more than 100 years old, but until the advent of the replication/reproducibility crisis in the early 2010s, replication methods have been rarely discussed [e.g., @King1995]. Different fields of research seem to tackle the task differently and independently, which has led to multiple overlapping terminologies across psychology [@Schmidt2009; @HueffmeierEtAl2016], management [@TsangKwan1999], marketing [@UrminskyDietvorst2024], organizational sciences [@KohlerCortina2021], computer sciences [@HerouxEtAl2018], language learning [@McManus2024], and the humanities [@Schoch2023].
+::: {.callout-tip icon="false"}
+**Key takeaways**
+
+Replication and reproduction are key approaches for testing previously
+examined hypotheses. While terminology varies across disciplines, in
+psychology replication usually refers to studies using new data, whereas
+reproduction relies on the same data. Reproductions often provide a
+cost-efficient first step to verify whether results are reliable before
+attempting a replication. The closeness between the original and
+repeated study can strongly influence outcomes, as even minor
+differences may affect results. Numerical and robustness reproductions
+help confirm findings, while conceptual or theory-driven replications
+test their generalizability. Recognizing these distinctions is crucial
+for improving transparency, reliability, and cumulative knowledge in
+research.
+
+*After this chapter, you will know:*
+
+-   How do reproduction and replication differ, and why is this
+    distinction important?
+
+-   In what ways can the similarity between original and repeat studies
+    affect outcomes?
+
+-   Why might studies that are methodologically identical still produce
+    different results?
+:::
+
+In this guide, we focus on studies that re-examine a previously tested
+hypothesis and refer to them as repetitions (i.e., reproductions and
+replications) with the general field being called repetitive research as
+suggested by Schöch [-@Schoch2023]. However, it is important to note
+from the outset, that there is no overarching terminology or consensus
+[e.g., @VoelklEtAl2025], as the formal development of replication
+methods has begun relatively late in the social, behavioral, and
+cognitive sciences. For example, empirical psychology is more than 100
+years old, but until the advent of the replication/reproducibility
+crisis in the early 2010s, replication methods have been rarely
+discussed [e.g., @King1995]. Different fields of research seem to tackle
+the task differently and independently, which has led to multiple
+overlapping terminologies across psychology [@Schmidt2009;
+@HueffmeierEtAl2016], management [@TsangKwan1999], marketing
+[@UrminskyDietvorst2024], organizational sciences [@KohlerCortina2021],
+computer sciences [@HerouxEtAl2018], language learning [@McManus2024],
+and the humanities [@Schoch2023].
 
 ## Reproduction and Replication
 
-The terms reproduction and replication are used in different ways between disciplines; for example, in psychology, studies using different data are commonly referred to as replications and studies using the same data are referred to as reproductions, whereas in other fields, such as computational science or economics, these terms may be used in the opposite manner or treated interchangeably [see @MilkowskiEtAl2018; @AnkelPetersEtAl2023]. In this paper, *replication* is used to refer to efforts involving the analysis of *different data*, and *reproduction* to efforts involving the *same data*. The different data do not necessarily need to be from a different sample but can also constitute distinct (non-overlapping) subsets from the same sample [e.g., incidental or panel data, @HuangHuang2024].
+The terms reproduction and replication are used in different ways
+between disciplines; for example, in psychology, studies using different
+data are commonly referred to as replications and studies using the same
+data are referred to as reproductions, whereas in other fields, such as
+computational science or economics, these terms may be used in the
+opposite manner or treated interchangeably [see @MilkowskiEtAl2018;
+@AnkelPetersEtAl2023]. In this paper, *replication* is used to refer to
+efforts involving the analysis of *different data*, and *reproduction*
+to efforts involving the *same data*. The different data do not
+necessarily need to be from a different sample but can also constitute
+distinct (non-overlapping) subsets from the same sample [e.g.,
+incidental or panel data, @HuangHuang2024].
 
-Reproduction and replication should always be considered together and if possible, *reproduction should come before replication*. This is because, at the early stages of research, reproduction is much more cost efficient; first confirming whether the findings are reproducible can clarify whether a replication is worthwhile. Furthermore, if the research procedure consists of “moving away” from a specific finding in terms of changing the analysis code, materials, and dataset to test its generalizability or boundary conditions, a *numerical reproduction* (using the same data and same code) is the closest possible repetition of a finding and a useful foundation for further steps. We discuss multiple cases to illustrate the relationship between reproduction and replication in @tbl-rep-outcomes (Note that a similar distinction is made by @TuringWay2025 but uses a less specific terminology for reproductions.)
+Reproduction and replication should always be considered together and if
+possible, *reproduction should come before replication*. This is
+because, at the early stages of research, reproduction is much more cost
+efficient; first confirming whether the findings are reproducible can
+clarify whether a replication is worthwhile. Furthermore, if the
+research procedure consists of “moving away” from a specific finding in
+terms of changing the analysis code, materials, and dataset to test its
+generalizability or boundary conditions, a *numerical reproduction*
+(using the same data and same code) is the closest possible repetition
+of a finding and a useful foundation for further steps. We discuss
+multiple cases to illustrate the relationship between reproduction and
+replication in @tbl-rep-outcomes (Note that a similar distinction is
+made by @TuringWay2025 but uses a less specific terminology for
+reproductions.)
 
 | Case | Reproducible? | Replicable? | Possible interpretation |
 |------------------|------------------|------------------|------------------|
@@ -17,32 +85,143 @@ Reproduction and replication should always be considered together and if possibl
 | C | No | Yes | The original finding is not reproducible but replicators could determine a scenario where it holds. |
 | D | No | No | The original finding is neither reproducible nor generalizable. |
 
-: Possible combinations of reproduction and replication outcomes. {#tbl-rep-outcomes}
+: Possible combinations of reproduction and replication outcomes.
+{#tbl-rep-outcomes}
 
 ## Outcome
 
-Common language often conflates outcome and study descriptions: researchers typically use the phrase “has been replicated” to refer to a replication attempt that has corroborated the findings of the original study, whereas “failed to replicate” or “could not be replicated” is used to refer to circumstances where a replication attempt has not corroborated the original results or has led to a different interpretation or conclusions [see also @PatilEtAl2016a].
+Common language often conflates outcome and study descriptions:
+researchers typically use the phrase “has been replicated” to refer to a
+replication attempt that has corroborated the findings of the original
+study, whereas “failed to replicate” or “could not be replicated” is
+used to refer to circumstances where a replication attempt has not
+corroborated the original results or has led to a different
+interpretation or conclusions [see also @PatilEtAl2016a].
 
-In this article, when we state that a “study was reproduced/replicated” we mean that there has been a replication attempt, irrespective of its outcome. With “replicable” and “reproducible” we express that there was support for the original hypothesis. Note that the outcome of a replication/reproduction study is often not straightforward, but may depend on the success criteria applied. This is discussed in @sec-success-criteria.
+In this article, when we state that a “study was reproduced/replicated”
+we mean that there has been a replication attempt, irrespective of its
+outcome. With “replicable” and “reproducible” we express that there was
+support for the original hypothesis. Note that the outcome of a
+replication/reproduction study is often not straightforward, but may
+depend on the success criteria applied. This is discussed in
+@sec-success-criteria.
 
 ## Types of replication
 
-We heavily rely on the typology provided by @HueffmeierEtAl2016 where different types of replications are defined by the *closeness* or *similarity* between original and replication study. Similarity cannot be evaluated without a theory about the concepts involved. For example, the concept of age can differ strongly between replications of historical, psychological, or biological studies, leading to different measures of the concept itself and thus different judgments about the similarity of an object’s age.
+We heavily rely on the typology provided by @HueffmeierEtAl2016 where
+different types of replications are defined by the *closeness* or
+*similarity* between original and replication study. Similarity cannot
+be evaluated without a theory about the concepts involved. For example,
+the concept of age can differ strongly between replications of
+historical, psychological, or biological studies, leading to different
+measures of the concept itself and thus different judgments about the
+similarity of an object’s age.
 
-Under the assumption of a stable world and constant laws or regularities that are investigated by the social, behavioral, and cognitive sciences, a reproduction and replication study’s closeness to an original study is associated with replication ‘success’ [@HueffmeierEtAl2016; @LeBelEtAl2018]. The argument can be made from two different philosophical perspectives that we call inductive (phenomenon-focused, effects application, bottom-up) and deductive [theory-focused, theory application, top down, e.g., @CalderEtAl1981; @BorgstedeScholz2021]. From an inductive perspective, a replication that is very similar to an original study should lead to the same result whereas one that differs with respect to any criterion may lead to different results.[^understanding-1] This is a stance often taken by proponents of findings that failed to replicate [e.g., @BaumeisterVohs2016; @Syed2023], arguing that characteristics such as time or place are different and can be valid reasons for different results. From a deductive (theory-focused) view, the only changes that matter are those that affect the underlying theory. Consider for example a replication experiment that is identical in every aspect except for the season (summer instead of winter). If the theory that is tested is about color perception, the replication is likely judged to be close to the original study but if it is about participants’ current tea preferences, it is likely judged to be different from the original study in a theoretically relevant aspect.[^understanding-2] A related dimension of closeness concerns *contextual sensitivity*—the extent to which the meaning of a questionnaire or the effect of a manipulation depends on time, culture, or population. As @VanBavelEtAl2016 demonstrate, studies on contextually sensitive topics were significantly less likely to replicate successfully in @OpenScienceCollab2015, even though methodological fidelity was high. This raises important questions about what constitutes a “close” replication: Should a study on celebrity attitudes, for example, use the same examples (which may be outdated and thus psychologically inert), or should it adapt to locally and temporarily salient figures to trigger the same cognitive or emotional responses? In such cases, strict methodological similarity might paradoxically undermine theoretical closeness, and thus the validity of the replication attempt. This tension highlights that *procedural* fidelity does not always equate to *theoretical* equivalence—particularly for studies involving social meaning, identity, or temporally anchored norms. @LeBelEtAl2018 provide a taxonomy for classifying a replication study’s closeness for psychological research.
+Under the assumption of a stable world and constant laws or regularities
+that are investigated by the social, behavioral, and cognitive sciences,
+a reproduction and replication study’s closeness to an original study is
+associated with replication ‘success’ [@HueffmeierEtAl2016;
+@LeBelEtAl2018]. The argument can be made from two different
+philosophical perspectives that we call inductive (phenomenon-focused,
+effects application, bottom-up) and deductive [theory-focused, theory
+application, top down, e.g., @CalderEtAl1981; @BorgstedeScholz2021].
+From an inductive perspective, a replication that is very similar to an
+original study should lead to the same result whereas one that differs
+with respect to any criterion may lead to different
+results.[^understanding-1] This is a stance often taken by proponents of
+findings that failed to replicate [e.g., @BaumeisterVohs2016;
+@Syed2023], arguing that characteristics such as time or place are
+different and can be valid reasons for different results. From a
+deductive (theory-focused) view, the only changes that matter are those
+that affect the underlying theory. Consider for example a replication
+experiment that is identical in every aspect except for the season
+(summer instead of winter). If the theory that is tested is about color
+perception, the replication is likely judged to be close to the original
+study but if it is about participants’ current tea preferences, it is
+likely judged to be different from the original study in a theoretically
+relevant aspect.[^understanding-2] A related dimension of closeness
+concerns *contextual sensitivity*—the extent to which the meaning of a
+questionnaire or the effect of a manipulation depends on time, culture,
+or population. As @VanBavelEtAl2016 demonstrate, studies on contextually
+sensitive topics were significantly less likely to replicate
+successfully in @OpenScienceCollab2015, even though methodological
+fidelity was high. This raises important questions about what
+constitutes a “close” replication: Should a study on celebrity
+attitudes, for example, use the same examples (which may be outdated and
+thus psychologically inert), or should it adapt to locally and
+temporarily salient figures to trigger the same cognitive or emotional
+responses? In such cases, strict methodological similarity might
+paradoxically undermine theoretical closeness, and thus the validity of
+the replication attempt. This tension highlights that *procedural*
+fidelity does not always equate to *theoretical*
+equivalence—particularly for studies involving social meaning, identity,
+or temporally anchored norms. @LeBelEtAl2018 provide a taxonomy for
+classifying a replication study’s closeness for psychological research.
 
-[^understanding-1]: From an extreme inductive perspective that stresses that there is no logical foundation in inferring future events from previous events (Hume, 1748/2016), one could even argue that it may not make a difference whether one tries to make the same observation again under the same or different circumstances.
+[^understanding-1]: From an extreme inductive perspective that stresses
+    that there is no logical foundation in inferring future events from
+    previous events (Hume, 1748/2016), one could even argue that it may
+    not make a difference whether one tries to make the same observation
+    again under the same or different circumstances.
 
-[^understanding-2]: On a different note, Vohs et al. (2021) published a study that was different from previous studies in that it did not replicate any previous study but was instead designed to be ideal to test the theory and estimate the average effect size and termed it “paradigmatic replication approach”. Given the present terminology, we do not consider this a replication.
+[^understanding-2]: On a different note, Vohs et al. (2021) published a
+    study that was different from previous studies in that it did not
+    replicate any previous study but was instead designed to be ideal to
+    test the theory and estimate the average effect size and termed it
+    “paradigmatic replication approach”. Given the present terminology,
+    we do not consider this a replication.
 
-![Taxonomy for classifying a replication study’s methodological similarity to an original study. Reprinted from with permission.](images/sTS_Image_2.png){#fig-taxonomy-similarity}
+![Taxonomy for classifying a replication study’s methodological
+similarity to an original study. Reprinted from with
+permission.](images/sTS_Image_2.png){#fig-taxonomy-similarity}
 
-Support for the view that methodological features that are theoretically irrelevant such as the use of text versus image stimuli or the type of sample can have a strong impact on the results is provided by @LandyEtAl2020, who let different groups of researchers test identical hypotheses using different study designs. The groups arrived at entirely different and even opposite conclusions for similar hypotheses. The differences in the study designs were not predicted by the theories involved in the respective studies: A priori, none of the differences (e.g., within- vs. between-subjects design, picture vs. text stimuli) “should” have affected the conclusions. Note that other theories such as demand characteristics [@orne2017social] could help in these cases. Moreover, this does not disconfirm the deductive perspective but may be a demonstration of the lack of specification of theories - as well as a reminder that statistical choices affect statistical power by changing the variance, and thus standardised effect sizes. In line with deviations from original studies mostly having uncertain consequences, close replications more directly test the credibility of original results, while conceptual replications that vary features of the design are concerned with generalizability.
+Support for the view that methodological features that are theoretically
+irrelevant such as the use of text versus image stimuli or the type of
+sample can have a strong impact on the results is provided by
+@LandyEtAl2020, who let different groups of researchers test identical
+hypotheses using different study designs. The groups arrived at entirely
+different and even opposite conclusions for similar hypotheses. The
+differences in the study designs were not predicted by the theories
+involved in the respective studies: A priori, none of the differences
+(e.g., within- vs. between-subjects design, picture vs. text stimuli)
+“should” have affected the conclusions. Note that other theories such as
+demand characteristics [@orne2017social] could help in these cases.
+Moreover, this does not disconfirm the deductive perspective but may be
+a demonstration of the lack of specification of theories - as well as a
+reminder that statistical choices affect statistical power by changing
+the variance, and thus standardised effect sizes. In line with
+deviations from original studies mostly having uncertain consequences,
+close replications more directly test the credibility of original
+results, while conceptual replications that vary features of the design
+are concerned with generalizability.
 
-Note that @NosekErrington2020 define replication as a study “for which any outcome would be considered diagnostic evidence about a claim from prior research”. This can lead to issues when the original claim is not clear on its boundary conditions. Conceptual replications that highlight limitations to the claim made clearly count, e.g. when the original claim was about a universal effect, and the replication shows that it does not hold in a specific country. Conversely, “replications” that go beyond the claim made, and test the transferability of a claim explicitly made about, e.g., maths education to science education may indeed serve to be framed differently, as they do not directly speak to the claim made originally. Where original authors’ failed to specify the scope of their claim, we would understand that they imply a broad/universally applicable relationship, which any attempts at generalisation help to corroborate or specify.
+Note that @NosekErrington2020 define replication as a study “for which
+any outcome would be considered diagnostic evidence about a claim from
+prior research”. This can lead to issues when the original claim is not
+clear on its boundary conditions. Conceptual replications that highlight
+limitations to the claim made clearly count, e.g. when the original
+claim was about a universal effect, and the replication shows that it
+does not hold in a specific country. Conversely, “replications” that go
+beyond the claim made, and test the transferability of a claim
+explicitly made about, e.g., maths education to science education may
+indeed serve to be framed differently, as they do not directly speak to
+the claim made originally. Where original authors’ failed to specify the
+scope of their claim, we would understand that they imply a
+broad/universally applicable relationship, which any attempts at
+generalisation help to corroborate or specify.
 
-In terms of Schöch [-@Schoch2023], who defines an overarching type of *repetitive research* based on multiple dimensions, replications are concerned with the same question as a previous study, use the same (close replication) or a similar (conceptual replication) method and use different data (otherwise they are reproductions).
+In terms of Schöch [-@Schoch2023], who defines an overarching type of
+*repetitive research* based on multiple dimensions, replications are
+concerned with the same question as a previous study, use the same
+(close replication) or a similar (conceptual replication) method and use
+different data (otherwise they are reproductions).
 
 ## Types of reproduction
 
-Reproductions can be numerical reproductions, testing whether the same data, code and software lead to the same results, or robustness reproductions, extending the original analysis and exploring the central finding’s limits [@DreberJohannesson2024]. Most reproductions would include both a numerical reproduction as baseline and then a robustness reproduction, unless the numerical reproduction is not possible due to a lack of code or software.
+Reproductions can be numerical reproductions, testing whether the same
+data, code and software lead to the same results, or robustness
+reproductions, extending the original analysis and exploring the central
+finding’s limits [@DreberJohannesson2024]. Most reproductions would
+include both a numerical reproduction as baseline and then a robustness
+reproduction, unless the numerical reproduction is not possible due to a
+lack of code or software.

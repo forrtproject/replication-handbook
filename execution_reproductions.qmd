@@ -2,40 +2,160 @@
 title: "Execution of Reproductions"
 ---
 
+::: {.callout-tip icon="false"}
+**Key takeaways**
+
+Reproduction studies require access to the original data and ideally
+also the analysis code, which are usually made available through
+repositories or supplementary materials. If not, contacting the original
+authors is recommended, while respecting licenses and following
+constructive communication guidelines. Researchers should identify the
+claims they plan to reproduce and explain why these are important.
+Preregistering the analysis plan then ensures that these decisions are
+clear and prevents unintended flexibility in how the data are analyzed.
+The main part of a reproduction is the analysis, including transparent
+reporting of software details. Reproduction studies may extend beyond
+numerical replication through alternative or exploratory analyses and,
+for statistical results, should report reproducibility indicators to
+compare findings. Any deviations from the original procedure should be
+clearly reported, and the discussion should evaluate success, explain
+differences, and include relevant feedback from the original authors.
+
+*After this chapter, you will know:*
+
+-   Why is it important to secure both data and code before attempting a
+    reproduction?
+
+-   How can preregistration support transparency and prevent
+    questionable research practices?
+
+-   What should a reproduction report include to clearly communicate
+    success and discrepancies?
+:::
+
 ## Gathering resources
 
-Prerequisites for reproduction studies are available data and ideally also code. These are usually linked within the manuscript and shared via repositories (e.g., Zenodo, OSF.io, github.com, gitlab.com) or they are part of the supplemental materials that are listed on the article’s website. In special cases, an entire original manuscript may be reproducible and written in Markdown language. Researchers searching for target studies to reproduce can check topfactor.org and filter for Data transparency level 3 [@topfactorDataSharing, will no longer be updated]. They can also use the extensive database of economics studies with available data compiled by Sebastian Kranz [@KranzDataList]. 
+Prerequisites for reproduction studies are available data and ideally
+also code. These are usually linked within the manuscript and shared via
+repositories (e.g., Zenodo, OSF.io, github.com, gitlab.com) or they are
+part of the supplemental materials that are listed on the article’s
+website. In special cases, an entire original manuscript may be
+reproducible and written in Markdown language. Researchers searching for
+target studies to reproduce can check topfactor.org and filter for Data
+transparency level 3 [@topfactorDataSharing, will no longer be updated].
+They can also use the extensive database of economics studies with
+available data compiled by Sebastian Kranz [@KranzDataList].
 
-If data are not publicly available, researchers can contact the authors of the original study. In this case, we recommend them to adhere to *Guide for Accelerating Computational Reproducibility in the Social Sciences* (ACRE) guidelines for constructive communication [@BITSS2020]. 
+If data are not publicly available, researchers can contact the authors
+of the original study. In this case, we recommend them to adhere to
+*Guide for Accelerating Computational Reproducibility in the Social
+Sciences* (ACRE) guidelines for constructive communication [@BITSS2020].
 
-When re-using data, researchers need to respect licenses. Generally, research data should be licensed openly, that is re-use and alteration should be permitted, likely requiring citation of the original resource (e.g., CC-BY 4.0 Attribution). Note, however, that non-derivative licenses may prohibit reproductions; in that case separate approval would be required from the copyright holder.
+When re-using data, researchers need to respect licenses. Generally,
+research data should be licensed openly, that is re-use and alteration
+should be permitted, likely requiring citation of the original resource
+(e.g., CC-BY 4.0 Attribution). Note, however, that non-derivative
+licenses may prohibit reproductions; in that case separate approval
+would be required from the copyright holder.
 
-When it comes to reporting, Ankel-Peters et al. [-@AnkelPetersEtAl2025] provide a table for reporting results from the computational reproduction that includes resource availability (e.g., raw data, cleaning code, analysis code).
+When it comes to reporting, Ankel-Peters et al. [-@AnkelPetersEtAl2025]
+provide a table for reporting results from the computational
+reproduction that includes resource availability (e.g., raw data,
+cleaning code, analysis code).
 
 ## Contacting Authors
 
-Reproduction authors may have to contact the original authors if there is something missing. It will often be necessary to contact the authors more than once because missing descriptions of details of the original study only become apparent once the replication study is planned. In most cases, the original paper identifies one of the authors as “corresponding author” with an e-mail address. We recommend a quick web search to check if this is the current email address, as researchers frequently change institutions and thus e-mail addresses. Sometimes, it may be most helpful to write to the last authors instead, who tend to have more stable e-mail addresses, or to copy all authors into the email. Templates for asking for materials and sharing replication results can be found in Section @sec-appendix-templates. Note that original authors may not respond due to institutional changes or not being active in academia anymore.
+Reproduction authors may have to contact the original authors if there
+is something missing. It will often be necessary to contact the authors
+more than once because missing descriptions of details of the original
+study only become apparent once the replication study is planned. In
+most cases, the original paper identifies one of the authors as
+“corresponding author” with an e-mail address. We recommend a quick web
+search to check if this is the current email address, as researchers
+frequently change institutions and thus e-mail addresses. Sometimes, it
+may be most helpful to write to the last authors instead, who tend to
+have more stable e-mail addresses, or to copy all authors into the
+email. Templates for asking for materials and sharing replication
+results can be found in Section @sec-appendix-templates. Note that
+original authors may not respond due to institutional changes or not
+being active in academia anymore.
 
 ## Identification of Claims
 
-Statistical analyses and their results are always used as a way to evaluate a certain claim. While Ankel-Peters et al. [-@AnkelPetersEtAl2025] recommend reproductions to identify “results [that] are essential for the paper's main argument to hold“, we acknowledge that a reproduction can also focus on secondary results if they are relevant in some other context. In either case, reproduction researchers need to justify the choice of the claim in their report
+Statistical analyses and their results are always used as a way to
+evaluate a certain claim. While Ankel-Peters et al.
+[-@AnkelPetersEtAl2025] recommend reproductions to identify “results
+\[that\] are essential for the paper's main argument to hold“, we
+acknowledge that a reproduction can also focus on secondary results if
+they are relevant in some other context. In either case, reproduction
+researchers need to justify the choice of the claim in their report
 
 ## Preregistration
 
-Preregistrations contain a description of the planned study or analysis prior to their execution. This way, they can reduce researchers’ ‘degrees of freedom’. In the case of reproductions, they can prevent QRPs [e.g., “null hacking”, @BryanEtAl2019; “gotcha bias”, @BerinskyEtAl2021] as long as the entire analysis plan is preregistered [@BrodeurEtAl2024a] and the data have not yet been accessed. While a numerical reproduction with available code does not require preregistration, we recommend a priori specification of all further planned analyses.
+Preregistrations contain a description of the planned study or analysis
+prior to their execution. This way, they can reduce researchers’
+‘degrees of freedom’. In the case of reproductions, they can prevent
+QRPs [e.g., “null hacking”, @BryanEtAl2019; “gotcha bias”,
+@BerinskyEtAl2021] as long as the entire analysis plan is preregistered
+[@BrodeurEtAl2024a] and the data have not yet been accessed. While a
+numerical reproduction with available code does not require
+preregistration, we recommend a priori specification of all further
+planned analyses.
 
-It should be noted that a preregistered analysis plan or analysis script is much easier to create with access to data and reproductions are impossible with unavailable data, preregistration cannot exclude the risk of authors having already looked at the data, yet making fraudulent claims regarding data access in a preregistration is evidently academic misconduct. How much weight readers and reviewers will give to a preregistration based on data that could have been accessed already will differ, but generating it is a way to keep ourselves accountable and produce robust reproductions.
+It should be noted that a preregistered analysis plan or analysis script
+is much easier to create with access to data and reproductions are
+impossible with unavailable data, preregistration cannot exclude the
+risk of authors having already looked at the data, yet making fraudulent
+claims regarding data access in a preregistration is evidently academic
+misconduct. How much weight readers and reviewers will give to a
+preregistration based on data that could have been accessed already will
+differ, but generating it is a way to keep ourselves accountable and
+produce robust reproductions.
 
 ## Deviations
 
-To increase trust in the reported results, reproduction researchers need to report them in a transparent way, in a possible preregistration and the final report. Ideally, all changes to the original procedure are explained, justified, and hypotheses about their expected effect on the outcomes are reported. Note that some journals’ publishing reproductions require adherence to special requirements such a Registered Report format (e.g., *Journal of Open Psychology Data*) or including a minimum of two independent reproductions (e.g., *Journal of Robustness Reports*).
+To increase trust in the reported results, reproduction researchers need
+to report them in a transparent way, in a possible preregistration and
+the final report. Ideally, all changes to the original procedure are
+explained, justified, and hypotheses about their expected effect on the
+outcomes are reported. Note that some journals’ publishing reproductions
+require adherence to special requirements such a Registered Report
+format (e.g., *Journal of Open Psychology Data*) or including a minimum
+of two independent reproductions (e.g., *Journal of Robustness
+Reports*).
 
 ## Analysis
 
-The main part of the reproduction is the analysis. Factors that are potentially relevant for reproduction success include the software of the machine that is running the code as well as versions of the software and additional packages or plug-ins. For example, users of the open source software R can get a comprehensive overview of the program version and their machine using the function sessionInfo(), which should be included in supplementary materials. For python users, a package has been developed to run a similar function session_info.show() ([https://gitlab.com/joelostblom/session_info](https://gitlab.com/joelostblom/session_info)). 
+The main part of the reproduction is the analysis. Factors that are
+potentially relevant for reproduction success include the software of
+the machine that is running the code as well as versions of the software
+and additional packages or plug-ins. For example, users of the open
+source software R can get a comprehensive overview of the program
+version and their machine using the function sessionInfo(), which should
+be included in supplementary materials. For python users, a package has
+been developed to run a similar function session_info.show()
+(<https://gitlab.com/joelostblom/session_info>).
 
-Apart from a numerical reproduction where the same code is used, reproduction researchers can explore alternative ways that should and should not affect the results, test new hypotheses or theories, and run exploratory analyses. Their report should be clearly structured to discern these methods. Finally, for statistical analyses, the reproduction report should include reproducibility indicators [@DreberJohannesson2024] that summarize statistical significance and relative effect sizes across the original and reproduction results. Ankel-Peters et al. [-@AnkelPetersEtAl2025] recommend a visual summary of these indicators in the form of a reproducibility dashboard and specification curves [@SimonsohnEtAl2020; see also @MazeiEtAl2025]. We strongly recommend reproduction researchers to consult the respective resources for further details.
+Apart from a numerical reproduction where the same code is used,
+reproduction researchers can explore alternative ways that should and
+should not affect the results, test new hypotheses or theories, and run
+exploratory analyses. Their report should be clearly structured to
+discern these methods. Finally, for statistical analyses, the
+reproduction report should include reproducibility indicators
+[@DreberJohannesson2024] that summarize statistical significance and
+relative effect sizes across the original and reproduction results.
+Ankel-Peters et al. [-@AnkelPetersEtAl2025] recommend a visual summary
+of these indicators in the form of a reproducibility dashboard and
+specification curves [@SimonsohnEtAl2020; see also @MazeiEtAl2025]. We
+strongly recommend reproduction researchers to consult the respective
+resources for further details.
 
 ## Discussion
 
-The discussion section should include a clear evaluation of the reproduction success on different levels  [@AnkelPetersEtAl2025]. Researchers should report possible reasons for failure (e.g., objective coding errors, changes in software packages) and the role of differences between the original and the reproduction studies’ results with respect to their conclusions. Finally, if the original authors provided comments, the reproduction report should include a discussion of them.
+The discussion section should include a clear evaluation of the
+reproduction success on different levels [@AnkelPetersEtAl2025].
+Researchers should report possible reasons for failure (e.g., objective
+coding errors, changes in software packages) and the role of differences
+between the original and the reproduction studies’ results with respect
+to their conclusions. Finally, if the original authors provided
+comments, the reproduction report should include a discussion of them.
