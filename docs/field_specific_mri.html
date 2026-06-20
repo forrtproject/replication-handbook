@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>9&nbsp; Field-Specific Replication Challenges: An example from MRI research – Handbook for Reproduction and Replication Studies</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -56,15 +59,14 @@ div.csl-indent {
 <link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f4d9bdc1b444b5adaf6c148e31b6632f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8f2481fac337f33222e91caf6a1fd681.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -342,7 +344,7 @@ div.csl-indent {
 <section id="sample-size-justification" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="sample-size-justification"><span class="header-section-number">9.3</span> Sample Size Justification</h2>
 <p>The gold standard for sample size justification is a power analysis. In neuroimaging this is complicated by the outlined mass-univariate three-dimensional data structure. Any power analysis would need to incorporate assumptions about the covariance structure of all data points, as well as the spatial extent and distribution of statistical effects, and the method to correct for multiple tests. While these numerous tests are not independent from another, the extent of their spatial covariance structure is difficult to assess and depends on preprocessing steps, such as image smoothing but is also on the data and the specific research question. Due to the high number of single data points, the obtained result is not a single statistical estimate with an effect size but rather a highly individual three-dimensional distribution of effect sizes around a peak localization. Simulation-based power analysis approaches have been previously suggested to address this problem. However, valid simulations require assumptions about valid spatial distributions of effects (contingent on regional anatomical peculiarities and on the specific research question), often difficult to assess and many developed power analysis tools have been discontinued. To date the utilization of power analysis is extremely rare in MRI research.</p>
-<p>Without proper power estimation, justifying sample size becomes challenging. As in other fields of research the statistical power ultimately depends on the expected effect size. Recent large-scale investigations in the domain of mental health neuroimaging suggest that maximum underlying effect sizes are very small across various neuroimaging modalities <span class="citation" data-cites="MarekEtAl2022 WinterEtAl2022">(below 2% explained variance, <a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>; <a href="references.html#ref-WinterEtAl2022" role="doc-biblioref">Winter et al., 2022</a>)</span> and could require thousands of individuals to obtain robust and replicable statistical estimates <span class="citation" data-cites="MarekEtAl2022">(<a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>)</span>. In contrast, given the labor-intensive and costly nature of MRI assessments, most MRI studies tend to have small sample sizes, making them likely underpowered <span class="citation" data-cites="ButtonEtAl2013">(<a href="references.html#ref-ButtonEtAl2013" role="doc-biblioref">Button et al., 2013</a>)</span>. Smaller samples may be suitable however, for research questions where the neurobiological effect sizes are expected to be larger, such as in psychosis research or when using highly individually tailored or within-subject designs <span class="citation" data-cites="LynchEtAl2024 MarekEtAl2022 RosenbergFinn2022 SpisakEtAl2023">(<a href="references.html#ref-LynchEtAl2024" role="doc-biblioref">Lynch et al., 2024</a>; <a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>; <a href="references.html#ref-RosenbergFinn2022" role="doc-biblioref">Rosenberg &amp; Finn, 2022</a>; <a href="references.html#ref-SpisakEtAl2023" role="doc-biblioref">Spisak et al., 2023</a>)</span>.</p>
+<p>Without proper power estimation, justifying sample size becomes challenging. As in other fields of research the statistical power ultimately depends on the expected effect size. Recent large-scale investigations in the domain of mental health neuroimaging suggest that maximum underlying effect sizes are very small across various neuroimaging modalities <span class="citation" data-cites="MarekEtAl2022 WinterEtAl2022">(below 2% explained variance, <a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>; <a href="references.html#ref-WinterEtAl2022" role="doc-biblioref">Winter et al., 2022</a>)</span> and could require thousands of individuals to obtain robust and replicable statistical estimates <span class="citation" data-cites="MarekEtAl2022">(<a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>)</span>. In contrast, given the labor-intensive and costly nature of MRI assessments, most MRI studies tend to have small sample sizes, making them likely underpowered <span class="citation" data-cites="ButtonEtAl2013">(<a href="references.html#ref-ButtonEtAl2013" role="doc-biblioref"><span class="nocase">Button et al.</span>, 2013</a>)</span>. Smaller samples may be suitable however, for research questions where the neurobiological effect sizes are expected to be larger, such as in psychosis research or when using highly individually tailored or within-subject designs <span class="citation" data-cites="LynchEtAl2024 MarekEtAl2022 RosenbergFinn2022 SpisakEtAl2023">(<a href="references.html#ref-LynchEtAl2024" role="doc-biblioref"><span class="nocase">Lynch et al.</span>, 2024</a>; <a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>; <a href="references.html#ref-RosenbergFinn2022" role="doc-biblioref">Rosenberg &amp; Finn, 2022</a>; <a href="references.html#ref-SpisakEtAl2023" role="doc-biblioref">Spisak et al., 2023</a>)</span>.</p>
 </section>
 <section id="criteria-for-replication-success" class="level2" data-number="9.4">
 <h2 data-number="9.4" class="anchored" data-anchor-id="criteria-for-replication-success"><span class="header-section-number">9.4</span> Criteria for Replication Success</h2>
@@ -365,7 +367,7 @@ Beyer, F., Flannery, J., Gau, R., Janssen, L., Schaare, L., Hartmann, H., Nilson
 Botvinik-Nezer, R., Holzmeister, F., Camerer, C. F., Dreber, A., Huber, J., Johannesson, M., &amp; Rieck, J. R. (2020). Variability in the analysis of a single neuroimaging dataset by many teams. <em>Nature</em>, <em>582</em>(7810), 84–88.
 </div>
 <div id="ref-ButtonEtAl2013" class="csl-entry" role="listitem">
-Button, K., Ioannidis, J., Mokrysz, C., et al. (2013). Power failure: Why small sample size undermines the reliability of neuroscience. <em>Nature Reviews Neuroscience</em>, <em>14</em>, 365–376. <a href="https://doi.org/10.1038/nrn3475">https://doi.org/10.1038/nrn3475</a>
+<span class="nocase">Button, K., Ioannidis, J., Mokrysz, C., et al.</span> (2013). Power failure: Why small sample size undermines the reliability of neuroscience. <em>Nature Reviews Neuroscience</em>, <em>14</em>, 365–376. <a href="https://doi.org/10.1038/nrn3475">https://doi.org/10.1038/nrn3475</a>
 </div>
 <div id="ref-EstebanEtAl2019" class="csl-entry" role="listitem">
 Esteban, O., Markiewicz, C. J., Blair, R. W., Moodie, C. A., Isik, A. I., Erramuzpe, A., &amp; Gorgolewski, K. J. (2019). fMRIPrep: A robust preprocessing pipeline for functional MRI. <em>Nature Methods</em>, <em>16</em>(1), 111–116.
@@ -386,7 +388,7 @@ Jwa, A. S., Koyejo, O., &amp; Poldrack, R. A. (2024). Demystifying the likelihoo
 Leehr, E. J., Seeger, F. R., Böhnlein, J., Gathmann, B., Straube, T., Roesmann, K., &amp; Lueken, U. (2024). Association between resting-state connectivity patterns in the defensive system network and treatment response in spider phobia—a replication approach. <em>Translational Psychiatry</em>, <em>14</em>(1), 137.
 </div>
 <div id="ref-LynchEtAl2024" class="csl-entry" role="listitem">
-Lynch, C. J., Elbau, I. G., Ng, T., et al. (2024). Frontostriatal salience network expansion in individuals in depression. <em>Nature</em>, <em>633</em>, 624–633. <a href="https://doi.org/10.1038/s41586-024-07805-2">https://doi.org/10.1038/s41586-024-07805-2</a>
+<span class="nocase">Lynch, C. J., Elbau, I. G., Ng, T., et al.</span> (2024). Frontostriatal salience network expansion in individuals in depression. <em>Nature</em>, <em>633</em>, 624–633. <a href="https://doi.org/10.1038/s41586-024-07805-2">https://doi.org/10.1038/s41586-024-07805-2</a>
 </div>
 <div id="ref-MarekEtAl2022" class="csl-entry" role="listitem">
 Marek, S., Tervo-Clemmens, B., Calabro, F. J., Montez, D. F., Kay, B. P., Hatoum, A. S., &amp; Dosenbach, N. U. (2022). Reproducible brain-wide association studies require thousands of individuals. <em>Nature</em>, <em>603</em>(7902), 654–660.
@@ -503,6 +505,11 @@ Zhou, X., Wu, R., Zeng, Y., Qi, Z., Ferraro, S., Xu, L., &amp; Becker, B. (2022)
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
