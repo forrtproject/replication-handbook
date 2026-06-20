@@ -4,7 +4,7 @@ title: "Execution of Reproductions"
 
 ## Gathering resources
 
-Prerequisites for reproduction studies are available data and ideally also code. These are usually linked within the manuscript and shared via repositories (e.g., Zenodo, OSF.io, github.com, gitlab.com) or they are part of the supplemental materials that are listed on the article’s website. In special cases, an entire original manuscript may be reproducible and written in Markdown language. Researchers searching for target studies to reproduce can check topfactor.org and filter for Data transparency level 3 [@topfactorDataSharing, will no longer be updated]. They can also use the extensive database of economics studies with available data compiled by Sebastian Kranz [@KranzDataList]. 
+Prerequisites for reproduction studies are available data and ideally also code. These are usually linked within the manuscript and shared via repositories (e.g., Zenodo, OSF.io, github.com, gitlab.com) or they are part of the supplemental materials that are listed on the article’s website. In special cases, an entire original manuscript may be reproducible and written in Markdown language. Researchers searching for target studies to reproduce can check topfactor.org and filter for Data transparency level 3 [@topfactorDataSharing, will no longer be updated]. They can also use the extensive database of economics studies with available data compiled by Sebastian Kranz [-@KranzDataList]. 
 
 If data are not publicly available, researchers can contact the authors of the original study. In this case, we recommend them to adhere to *Guide for Accelerating Computational Reproducibility in the Social Sciences* (ACRE) guidelines for constructive communication [@BITSS2020]. 
 
