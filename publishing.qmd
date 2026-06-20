@@ -27,6 +27,6 @@ Many institutions and libraries recommend adding a CC-BY disclaimer on journal s
 | Rescience C | Non-commercial, diamond OA | Olivia Guest, Benoît Girard, Konrad Hinsen, Nicolas P. Rougier | Multidisciplinary | Reproductions | <https://rescience.github.io> |
 | Journal of Management Scientific Reports | Commercial (subscription based) | Sage | Management | Replications, reproductions, related methods | <https://smgmt.org/jomsr> |
 | Rescience X | Non-commercial, diamond OA | Etienne B. Roesch | Multidisciplinary | Replications (Experiments) | <http://rescience.org/x> |
-| Implementation and Replication Studies in Mathematics Education | Commercial (subscription based) | Brill | Mathematics | Replications | [https://brill.com/view/journals/irme/irme-overview.xml](https://brill.com/view/journals/irme/irme-overview.xml?language=en&srsltid=AfmBOooxZRylPrqSX3o4zW1ZC22bvSkgbvo7KWyG9cew10PCDjfAOBD3) |
+| Implementation and Replication Studies in Mathematics Education | Commercial (subscription based) | Brill | Mathematics | Replications | [https://brill.com/view/journals/irme/irme-overview.xml](https://brill.com/view/journals/irme/irme-overview.xml) |
 
 : Active journals dedicated to reproductions and replications. {#tbl-rep-journals}

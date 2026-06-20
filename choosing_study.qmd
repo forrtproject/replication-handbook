@@ -42,7 +42,7 @@ Nevertheless, it has been argued that because so many original studies are flawe
 
 While a single replication (or robustness reproduction) cannot provide conclusive evidence in regard to the veracity of original claims, the first numerical reproduction, and arguably also the first robustness reproduction and replication adds the greatest value in terms of reducing uncertainty. Therefore, the search for existing reproductions and replications is a key part of the selection of a target study.
 
-Although there is no comprehensive database with reproductions yet, researchers can check resources such as the Institute for Replication’s discussion paper series [<https://i4replication.org/discussion_paper.html>, cf. @BrodeurEtAl2024b], the ReplicationWiki [@Hoeffler2017], the CODECHECK register [<https://codecheck.org.uk/register/>, cf. @NuestEglen2021], or the Social Science Reproduction Platform (<https://www.socialsciencereproduction.org>).
+Although there is no comprehensive database with reproductions yet, researchers can check resources such as the Institute for Replication’s discussion paper series [<https://www.i4replication.org/papers>, cf. @BrodeurEtAl2024b], the ReplicationWiki [@Hoeffler2017], the CODECHECK register [<https://codecheck.org.uk/register/>, cf. @NuestEglen2021], or the Social Science Reproduction Platform (<https://www.socialsciencereproduction.org>).
 
 With regard to replications, researchers can browse the FORRT Replication Database [<https://forrt.org/apps/fred_explorer.html>, cf. @RoselerEtAl2024], though this does not (yet) provide a replacement for manual searches. The following table provides an overview of different types of *reproducibility checks*.
 

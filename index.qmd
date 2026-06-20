@@ -17,4 +17,4 @@ cat(paste("Last update:", Sys.Date()))
 
 Please cite this handbook as:
 
-Röseler, L.\**,* Wallrich, L.\*, Hartmann, H., Hüffmeier, J., Goltermann, J., Pennington, C. R., Boyce, V., Field, S. M., Pittelkow, M.-M., Silverstein, P., van Ravenzwaaij, D., Azevedo, F. (2025). *Handbook for Reproduction and Replication Studies.* Retrieved from <https://forrt.org/replication_handbook>, <https://doi.org/10.5281/zenodo.16990114> \*shared first authorship
+Röseler, L.\**,* Wallrich, L.\*, Hartmann, H., Hüffmeier, J., Goltermann, J., Pennington, C. R., Boyce, V., Field, S. M., Pittelkow, M.-M., Silverstein, P., van Ravenzwaaij, D., Azevedo, F. (2025). *Handbook for Reproduction and Replication Studies.* Retrieved from <https://forrt.org/replication-handbook/>, <https://doi.org/10.5281/zenodo.16990114> \*shared first authorship
