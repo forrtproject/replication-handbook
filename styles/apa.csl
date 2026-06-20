@@ -1688,13 +1688,24 @@
       <else-if variable="URL">
         <group delimiter=" ">
           <choose>
-            <if variable="issued status" match="none">
+            <!-- Show a retrieval date for unstable web sources. APA prints it only for
+                 undated content; we additionally print it whenever an access date
+                 (urldate) is supplied, which we set deliberately on non-archived web
+                 sources that lack a DOI. -->
+            <if variable="accessed">
               <group delimiter=" ">
                 <text term="retrieved" text-case="capitalize-first"/>
                 <date variable="accessed" form="text" suffix=","/>
                 <text term="from"/>
               </group>
             </if>
+            <else-if variable="issued status" match="none">
+              <group delimiter=" ">
+                <text term="retrieved" text-case="capitalize-first"/>
+                <date variable="accessed" form="text" suffix=","/>
+                <text term="from"/>
+              </group>
+            </else-if>
           </choose>
           <text variable="URL"/>
         </group>
