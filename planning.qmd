@@ -12,9 +12,9 @@ In addition, the formation of the replication team is important, as replications
 | Recoding reproduction | Reanalysis of the same data, with new (equivalent) code | Correctness of original report |
 | Robustness Reproduction | Reanalysis of the same data with new coding choices; can vary in closeness | Robustness of original finding and sensitivity to different analytical decisions or software |
 | Multiverse analysis | Analyze data in all sensible ways (i.e., a large number of different robustness reproductions) | Robustness and generalizability of original finding, identification of potential moderators or sources for effect variability |
-| Internal replication | Replicate one of your own studies as closely as possible | Demonstrate one’s findings’ generalizability across studies and rule out fear of false-positives (e.g., for new discoveries) |
-| Close / direct / exact replication | Conduct a new study (based on work by other researchers) that is as close as possible to the original study | Rule out fear of the original finding being a false-positive, validate original materials or design, check generalizability/external validity for theoretically irrelevant variables (e.g., population, year of data collection) |
-| Close replication with extension | Add a variable or procedure to a close replication | Rule out fear of the original finding being a false-positive, test generalizability of original finding |
+| Internal replication | Replicate one of your own studies as closely as possible | Demonstrate generalizability across studies; rule out false-positives (e.g., for new discoveries) |
+| Close / direct / exact replication | Conduct a new study (based on work by other researchers) that is as close as possible to the original study | Rule out a false-positive original finding, validate original materials or design, check generalizability/external validity for theoretically irrelevant variables (e.g., population, year of data collection) |
+| Close replication with extension | Add a variable or procedure to a close replication | Rule out a false-positive original finding, test generalizability of original finding |
 | Conceptual / constructive replication | Conduct a study with changes that may be theoretically relevant but that tests the same hypothesis (e.g., different operationalization) | Generalizability of original finding, validity of theory |
 
 : Types of repetitive research ordered by reproduction and replication and respective closeness to the original study. {#tbl-rep-types}
