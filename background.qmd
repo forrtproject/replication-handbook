@@ -8,7 +8,17 @@ Repeatability is the cornerstone of many sciences: Although scientific claims ar
 
 Cumulative science without repetition is costly: building on unreliable findings leads to research waste and misdirected effort. The aim of this guide is to empower researchers to conduct high-quality reproductions and replications and thereby contribute to making their fields of research more cumulative and robust. Issues of replicability have been discussed across many disciplines, such as psychology [@OpenScienceCollab2015], economics [@DreberJohannesson2024], biology [@ErringtonEtAl2021b], marketing [@UrminskyDietvorst2024], linguistics [@McManus2024], computer science [@HummelManner2024] and epidemiology [@LashEtAl2018] and the number of replications has been rising sharply (see @fig-replication-growth, which shows replications only as there is no comprehensive database for reproductions yet).
 
-![Number of replication studies by year of publication, based on the FORRT Library of Replication Attempts (FLoRA) as of April 17, 2026.](images/3Rx_Image_1.jpeg){#fig-replication-growth}
+```{r}
+#| label: fig-replication-growth
+#| fig-cap: "Number of replication studies by year of publication, based on the FORRT Library of Replication Attempts (FLoRA) as of 20 June 2026. The figure is regenerated from FLoRA by `R/fig_replication_growth.R`; the book renders it from the committed snapshot `data/flora_replication_counts.csv`."
+#| echo: false
+#| message: false
+#| warning: false
+library(ggplot2)
+source("R/plot_replication_growth.R")
+counts <- read.csv("data/flora_replication_counts.csv")
+plot_replication_growth(counts)
+```
 
 While the number of replication and reproduction studies has increased, the overall proportion of them is still very small, with reviews finding that replications make up well below 1% of published papers [@PerryEtAl2022]. Moreover, much of the guidance on replications is still being developed [@ClarkeEtAl2024] and in narrow parts of science, which leads to fragmentation, siloing, and potentially inconsistent information.
 
