@@ -272,6 +272,7 @@ format:
     theme:
       light: [cosmo, theme.scss]
     fig-cap-location: top
+    link-external-newwindow: true
 
   pdf:
     documentclass: scrbook
