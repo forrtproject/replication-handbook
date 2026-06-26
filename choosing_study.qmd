@@ -125,7 +125,7 @@ citations, the phenomenon being over- or understudied, and the impact
 factor of the journal), the theoretical relevance of the study, and the
 implications of the original study for practice, policy, or clinical
 work [@PittelkowEtAl2023]. The relevance of societal impact was also
-stressed by [-@Bekkers2024], as a study may have a high value for a
+stressed by @Bekkers2024, as a study may have a high value for a
 societal problem (e.g., a new vaccine or a repeated test of a claim that
 is relevant in the political discourse such as criminality among
 immigrants).
@@ -224,7 +224,7 @@ and replications is a key part of the selection of a target study.
 Although there is no comprehensive database with reproductions yet,
 researchers can check resources such as the Institute for Replication’s
 discussion paper series
-[<https://i4replication.org/discussion_paper.html>, cf.
+[<https://www.i4replication.org/papers>, cf.
 @BrodeurEtAl2024b], the ReplicationWiki [@Hoeffler2017], the CODECHECK
 register [<https://codecheck.org.uk/register/>, cf. @NuestEglen2021], or
 the Social Science Reproduction Platform

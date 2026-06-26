@@ -44,7 +44,7 @@ reproducible and written in Markdown language. Researchers searching for
 target studies to reproduce can check topfactor.org and filter for Data
 transparency level 3 [@topfactorDataSharing, will no longer be updated].
 They can also use the extensive database of economics studies with
-available data compiled by Sebastian Kranz [@KranzDataList].
+available data compiled by Sebastian Kranz [-@KranzDataList].
 
 If data are not publicly available, researchers can contact the authors
 of the original study. In this case, we recommend them to adhere to

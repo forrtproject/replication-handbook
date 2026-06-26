@@ -293,9 +293,7 @@ be reported and justified exhaustively.
     could include positive or negative controls (items that are
     diagnostic of the method rather than the question of interest),
     manipulation checks (generally placed *after* the critical parts of
-    the experiment), or attention checks. See Frank et al. (2025,
-    [chapter
-    12.3](https://experimentology.io/012-collection.html#ensuring-high-quality-data))
+    the experiment), or attention checks. See @FrankEtAl2025 [chap. 12.3]
     for further discussion.
 
 ## Piloting
