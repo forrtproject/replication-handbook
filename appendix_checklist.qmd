@@ -1,0 +1,19 @@
+---
+title: "Reproduction and Replication Checklist"
+---
+
+The checklist below summarises the handbook's core recommendations for
+planning, conducting, and reporting reproductions and replications.
+
+## Checklist {#sec-checklist}
+
+- [ ] Justify choice of target study and claims
+- [ ] Choose a reproduction/replication type that aligns with your aims
+- [ ] Gather and review all relevant materials
+- [ ] Reproduce before you replicate, where possible
+- [ ] Discuss all updates, changes, and extensions of the original materials (as close as possible, as updated as necessary)
+- [ ] Preregister your study and analysis plan
+- [ ] Predetermine conditions for success and failure
+- [ ] Use balanced language when describing the outcomes
+- [ ] Carefully evaluate outcomes and potential reasons for divergences
+- [ ] Report your research comprehensively and openly accessible

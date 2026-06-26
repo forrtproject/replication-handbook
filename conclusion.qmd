@@ -2,17 +2,4 @@
 title: "Conclusion"
 ---
 
-As replication researchers from multiple disciplines, we have discussed current standards, best-practices, and open debates surrounding the planning and execution of reproductions and replications. We have also highlighted the need for field-specific guidance and debate by presenting the special case of replications with MRI data. Our recommendations are summarized in the checklist below. With decades of research waiting to be reproduced and replicated, we hope to provide a starting point for interdisciplinary discussions and support researchers in embracing the essential and exciting element of repetitive research.
-
-## Reproductions and Replications Checklist
-
-- [ ] Justify choice of target study and claims  
-- [ ] Choose a reproduction/replication type that aligns with your aims  
-- [ ] Gather and review all relevant materials  
-- [ ] Reproduce before you replicate, where possible  
-- [ ] Discuss all updates, changes, and extensions of the original materials (as close as possible, as updated as necessary)  
-- [ ] Preregister your study and analysis plan  
-- [ ] Predetermine conditions for success and failure  
-- [ ] Use balanced language when describing the outcomes  
-- [ ] Carefully evaluate outcomes and potential reasons for divergences  
-- [ ] Report your research comprehensively and openly accessible  
+As replication researchers from multiple disciplines, we have discussed current standards, best-practices, and open debates surrounding the planning and execution of reproductions and replications. We have also highlighted the need for field-specific guidance and debate by presenting the special case of replications with MRI data. Our recommendations are summarized in the checklist in @sec-checklist. With decades of research waiting to be reproduced and replicated, we hope to provide a starting point for interdisciplinary discussions and support researchers in embracing the essential and exciting element of repetitive research.

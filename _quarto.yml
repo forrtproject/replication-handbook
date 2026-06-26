@@ -262,7 +262,7 @@ book:
       chapters:
         - publishing.qmd
         - field_specific_mri.qmd
-    - part: "Conclusion and Checklist"
+    - part: "Conclusion"
       chapters:
         - conclusion.qmd
     - references.qmd
@@ -270,6 +270,7 @@ book:
   downloads: [pdf]
 
   appendices:
+    - appendix_checklist.qmd
     - contributions.qmd
     - appendix_templates.qmd
 
