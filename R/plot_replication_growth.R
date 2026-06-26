@@ -15,6 +15,13 @@ plot_replication_growth <- function(counts) {
 
   ggplot2::ggplot(full, ggplot2::aes(x = year, y = n)) +
     ggplot2::geom_col(fill = "#0079A3", width = 0.85) +
+    # Mark the onset of the replication crisis (~2010), after which the number
+    # of replication studies rises sharply.
+    ggplot2::geom_vline(xintercept = 2009.5, linetype = "dashed",
+                        color = "grey30", linewidth = 0.4) +
+    ggplot2::annotate("text", x = 2008, y = max(full$n) * 0.96,
+                      label = "Replication crisis", hjust = 1, vjust = 1,
+                      size = 3.5, fontface = "italic", color = "grey30") +
     ggplot2::scale_x_continuous(
       breaks = seq(1950, 2030, by = 10),
       expand = ggplot2::expansion(mult = c(0.01, 0.01))
