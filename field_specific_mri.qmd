@@ -74,7 +74,7 @@ example, cerebral gray matter structure could be investigated as
 voxel-wise gray matter, segmentation-based regional cortical surface,
 thickness or gyrification.
 
-Analysis-wise, the high number of researcher degrees of freedom is mainly a consequence of the multidimensional data structure. Basically, the central question is where in the brain to look for effects and how to define significance in the face of a large number of tests. There is an immensely high number of single data points represented by spatial units in the obtained individual images (e.g., two-dimensional pixels or three-dimensional voxels). Analysis is often done utilizing mass-univariate approaches where a statistical model is calculated separately for each of these spatial units. For example, in cerebral MRI research the analysis of 400k voxels  is common. To avoid false-positive findings, region-of-interests (ROIs) are often defined or the analysis is restricted to a smaller region in the brain (i.e., small volume correction) to narrow down the search space and unique methods to correct for multiple testing are applied [@HanEtAl2019]. This again results in a multitude of options, such as the anatomical vs. functional definition of a ROI based on several different atlases and a variety of voxel-based or cluster-based inference methods to choose from. Botvinik-Nezer et al. [-@BotvinikNezerEtAl2020] gave the same fMRI dataset (raw data and preprocessed data), along with predefined hypotheses to 70 independent analysis teams and observed substantial variation in obtained results, attributable to variability in the analysis pipelines — notably, none of the 70 teams used the same pipeline. This finding underscores the value of automated, standardised preprocessing pipelines (discussed below) as a means to reduce this variability and improve reproducibility. Even when the same code and data is available the reproducibility of MRI analysis can be challenging [@LeehrEtAl2024].
+Analysis-wise, the high number of researcher degrees of freedom is mainly a consequence of the multidimensional data structure. Basically, the central question is where in the brain to look for effects and how to define significance in the face of a large number of tests. There is an immensely high number of single data points represented by spatial units in the obtained individual images (e.g., two-dimensional pixels or three-dimensional voxels). Analysis is often done utilizing mass-univariate approaches where a statistical model is calculated separately for each of these spatial units. For example, in cerebral MRI research the analysis of 400k voxels is common. To avoid false-positive findings, region-of-interests (ROIs) are often defined or the analysis is restricted to a smaller region in the brain (i.e., small volume correction) to narrow down the search space and unique methods to correct for multiple testing are applied [@HanEtAl2019]. This again results in a multitude of options, such as the anatomical vs. functional definition of a ROI based on several different atlases and a variety of voxel-based or cluster-based inference methods to choose from. Botvinik-Nezer et al. [-@BotvinikNezerEtAl2020] gave the same fMRI dataset (raw data and preprocessed data), along with predefined hypotheses to 70 independent analysis teams and observed substantial variation in obtained results, attributable to variability in the analysis pipelines — notably, none of the 70 teams used the same pipeline. This finding underscores the value of automated, standardised preprocessing pipelines (discussed below) as a means to reduce this variability and improve reproducibility. Even when the same code and data is available the reproducibility of MRI analysis can be challenging [@LeehrEtAl2024].
 
 ## Sample Size Justification
 
@@ -84,9 +84,9 @@ three-dimensional data structure. Any power analysis would need to
 incorporate assumptions about the covariance structure of all data
 points, as well as the spatial extent and distribution of statistical
 effects, and the method to correct for multiple tests. While these
-numerous tests are not independent from another, the extent of their
+numerous tests are not independent from one another, the extent of their
 spatial covariance structure is difficult to assess and depends on
-preprocessing steps, such as image smoothing but is also on the data and
+preprocessing steps, such as image smoothing, but also on the data and
 the specific research question. Due to the high number of single data
 points, the obtained result is not a single statistical estimate with an
 effect size but rather a highly individual three-dimensional
@@ -132,7 +132,7 @@ defined in terms of spatial proximity to this peak voxel (for example a
 15mm sphere with the peak voxel as a center) or in terms of an
 anatomically defined region where the original effect was found (for
 example anywhere in the hippocampus). Another possibility is the
-definition of a ROI directly deducted from the original results mask, if
+definition of a ROI directly deduced from the original results mask, if
 available (i.e., the original thresholded mask). Each of these spatial
 definitions comes with important limitations. For example, the meaning
 of proximity could be judged very different in different locations in
@@ -174,8 +174,8 @@ researcher degrees of freedom more transparent. To facilitate
 preregistrations in neuroimaging, there are multiple templates
 available. To incorporate all the specifics coming with MRI studies
 Beyer, Flannery et al. [-@BeyerEtAl2021] developed a fMRI specific
-template, which can be assessed here:[
-https://doi.org/10.23668/psycharchives.5121](https://doi.org/10.23668/psycharchives.5121).
+template, which can be accessed here:
+<https://doi.org/10.23668/psycharchives.5121>.
 For replication research, preregistrations should contain a definition
 of replication success criteria that take into consideration the spatial
 dimension of results. Overall, open science practices and replications
