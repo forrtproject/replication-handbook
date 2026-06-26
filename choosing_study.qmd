@@ -2,52 +2,242 @@
 title: "Choosing the Target Study"
 ---
 
-Reproduction and replication studies can serve different goals and depending on the goal, the way of choosing a target study differs [see @PittelkowEtAl2023]. In large-scale reproduction and replication projects, such as Brodeur et al. [-@BrodeurEtAl2024b], the Reproducibility Project: Psychology [@OpenScienceCollab2015] or the Reproducibility Project: Cancer Biology [@ErringtonEtAl2021b], the primary aim is to assess the overall reliability of a field or a set of findings, leading to a top-down approach in which the decision to replicate comes first, followed by the selection of specific replication targets. This is often done in a way aimed to be representative of a field, ideally through random sampling, though this is generally constrained by practicalities. Here, individual studies are not the primary focus in the decision to repeat; instead, choices are guided by broader methodological or theoretical considerations. In contrast, individual researchers frequently adopt a bottom-up approach, where the decision to replicate is driven by engagement with a specific study [or theoretically related set of studies, e.g., @RoselerEtAl2021]. This may occur when a researcher wishes to build upon an existing finding and seeks to verify its robustness before doing so, or when they harbor doubts about a claim and aim to test its validity. Since reproductions and replications can serve multiple purposes—from assessing theoretical frameworks to correcting potential errors—there is no singular correct way to decide what to repeat. The choice of targets ultimately depends on the overarching goals and methodological approach of the replication effort, as well as on practical constraints. However, what does matter is that the selection of reproduction and replication targets is well justified and transparently communicated. For instance, researchers can use structured frameworks such as the replication target selection checklist to ensure clarity and consistency in their decision-making process [@PittelkowEtAl2023]. For a comment on what empirical reasons for replications are, see Kamermans et al. [-@KamermansEtAl2025].
+::: {.callout-tip icon="false"}
+**Key takeaways**
+
+Choosing a target study for reproduction or replication depends on the
+goals, which can range from assessing the overall reliability of a field
+to verifying specific findings. Large-scale projects often adopt a
+top-down approach, selecting studies to represent a field, while
+individual researchers usually follow a bottom-up approach driven by
+interest in particular studies. The value of a target study is
+influenced by its relevance, theoretical or societal impact, and
+citation history. High uncertainty in the original results increases the
+potential knowledge gain from replication, while limited reporting,
+multiple prior studies, or contextual specificity may further motivate
+replication. Researchers must also consider feasibility, including data
+availability, resources, and technical requirements. Potential
+researcher biases, such as confirmation bias or conflicts of interest,
+highlight the importance of preregistration and transparent
+documentation. Clear justification and systematic frameworks can ensure
+that replication efforts are efficient and trustworthy.
+
+*After this chapter, you will know:*
+
+-   How do top-down and bottom-up approaches differ when choosing a
+    study to replicate?
+
+-   Which factors determine whether a study is worth reproducing or
+    replicating?
+
+-   How can practical constraints and potential biases influence the
+    selection of replication targets?
+:::
+
+Reproduction and replication studies can serve different goals and
+depending on the goal, the way of choosing a target study differs [see
+@PittelkowEtAl2023]. In large-scale reproduction and replication
+projects, such as Brodeur et al. [-@BrodeurEtAl2024b], the
+Reproducibility Project: Psychology [@OpenScienceCollab2015] or the
+Reproducibility Project: Cancer Biology [@ErringtonEtAl2021b], the
+primary aim is to assess the overall reliability of a field or a set of
+findings, leading to a top-down approach in which the decision to
+replicate comes first, followed by the selection of specific replication
+targets. This is often done in a way aimed to be representative of a
+field, ideally through random sampling, though this is generally
+constrained by practicalities. Here, individual studies are not the
+primary focus in the decision to repeat; instead, choices are guided by
+broader methodological or theoretical considerations. In contrast,
+individual researchers frequently adopt a bottom-up approach, where the
+decision to replicate is driven by engagement with a specific study [or
+theoretically related set of studies, e.g., @RoselerEtAl2021]. This may
+occur when a researcher wishes to build upon an existing finding and
+seeks to verify its robustness before doing so, or when they harbor
+doubts about a claim and aim to test its validity. Since reproductions
+and replications can serve multiple purposes—from assessing theoretical
+frameworks to correcting potential errors—there is no singular correct
+way to decide what to repeat. The choice of targets ultimately depends
+on the overarching goals and methodological approach of the replication
+effort, as well as on practical constraints. However, what does matter
+is that the selection of reproduction and replication targets is well
+justified and transparently communicated. For instance, researchers can
+use structured frameworks such as the replication target selection
+checklist to ensure clarity and consistency in their decision-making
+process [@PittelkowEtAl2023]. For a comment on what empirical reasons
+for replications are, see Kamermans et al. [-@KamermansEtAl2025].
 
 ## Determining Reproduction and Replication Value
 
-Whether a target study is “worth reproducing” or “worth replicating” is highly debated and is suggested to depend on several overlapping factors, including value (sometimes also referred to as impact or relevance), uncertainty, and feasibility [@IsagerEtAl2023]. Below, different suggestions for operationalizing these factors are discussed systematically.
+Whether a target study is “worth reproducing” or “worth replicating” is
+highly debated and is suggested to depend on several overlapping
+factors, including value (sometimes also referred to as impact or
+relevance), uncertainty, and feasibility [@IsagerEtAl2023]. Below,
+different suggestions for operationalizing these factors are discussed
+systematically.
 
-Note that there is also ongoing discussion about whether or not all studies are generally ‘worth replicating’. One perspective is *what is worthy of publication is worthy of replication* [@Feldman2025] or on a different note, what is worthy of publication *should be* worthy of replication - though this perspective is becoming complicated through the rise of influential preprints and a public-review-curate model to publications. Naturally, a public report of a study is necessary for other researchers to attempt a replication and an available dataset is needed for a reproduction. To take a more fine-grained look at the publication status, several different types of research emerge. An article can be *retracted*, that is, there is no confidence anymore in its findings due to research misconduct or severe errors. When the data of a study were fabricated and it was thus retracted, a reproduction will not be informative but a replication may inform researchers about the correctness of the hypothesis unlike the original report. Other reasons (or unclear reasons) for retraction may conversely increase the replication and reproduction value, as the source of a true claim may have become untrustworthy (and not easily citeable) due to issues unrelated to its truth (e.g. plagiarism).
+Note that there is also ongoing discussion about whether or not all
+studies are generally ‘worth replicating’. One perspective is *what is
+worthy of publication is worthy of replication* [@Feldman2025] or on a
+different note, what is worthy of publication *should be* worthy of
+replication - though this perspective is becoming complicated through
+the rise of influential preprints and a public-review-curate model to
+publications. Naturally, a public report of a study is necessary for
+other researchers to attempt a replication and an available dataset is
+needed for a reproduction. To take a more fine-grained look at the
+publication status, several different types of research emerge. An
+article can be *retracted*, that is, there is no confidence anymore in
+its findings due to research misconduct or severe errors. When the data
+of a study were fabricated and it was thus retracted, a reproduction
+will not be informative but a replication may inform researchers about
+the correctness of the hypothesis unlike the original report. Other
+reasons (or unclear reasons) for retraction may conversely increase the
+replication and reproduction value, as the source of a true claim may
+have become untrustworthy (and not easily citeable) due to issues
+unrelated to its truth (e.g. plagiarism).
 
-Replicating and reproducing every finding that was ever published appears impossible to achieve, which is why researchers need to make decisions about prioritization. In the following, we discuss criteria by which such a prioritization can occur - restricted to quantitative research.
+Replicating and reproducing every finding that was ever published
+appears impossible to achieve, which is why researchers need to make
+decisions about prioritization. In the following, we discuss criteria by
+which such a prioritization can occur - restricted to quantitative
+research.
 
 ## Value
 
-The original study should be somehow relevant for the replication to have value [e.g., @KarhulahtiEtAl2024]. It may have started a research stream. For example, Jacowitz and Kahneman’s [-@JacowitzKahneman1995] studies on anchoring and adjustment were fundamental for how anchoring effects are investigated today, and were therefore replicated by @KleinEtAl2014. Field et al. [-@FieldEtAl2019] propose a method for the selection of replication studies that features the theoretical importance of the original study result. Relevance may be evidenced by many citations as they show that many studies are building on the finding, testing similar hypotheses, or criticizing the study. Note that a study could also be cited as a negative example or study that has not been replicated or retracted for some reason. Isager et al. \[[-@IsagerEtAl2021], [-@IsagerEtAl2023]\] suggest deciding what to replicate based on sample size and citation count [but see @PittelkowEtAl2025]. In a Delphi study examining consensus among psychologists that had conducted empirical replications on what should influence the decision of what study to replicate, elements that came up were the importance of the original study for research (as indicated by citations, the phenomenon being over- or understudied, and the impact factor of the journal), the theoretical relevance of the study, and the implications of the original study for practice, policy, or clinical work [@PittelkowEtAl2023]. The relevance of societal impact was also stressed by @Bekkers2024, as a study may have a high value for a societal problem (e.g., a new vaccine or a repeated test of a claim that is relevant in the political discourse such as criminality among immigrants).
+The original study should be somehow relevant for the replication to
+have value [e.g., @KarhulahtiEtAl2024]. It may have started a research
+stream. For example, Jacowitz and Kahneman’s [-@JacowitzKahneman1995]
+studies on anchoring and adjustment were fundamental for how anchoring
+effects are investigated today, and were therefore replicated by
+@KleinEtAl2014. Field et al. [-@FieldEtAl2019] propose a method for the
+selection of replication studies that features the theoretical
+importance of the original study result. Relevance may be evidenced by
+many citations as they show that many studies are building on the
+finding, testing similar hypotheses, or criticizing the study. Note that
+a study could also be cited as a negative example or study that has not
+been replicated or retracted for some reason. Isager et al.
+\[[-@IsagerEtAl2021], [-@IsagerEtAl2023]\] suggest deciding what to
+replicate based on sample size and citation count [but see
+@PittelkowEtAl2025]. In a Delphi study examining consensus among
+psychologists that had conducted empirical replications on what should
+influence the decision of what study to replicate, elements that came up
+were the importance of the original study for research (as indicated by
+citations, the phenomenon being over- or understudied, and the impact
+factor of the journal), the theoretical relevance of the study, and the
+implications of the original study for practice, policy, or clinical
+work [@PittelkowEtAl2023]. The relevance of societal impact was also
+stressed by @Bekkers2024, as a study may have a high value for a
+societal problem (e.g., a new vaccine or a repeated test of a claim that
+is relevant in the political discourse such as criminality among
+immigrants).
 
-For scientists reproducing or replicating a study because they are interested in building on its findings (including if they wish to build upon their own original findings), their interest to build on it may be a sufficient indicator of its relevance to their research program.
+For scientists reproducing or replicating a study because they are
+interested in building on its findings (including if they wish to build
+upon their own original findings), their interest to build on it may be
+a sufficient indicator of its relevance to their research program.
 
 ## Uncertainty
 
 The more uncertain the original study’s outcome is, the higher the potential of knowledge gained from reproduction and replication. Although no findings are definitive, research reports differ in the strength of the evidence they present \[e.g., Registered Reports[^choosing_study-1] are typically more convincing than non preregistered studies, @SoderbergEtAl2021\]. Similarly, sample size (within a given field) has been proposed as an indicator of evidence strength [@IsagerEtAl2021]. @PittelkowEtAl2021, @PittelkowEtAl2023 and @FieldEtAl2019 all argued for using the current strength of evidence in favour of the original claim as an important element that features into the choosing a replication target. However, the degree of uncertainty can be uncertain or misjudged: In some areas of research a hypothesis had been claimed to be confirmed hundreds of times and yet, large-scale replication effort could not support the original hypothesis so that after hundreds of studies the existence of the phenomenon was still unknown [e.g., @FrieseEtAl2019]. Meta-analyses allow some tests for uncertainty (e.g. via correction of bias, evaluation of risk of bias, or estimates of heterogeneity). Although there are numerous ways to meta-analytically evaluate the expected replicability of a set of claims, none of them is as solid as a well-designed replication attempt [@CarterEtAl2019]. Other heuristics to estimate robustness reproducibility and replicability of sets of findings have been proposed. They include the caliper test, relative proximity, or *z*-curve [@BartosSchimmack2022; see @AdlerEtAl2023, for an overview and a ShinyApp that combines these tools]. Individual findings can be assessed through forensic meta-science tests — techniques such as GRIM, SPRITE, and statistical consistency checks that detect impossible or implausible values in published results [for an overview, see @Heathers2025], and through the assessment of papers for reporting issues, such as those identified by *statcheck* [@NuijtenPolanin2020; @papercheckR]. Moreover, methods such as *sum of p-values* [@HeldEtAl2024] and Bayesian re-analysis can be applied to help determine the degree of evidence for a given effect an original study might contain [@FieldEtAl2019; @PittelkowEtAl2021].
 
-[^choosing_study-1]: For registered reports, a journal reviews only the introduction and method and no data have been collected at this point of time. After an initial revision and “in-principle acceptance”, results are collected and the full report submitted. The second round of review is concerned only with the authors’ adherence to the preregistration and success to execute the planned study.
+[^choosing_study-1]: For registered reports, a journal reviews only the
+    introduction and method and no data have been collected at this
+    point of time. After an initial revision and “in-principle
+    acceptance”, results are collected and the full report submitted.
+    The second round of review is concerned only with the authors’
+    adherence to the preregistration and success to execute the planned
+    study.
 
-If the original paper reports multiple studies for the same phenomenon, researchers should check the proportion of significant studies and whether all of them confirm the hypothesis. More studies reduce the overall statistical power (power deflation). Provided the hypothesis is correct, a single study may test it with 90% power, that is, the statistical analysis will indicate the correctness of the hypothesis with a probability of .9. Now, if 10 studies are run with 90% power each, the chances of all of them supporting the hypothesis (even if it is true) are $0.9^{10} \approx 0.35$. For 80%, even finding five significant findings in a row is fairly unlikely ($0.8^{5} \approx 0.33$). Thus, studies reporting a set of many and only significant findings when each of the studies does not have very high power should be taken with caution [see also @Francis2012; @Schimmack2012; @LakensEtz2017].
+If the original paper reports multiple studies for the same phenomenon,
+researchers should check the proportion of significant studies and
+whether all of them confirm the hypothesis. More studies reduce the
+overall statistical power (power deflation). Provided the hypothesis is
+correct, a single study may test it with 90% power, that is, the
+statistical analysis will indicate the correctness of the hypothesis
+with a probability of .9. Now, if 10 studies are run with 90% power
+each, the chances of all of them supporting the hypothesis (even if it
+is true) are $0.9^{10} \approx 0.35$. For 80%, even finding five
+significant findings in a row is fairly unlikely
+($0.8^{5} \approx 0.33$). Thus, studies reporting a set of many and only
+significant findings when each of the studies does not have very high
+power should be taken with caution [see also @Francis2012;
+@Schimmack2012; @LakensEtz2017].
 
 For large parts of the literature and given the overall low replicability rate in many fields, the mere lack of a reproduction or close replication by independent researchers can be used as an argument for uncertainty [e.g., @PittelkowEtAl2023], though it *might* also indicate that nobody beyond the original orders is interested in the phenomenon. However, it is also possible that replications have been attempted but not published, for instance when reviewers show an aversion to null findings, replications, or findings criticizing their own work.
 
-As replications can also be used to probe a phenomenon’s generalizability, a lack of variety in study designs can motivate a replication attempt. If there is reason to assume that a phenomenon is highly dependent on context (e.g., works only for graduate students, with English-speaking people, when people are incentivized, for the chosen stimuli, …), it can be replicated and extended in other contexts. More generally, when background factors are introduced to a study (e.g., there was a positive correlation in study X but researchers suspect it to vanish under condition M), the original finding needs to be replicated in a part of the new study for the argument to work. An added benefit of this is to help avoid later claims of ‘hidden moderators’ in original studies; an argument which has been used previously to refute the validity of replication study results [@ZwaanEtAl2018].
+As replications can also be used to probe a phenomenon’s
+generalizability, a lack of variety in study designs can motivate a
+replication attempt. If there is reason to assume that a phenomenon is
+highly dependent on context (e.g., works only for graduate students,
+with English-speaking people, when people are incentivized, for the
+chosen stimuli, …), it can be replicated and extended in other contexts.
+More generally, when background factors are introduced to a study (e.g.,
+there was a positive correlation in study X but researchers suspect it
+to vanish under condition M), the original finding needs to be
+replicated in a part of the new study for the argument to work. An added
+benefit of this is to help avoid later claims of ‘hidden moderators’ in
+original studies; an argument which has been used previously to refute
+the validity of replication study results [@ZwaanEtAl2018].
 
-Finally, uncertainty can be the result of a lack of specificity in the original report: If there are details missing that cannot be retrieved anymore (e.g., researchers involved in the original study cannot be reached), a replication can develop, test and share a comprehensive set of materials. For example, Chartrand and Bargh’s [-@ChartrandBargh1999] seminal study on the *chameleon effect* requires many materials but none of them are openly available. Accordingly, @PittelkowEtAl2023 identified the clarity of the original study protocol as an important element that features into the decision of replication study selection. Reconstructing these materials and documenting a procedure would, thus, be a valuable contribution of a replication study.
+Finally, uncertainty can be the result of a lack of specificity in the
+original report: If there are details missing that cannot be retrieved
+anymore (e.g., researchers involved in the original study cannot be
+reached), a replication can develop, test and share a comprehensive set
+of materials. For example, Chartrand and Bargh’s [-@ChartrandBargh1999]
+seminal study on the *chameleon effect* requires many materials but none
+of them are openly available. Accordingly, @PittelkowEtAl2023 identified
+the clarity of the original study protocol as an important element that
+features into the decision of replication study selection.
+Reconstructing these materials and documenting a procedure would, thus,
+be a valuable contribution of a replication study.
 
 ***Theoretical contribution***
 
-In some cases, theories are so vague that a failed replication would likely be criticized for misunderstanding the theory [e.g., @BaumeisterVohs2016]. This suggests that the target theory was not well specified. If accepted as a reason not to replicate, it can discourage any form of replication despite the target finding being relevant. Instead, replication researchers can ask original authors for feedback on the study protocol before collecting data to try to ensure that it tests (and then articulates) the intended theory. They can also engage in adversarial collaboration or “red teaming” [e.g., @CowanEtAl2020; @ClarkEtAl2022; @CorcoranEtAl2023], that is work together with the original authors to design a study that they agree would be able to corroborate the original claim, or to call it into doubt.
+In some cases, theories are so vague that a failed replication would
+likely be criticized for misunderstanding the theory [e.g.,
+@BaumeisterVohs2016]. This suggests that the target theory was not well
+specified. If accepted as a reason not to replicate, it can discourage
+any form of replication despite the target finding being relevant.
+Instead, replication researchers can ask original authors for feedback
+on the study protocol before collecting data to try to ensure that it
+tests (and then articulates) the intended theory. They can also engage
+in adversarial collaboration or “red teaming” [e.g., @CowanEtAl2020;
+@ClarkEtAl2022; @CorcoranEtAl2023], that is work together with the
+original authors to design a study that they agree would be able to
+corroborate the original claim, or to call it into doubt.
 
-Nevertheless, it has been argued that because so many original studies are flawed, the theories built upon them are weak, or contaminated. This, in turn, can lead to flawed replication studies, especially in the case of theory that aims to explain phenomena [@FieldEtAl2024], risking a vicious cycle in which successful replications potentially perpetuate flaws across studies.
+Nevertheless, it has been argued that because so many original studies
+are flawed, the theories built upon them are weak, or contaminated.
+This, in turn, can lead to flawed replication studies, especially in the
+case of theory that aims to explain phenomena [@FieldEtAl2024], risking
+a vicious cycle in which successful replications potentially perpetuate
+flaws across studies.
 
 ***Availability of reproductions and replications***
 
-While a single replication (or robustness reproduction) cannot provide conclusive evidence in regard to the veracity of original claims, the first numerical reproduction, and arguably also the first robustness reproduction and replication adds the greatest value in terms of reducing uncertainty. Therefore, the search for existing reproductions and replications is a key part of the selection of a target study.
+While a single replication (or robustness reproduction) cannot provide
+conclusive evidence in regard to the veracity of original claims, the
+first numerical reproduction, and arguably also the first robustness
+reproduction and replication adds the greatest value in terms of
+reducing uncertainty. Therefore, the search for existing reproductions
+and replications is a key part of the selection of a target study.
 
-Although there is no comprehensive database with reproductions yet, researchers can check resources such as the Institute for Replication’s discussion paper series [<https://www.i4replication.org/papers>, cf. @BrodeurEtAl2024b], the ReplicationWiki [@Hoeffler2017], the CODECHECK register [<https://codecheck.org.uk/register/>, cf. @NuestEglen2021], or the Social Science Reproduction Platform (<https://www.socialsciencereproduction.org>).
+Although there is no comprehensive database with reproductions yet,
+researchers can check resources such as the Institute for Replication’s
+discussion paper series
+[<https://www.i4replication.org/papers>, cf.
+@BrodeurEtAl2024b], the ReplicationWiki [@Hoeffler2017], the CODECHECK
+register [<https://codecheck.org.uk/register/>, cf. @NuestEglen2021], or
+the Social Science Reproduction Platform
+(<https://www.socialsciencereproduction.org>).
 
-With regard to replications, researchers can browse the FORRT Replication Database [<https://forrt.org/apps/fred_explorer.html>, cf. @RoselerEtAl2024], though this does not (yet) provide a replacement for manual searches. The following table provides an overview of different types of *reproducibility checks*.
+With regard to replications, researchers can browse the FORRT
+Replication Database [<https://forrt.org/apps/fred_explorer.html>, cf.
+@RoselerEtAl2024], though this does not (yet) provide a replacement for
+manual searches. The following table provides an overview of different
+types of *reproducibility checks*.
 
 | Type | Checker | Nomination | Documentation | Format | Typical Time |
-|----|----|----|----|----|----|
+|------------|------------|------------|------------|------------|------------|
 | No check | — | — | — | — | — |
 | Informal | Author, Co-Author, Research Assistant, Institutional Service (e.g., Code Review) | Self-nomination | Usually none | No specific format or public report | Before posting preprint or submitting to a journal |
 | Pre-submission (e.g,. [CODECHECK](https://codecheck.org.uk)) | Independent researcher | Self-nomination | On Zenodo with DOI | Standardized report | After posting preprint, before submitting to journal |
@@ -58,7 +248,18 @@ With regard to replications, researchers can browse the FORRT Replication Databa
 
 ## (Potential) Researcher Bias
 
-Researchers typically work in relatively small communities to investigate the same phenomenon. These researchers are invested in their work and can be influenced by certain researcher biases, such as confirmation bias [the tendency to preferentially seek out, evaluate and recall information that supports one’s existing beliefs, see @Mahoney1977] and motivated reasoning [generating post-hoc rationalizations that frame previous decisions in a favourable light, see @HardwickeWagenmakers2023; @MunafoEtAl2020]. In some cases, researchers profit off their work and the (perceived) replicability of their findings may be associated with personal financial gain. Such conflicts of interest should be disclosed, but this is not always the case [see @HeireneEtAl2024].
+Researchers typically work in relatively small communities to
+investigate the same phenomenon. These researchers are invested in their
+work and can be influenced by certain researcher biases, such as
+confirmation bias [the tendency to preferentially seek out, evaluate and
+recall information that supports one’s existing beliefs, see
+@Mahoney1977] and motivated reasoning [generating post-hoc
+rationalizations that frame previous decisions in a favourable light,
+see @HardwickeWagenmakers2023; @MunafoEtAl2020]. In some cases,
+researchers profit off their work and the (perceived) replicability of
+their findings may be associated with personal financial gain. Such
+conflicts of interest should be disclosed, but this is not always the
+case [see @HeireneEtAl2024].
 
 However, replication researchers are just as prone to bias as original authors can be. There *may* be a publication bias in replication studies in favor of nonsignificant findings [@BerinskyEtAl2021], though there is no empirical evidence for this yet. Nevertheless, greater interest in failed replications seems likely, incentivizing replication researchers to apply questionable research practices (QRPs) so that the results are nonsignificant [“null hacking”, @Protzko2018; @BaumeisterEtAl2022]. The problems of *p*-hacking and null-hacking can mostly be solved through preregistration and the use of Registered (Replication) Reports [e.g., @BrodeurEtAl2024b; @SoderbergEtAl2021]. Another type of bias is that researchers may be interested in replicating specific studies because of personal admiration towards a study or envy towards a colleague.
 
@@ -66,8 +267,44 @@ Even in the absence of such biases, the selection of replication targets can aff
 
 ## Feasibility
 
-Reproductions require the original dataset. We recommend that researchers check whether the journal that published the original study has a data editor or reproducibility manager who has done a reproducibility check or provides a *replication package*. A replication package is a collection of materials to allow reproduction of the original results. Ideally, the dataset in the replication package, or shared separately, adheres to the FAIR criteria [@WilkinsonEtAl2016], that is, it should be findable, accessible, interoperable, and reusable. Otherwise, the reproduction author would need to send a data sharing request to the original authors. In any case, they may need to consult with the original authors regarding software versions and code that does not work anymore due to changes in the software.
+Reproductions require the original dataset. We recommend that
+researchers check whether the journal that published the original study
+has a data editor or reproducibility manager who has done a
+reproducibility check or provides a *replication package*. A replication
+package is a collection of materials to allow reproduction of the
+original results. Ideally, the dataset in the replication package, or
+shared separately, adheres to the FAIR criteria [@WilkinsonEtAl2016],
+that is, it should be findable, accessible, interoperable, and reusable.
+Otherwise, the reproduction author would need to send a data sharing
+request to the original authors. In any case, they may need to consult
+with the original authors regarding software versions and code that does
+not work anymore due to changes in the software.
 
-While original data is not necessary for replications, thorough documentation of the original study is highly beneficial. Moreover, replication researchers should evaluate whether they can achieve the target sample size, which is often a multiple of the original sample size (see section [Sample Size Determination](?tab=t.0#heading=h.r1a225ca00xn)). @PittelkowEtAl2023 identified the resources available to the replicating team in terms of funding, time, equipment, and (if relevant) previous experience and expertise as important elements that feature into the replication study selection. When choosing a target study, researchers should try to anticipate practical problems, and should restrict their choice of replication target to align with their lab resources in order to prevent ‘secondary’ research waste [@FieldEtAl2019]. Specifically, some studies may be difficult to replicate (e.g., longitudinal studies). Other studies, such as those conducted with the use of highly technical, restricted, or expensive equipment, such as studies involving MRI scanning, might require expertise and knowledge that is not represented in all potential replication research teams [@FieldEtAl2019].
+While original data is not necessary for replications, thorough
+documentation of the original study is highly beneficial. Moreover,
+replication researchers should evaluate whether they can achieve the
+target sample size, which is often a multiple of the original sample
+size (see section [Sample Size
+Determination](?tab=t.0#heading=h.r1a225ca00xn)). @PittelkowEtAl2023
+identified the resources available to the replicating team in terms of
+funding, time, equipment, and (if relevant) previous experience and
+expertise as important elements that feature into the replication study
+selection. When choosing a target study, researchers should try to
+anticipate practical problems, and should restrict their choice of
+replication target to align with their lab resources in order to prevent
+‘secondary’ research waste [@FieldEtAl2019]. Specifically, some studies
+may be difficult to replicate (e.g., longitudinal studies). Other
+studies, such as those conducted with the use of highly technical,
+restricted, or expensive equipment, such as studies involving MRI
+scanning, might require expertise and knowledge that is not represented
+in all potential replication research teams [@FieldEtAl2019].
 
-Moreover, there are no established standards for replications in some fields yet. In that case, replications may add less to the reduction of uncertainty and replicators need to propose methods. For example, replications with response-surface-analyses are not as established as those with *t*-tests for two-group study designs. Furthermore, the complexity of the data types can pose challenges for definitions of successful replications, such as in neuroimaging research (e.g., MRI studies) which often implicates outcome variables with an additional spatial component.
+Moreover, there are no established standards for replications in some
+fields yet. In that case, replications may add less to the reduction of
+uncertainty and replicators need to propose methods. For example,
+replications with response-surface-analyses are not as established as
+those with *t*-tests for two-group study designs. Furthermore, the
+complexity of the data types can pose challenges for definitions of
+successful replications, such as in neuroimaging research (e.g., MRI
+studies) which often implicates outcome variables with an additional
+spatial component.

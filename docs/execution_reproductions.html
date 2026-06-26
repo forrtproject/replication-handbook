@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>5&nbsp; Execution of Reproductions – Handbook for Reproduction and Replication Studies</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -56,15 +59,14 @@ div.csl-indent {
 <link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f4d9bdc1b444b5adaf6c148e31b6632f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8f2481fac337f33222e91caf6a1fd681.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -331,6 +333,26 @@ div.csl-indent {
   <a href="mailto:lukas.roeseler@uni-muenster.de">lukas.roeseler@uni-muenster.de</a> or <a href="https://github.com/forrtproject/replication_handbook/issues">GitHub</a>.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Key takeaways</strong></p>
+<p>Reproduction studies require access to the original data and ideally also the analysis code, which are usually made available through repositories or supplementary materials. If not, contacting the original authors is recommended, while respecting licenses and following constructive communication guidelines. Researchers should identify the claims they plan to reproduce and explain why these are important. Preregistering the analysis plan then ensures that these decisions are clear and prevents unintended flexibility in how the data are analyzed. The main part of a reproduction is the analysis, including transparent reporting of software details. Reproduction studies may extend beyond numerical replication through alternative or exploratory analyses and, for statistical results, should report reproducibility indicators to compare findings. Any deviations from the original procedure should be clearly reported, and the discussion should evaluate success, explain differences, and include relevant feedback from the original authors.</p>
+<p><em>After this chapter, you will know:</em></p>
+<ul>
+<li><p>Why is it important to secure both data and code before attempting a reproduction?</p></li>
+<li><p>How can preregistration support transparency and prevent questionable research practices?</p></li>
+<li><p>What should a reproduction report include to clearly communicate success and discrepancies?</p></li>
+</ul>
+</div>
+</div>
 <section id="gathering-resources" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="gathering-resources"><span class="header-section-number">5.1</span> Gathering resources</h2>
 <p>Prerequisites for reproduction studies are available data and ideally also code. These are usually linked within the manuscript and shared via repositories (e.g., Zenodo, OSF.io, github.com, gitlab.com) or they are part of the supplemental materials that are listed on the article’s website. In special cases, an entire original manuscript may be reproducible and written in Markdown language. Researchers searching for target studies to reproduce can check topfactor.org and filter for Data transparency level 3 <span class="citation" data-cites="topfactorDataSharing">(<a href="references.html#ref-topfactorDataSharing" role="doc-biblioref">Leibniz Institute for the Social Sciences, 2023</a>, will no longer be updated)</span>. They can also use the extensive database of economics studies with available data compiled by Sebastian Kranz <span class="citation" data-cites="KranzDataList">(<a href="references.html#ref-KranzDataList" role="doc-biblioref">Kranz, 2025</a>)</span>.</p>
@@ -348,13 +370,13 @@ div.csl-indent {
 </section>
 <section id="preregistration" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="preregistration"><span class="header-section-number">5.4</span> Preregistration</h2>
-<p>Preregistrations contain a description of the planned study or analysis prior to their execution. This way, they can reduce researchers’ ‘degrees of freedom’. In the case of reproductions, they can prevent QRPs <span class="citation" data-cites="BryanEtAl2019 BerinskyEtAl2021">(e.g., “null hacking,” <a href="references.html#ref-BryanEtAl2019" role="doc-biblioref">Bryan et al., 2019</a>; “gotcha bias,” <a href="references.html#ref-BerinskyEtAl2021" role="doc-biblioref">Berinsky et al., 2021</a>)</span> as long as the entire analysis plan is preregistered <span class="citation" data-cites="BrodeurEtAl2024a">(<a href="references.html#ref-BrodeurEtAl2024a" role="doc-biblioref">Brodeur et al., 2024</a>)</span> and the data have not yet been accessed. While a numerical reproduction with available code does not require preregistration, we recommend a priori specification of all further planned analyses.</p>
+<p>Preregistrations contain a description of the planned study or analysis prior to their execution. This way, they can reduce researchers’ ‘degrees of freedom’. In the case of reproductions, they can prevent QRPs <span class="citation" data-cites="BryanEtAl2019 BerinskyEtAl2021">(e.g., “null hacking”, <a href="references.html#ref-BryanEtAl2019" role="doc-biblioref">Bryan et al., 2019</a>; “gotcha bias”, <a href="references.html#ref-BerinskyEtAl2021" role="doc-biblioref">Berinsky et al., 2021</a>)</span> as long as the entire analysis plan is preregistered <span class="citation" data-cites="BrodeurEtAl2024a">(<a href="references.html#ref-BrodeurEtAl2024a" role="doc-biblioref">Brodeur et al., 2024</a>)</span> and the data have not yet been accessed. While a numerical reproduction with available code does not require preregistration, we recommend a priori specification of all further planned analyses.</p>
 <p>While preregistration of a reproduction may seem paradoxical when data are already accessible, it remains valuable as a (personal) commitment device: specifying the analysis plan in advance keeps researchers accountable and helps produce robust reproductions. If the data could already have been accessed, some readers may discount the registration, yet we would recommend to still start with this.</p>
 </section>
 <section id="deviations" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="deviations"><span class="header-section-number">5.5</span> Deviations</h2>
 <p>To increase trust in the reported results, reproduction researchers need to report them in a transparent way, in a possible preregistration and the final report. Ideally, all changes to the original procedure are explained, justified, and hypotheses about their expected effect on the outcomes are reported. ## Analysis</p>
-<p>The main part of the reproduction is the analysis. Factors that are potentially relevant for reproduction success include the software of the machine that is running the code as well as versions of the software and additional packages or plug-ins. For example, users of the open source software R can get a comprehensive overview of the program version and their machine using the function sessionInfo(), which should be included in supplementary materials. For python users, a package has been developed to run a similar function session_info.show() (<a href="https://gitlab.com/joelostblom/session_info">https://gitlab.com/joelostblom/session_info</a>).</p>
+<p>The main part of the reproduction is the analysis. Factors that are potentially relevant for reproduction success include the software of the machine that is running the code as well as versions of the software and additional packages or plug-ins. For example, users of the open source software R can get a comprehensive overview of the program version and their machine using the function sessionInfo(), which should be included in supplementary materials. For python users, a package has been developed to run a similar function session_info.show() (<a href="https://gitlab.com/joelostblom/session_info" class="uri">https://gitlab.com/joelostblom/session_info</a>).</p>
 <p>Apart from a numerical reproduction where the same code is used, reproduction researchers can explore alternative ways that should and should not affect the results, test new hypotheses or theories, and run exploratory analyses. Their report should be clearly structured to discern these methods. Finally, for statistical analyses, the reproduction report should include reproducibility indicators <span class="citation" data-cites="DreberJohannesson2024">(<a href="references.html#ref-DreberJohannesson2024" role="doc-biblioref">Dreber &amp; Johannesson, 2024</a>)</span> that summarize statistical significance and relative effect sizes across the original and reproduction results. Ankel-Peters et al. <span class="citation" data-cites="AnkelPetersEtAl2025">(<a href="references.html#ref-AnkelPetersEtAl2025" role="doc-biblioref">2025</a>)</span> recommend a visual summary of these indicators in the form of a reproducibility dashboard and specification curves <span class="citation" data-cites="SimonsohnEtAl2020 MazeiEtAl2025">(<a href="references.html#ref-SimonsohnEtAl2020" role="doc-biblioref">Simonsohn et al., 2020</a>; see also <a href="references.html#ref-MazeiEtAl2025" role="doc-biblioref">Mazei et al., 2025</a>)</span>. We strongly recommend reproduction researchers to consult the respective resources for further details.</p>
 </section>
 <section id="discussion" class="level2" data-number="5.6">
@@ -484,6 +506,11 @@ Simonsohn, U., Simmons, J. P., &amp; Nelson, L. D. (2020). Specification curve a
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -816,7 +843,7 @@ Simonsohn, U., Simmons, J. P., &amp; Nelson, L. D. (2020). Specification curve a
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Röseler, L.*, Wallrich, L.*, Hartmann, H., Hüffmeier, J., Goltermann, J., Pennington, C. R., Boyce, V., Field, S. M., Pittelkow, M.-M., Silverstein, P., van Ravenzwaaij, D., Azevedo, F. (2025). Handbook for Reproduction and Replication Studies. Retrieved from https://forrt.org/replication_handbook. https://doi.org/10.5281/zenodo.16990114 *shared first authorship</p>
+<p>Röseler, L.*, Wallrich, L.*, Hartmann, H., Altegoer, L., Boyce, V., Field, S., Goltermann, J., Hüffmeier, J., Moser, V., Pennington, C. R., Pittelkow, M.-M., Silverstein, P., van Ravenzwaaij, D., Azevedo, F. (2026). Handbook for Reproduction and Replication Studies. Retrieved from https://forrt.org/replication_handbook. https://doi.org/10.5281/zenodo.16990114 *shared first authorship</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

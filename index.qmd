@@ -2,7 +2,9 @@
 
 The practice of retesting published results with the same data (reproduction) or new data (replication) is currently gaining traction in the social sciences, owing to multiple failures to reproduce and replicate published findings. Along with increased skepticism have come guidelines for the repeated testing of hypotheses from various disciplines and fields. This guide aims to enable researchers to conduct high-quality reproductions and replications across social science disciplines. First we summarize recent developments, then provide a comprehensive guide to carrying out reproductions and replications, and finally present an example for how guidance needs to be tailored for specific fields. Our guide covers the entire research process: choosing a target study, deciding between different types of reproductions and replications, planning and running the new study, analyzing the results, discussing outcomes in the light of potential differences, and publishing a report.
 
-*Keywords*: replication, repetitive research, reproducibility, meta-science, meta-research, open science, open research, open scholarship
+*Keywords*: replication, repetitive research, reproducibility,
+meta-science, meta-research, open science, open research, open
+scholarship
 
 ![](images/clipboard-410410403.png){width="316"}
 
@@ -17,4 +19,9 @@ cat(paste("Last update:", Sys.Date()))
 
 Please cite this handbook as:
 
-Röseler, L.\**,* Wallrich, L.\*, Hartmann, H., Hüffmeier, J., Goltermann, J., Pennington, C. R., Boyce, V., Field, S. M., Pittelkow, M.-M., Silverstein, P., van Ravenzwaaij, D., Azevedo, F. (2025). *Handbook for Reproduction and Replication Studies.* Retrieved from <https://forrt.org/replication-handbook/>, <https://doi.org/10.5281/zenodo.16990114> \*shared first authorship
+Röseler, L.\**,* Wallrich, L.\*, Hartmann, H., Hüffmeier, J.,
+Goltermann, J., Pennington, C. R., Boyce, V., Field, S. M., Pittelkow,
+M.-M., Silverstein, P., van Ravenzwaaij, D., Azevedo, F. (2025).
+*Handbook for Reproduction and Replication Studies.* Retrieved from
+<https://forrt.org/replication-handbook/>,
+<https://doi.org/10.5281/zenodo.16990114> \*shared first authorship

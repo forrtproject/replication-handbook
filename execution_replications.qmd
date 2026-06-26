@@ -2,13 +2,64 @@
 title: "Execution of Replications"
 ---
 
+::: {.callout-tip icon="false"}
+**Key takeaways**
+
+High standards of transparency are essential when executing
+replications, including detailed preregistration of hypotheses, analysis
+plans, and success criteria, ideally through Registered Reports to
+prevent publication bias. Sample size justification should go beyond
+simply matching the original study, as informative replications
+typically require larger samples to detect smaller effects or provide
+evidence for the null hypothesis. Approaches such as the small
+telescopes framework, equivalence testing based on a smallest effect
+size of interest, Bayesian design methods, meta-analytical estimates,
+and multilab replications (collaborations) offer structured strategies
+for planning adequately powered studies. Although close adherence to the
+original methodology is central, deviations may be necessary due to
+incomplete reporting, outdated materials, translation issues, improved
+methods, or justified corrections; all changes must be transparently
+documented. Piloting can identify procedural flaws but should not be
+used to estimate effect sizes. Analytical decisions should closely
+follow the original procedures while incorporating contemporary best
+practices, with robustness checks and transparent handling of exclusions
+to ensure credible comparison between original and replication findings.
+
+*After this chapter, you will know:*
+
+-   How should researchers decide whether to replicate a study closely
+    or test it conceptually?
+
+-   Why is it important to clearly document and justify any deviations
+    from the preregistered plan?
+
+-   How can piloting or updating methods improve the quality and
+    interpretability of a replication?
+:::
+
 ## Preregistration and Registered (Replication) Reports
 
-Due to the replications being met with skepticism, we encourage researchers to adhere to the highest standards of openness and transparency. This includes preregistering the replication including the analysis plan (ideally with an analysis code that was tested beforehand using data from test runs or simulations), and criteria for the results to distinguish between a replication success and failure. A preregistration without an analysis plan provides no safeguard against *p*-hacking [@BrodeurEtAl2024a]. Beware that these criteria can be structured sequentially. For example, if there is a manipulation check, it can be defined that it has to work for the replicability to actually be evaluated. Boyce et al. [-@BoyceEtAl2024] also found that repeating unsuccessful replications did not change the outcomes unless obvious weaknesses were fixed.
+Due to the replications being met with skepticism, we encourage
+researchers to adhere to the highest standards of openness and
+transparency. This includes preregistering the replication including the
+analysis plan (ideally with an analysis code that was tested beforehand
+using data from test runs or simulations), and criteria for the results
+to distinguish between a replication success and failure. A
+preregistration without an analysis plan provides no safeguard against
+*p*-hacking [@BrodeurEtAl2024a]. Beware that these criteria can be
+structured sequentially. For example, if there is a manipulation check,
+it can be defined that it has to work for the replicability to actually
+be evaluated. Boyce et al. [-@BoyceEtAl2024] also found that repeating
+unsuccessful replications did not change the outcomes unless obvious
+weaknesses were fixed.
 
 There is a specific preregistration template by Brandt et al. [-@BrandtEtAl2014] but it may not fit the structure of some studies beyond social psychology (e.g., personality science or cognitive psychology; for a list of preregistration templates see [https://osf.io/7xrn9](https://osf.io/7xrn9) and [https://osf.io/zab38/wiki/home](https://osf.io/zab38/wiki/home)). Replications can also be published as Registered Reports, where methods are reviewed before data is collected, and a decision about publication is made based on the importance of the research question and the quality of the methods, rather than the results. This can improve the rigour of the methods and the credibility of the results. It can also reduce any bias in favour or against null results, as the nature of results should no longer influence the final acceptance decision, though specific policies vary across journals. A list of journals offering Registered Reports (not specifically for replications) is [available online](https://docs.google.com/spreadsheets/d/1D4_k-8C_UENTRtbPzXfhjEyu3BfLxdOsn9j-otrO870/edit#gid=0). 
 
-A special review platform for Registered Reports is *Peer Community in Registered Reports* (PCI-RR; [https://rr.peercommunityin.org](https://rr.peercommunityin.org)) where a community reviews pre-prints. Once accepted by PCI-RR, authors can decide to publish their paper in participating journals (PCI friendly journals) without another editorial round.
+A special review platform for Registered Reports is *Peer Community in
+Registered Reports* (PCI-RR; <https://rr.peercommunityin.org>) where a
+community reviews pre-prints. Once accepted by PCI-RR, authors can
+decide to publish their paper in participating journals (PCI friendly
+journals) without another editorial round.
 
 ### Deviations from the Preregistration
 
@@ -16,80 +67,342 @@ Replication researchers need to deal with deviations from their preregistration 
 
 ## Sample Size Determination
 
-For replication studies, power analyses or other types of sample size justification can be simpler than for studies testing entirely new hypotheses because there already is a study that did what one is planning, with a result that one can refer to. However, we advise against simply using the original study’s sample size. While the maxim for most decisions is “stay as close as possible to the original study”, sample sizes of replication studies usually need to be larger. To be informative, replication failure should provide evidence *for *a null hypothesis or a substantially smaller effect size, which requires a larger sample. While a general tutorial for sample size justification is provided by Lakens [-@Lakens2022b], we briefly present approaches that are fit for replication studies.
+For replication studies, power analyses or other types of sample size
+justification can be simpler than for studies testing entirely new
+hypotheses because there already is a study that did what one is
+planning, with a result that one can refer to. However, we advise
+against simply using the original study’s sample size. While the maxim
+for most decisions is “stay as close as possible to the original study”,
+sample sizes of replication studies usually need to be larger. To be
+informative, replication failure should provide evidence *for* a null
+hypothesis or a substantially smaller effect size, which requires a
+larger sample. While a general tutorial for sample size justification is
+provided by Lakens [-@Lakens2022b], we briefly present approaches that
+are fit for replication studies.
 
-As a pair of original and replication studies is usually concerned with multiple effect sizes (e.g., for different scales/items/groups/hypotheses), their number and individual power need to be considered carefully. If the interpretation will rely on the significance of *all *effect sizes, the total power will be smaller than the power for each individual test. To get along with limited resources, researchers may choose one single effect size and argue that it is central, or clearly specify other methods for aggregation across results (e.g., testing multivariate models).
+As a pair of original and replication studies is usually concerned with
+multiple effect sizes (e.g., for different
+scales/items/groups/hypotheses), their number and individual power need
+to be considered carefully. If the interpretation will rely on the
+significance of *all* effect sizes, the total power will be smaller than
+the power for each individual test. To get along with limited resources,
+researchers may choose one single effect size and argue that it is
+central, or clearly specify other methods for aggregation across results
+(e.g., testing multivariate models).
 
 ### Small Telescopes Approach
 
-The idea behind the small telescopes approach [@Simonsohn2015] is that a replication study should be precise but how far this precision exceeds the original study should be limited. Specifically, the replication study should be able to detect an effect size for which the original study had insufficient power (usually 33%). If that effect size can be ruled out, the original study can be treated as uninformative, as with such low power, the result becomes more likely to have been a false positive.
+The idea behind the small telescopes approach [@Simonsohn2015] is that a
+replication study should be precise but how far this precision exceeds
+the original study should be limited. Specifically, the replication
+study should be able to detect an effect size for which the original
+study had insufficient power (usually 33%). If that effect size can be
+ruled out, the original study can be treated as uninformative, as with
+such low power, the result becomes more likely to have been a false
+positive.
 
-This approach is based on the notion that replications should assess the evidentiary value of the original study, and that the ‘burden of proof’ shifts back to proponents of a hypothesis if their evidence is shown to be very weak. It is particularly appropriate when original studies are very imprecise. In that case, a replication that finds a much smaller effect may well still be compatible with the (wide) confidence interval of the original study, and it might be impossible to reject the original claim on that basis.
+This approach is based on the notion that replications should assess the
+evidentiary value of the original study, and that the ‘burden of proof’
+shifts back to proponents of a hypothesis if their evidence is shown to
+be very weak. It is particularly appropriate when original studies are
+very imprecise. In that case, a replication that finds a much smaller
+effect may well still be compatible with the (wide) confidence interval
+of the original study, and it might be impossible to reject the original
+claim on that basis.
 
-As an example, @SchultzeEtAl2018 [Figure 4] found an effect in three studies with an average effect size of *r* = -.11, 95% CI [-.22, -.01].
+As an example, @SchultzeEtAl2018 [Figure 4] found an effect in three
+studies with an average effect size of *r* = -.11, 95% CI \[-.22,
+-.01\].
 
-If we wanted to achieve high power to rule out an effect of -.01, and thus show that the true effect does not fall into their confidence interval, we would need a sample size of 108,218 participants  (alpha = 5%, one-tailed test[^4] ). Conversely, with the small telescopes approach, we would aim to test whether the replication effect is *smaller* than the effect which the original study had 33% power to detect, *r *= -.043 (alpha = 5%, one-tailed test). Simonsohn [-@Simonsohn2015] showed that this requires a sample 2.5 times as large as the original for 80% power. However, we deem that level of power insufficient for replications, and instead suggest aiming for 95% power (given that a false negative in a replication leads to a wrong claim regarding the absence *of an effect*). This requires a multiple of 4.5 [rather than 2.5, see @Wallrich2025], so a sample is in this case of 4.5 * 793 = 3,569 participants. If this replication then results in an estimate that is *significantly smaller *than the effect the original study had 33% power to detect, the small telescopes approach would suggest treating the original study as unable to provide reliable evidence for its claim.
+If we wanted to achieve high power to rule out an effect of -.01, and
+thus show that the true effect does not fall into their confidence
+interval, we would need a sample size of 108,218 participants (alpha =
+5%, one-tailed test[^execution_replications-1] ). Conversely, with the
+small telescopes approach, we would aim to test whether the replication
+effect is *smaller* than the effect which the original study had 33%
+power to detect, *r* = -.043 (alpha = 5%, one-tailed test). Simonsohn
+[-@Simonsohn2015] showed that this requires a sample 2.5 times as large
+as the original for 80% power. However, we deem that level of power
+insufficient for replications, and instead suggest aiming for 95% power
+(given that a false negative in a replication leads to a wrong claim
+regarding the absence *of an effect*). This requires a multiple of 4.5
+[rather than 2.5, see @Wallrich2025], so a sample is in this case of 4.5
+\* 793 = 3,569 participants. If this replication then results in an
+estimate that is *significantly smaller* than the effect the original
+study had 33% power to detect, the small telescopes approach would
+suggest treating the original study as unable to provide reliable
+evidence for its claim.
+
+[^execution_replications-1]: Note that a two-tailed test could be
+    applied as well. Given that the original study has a clear effect
+    and direction, one-tailed gives the original authors the benefit of
+    the doubt.
 
 ### Equivalence Testing
 
-If statements can be made about the smallest effect size of interest (SESOI), researchers can aim to test whether the replication effect is smaller than that. Given that the direction is fixed by the original, this simply requires running a one-sided test, e.g., a *t*-test in the case of a two group design, in the “lesser” direction. If the replication effect size is significantly smaller than the SESOI, the original claim is taken to be refuted in this instance by those who accept that this is really the smallest effect of interest. Lakens et al. [-@LakensEtAl2018] provide a practical tutorial on equivalence testing, though they focus on cases where observations in either direction would falsify the null hypothesis.
+If statements can be made about the smallest effect size of interest
+(SESOI), researchers can aim to test whether the replication effect is
+smaller than that. Given that the direction is fixed by the original,
+this simply requires running a one-sided test, e.g., a *t*-test in the
+case of a two group design, in the “lesser” direction. If the
+replication effect size is significantly smaller than the SESOI, the
+original claim is taken to be refuted in this instance by those who
+accept that this is really the smallest effect of interest. Lakens et
+al. [-@LakensEtAl2018] provide a practical tutorial on equivalence
+testing, though they focus on cases where observations in either
+direction would falsify the null hypothesis.
 
 ### Bayesian Approach
 
-External knowledge can be incorporated into sample size planning (uninformative / flat priors; heterogeneity; shrinkage) using the R package BayesRepDesign [@PawelEtAl2023]. Moreover, Micheloud and Held [-@MicheloudHeld2022] provide a method for incorporating an original study’s uncertainty into power calculations. With interim analyses (e.g., sequential testing) , a replication study can also be stopped early and prevent wasting resources [@WagenmakersEtAl2019]. However, when planning to use Bayes Factors to make inferences about replication success, it is important to plan to use plausibly narrow priors. Priors that assign substantial likelihood to effects rarely observed (e.g., N(0,1) priors for standardized mean differences in the social sciences) may be taken to unfairly privilege the null hypothesis, which is inappropriate for a study setting out to find support for it.
+External knowledge can be incorporated into sample size planning
+(uninformative / flat priors; heterogeneity; shrinkage) using the R
+package BayesRepDesign [@PawelEtAl2023]. Moreover, Micheloud and Held
+[-@MicheloudHeld2022] provide a method for incorporating an original
+study’s uncertainty into power calculations. With interim analyses
+(e.g., sequential testing) , a replication study can also be stopped
+early and prevent wasting resources [@WagenmakersEtAl2019]. However,
+when planning to use Bayes Factors to make inferences about replication
+success, it is important to plan to use plausibly narrow priors. Priors
+that assign substantial likelihood to effects rarely observed (e.g.,
+N(0,1) priors for standardized mean differences in the social sciences)
+may be taken to unfairly privilege the null hypothesis, which is
+inappropriate for a study setting out to find support for it.
 
 ### Meta-Analytical Estimates
 
-If the replication study is part of a larger research programme, it is possible to include other studies in the estimate of the (minimum) effect size one wishes to detect/rule out. The target study may be part of a multistudy paper with at least one other study that includes an effect size for the hypothesis of interest. Researchers can compare the effect sizes and possibly pool them to get a more precise estimate [for a related Shiny App, see @McShaneBockenholt2017].
+If the replication study is part of a larger research programme, it is
+possible to include other studies in the estimate of the (minimum)
+effect size one wishes to detect/rule out. The target study may be part
+of a multistudy paper with at least one other study that includes an
+effect size for the hypothesis of interest. Researchers can compare the
+effect sizes and possibly pool them to get a more precise estimate [for
+a related Shiny App, see @McShaneBockenholt2017].
 
-Metrics such as average effect sizes, heterogeneity, or the confidence interval width are valuable estimates needed for the replication’s sample size justification. If there is a meta-analysis on the general topic, researchers can also use that to inform sample size planning, but should prioritise estimates that aim to correct for publication bias and other QRPs [for an overview see @Nagy_2025]. They should also choose effect sizes from a set of studies that resembles the planned replication study as closely as possible. For correlational effects, researchers can check [metabus.org](metabus.org)  [@BoscoEtAl2017] to identify similar studies.
+Metrics such as average effect sizes, heterogeneity, or the confidence
+interval width are valuable estimates needed for the replication’s
+sample size justification. If there is a meta-analysis on the general
+topic, researchers can also use that to inform sample size planning, but
+should prioritise estimates that aim to correct for publication bias and
+other QRPs [for an overview see @Nagy_2025]. They should also choose
+effect sizes from a set of studies that resembles the planned
+replication study as closely as possible. For correlational effects,
+researchers can check [metabus.org](metabus.org) [@BoscoEtAl2017] to
+identify similar studies.
 
 ### Multilab Replications
 
-Multilab replications, that is replications that are conducted by different groups of researchers in different locations adhering to the same protocol, allow researchers to investigate heterogeneity of effects and estimate effect sizes with high precision. There are currently no standards for planning sample sizes for multilab replications. Depending on the specific goals, a power analysis needs to account for possible moderator hypotheses and the desired precision of effect size, heterogeneity estimates, or cultural variables. Note that this often requires large sample sizes for any level of the moderator (e.g., culture, profession). Usually, the different labs are required to collect data from a minimum number of participants. Each lab’s study and all analysis scripts should be preregistered to prevent local and global QRPs such as optional stopping or ad hoc exclusions of single labs.
+Multilab replications, that is replications that are conducted by
+different groups of researchers in different locations adhering to the
+same protocol, allow researchers to investigate heterogeneity of effects
+and estimate effect sizes with high precision. There are currently no
+standards for planning sample sizes for multilab replications. Depending
+on the specific goals, a power analysis needs to account for possible
+moderator hypotheses and the desired precision of effect size,
+heterogeneity estimates, or cultural variables. Note that this often
+requires large sample sizes for any level of the moderator (e.g.,
+culture, profession). Usually, the different labs are required to
+collect data from a minimum number of participants. Each lab’s study and
+all analysis scripts should be preregistered to prevent local and global
+QRPs such as optional stopping or ad hoc exclusions of single labs.
 
 ## Changes in the Methods
 
-A replication study should closely resemble the original study, in the case of conducting a direct/close replication. However, this is difficult for multiple reasons: First, original studies may not include sufficient detail to allow for a replication [@AguinisSolarino2019; @ErringtonEtAl2021a]. Second, scientific progress in the form of new methods and insights and cultural changes might require replication researchers to make changes or additions to their study. Third, obvious errors must be corrected. We elaborate on a number of reasons to deviate from an original study. In the replication report, all deviations should be reported and justified exhaustively.
+A replication study should closely resemble the original study, in the
+case of conducting a direct/close replication. However, this is
+difficult for multiple reasons: First, original studies may not include
+sufficient detail to allow for a replication [@AguinisSolarino2019;
+@ErringtonEtAl2021a]. Second, scientific progress in the form of new
+methods and insights and cultural changes might require replication
+researchers to make changes or additions to their study. Third, obvious
+errors must be corrected. We elaborate on a number of reasons to deviate
+from an original study. In the replication report, all deviations should
+be reported and justified exhaustively.
 
-- <span style="text - decoration: underline;">Unspecific original materials:</span> If the original study does not specify a key element that is needed for the replication, replication researchers can reach out to the original study’s authors and ask for the details. If this is not possible because authors cannot be reached or they are unwilling/unable to share the materials, new materials must be created. In this case, special attention should be paid to the theory, so that the new materials exhibit both face and construct validity.
+-   [Unspecific original
+    materials:]{style="text - decoration: underline;"} If the original
+    study does not specify a key element that is needed for the
+    replication, replication researchers can reach out to the original
+    study’s authors and ask for the details. If this is not possible
+    because authors cannot be reached or they are unwilling/unable to
+    share the materials, new materials must be created. In this case,
+    special attention should be paid to the theory, so that the new
+    materials exhibit both face and construct validity.
 
-- <span style="text - decoration: underline;">Deprecated materials:</span> If a psychological study about person perception published in the 1980s used celebrities, the examples used may no longer have the same status. For example, Mussweiler et al. [-@MussweilerEtAl2000] used “a 10-year old car (1987 Opel Kadett E)” to be evaluated in German Marks. For a new study, car and currency would have to be replaced as a car’s age is strongly associated with price. Like most studies, the original provides no details about the conditions that a new stimulus would have to meet. Ideally, the theoretical requirements for stimuli should be specified in primary research, where they are not, replication authors need to make their own assumptions and report them explicitly [see @SimonsEtAl2017].
+-   [Deprecated materials:]{style="text - decoration: underline;"} If a
+    psychological study about person perception published in the 1980s
+    used celebrities, the examples used may no longer have the same
+    status. For example, Mussweiler et al. [-@MussweilerEtAl2000] used
+    “a 10-year old car (1987 Opel Kadett E)” to be evaluated in German
+    Marks. For a new study, car and currency would have to be replaced
+    as a car’s age is strongly associated with price. Like most studies,
+    the original provides no details about the conditions that a new
+    stimulus would have to meet. Ideally, the theoretical requirements
+    for stimuli should be specified in primary research, where they are
+    not, replication authors need to make their own assumptions and
+    report them explicitly [see @SimonsEtAl2017].
 
-- <span style="text - decoration: underline;">Translation:</span> Most published original studies are in English. If the replication sample’s mother tongue is not English, translation may be necessary. Standards for translation differ strongly even between subfields. For example, when a personality scale is translated, the translated version will usually be validated and tests of invariance will be required. In social psychology, such procedures are less common, and often merely a back-translation is conducted. However, in any field, measurement invariance is required if one wants to compare effect sizes across samples, so that this should be tested rather than assumed where possible.
+-   [Translation:]{style="text - decoration: underline;"} Most published
+    original studies are in English. If the replication sample’s mother
+    tongue is not English, translation may be necessary. Standards for
+    translation differ strongly even between subfields. For example,
+    when a personality scale is translated, the translated version will
+    usually be validated and tests of invariance will be required. In
+    social psychology, such procedures are less common, and often merely
+    a back-translation is conducted. However, in any field, measurement
+    invariance is required if one wants to compare effect sizes across
+    samples, so that this should be tested rather than assumed where
+    possible.
 
-- <span style="text - decoration: underline;">Necessity of a special sample:</span> Many large-scale replication projects made use of click workers (e.g., via MTurk) or use student samples. Replicators should consider if using such samples satisfy their needs and evaluate which platform to use (for best practices and ethical considerations, see @KapitanyKavanagh2023. Even if the original study used such a convenience population, changing to a different convenience population may require tweaks to maintain comparability, e.g. with regard to participant attentiveness and engagement with the paradigm. 
+-   [Necessity of a special
+    sample:]{style="text - decoration: underline;"} Many large-scale
+    replication projects made use of click workers (e.g., via MTurk) or
+    use student samples. Replicators should consider if using such
+    samples satisfy their needs and evaluate which platform to use (for
+    best practices and ethical considerations, see
+    @KapitanyKavanagh2023. Even if the original study used such a
+    convenience population, changing to a different convenience
+    population may require tweaks to maintain comparability, e.g. with
+    regard to participant attentiveness and engagement with the
+    paradigm.
 
-- <span style="text - decoration: underline;">Quality of methods and apparatus:</span> Replicating old studies often faces the problem that something new has been discovered that should be taken into account. If a specific tool or method is used, there may be another recent method that is more reliable. For example, software for eye tracking studies from the early 2000s is now deprecated; there is new hardware and software that researchers will use. This might also apply to analysis methods, yet where possible, both the results from the original methods as well as state-of-the-art methods should be reported; where a choice has to be made, it is essential that invalid methods are avoided while comparability is maintained as far as possible. Finally, if the original finding’s generalizability is tested, new items or tasks that vary more or less systematically can be added to compare results for the original parts versus these extensions (though order effects have to be carefully considered, as a second manipulation might affect participants differently from a first manipulation)
+-   [Quality of methods and
+    apparatus:]{style="text - decoration: underline;"} Replicating old
+    studies often faces the problem that something new has been
+    discovered that should be taken into account. If a specific tool or
+    method is used, there may be another recent method that is more
+    reliable. For example, software for eye tracking studies from the
+    early 2000s is now deprecated; there is new hardware and software
+    that researchers will use. This might also apply to analysis
+    methods, yet where possible, both the results from the original
+    methods as well as state-of-the-art methods should be reported;
+    where a choice has to be made, it is essential that invalid methods
+    are avoided while comparability is maintained as far as possible.
+    Finally, if the original finding’s generalizability is tested, new
+    items or tasks that vary more or less systematically can be added to
+    compare results for the original parts versus these extensions
+    (though order effects have to be carefully considered, as a second
+    manipulation might affect participants differently from a first
+    manipulation)
 
-- <span style="text - decoration: underline;">Adding checks:</span> Doing a replication often implies some uncertainty in the results, so it is wise to include checks that will be helpful to interpret the results, especially if they are negative. For example, if there are occurrences that would make the results meaningless, it is good to have a way to measure them and incorporate that into the study. This could include positive or negative controls (items that are diagnostic of the method rather than the question of interest), manipulation checks (generally placed *after *the critical parts of the experiment), or attention checks. See @FrankEtAl2025 [chap. 12.3] for further discussion.
+-   [Adding checks:]{style="text - decoration: underline;"} Doing a
+    replication often implies some uncertainty in the results, so it is
+    wise to include checks that will be helpful to interpret the
+    results, especially if they are negative. For example, if there are
+    occurrences that would make the results meaningless, it is good to
+    have a way to measure them and incorporate that into the study. This
+    could include positive or negative controls (items that are
+    diagnostic of the method rather than the question of interest),
+    manipulation checks (generally placed *after* the critical parts of
+    the experiment), or attention checks. See @FrankEtAl2025 [chap. 12.3]
+    for further discussion.
 
 ## Piloting
 
-If considerable resources are linked to the full execution of a replication (e.g., in a Registered Replication Report), or when new materials are used, researchers may want to consider piloting it (or parts of it) first. For multi-lab replications, researchers may want to consider a sequential study order in contrast to a simultaneous design: As Buttliere [-@Buttliere2024] put it: “Who gets better results, 39 people doing it the first time or one person doing it 39 times?” (p.4) Beware that piloting may not be of value if it is simply an under-powered version of the study; instead it may be used to identify flaws in the methodology or test assumptions about the distribution of values or participants’ qualitative responses. Importantly, small pilot studies should never be used to derive effect sizes for power analyses as their results are too imprecise.
+If considerable resources are linked to the full execution of a
+replication (e.g., in a Registered Replication Report), or when new
+materials are used, researchers may want to consider piloting it (or
+parts of it) first. For multi-lab replications, researchers may want to
+consider a sequential study order in contrast to a simultaneous design:
+As Buttliere [-@Buttliere2024] put it: “Who gets better results, 39
+people doing it the first time or one person doing it 39 times?” (p.4)
+Beware that piloting may not be of value if it is simply an
+under-powered version of the study; instead it may be used to identify
+flaws in the methodology or test assumptions about the distribution of
+values or participants’ qualitative responses. Importantly, small pilot
+studies should never be used to derive effect sizes for power analyses
+as their results are too imprecise.
 
-For instance, researchers should follow general best practices for their replications including piloting their study on a few participants to ensure that the instructions are clear, that the procedure works smoothly (e.g., website loads appropriately), and that all necessary data are recorded. A debriefing survey where pilot participants are asked about their experience, the clarity of instructions, and the clarity of any user interface, can help to identify some issues that could undermine the replication. See Frank et al. (2025, chapter 12.3.1) for further discussion on piloting studies.
+For instance, researchers should follow general best practices for their
+replications including piloting their study on a few participants to
+ensure that the instructions are clear, that the procedure works
+smoothly (e.g., website loads appropriately), and that all necessary
+data are recorded. A debriefing survey where pilot participants are
+asked about their experience, the clarity of instructions, and the
+clarity of any user interface, can help to identify some issues that
+could undermine the replication. See Frank et al. (2025, chapter 12.3.1)
+for further discussion on piloting studies.
 
 ### Collaborating and Consulting with the Original Authors
 
-To reduce the chance that a failure to replicate is dismissed by the original study’s authors afterwards by pointing out a flaw in the method, researchers can consult with the original authors before running the study. However, in the past, this still has not kept the original authors from dismissing a replication as an inadequate test of a hypothesis [@BaumeisterVohs2016]. Note that replication researchers have even been accused of “null hacking” [@Protzko2018] although little evidence exists for this claim [@BerinskyEtAl2021]. While involving original authors can help in creating a good study when reporting is poor, ideally original studies should be reported in sufficient detail for others to replicate them without further involving the original authors. Historically, the relationship between involvement of original authors and the average replication effect size is not clear (although there have been lab effects in some cases [@PowersEtAl2013]. This is showcased here in a few examples:
+To reduce the chance that a failure to replicate is dismissed by the
+original study’s authors afterwards by pointing out a flaw in the
+method, researchers can consult with the original authors before running
+the study. However, in the past, this still has not kept the original
+authors from dismissing a replication as an inadequate test of a
+hypothesis [@BaumeisterVohs2016]. Note that replication researchers have
+even been accused of “null hacking” [@Protzko2018] although little
+evidence exists for this claim [@BerinskyEtAl2021]. While involving
+original authors can help in creating a good study when reporting is
+poor, ideally original studies should be reported in sufficient detail
+for others to replicate them without further involving the original
+authors. Historically, the relationship between involvement of original
+authors and the average replication effect size is not clear (although
+there have been lab effects in some cases [@PowersEtAl2013]. This is
+showcased here in a few examples:
 
 The evidence on whether involving original authors affects replication outcomes is mixed. In Many Labs 5, @EbersoleEtAl2020 had original authors comment on replication protocols for ten effects from the Reproducibility Project, yet “the revised protocols produced effect sizes similar to those of the RP:P protocols (Δr = .002 or .014, depending on analytic approach).” In contrast, @MacGiollaEtAl2024 found that for social priming studies, “the strongest predictor of replication success was whether or not the replication team included at least one of the authors of the original paper.” Other studies have found varying results: some suggest lab effects [@PowersEtAl2013], while others found null effects of original authors’ involvement on replication outcomes [e.g., @McCarthyEtAl2021; @VohsEtAl2021; @ColesEtAl2022; @KleinEtAl2014].
 
 ## Adversarial Collaborations
 
-Although they are not specific to replication projects, researchers have often issued calls for adversarial collaborations [@ClarkEtAl2022; @CowanEtAl2020; @CorcoranEtAl2023]. Thereby, groups of researchers can collaborate and try to settle conflicting views by designing and conducting a study designed to settle a debate. A related idea are “red teams” where experts are invited to critique the analysis plan, without becoming authors and thus without a conflict of interest in terms of desired results [-@LakensEtAl2018].
+Although they are not specific to replication projects, researchers have
+often issued calls for adversarial collaborations [@ClarkEtAl2022;
+@CowanEtAl2020; @CorcoranEtAl2023]. Thereby, groups of researchers can
+collaborate and try to settle conflicting views by designing and
+conducting a study designed to settle a debate. A related idea are “red
+teams” where experts are invited to critique the analysis plan, without
+becoming authors and thus without a conflict of interest in terms of
+desired results [-@LakensEtAl2018].
 
 ## Analysis
 
-Analyses of replication results are often a compromise or a combination of the original analysis and the current state-of-the-art. Generally, replication studies should follow the original analysis plan as closely as possible. That does not only concern statistical procedures but also data processing (e.g., exclusion of outliers, transformation and computation of variables). Even when following the original analysis plan for their confirmatory analysis, researchers should still follow best practices and examine their raw data to check for distributional anomalies to detect whether participants might be inattentive, guessing or speeding, and report relevant sensitivity checks where helpful. Some things to check for include theory-agnostic condition/manipulation checks (e.g., were participants faster in the condition focused on speed?) and the results of attention checks or control trials. Generally, it is advisable not to remove participants from the main analysis on that basis, but instead to confirm that the rates of non-compliance are acceptably low and to report robustness to the exclusion of these participants. See Ward and Meade [-@WardEtAl2023] for a comprehensive review of strategies for assessing and responding to careless responding.
+Analyses of replication results are often a compromise or a combination
+of the original analysis and the current state-of-the-art. Generally,
+replication studies should follow the original analysis plan as closely
+as possible. That does not only concern statistical procedures but also
+data processing (e.g., exclusion of outliers, transformation and
+computation of variables). Even when following the original analysis
+plan for their confirmatory analysis, researchers should still follow
+best practices and examine their raw data to check for distributional
+anomalies to detect whether participants might be inattentive, guessing
+or speeding, and report relevant sensitivity checks where helpful. Some
+things to check for include theory-agnostic condition/manipulation
+checks (e.g., were participants faster in the condition focused on
+speed?) and the results of attention checks or control trials.
+Generally, it is advisable not to remove participants from the main
+analysis on that basis, but instead to confirm that the rates of
+non-compliance are acceptably low and to report robustness to the
+exclusion of these participants. See Ward and Meade [-@WardEtAl2023] for
+a comprehensive review of strategies for assessing and responding to
+careless responding.
 
-At times, methodological advances may suggest that the original statistical tests are not robust. In such cases, researchers may want to run both the test that the original study used, as well as the statistical approach that is most appropriate by today’s standards (for instance, both the *t*-test that can be compared with the original, and the mixed-effect model that is justified by the study design). Where original data is available, or can be obtained from the original authors, researchers might be able to also update the analyses in the original study, which facilitates interpretation.
+At times, methodological advances may suggest that the original
+statistical tests are not robust. In such cases, researchers may want to
+run both the test that the original study used, as well as the
+statistical approach that is most appropriate by today’s standards (for
+instance, both the *t*-test that can be compared with the original, and
+the mixed-effect model that is justified by the study design). Where
+original data is available, or can be obtained from the original
+authors, researchers might be able to also update the analyses in the
+original study, which facilitates interpretation.
 
-Where original statistical analyses are fundamentally flawed, replication researchers are faced with a difficult choice.  For instance, it has been convincingly demonstrated that the famous Dunning-Kruger effect [@KrugerEtAl1999] is based on analyses strongly influenced by a statistical artifact, namely regression to the mean [@GignacEtAl2020]. In such a context, one may want to report results based on the original methods alongside more robust tests, yet needs to be very careful to frame them in a way that “replication success” cannot be claimed in the absence of evidence for the original claim.
+Where original statistical analyses are fundamentally flawed,
+replication researchers are faced with a difficult choice. For instance,
+it has been convincingly demonstrated that the famous Dunning-Kruger
+effect [@KrugerEtAl1999] is based on analyses strongly influenced by a
+statistical artifact, namely regression to the mean [@GignacEtAl2020].
+In such a context, one may want to report results based on the original
+methods alongside more robust tests, yet needs to be very careful to
+frame them in a way that “replication success” cannot be claimed in the
+absence of evidence for the original claim.
 
-Exclusion criteria are another area where there may be tension between the original study and current best practices. Typically, it makes sense to run the analysis both ways to check for robustness, yet one analysis choice should be preregistered as the central analysis. 
+Exclusion criteria are another area where there may be tension between
+the original study and current best practices. Typically, it makes sense
+to run the analysis both ways to check for robustness, yet one analysis
+choice should be preregistered as the central analysis.
 
-Naturally, original and replication results should be compared. Unstandardized values can be informative with respect to sample characteristics (e.g., overall reaction times). How to do this analytically depends on the choice of success criteria discussed in the next section.
+Naturally, original and replication results should be compared.
+Unstandardized values can be informative with respect to sample
+characteristics (e.g., overall reaction times). How to do this
+analytically depends on the choice of success criteria discussed in the
+next section.
 
-[^4]:  Note that a two-tailed test could be applied as well. Given that the original study has a clear effect and direction, one-tailed gives the original authors the benefit of the doubt.

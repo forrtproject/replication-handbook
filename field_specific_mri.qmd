@@ -2,28 +2,185 @@
 title: "Field-Specific Replication Challenges: An example from MRI research"
 ---
 
+::: {.callout-tip icon="false"}
+**Key takeaways**
+
+Neuroimaging research faces unique challenges for reproducibility and
+replication due to high-dimensional MRI data and numerous methodological
+choices. Preprocessing and analysis pipelines offer countless parameter
+options, leading to variability in results even when analyzing the same
+dataset. Mass-univariate approaches generate a vast number of
+statistical tests, requiring careful control for false positives and
+flexible definitions of regions of interest. Sample size justification
+is complicated by spatially correlated effect distributions, and many
+studies remain underpowered given typically small effects. Defining
+replication success demands attention to the three-dimensional
+distribution of effects, with multiple potential spatial criteria and
+limitations. Open science practices, including automated pipelines,
+transparent scripts, preregistration, and data sharing, are essential
+yet underutilized. Their implementation is further complicated by
+privacy concerns and sustainability considerations. Despite challenges,
+rigorous replication and transparency remain crucial for reliable
+neuroimaging findings.
+
+*After this chapter, you will know:*
+
+-   Why does MRI research have more “researcher degrees of freedom” than
+    many other scientific fields, and how can this affect replication?
+
+-   How do small sample sizes and complex data structures influence the
+    reliability of neuroimaging results?
+
+-   What strategies can improve reproducibility in neuroimaging, and why
+    are open science practices particularly important in this field?
+:::
+
 ## Introduction
 
-While the principles of reproducibility and replication apply across scientific disciplines, certain fields face distinct methodological and practical challenges. Neuroimaging research, particularly MRI-based studies, is one example where field-specific complexities cause specific challenges for data sharing, reproducibility and replicability. Other fields may have different specialized requirements on these topics. Generally, false-positive findings are likely driven by a combination of low statistical power, a high number of researcher degrees of freedom and statistical tests, and biased motivation towards obtaining positive (i.e., significant) results [@Ioannidis2005]. Most of these factors are arguably aggravated in MRI studies, making replication research in this field particularly relevant albeit challenging. In addition, the analyzed data and obtained findings are characterized by a three-dimensional spatial component (or four dimensions in case of functional MRI studies (fMRI) in combination with time series data), which further complicates the matter. In the following we summarize the inherent peculiarities of replication research in the field of neuroimaging.
+While the principles of reproducibility and replication apply across
+scientific disciplines, certain fields face distinct methodological and
+practical challenges. Neuroimaging research, particularly MRI-based
+studies, is one example where field-specific complexities cause specific
+challenges for data sharing, reproducibility and replicability. Other
+fields may have different specialized requirements on these topics.
+Generally, false-positive findings are likely driven by a combination of
+low statistical power, a high number of researcher degrees of freedom
+and statistical tests, and biased motivation towards obtaining positive
+(i.e., significant) results [@Ioannidis2005]. Most of these factors are
+arguably aggravated in MRI studies, making replication research in this
+field particularly relevant albeit challenging. In addition, the
+analyzed data and obtained findings are characterized by a
+three-dimensional spatial component (or four dimensions in case of
+functional MRI studies (fMRI) in combination with time series data),
+which further complicates the matter. In the following we summarize the
+inherent peculiarities of replication research in the field of
+neuroimaging.
 
 ## Researcher Degrees of Freedom
 
-Brain imaging comes with a massive number of researcher degrees of freedom along the preprocessing and analysis pipelines. Preprocessing steps include for example motion correction procedures, spatial normalization and smoothing, with additional steps necessary for some imaging modalities, such as temporal signal filtering for fMRI. For each of these steps a multitude of parameter options and toolboxes are available. It has been shown that different preprocessing toolboxes can lead to fundamentally different results, even when aiming to harmonize all parameters [@ZhouEtAl2022], and that different teams analyzing the same dataset can arrive at different final conclusions dependent on the used pipeline [@BotvinikNezerEtAl2020]. Furthermore, a large variety of operationalizations of neurobiological targets is available. For example, cerebral gray matter structure could be investigated as voxel-wise gray matter, segmentation-based regional cortical surface, thickness or gyrification.
+Brain imaging comes with a massive number of researcher degrees of
+freedom along the preprocessing and analysis pipelines. Preprocessing
+steps include for example motion correction procedures, spatial
+normalization and smoothing, with additional steps necessary for some
+imaging modalities, such as temporal signal filtering for fMRI. For each
+of these steps a multitude of parameter options and toolboxes are
+available. It has been shown that different preprocessing toolboxes can
+lead to fundamentally different results, even when aiming to harmonize
+all parameters [@ZhouEtAl2022], and that different teams analyzing the
+same dataset can arrive at different final conclusions dependent on the
+used pipeline [@BotvinikNezerEtAl2020]. Furthermore, a large variety of
+operationalizations of neurobiological targets is available. For
+example, cerebral gray matter structure could be investigated as
+voxel-wise gray matter, segmentation-based regional cortical surface,
+thickness or gyrification.
 
 Analysis-wise, the high number of researcher degrees of freedom is mainly a consequence of the multidimensional data structure. Basically, the central question is where in the brain to look for effects and how to define significance in the face of a large number of tests. There is an immensely high number of single data points represented by spatial units in the obtained individual images (e.g., two-dimensional pixels or three-dimensional voxels). Analysis is often done utilizing mass-univariate approaches where a statistical model is calculated separately for each of these spatial units. For example, in cerebral MRI research the analysis of 400k voxels  is common. To avoid false-positive findings, region-of-interests (ROIs) are often defined or the analysis is restricted to a smaller region in the brain (i.e., small volume correction) to narrow down the search space and unique methods to correct for multiple testing are applied [@HanEtAl2019]. This again results in a multitude of options, such as the anatomical vs. functional definition of a ROI based on several different atlases and a variety of voxel-based or cluster-based inference methods to choose from. Botvinik-Nezer et al. [-@BotvinikNezerEtAl2020] gave the same fMRI dataset (raw data and preprocessed data), along with predefined hypotheses to 70 independent analysis teams and observed substantial variation in obtained results, attributable to variability in the analysis pipelines — notably, none of the 70 teams used the same pipeline. This finding underscores the value of automated, standardised preprocessing pipelines (discussed below) as a means to reduce this variability and improve reproducibility. Even when the same code and data is available the reproducibility of MRI analysis can be challenging [@LeehrEtAl2024].
 
 ## Sample Size Justification
 
-The gold standard for sample size justification is a power analysis. In neuroimaging this is complicated by the outlined mass-univariate three-dimensional data structure. Any power analysis would need to incorporate assumptions about the covariance structure of all data points, as well as the spatial extent and distribution of statistical effects, and the method to correct for multiple tests. While these numerous tests are not independent from another, the extent of their spatial covariance structure is difficult to assess and depends on preprocessing steps, such as image smoothing but is also on the data and the specific research question. Due to the high number of single data points, the obtained result is not a single statistical estimate with an effect size but rather a highly individual three-dimensional distribution of effect sizes around a peak localization. Simulation-based power analysis approaches have been previously suggested to address this problem. However, valid simulations require assumptions about valid spatial distributions of effects (contingent on regional anatomical peculiarities and on the specific research question), often difficult to assess and many developed power analysis tools have been discontinued. To date the utilization of power analysis is extremely rare in MRI research.
+The gold standard for sample size justification is a power analysis. In
+neuroimaging this is complicated by the outlined mass-univariate
+three-dimensional data structure. Any power analysis would need to
+incorporate assumptions about the covariance structure of all data
+points, as well as the spatial extent and distribution of statistical
+effects, and the method to correct for multiple tests. While these
+numerous tests are not independent from another, the extent of their
+spatial covariance structure is difficult to assess and depends on
+preprocessing steps, such as image smoothing but is also on the data and
+the specific research question. Due to the high number of single data
+points, the obtained result is not a single statistical estimate with an
+effect size but rather a highly individual three-dimensional
+distribution of effect sizes around a peak localization.
+Simulation-based power analysis approaches have been previously
+suggested to address this problem. However, valid simulations require
+assumptions about valid spatial distributions of effects (contingent on
+regional anatomical peculiarities and on the specific research
+question), often difficult to assess and many developed power analysis
+tools have been discontinued. To date the utilization of power analysis
+is extremely rare in MRI research.
 
-Without proper power estimation, justifying sample size becomes challenging. As in other fields of research the statistical power ultimately depends on the expected effect size. Recent large-scale investigations in the domain of mental health neuroimaging suggest that maximum underlying effect sizes are very small across various neuroimaging modalities [below 2% explained variance, @MarekEtAl2022; @WinterEtAl2022] and could require thousands of individuals to obtain robust and replicable statistical estimates [@MarekEtAl2022]. In contrast, given the labor-intensive and costly nature of MRI assessments, most MRI studies tend to have small sample sizes, making them likely underpowered [@ButtonEtAl2013]. Smaller samples may be suitable however, for research questions where the neurobiological effect sizes are expected to be larger, such as in psychosis research or when using highly individually tailored or within-subject designs  [@LynchEtAl2024; @MarekEtAl2022; @RosenbergFinn2022; @SpisakEtAl2023].
+Without proper power estimation, justifying sample size becomes
+challenging. As in other fields of research the statistical power
+ultimately depends on the expected effect size. Recent large-scale
+investigations in the domain of mental health neuroimaging suggest that
+maximum underlying effect sizes are very small across various
+neuroimaging modalities [below 2% explained variance, @MarekEtAl2022;
+@WinterEtAl2022] and could require thousands of individuals to obtain
+robust and replicable statistical estimates [@MarekEtAl2022]. In
+contrast, given the labor-intensive and costly nature of MRI
+assessments, most MRI studies tend to have small sample sizes, making
+them likely underpowered [@ButtonEtAl2013]. Smaller samples may be
+suitable however, for research questions where the neurobiological
+effect sizes are expected to be larger, such as in psychosis research or
+when using highly individually tailored or within-subject designs
+[@LynchEtAl2024; @MarekEtAl2022; @RosenbergFinn2022; @SpisakEtAl2023].
 
 ## Criteria for Replication Success
 
-Regarding the definition of replication success, the three-dimensional data structure requires special attention when defining replication success. In addition to other possible definitions, it has to be defined where in the brain the criteria of replication success should be met. As discussed above, there is not only one effect size but rather a 3D map with an effect size for each spatial unit (e.g., voxel). @GoltermannAltegoer2025 describe a variety of potential criteria focusing on statistical significance in accordance with different spatial definitions revolving around the original finding. These include significance either at the peak voxel location (where the effect in the original study had the largest effect size), or in a ROI that can be defined in terms of spatial proximity to this peak voxel (for example a 15mm sphere with the peak voxel as a center) or in terms of an anatomically defined region where the original effect was found (for example anywhere in the hippocampus). Another possibility is the definition of a ROI directly deducted from the original results mask, if available (i.e., the original thresholded mask). Each of these spatial definitions comes with important limitations. For example, the meaning of proximity could be judged very different in different locations in the brain, as some anatomically or functionally defined structures may vary in size and distinctiveness (e.g., comparing the small and clearly-defined amygdala with a large and difficult to define dorsolateral prefrontal cortex). Thus, it may be necessary to combine several criteria in a systematic and/or subjective manner.
+Regarding the definition of replication success, the three-dimensional
+data structure requires special attention when defining replication
+success. In addition to other possible definitions, it has to be defined
+where in the brain the criteria of replication success should be met. As
+discussed above, there is not only one effect size but rather a 3D map
+with an effect size for each spatial unit (e.g., voxel).
+@GoltermannAltegoer2025 describe a variety of potential criteria
+focusing on statistical significance in accordance with different
+spatial definitions revolving around the original finding. These include
+significance either at the peak voxel location (where the effect in the
+original study had the largest effect size), or in a ROI that can be
+defined in terms of spatial proximity to this peak voxel (for example a
+15mm sphere with the peak voxel as a center) or in terms of an
+anatomically defined region where the original effect was found (for
+example anywhere in the hippocampus). Another possibility is the
+definition of a ROI directly deducted from the original results mask, if
+available (i.e., the original thresholded mask). Each of these spatial
+definitions comes with important limitations. For example, the meaning
+of proximity could be judged very different in different locations in
+the brain, as some anatomically or functionally defined structures may
+vary in size and distinctiveness (e.g., comparing the small and
+clearly-defined amygdala with a large and difficult to define
+dorsolateral prefrontal cortex). Thus, it may be necessary to combine
+several criteria in a systematic and/or subjective manner.
 
-It should be noted that these criteria apply to voxel-based analyses. For other neuroimaging techniques, such as segmentation-based MRI analysis, diffusion tensor imaging (white matter integrity), or functional connectivity metrics, other criteria for replication success may be necessary.
+It should be noted that these criteria apply to voxel-based analyses.
+For other neuroimaging techniques, such as segmentation-based MRI
+analysis, diffusion tensor imaging (white matter integrity), or
+functional connectivity metrics, other criteria for replication success
+may be necessary.
 
 ## Open Science Practices in Neuroimaging
 
-While suggestions on open science practices and replication studies are not fundamentally different from other research areas, their necessity for neuroimaging studies could be even more pressing and there are some peculiarities to consider. Due to the high number of researcher degrees of freedom the utilization of automated preprocessing pipelines is highly advisable [e.g., @EstebanEtAl2019], ideally in combination with containerized toolbox environments for preprocessing and analysis [@RentonEtAl2024]. In face of reproducibility challenges the transparent publication of preprocessing and analysis scripts becomes even more vital. While the publication of data is advised whenever possible, this can be difficult when sensitive patient data is included and whenever anonymization is difficult. For example, while this is currently subject of debate, MRI-derived brain scans may retain fingerprint-like identifiable features, even when removing the face from the image [@JwaEtAl2024; @AbramianEklund2019]. When the publication of raw data is not possible, comprehensive statistical brain maps (i.e., the statistical results in each voxel) should be made publicly available in non-thresholded form [@TaylorEtAl2023] and/or data can be published in aggregated form (e.g., summarized for one brain region). Preregistrations can and should be used to make the exploitation of researcher degrees of freedom more transparent. To facilitate preregistrations in neuroimaging, there are multiple templates available. To incorporate all the specifics coming with MRI studies Beyer, Flannery et al. [-@BeyerEtAl2021] developed a fMRI specific template, which can be assessed here:[ ](https://doi.org/10.23668/psycharchives.5121)[https://doi.org/10.23668/psycharchives.5121](https://doi.org/10.23668/psycharchives.5121). For replication research, preregistrations should contain a definition of replication success criteria that take into consideration the spatial dimension of results. Overall, open science practices and replications are still extremely rare in neuroimaging research despite their pressing relevance. Finally, there are also unique tensions to be navigated between open science practices in neuroimaging and the ongoing climate crisis, for example the sustainability of data sharing [see @PuhlmannEtAl2025 for a perspective].
+While suggestions on open science practices and replication studies are
+not fundamentally different from other research areas, their necessity
+for neuroimaging studies could be even more pressing and there are some
+peculiarities to consider. Due to the high number of researcher degrees
+of freedom the utilization of automated preprocessing pipelines is
+highly advisable [e.g., @EstebanEtAl2019], ideally in combination with
+containerized toolbox environments for preprocessing and analysis
+[@RentonEtAl2024]. In face of reproducibility challenges the transparent
+publication of preprocessing and analysis scripts becomes even more
+vital. While the publication of data is advised whenever possible, this
+can be difficult when sensitive patient data is included and whenever
+anonymization is difficult. For example, while this is currently subject
+of debate, MRI-derived brain scans may retain fingerprint-like
+identifiable features, even when removing the face from the image
+[@JwaEtAl2024; @AbramianEklund2019]. When the publication of raw data is
+not possible, comprehensive statistical brain maps (i.e., the
+statistical results in each voxel) should be made publicly available in
+non-thresholded form [@TaylorEtAl2023] and/or data can be published in
+aggregated form (e.g., summarized for one brain region).
+Preregistrations can and should be used to make the exploitation of
+researcher degrees of freedom more transparent. To facilitate
+preregistrations in neuroimaging, there are multiple templates
+available. To incorporate all the specifics coming with MRI studies
+Beyer, Flannery et al. [-@BeyerEtAl2021] developed a fMRI specific
+template, which can be assessed here:[
+https://doi.org/10.23668/psycharchives.5121](https://doi.org/10.23668/psycharchives.5121).
+For replication research, preregistrations should contain a definition
+of replication success criteria that take into consideration the spatial
+dimension of results. Overall, open science practices and replications
+are still extremely rare in neuroimaging research despite their pressing
+relevance. Finally, there are also unique tensions to be navigated
+between open science practices in neuroimaging and the ongoing climate
+crisis, for example the sustainability of data sharing [see
+@PuhlmannEtAl2025 for a perspective].

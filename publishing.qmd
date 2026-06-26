@@ -2,9 +2,38 @@
 title: "Communicating and Publishing"
 ---
 
-The final step of replication research is publishing and communicating the results. Researchers should adhere to best practices of transparency and openness promotion guidelines [TOP, @GrantEtAl2024] and to the reporting standards of their respective field [e.g., JARS standards for reporting psychology replications, @openpsychdataJARS]. For example, they should report a link to the preregistration, analysis plan, and analysis script, share all materials and data (if possible in light of ethical and legal limitations) under an open license [see also @JanzFreese2021], and report methods and results comprehensively. Finally, in writing the report, reproduction and replication authors should be mindful of their language. Ideally, being replicated would be an honor for authors since other researchers deem their findings important but a failed replication could potentially harm the reputation of the original and increase distrust towards them among their peers. We recommend a descriptive and impersonal language. When criticizing bad documentation, no access to data, or brevity in methods replication authors should keep in mind the historical context of the original publication. For example, sharing data was much more difficult in the 1990s and not required in many areas until recently.
+The final step of replication research is publishing and communicating
+the results. Researchers should adhere to best practices of transparency
+and openness promotion guidelines [TOP, @GrantEtAl2024] and to the
+reporting standards of their respective field [e.g., JARS standards for
+reporting psychology replications, @openpsychdataJARS]. For example,
+they should report a link to the preregistration, analysis plan, and
+analysis script, share all materials and data (if possible in light of
+ethical and legal limitations) under an open license [see also
+@JanzFreese2021], and report methods and results comprehensively.
+Finally, in writing the report, reproduction and replication authors
+should be mindful of their language. Ideally, being replicated would be
+an honor for authors since other researchers deem their findings
+important but a failed replication could potentially harm the reputation
+of the original and increase distrust towards them among their peers. We
+recommend a descriptive and impersonal language. When criticizing bad
+documentation, no access to data, or brevity in methods replication
+authors should keep in mind the historical context of the original
+publication. For example, sharing data was much more difficult in the
+1990s and not required in many areas until recently.
 
-The journals that published the original studies are often also chosen by authors for publication in accordance with the *pottery-barn-rule* [@Srivastava2012]. However, in our experience, many journals reject replications due to their lack of novelty. We list several options for writing and publishing the report in @tbl-reporting-options. These are non-exclusive, that is, researchers can choose multiple of them. An overview of active journals that exclusively publish replications is in @tbl-rep-journals. Note that the Journal of Reproducibility in Neuroscience (<https://jrn.trialanderror.org>) has been discontinued and AIS Transactions on Replication Research (<https://aisel.aisnet.org/trr/>) has been moved into a journal that is not specialized on repetitions.
+The journals that published the original studies are often also chosen
+by authors for publication in accordance with the *pottery-barn-rule*
+[@Srivastava2012]. However, in our experience, many journals reject
+replications due to their lack of novelty. We list several options for
+writing and publishing the report in @tbl-reporting-options. These are
+non-exclusive, that is, researchers can choose multiple of them. An
+overview of active journals that exclusively publish replications is in
+@tbl-rep-journals. Note that the Journal of Reproducibility in
+Neuroscience (<https://jrn.trialanderror.org>) has been discontinued and
+AIS Transactions on Replication Research
+(<https://aisel.aisnet.org/trr/>) has been moved into a journal that is
+not specialized on repetitions.
 
 | Type | Description |
 |----|----|
@@ -14,9 +43,14 @@ The journals that published the original studies are often also chosen by author
 | Preprint | We recommend publishing a report in the form of a traditional or standardized manuscript as a preprint. This secures open access and makes the report visible, citable, and commentable. There are many preprint servers across the social sciences (e.g., PsyArxiv, SOCARXIV, SportRxiv, MediArXiv, MindRxiv, EdArXiv, AfricArXiv, or MetaArXiv). In some countries, researchers have a legal right for a secondary publication of their research (green open access). Be aware that preprints are faster in terms of publication than journal articles, but are usually not peer-reviewed. |
 | Journal article | Most researchers have to “play by the rules”, that is, publish or perish [@BakkerEtAl2012; @KooleLakens2012]. While some have argued for a pottery barn rule where journals that published the original finding have to publish respective replication attempts [e.g., @Srivastava2012], many journals are not (yet) interested in replications. Notable exceptions are listed in the appendix. This is why journals dedicated to replications have emerged (see @tbl-rep-journals). Moreover, researchers can submit their preprint to a PCI community (see <https://peercommunityin.org/current-pcis>), which is a preprint peer-review service. Several journals are PCI-friendly, which means that they publish articles recommended by the respective PCI. |
 
-: Reporting and communicating reproductions and replications. {#tbl-reporting-options}
+: Reporting and communicating reproductions and replications.
+{#tbl-reporting-options}
 
-Many institutions and libraries recommend adding a CC-BY disclaimer on journal submissions that give the researchers the right to use the accepted manuscript as they like or choosing Diamond Open Access journals that are defined by no fees for publishing and reading research.
+Many institutions and libraries recommend adding a CC-BY disclaimer on
+journal submissions that give the researchers the right to use the
+accepted manuscript as they like or choosing Diamond Open Access
+journals that are defined by no fees for publishing and reading
+research.
 
 | Journal name | Commercial status | Owners | Disciplines | Article types | Website |
 |----|----|----|----|----|----|
@@ -29,4 +63,5 @@ Many institutions and libraries recommend adding a CC-BY disclaimer on journal s
 | Rescience X | Non-commercial, diamond OA | Etienne B. Roesch | Multidisciplinary | Replications (Experiments) | <http://rescience.org/x> |
 | Implementation and Replication Studies in Mathematics Education | Commercial (subscription based) | Brill | Mathematics | Replications | [https://brill.com/view/journals/irme/irme-overview.xml](https://brill.com/view/journals/irme/irme-overview.xml) |
 
-: Active journals dedicated to reproductions and replications. {#tbl-rep-journals}
+: Active journals dedicated to reproductions and replications.
+{#tbl-rep-journals}
