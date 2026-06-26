@@ -102,28 +102,11 @@ numerical reproduction with available code does not require
 preregistration, we recommend a priori specification of all further
 planned analyses.
 
-It should be noted that a preregistered analysis plan or analysis script
-is much easier to create with access to data and reproductions are
-impossible with unavailable data, preregistration cannot exclude the
-risk of authors having already looked at the data, yet making fraudulent
-claims regarding data access in a preregistration is evidently academic
-misconduct. How much weight readers and reviewers will give to a
-preregistration based on data that could have been accessed already will
-differ, but generating it is a way to keep ourselves accountable and
-produce robust reproductions.
+While preregistration of a reproduction may seem paradoxical when data are already accessible, it remains valuable as a (personal) commitment device: specifying the analysis plan in advance keeps researchers accountable and helps produce robust reproductions. If the data could already have been accessed, some readers may discount the registration, yet we would recommend to still start with this.
 
 ## Deviations
 
-To increase trust in the reported results, reproduction researchers need
-to report them in a transparent way, in a possible preregistration and
-the final report. Ideally, all changes to the original procedure are
-explained, justified, and hypotheses about their expected effect on the
-outcomes are reported. Note that some journals’ publishing reproductions
-require adherence to special requirements such a Registered Report
-format (e.g., *Journal of Open Psychology Data*) or including a minimum
-of two independent reproductions (e.g., *Journal of Robustness
-Reports*).
-
+To increase trust in the reported results, reproduction researchers need to report them in a transparent way, in a possible preregistration and the final report. Ideally, all changes to the original procedure are explained, justified, and hypotheses about their expected effect on the outcomes are reported.
 ## Analysis
 
 The main part of the reproduction is the analysis. Factors that are

@@ -63,7 +63,7 @@ as summarized by Heyard et al. [-@HeyardEtAl2025; see also
 ```{r}
 #| label: tbl-rep-success-criteria
 #| tbl-cap: |
-#|   Criteria to operationalize replication success [excerpt from @HeyardEtAl2025 [Table 4]]
+#|   Criteria to operationalize replication success [adapted from @HeyardEtAl2025 [Table 4]]
 #|   For full references and descriptions, see the [original table](http://rachelheyard.com/reproducibility_metrics/#table). Reused in accordance with the CC-BY license of the article.
 #| echo: false
 #| message: false
@@ -102,6 +102,7 @@ relevant <- c("Name", "Question.answered", "Type.of.Reproducibility.investigated
 
 rs <- rs[, relevant]
 names(rs) <- gsub("\\.", " ", names(rs)) # replace "." with " " in variable names
+names(rs)[names(rs) == "Type of Reproducibility investigated"] <- "Type of Repeatability investigated"
 
 knitr::kable(rs)
 ```
@@ -186,9 +187,7 @@ replications from both phenomenon-focused / inductive and theory-focused
 Borgstede and Scholz [@BorgstedeScholz2021] and Freese and Peterson
 [@FreesePeterson2017, Figure 3].
 
-![Interpretation of replication outcomes depend on similarity of
-closeness and results as well as the view (inductive vs.
-deductive).](images/eH3_Image_5.png){#fig-success-interpretation}
+![Interpretation of replication outcomes depends on the similarity/closeness between studies and the results, as well as whether an inductive or deductive view is adopted (see @sec-types-replication for the conceptual framework).](images/eH3_Image_5.png){#fig-success-interpretation}
 
 *Note.*
 

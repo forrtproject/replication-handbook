@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.53">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>2&nbsp; Understanding Replications and Reproductions – Handbook for Reproduction and Replication Studies</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -54,15 +57,16 @@ div.csl-indent {
 <link href="./choosing_study.html" rel="next">
 <link href="./background.html" rel="prev">
 <link href="./images/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8f2481fac337f33222e91caf6a1fd681.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -94,7 +98,7 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -169,7 +173,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">The Replication Process</span></a>
+ <span class="menu-text">The Reproduction and Replication Process</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -288,7 +292,7 @@ div.csl-indent {
   <ul>
   <li><a href="#reproduction-and-replication" id="toc-reproduction-and-replication" class="nav-link active" data-scroll-target="#reproduction-and-replication"><span class="header-section-number">2.1</span> Reproduction and Replication</a></li>
   <li><a href="#outcome" id="toc-outcome" class="nav-link" data-scroll-target="#outcome"><span class="header-section-number">2.2</span> Outcome</a></li>
-  <li><a href="#types-of-replication" id="toc-types-of-replication" class="nav-link" data-scroll-target="#types-of-replication"><span class="header-section-number">2.3</span> Types of replication</a></li>
+  <li><a href="#sec-types-replication" id="toc-sec-types-replication" class="nav-link" data-scroll-target="#sec-types-replication"><span class="header-section-number">2.3</span> Types of replication</a></li>
   <li><a href="#types-of-reproduction" id="toc-types-of-reproduction" class="nav-link" data-scroll-target="#types-of-reproduction"><span class="header-section-number">2.4</span> Types of reproduction</a></li>
   </ul>
 </nav>
@@ -330,8 +334,8 @@ div.csl-indent {
 <p>In this guide, we focus on studies that re-examine a previously tested hypothesis and refer to them as repetitions (i.e., reproductions and replications) with the general field being called repetitive research as suggested by Schöch <span class="citation" data-cites="Schoch2023">(<a href="references.html#ref-Schoch2023" role="doc-biblioref">2023</a>)</span>. However, it is important to note from the outset, that there is no overarching terminology or consensus <span class="citation" data-cites="VoelklEtAl2025">(e.g., <a href="references.html#ref-VoelklEtAl2025" role="doc-biblioref">Voelkl et al., 2025</a>)</span>, as the formal development of replication methods has begun relatively late in the social, behavioral, and cognitive sciences. For example, empirical psychology is more than 100 years old, but until the advent of the replication/reproducibility crisis in the early 2010s, replication methods have been rarely discussed <span class="citation" data-cites="King1995">(e.g., <a href="references.html#ref-King1995" role="doc-biblioref">King, 1995</a>)</span>. Different fields of research seem to tackle the task differently and independently, which has led to multiple overlapping terminologies across psychology <span class="citation" data-cites="Schmidt2009 HueffmeierEtAl2016">(<a href="references.html#ref-HueffmeierEtAl2016" role="doc-biblioref">Hüffmeier et al., 2016</a>; <a href="references.html#ref-Schmidt2009" role="doc-biblioref">Schmidt, 2009</a>)</span>, management <span class="citation" data-cites="TsangKwan1999">(<a href="references.html#ref-TsangKwan1999" role="doc-biblioref">Tsang &amp; Kwan, 1999</a>)</span>, marketing <span class="citation" data-cites="UrminskyDietvorst2024">(<a href="references.html#ref-UrminskyDietvorst2024" role="doc-biblioref">Urminsky &amp; Dietvorst, 2024</a>)</span>, organizational sciences <span class="citation" data-cites="KohlerCortina2021">(<a href="references.html#ref-KohlerCortina2021" role="doc-biblioref">Köhler &amp; Cortina, 2021</a>)</span>, computer sciences <span class="citation" data-cites="HerouxEtAl2018">(<a href="references.html#ref-HerouxEtAl2018" role="doc-biblioref">Heroux et al., 2018</a>)</span>, language learning <span class="citation" data-cites="McManus2024">(<a href="references.html#ref-McManus2024" role="doc-biblioref">McManus, 2024</a>)</span>, and the humanities <span class="citation" data-cites="Schoch2023">(<a href="references.html#ref-Schoch2023" role="doc-biblioref">Schöch, 2023</a>)</span>.</p>
 <section id="reproduction-and-replication" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="reproduction-and-replication"><span class="header-section-number">2.1</span> Reproduction and Replication</h2>
-<p>The terms reproduction and replication are used in different ways between disciplines; for example, in psychology, studies using different data are commonly referred to as replications and studies using the same data are referred to as reproductions, whereas in other fields, such as computational science or economics, these terms may be used in the opposite manner or treated interchangeably <span class="citation" data-cites="MilkowskiEtAl2018 AnkelPetersEtAl2023">(<a href="references.html#ref-AnkelPetersEtAl2023" role="doc-biblioref">Ankel-Peters et al., 2023</a>; see <a href="references.html#ref-MilkowskiEtAl2018" role="doc-biblioref">Miłkowski et al., 2018</a>)</span>. In this paper, <em>replication</em> is used to refer to efforts involving the analysis of <em>different data</em>, and <em>reproduction</em> to efforts involving the <em>same data</em>. The different data do not necessarily need to be from a different sample but can also constitute distinct (non-overlapping) subsets from the same sample <span class="citation" data-cites="HuangHuang2024">(e.g., incidental or panel data, <a href="references.html#ref-HuangHuang2024" role="doc-biblioref">Huang &amp; Huang, 2024</a>)</span>.</p>
-<p>Reproduction and replication should always be considered together and if possible, <em>reproduction should come before replication</em>. This is because, at the early stages of research, reproduction is much more cost efficient; first confirming whether the findings are reproducible can clarify whether a replication is worthwhile. Furthermore, if the research procedure consists of “moving away” from a specific finding in terms of changing the analysis code, materials, and dataset to test its generalizability or boundary conditions, a <em>numerical reproduction</em> (using the same data and same code) is the closest possible repetition of a finding and a useful foundation for further steps. We discuss multiple cases to illustrate the relationship between reproduction and replication in <a href="#tbl-rep-outcomes" class="quarto-xref">Table&nbsp;<span>2.1</span></a> (Note that a similar distinction is made by <span class="citation" data-cites="TuringWay2025">The Turing Way Community (<a href="references.html#ref-TuringWay2025" role="doc-biblioref">2025</a>)</span> but uses a less specific terminology for reproductions.)</p>
+<p>The terms reproduction and replication are used in different ways between disciplines; for example, in psychology, studies using different data are commonly referred to as replications and studies using the same data are referred to as reproductions, whereas in other fields, such as computational science or economics, these terms may be used in the opposite manner or treated interchangeably <span class="citation" data-cites="MilkowskiEtAl2018 AnkelPetersEtAl2023">(see <a href="references.html#ref-MilkowskiEtAl2018" role="doc-biblioref">Miłkowski et al., 2018</a>; <a href="references.html#ref-AnkelPetersEtAl2023" role="doc-biblioref">Ankel-Peters et al., 2023</a>)</span>. In this handbook, <em>replication</em> is used to refer to efforts involving the analysis of <em>different data</em>, and <em>reproduction</em> to efforts involving the <em>same data</em>. The different data do not necessarily need to be from a different sample but can also constitute distinct (non-overlapping) subsets from the same sample <span class="citation" data-cites="HuangHuang2024">(e.g., incidental or panel data, <a href="references.html#ref-HuangHuang2024" role="doc-biblioref">Huang &amp; Huang, 2024</a>)</span>.</p>
+<p>We discuss multiple cases to illustrate the relationship between reproduction and replication in <a href="#tbl-rep-outcomes" class="quarto-xref">Table&nbsp;<span>2.1</span></a> (Note that a similar distinction is made by <span class="citation" data-cites="TuringWay2025">The Turing Way Community (<a href="references.html#ref-TuringWay2025" role="doc-biblioref">2025</a>)</span> but uses a less specific terminology for reproductions.)</p>
 <div id="tbl-rep-outcomes" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rep-outcomes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -383,20 +387,21 @@ Table&nbsp;2.1: Possible combinations of reproduction and replication outcomes.
 </div>
 </figure>
 </div>
+<p>Reproduction and replication should always be considered together and if possible, <em>reproduction should come before replication</em>. This is because, at the early stages of research, reproduction is much more cost efficient; first confirming whether the findings are reproducible can clarify whether a replication is worthwhile. Furthermore, if the research procedure consists of “moving away” from a specific finding in terms of changing the analysis code, materials, and dataset to test its generalizability or boundary conditions, a <em>numerical reproduction</em> (using the same data and same code) is the closest possible repetition of a finding and a useful foundation for further steps.</p>
 </section>
 <section id="outcome" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="outcome"><span class="header-section-number">2.2</span> Outcome</h2>
 <p>Common language often conflates outcome and study descriptions: researchers typically use the phrase “has been replicated” to refer to a replication attempt that has corroborated the findings of the original study, whereas “failed to replicate” or “could not be replicated” is used to refer to circumstances where a replication attempt has not corroborated the original results or has led to a different interpretation or conclusions <span class="citation" data-cites="PatilEtAl2016a">(see also <a href="references.html#ref-PatilEtAl2016a" role="doc-biblioref">Patil et al., 2016</a>)</span>.</p>
 <p>In this article, when we state that a “study was reproduced/replicated” we mean that there has been a replication attempt, irrespective of its outcome. With “replicable” and “reproducible” we express that there was support for the original hypothesis. Note that the outcome of a replication/reproduction study is often not straightforward, but may depend on the success criteria applied. This is discussed in <a href="discussion.html#sec-success-criteria" class="quarto-xref"><span>Section 7.1</span></a>.</p>
 </section>
-<section id="types-of-replication" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="types-of-replication"><span class="header-section-number">2.3</span> Types of replication</h2>
-<p>We heavily rely on the typology provided by <span class="citation" data-cites="HueffmeierEtAl2016">Hüffmeier et al. (<a href="references.html#ref-HueffmeierEtAl2016" role="doc-biblioref">2016</a>)</span> where different types of replications are defined by the <em>closeness</em> or <em>similarity</em> between original and replication study. Similarity cannot be evaluated without a theory about the concepts involved. For example, the concept of age can differ strongly between replications of historical, psychological, or biological studies, leading to different measures of the concept itself and thus different judgments about the similarity of an object’s age.</p>
-<p>Under the assumption of a stable world and constant laws or regularities that are investigated by the social, behavioral, and cognitive sciences, a reproduction and replication study’s closeness to an original study is associated with replication ‘success’ <span class="citation" data-cites="HueffmeierEtAl2016 LeBelEtAl2018">(<a href="references.html#ref-HueffmeierEtAl2016" role="doc-biblioref">Hüffmeier et al., 2016</a>; <a href="references.html#ref-LeBelEtAl2018" role="doc-biblioref">LeBel et al., 2018</a>)</span>. The argument can be made from two different philosophical perspectives that we call inductive (phenomenon-focused, effects application, bottom-up) and deductive <span class="citation" data-cites="CalderEtAl1981 BorgstedeScholz2021">(<a href="references.html#ref-BorgstedeScholz2021" role="doc-biblioref">Borgstede &amp; Scholz, 2021</a>; theory-focused, theory application, top down, e.g., <a href="references.html#ref-CalderEtAl1981" role="doc-biblioref">Calder et al., 1981</a>)</span>. From an inductive perspective, a replication that is very similar to an original study should lead to the same result whereas one that differs with respect to any criterion may lead to different results.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> This is a stance often taken by proponents of findings that failed to replicate <span class="citation" data-cites="BaumeisterVohs2016 Syed2023">(e.g., <a href="references.html#ref-BaumeisterVohs2016" role="doc-biblioref">Baumeister &amp; Vohs, 2016</a>; <a href="references.html#ref-Syed2023" role="doc-biblioref">Syed, 2023</a>)</span>, arguing that characteristics such as time or place are different and can be valid reasons for different results. From a deductive (theory-focused) view, the only changes that matter are those that affect the underlying theory. Consider for example a replication experiment that is identical in every aspect except for the season (summer instead of winter). If the theory that is tested is about color perception, the replication is likely judged to be close to the original study but if it is about participants’ current tea preferences, it is likely judged to be different from the original study in a theoretically relevant aspect.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> A related dimension of closeness concerns <em>contextual sensitivity</em>—the extent to which the meaning of a questionnaire or the effect of a manipulation depends on time, culture, or population. As <span class="citation" data-cites="VanBavelEtAl2016">Van Bavel et al. (<a href="references.html#ref-VanBavelEtAl2016" role="doc-biblioref">2016</a>)</span> demonstrate, studies on contextually sensitive topics were significantly less likely to replicate successfully in <span class="citation" data-cites="OpenScienceCollab2015">Open Science Collaboration (<a href="references.html#ref-OpenScienceCollab2015" role="doc-biblioref">2015</a>)</span>, even though methodological fidelity was high. This raises important questions about what constitutes a “close” replication: Should a study on celebrity attitudes, for example, use the same examples (which may be outdated and thus psychologically inert), or should it adapt to locally and temporarily salient figures to trigger the same cognitive or emotional responses? In such cases, strict methodological similarity might paradoxically undermine theoretical closeness, and thus the validity of the replication attempt. This tension highlights that <em>procedural</em> fidelity does not always equate to <em>theoretical</em> equivalence—particularly for studies involving social meaning, identity, or temporally anchored norms. <span class="citation" data-cites="LeBelEtAl2018">LeBel et al. (<a href="references.html#ref-LeBelEtAl2018" role="doc-biblioref">2018</a>)</span> provide a taxonomy for classifying a replication study’s closeness for psychological research.</p>
+<section id="sec-types-replication" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="sec-types-replication"><span class="header-section-number">2.3</span> Types of replication</h2>
+<p>We heavily rely on the typology provided by <span class="citation" data-cites="HueffmeierEtAl2016">Hüffmeier et al. (<a href="references.html#ref-HueffmeierEtAl2016" role="doc-biblioref">2016</a>)</span> where different types of replications are defined by the <em>closeness</em> or <em>similarity</em> between original and replication study. Determining what constitutes closeness or similarity is context-specific and relies on a detailed understanding of the original study. Similarity cannot be evaluated without a theory about the concepts involved. For example, the concept of age can differ strongly between replications of historical, psychological, or biological studies, leading to different measures of the concept itself and thus different judgments about the similarity of an object’s age.</p>
+<p>Under the assumption of a stable world and constant laws or regularities that are investigated by the social, behavioral, and cognitive sciences, a reproduction and replication study’s closeness to an original study is associated with replication ‘success’ <span class="citation" data-cites="HueffmeierEtAl2016 LeBelEtAl2018">(<a href="references.html#ref-HueffmeierEtAl2016" role="doc-biblioref">Hüffmeier et al., 2016</a>; <a href="references.html#ref-LeBelEtAl2018" role="doc-biblioref">LeBel et al., 2018</a>)</span>. The argument can be made from two different philosophical perspectives that we call inductive (phenomenon-focused, effects application, bottom-up) and deductive <span class="citation" data-cites="CalderEtAl1981 BorgstedeScholz2021">(theory-focused, theory application, top down, e.g., <a href="references.html#ref-CalderEtAl1981" role="doc-biblioref">Calder et al., 1981</a>; <a href="references.html#ref-BorgstedeScholz2021" role="doc-biblioref">Borgstede &amp; Scholz, 2021</a>)</span>. From an inductive perspective, a replication that is very similar to an original study should lead to the same result whereas one that differs with respect to any criterion may lead to different results.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> This is a stance often taken by proponents of findings that failed to replicate <span class="citation" data-cites="BaumeisterVohs2016 Syed2023">(e.g., <a href="references.html#ref-BaumeisterVohs2016" role="doc-biblioref">Baumeister &amp; Vohs, 2016</a>; <a href="references.html#ref-Syed2023" role="doc-biblioref">Syed, 2023</a>)</span>, arguing that characteristics such as time or place are different and can be valid reasons for different results. From a deductive (theory-focused) view, the only changes that matter are those that affect the underlying theory. Consider for example a replication experiment that is identical in every aspect except for the season (summer instead of winter). If the theory that is tested is about color perception, the replication is likely judged to be close to the original study but if it is about participants’ current tea preferences, it is likely judged to be different from the original study in a theoretically relevant aspect.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> A related dimension of closeness concerns <em>contextual sensitivity</em>—the extent to which the meaning of a questionnaire or the effect of a manipulation depends on time, culture, or population. As <span class="citation" data-cites="VanBavelEtAl2016">Van Bavel et al. (<a href="references.html#ref-VanBavelEtAl2016" role="doc-biblioref">2016</a>)</span> demonstrate, studies on contextually sensitive topics were significantly less likely to replicate successfully in <span class="citation" data-cites="OpenScienceCollab2015">Open Science Collaboration (<a href="references.html#ref-OpenScienceCollab2015" role="doc-biblioref">2015</a>)</span>, even though methodological fidelity was high. This raises important questions about what constitutes a “close” replication: Should a study on celebrity attitudes, for example, use the same examples (which may be outdated and thus psychologically inert), or should it adapt to locally and temporarily salient figures to trigger the same cognitive or emotional responses? In such cases, strict methodological similarity might paradoxically undermine theoretical closeness, and thus the validity of the replication attempt. This tension highlights that <em>procedural</em> fidelity does not always equate to <em>theoretical</em> equivalence—particularly for studies involving social meaning, identity, or temporally anchored norms. <span class="citation" data-cites="LeBelEtAl2018">LeBel et al. (<a href="references.html#ref-LeBelEtAl2018" role="doc-biblioref">2018</a>)</span> provide a taxonomy for classifying a replication study’s closeness for psychological research (<a href="#fig-taxonomy-similarity" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>).</p>
 <div id="fig-taxonomy-similarity" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-taxonomy-similarity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.1: Taxonomy for classifying a replication study’s methodological similarity to an original study. Reprinted from with permission.
+Figure&nbsp;2.1: Taxonomy for classifying a replication study’s methodological similarity to an original study. Note that from a deductive perspective, not all of these variables need to be considered for a given study; which ones matter depends on the underlying theory. Reprinted from LeBel et al.&nbsp;(2018) with permission.
 </figcaption>
 <div aria-describedby="fig-taxonomy-similarity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/sTS_Image_2.png" class="img-fluid figure-img">
@@ -477,7 +482,7 @@ Schöch, C. (2023). Repetitive research: A conceptual space and terminology of r
 Syed, M. (2023). <em>Replication or generalizability? How flexible inferences uphold unfounded universal claims</em>. <a href="https://doi.org/10.31234/osf.io/znv5r">https://doi.org/10.31234/osf.io/znv5r</a>
 </div>
 <div id="ref-TuringWay2025" class="csl-entry" role="listitem">
-The Turing Way Community. (2025). <em>The turing way: A handbook for reproducible, ethical and collaborative research</em> (1.2.3 ed.). Zenodo. <a href="https://doi.org/10.5281/zenodo.15213042">https://doi.org/10.5281/zenodo.15213042</a>
+The Turing Way Community. (2025). <em>The turing way: A handbook for reproducible, ethical and collaborative research</em> (1.2.3). Zenodo. <a href="https://doi.org/10.5281/zenodo.15213042">https://doi.org/10.5281/zenodo.15213042</a>
 </div>
 <div id="ref-TsangKwan1999" class="csl-entry" role="listitem">
 Tsang, E. W., &amp; Kwan, K. M. (1999). Replication and theory development in organizational science: A critical realist perspective. <em>Academy of Management Review</em>, <em>24</em>(4), 759–780. <a href="https://doi.org/10.2307/259353">https://doi.org/10.2307/259353</a>
@@ -503,239 +508,248 @@ Voelkl, B., Heyard, R., Fanelli, D., Wever, K. E., Held, L., Maniadis, Z., &amp;
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
       }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-      }
+      });
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
         }
-        return container.innerHTML
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -743,185 +757,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./background.html" class="pagination-link" aria-label="Background">

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.53">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>9&nbsp; Field-Specific Replication Challenges: An example from MRI research – Handbook for Reproduction and Replication Studies</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -54,15 +57,16 @@ div.csl-indent {
 <link href="./conclusion.html" rel="next">
 <link href="./publishing.html" rel="prev">
 <link href="./images/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8f2481fac337f33222e91caf6a1fd681.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -94,7 +98,7 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -169,7 +173,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">The Replication Process</span></a>
+ <span class="menu-text">The Reproduction and Replication Process</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -286,11 +290,11 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">9.0.1</span> Introduction</a></li>
-  <li><a href="#researcher-degrees-of-freedom" id="toc-researcher-degrees-of-freedom" class="nav-link" data-scroll-target="#researcher-degrees-of-freedom"><span class="header-section-number">9.0.2</span> Researcher Degrees of Freedom</a></li>
-  <li><a href="#sample-size-justification" id="toc-sample-size-justification" class="nav-link" data-scroll-target="#sample-size-justification"><span class="header-section-number">9.0.3</span> Sample Size Justification</a></li>
-  <li><a href="#criteria-of-replication-success" id="toc-criteria-of-replication-success" class="nav-link" data-scroll-target="#criteria-of-replication-success"><span class="header-section-number">9.0.4</span> Criteria of Replication Success</a></li>
-  <li><a href="#open-science-practices-in-neuroimaging" id="toc-open-science-practices-in-neuroimaging" class="nav-link" data-scroll-target="#open-science-practices-in-neuroimaging"><span class="header-section-number">9.0.5</span> Open Science Practices in Neuroimaging</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">9.1</span> Introduction</a></li>
+  <li><a href="#researcher-degrees-of-freedom" id="toc-researcher-degrees-of-freedom" class="nav-link" data-scroll-target="#researcher-degrees-of-freedom"><span class="header-section-number">9.2</span> Researcher Degrees of Freedom</a></li>
+  <li><a href="#sample-size-justification" id="toc-sample-size-justification" class="nav-link" data-scroll-target="#sample-size-justification"><span class="header-section-number">9.3</span> Sample Size Justification</a></li>
+  <li><a href="#criteria-for-replication-success" id="toc-criteria-for-replication-success" class="nav-link" data-scroll-target="#criteria-for-replication-success"><span class="header-section-number">9.4</span> Criteria for Replication Success</a></li>
+  <li><a href="#open-science-practices-in-neuroimaging" id="toc-open-science-practices-in-neuroimaging" class="nav-link" data-scroll-target="#open-science-practices-in-neuroimaging"><span class="header-section-number">9.5</span> Open Science Practices in Neuroimaging</a></li>
   </ul>
 </nav>
     </div>
@@ -328,27 +332,27 @@ div.csl-indent {
   <a href="mailto:lukas.roeseler@uni-muenster.de">lukas.roeseler@uni-muenster.de</a> or <a href="https://github.com/forrtproject/replication_handbook/issues">GitHub</a>.</p>
 </div>
 </div>
-<section id="introduction" class="level3" data-number="9.0.1">
-<h3 data-number="9.0.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">9.0.1</span> Introduction</h3>
+<section id="introduction" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">9.1</span> Introduction</h2>
 <p>While the principles of reproducibility and replication apply across scientific disciplines, certain fields face distinct methodological and practical challenges. Neuroimaging research, particularly MRI-based studies, is one example where field-specific complexities cause specific challenges for data sharing, reproducibility and replicability. Other fields may have different specialized requirements on these topics. Generally, false-positive findings are likely driven by a combination of low statistical power, a high number of researcher degrees of freedom and statistical tests, and biased motivation towards obtaining positive (i.e., significant) results <span class="citation" data-cites="Ioannidis2005">(<a href="references.html#ref-Ioannidis2005" role="doc-biblioref">Ioannidis, 2005</a>)</span>. Most of these factors are arguably aggravated in MRI studies, making replication research in this field particularly relevant albeit challenging. In addition, the analyzed data and obtained findings are characterized by a three-dimensional spatial component (or four dimensions in case of functional MRI studies (fMRI) in combination with time series data), which further complicates the matter. In the following we summarize the inherent peculiarities of replication research in the field of neuroimaging.</p>
 </section>
-<section id="researcher-degrees-of-freedom" class="level3" data-number="9.0.2">
-<h3 data-number="9.0.2" class="anchored" data-anchor-id="researcher-degrees-of-freedom"><span class="header-section-number">9.0.2</span> Researcher Degrees of Freedom</h3>
+<section id="researcher-degrees-of-freedom" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="researcher-degrees-of-freedom"><span class="header-section-number">9.2</span> Researcher Degrees of Freedom</h2>
 <p>Brain imaging comes with a massive number of researcher degrees of freedom along the preprocessing and analysis pipelines. Preprocessing steps include for example motion correction procedures, spatial normalization and smoothing, with additional steps necessary for some imaging modalities, such as temporal signal filtering for fMRI. For each of these steps a multitude of parameter options and toolboxes are available. It has been shown that different preprocessing toolboxes can lead to fundamentally different results, even when aiming to harmonize all parameters <span class="citation" data-cites="ZhouEtAl2022">(<a href="references.html#ref-ZhouEtAl2022" role="doc-biblioref">Zhou et al., 2022</a>)</span>, and that different teams analyzing the same dataset can arrive at different final conclusions dependent on the used pipeline <span class="citation" data-cites="BotvinikNezerEtAl2020">(<a href="references.html#ref-BotvinikNezerEtAl2020" role="doc-biblioref">Botvinik-Nezer et al., 2020</a>)</span>. Furthermore, a large variety of operationalizations of neurobiological targets is available. For example, cerebral gray matter structure could be investigated as voxel-wise gray matter, segmentation-based regional cortical surface, thickness or gyrification.</p>
-<p>Analysis-wise, the high number of researcher degrees of freedom is mainly a consequence of the multidimensional data structure. Basically, the central question is where in the brain to look for effects and how to define significance in the face of a large number of tests. There is an immensely high number of single data points represented by spatial units in the obtained individual images (e.g., two-dimensional pixels or three-dimensional voxels). Analysis is often done utilizing mass-univariate approaches where a statistical model is calculated separately for each of these spatial units. For example, in cerebral MRI research the analysis of 400k voxels is common. To avoid false-positive findings, region-of-interests (ROIs) are often defined or the analysis is restricted to a smaller region in the brain (i.e., small volume correction) to narrow down the search space and unique methods to correct for multiple testing are applied <span class="citation" data-cites="HanEtAl2019">(<a href="references.html#ref-HanEtAl2019" role="doc-biblioref">Han et al., 2019</a>)</span>. This again results in a multitude of options, such as the anatomical vs.&nbsp;functional definition of a ROI based on several different atlases and a variety of voxel-based or cluster-based inference methods to choose from. Botvinik-Nezer et al. <span class="citation" data-cites="BotvinikNezerEtAl2020">(<a href="references.html#ref-BotvinikNezerEtAl2020" role="doc-biblioref">2020</a>)</span> gave the same fMRI dataset (raw data and preprocessed data), along with predefined hypotheses to 70 independent analysis teams and observed substantial variation in obtained results, attributable to variability in the analysis pipelines (in fact, none of the 70 teams used the same pipeline). Even when the same code and data is available the reproducibility of MRI analysis can be challenging <span class="citation" data-cites="LeehrEtAl2024">(<a href="references.html#ref-LeehrEtAl2024" role="doc-biblioref">Leehr et al., 2024</a>)</span>.</p>
+<p>Analysis-wise, the high number of researcher degrees of freedom is mainly a consequence of the multidimensional data structure. Basically, the central question is where in the brain to look for effects and how to define significance in the face of a large number of tests. There is an immensely high number of single data points represented by spatial units in the obtained individual images (e.g., two-dimensional pixels or three-dimensional voxels). Analysis is often done utilizing mass-univariate approaches where a statistical model is calculated separately for each of these spatial units. For example, in cerebral MRI research the analysis of 400k voxels is common. To avoid false-positive findings, region-of-interests (ROIs) are often defined or the analysis is restricted to a smaller region in the brain (i.e., small volume correction) to narrow down the search space and unique methods to correct for multiple testing are applied <span class="citation" data-cites="HanEtAl2019">(<a href="references.html#ref-HanEtAl2019" role="doc-biblioref">Han et al., 2019</a>)</span>. This again results in a multitude of options, such as the anatomical vs.&nbsp;functional definition of a ROI based on several different atlases and a variety of voxel-based or cluster-based inference methods to choose from. Botvinik-Nezer et al. <span class="citation" data-cites="BotvinikNezerEtAl2020">(<a href="references.html#ref-BotvinikNezerEtAl2020" role="doc-biblioref">2020</a>)</span> gave the same fMRI dataset (raw data and preprocessed data), along with predefined hypotheses to 70 independent analysis teams and observed substantial variation in obtained results, attributable to variability in the analysis pipelines — notably, none of the 70 teams used the same pipeline. This finding underscores the value of automated, standardised preprocessing pipelines (discussed below) as a means to reduce this variability and improve reproducibility. Even when the same code and data is available the reproducibility of MRI analysis can be challenging <span class="citation" data-cites="LeehrEtAl2024">(<a href="references.html#ref-LeehrEtAl2024" role="doc-biblioref">Leehr et al., 2024</a>)</span>.</p>
 </section>
-<section id="sample-size-justification" class="level3" data-number="9.0.3">
-<h3 data-number="9.0.3" class="anchored" data-anchor-id="sample-size-justification"><span class="header-section-number">9.0.3</span> Sample Size Justification</h3>
+<section id="sample-size-justification" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="sample-size-justification"><span class="header-section-number">9.3</span> Sample Size Justification</h2>
 <p>The gold standard for sample size justification is a power analysis. In neuroimaging this is complicated by the outlined mass-univariate three-dimensional data structure. Any power analysis would need to incorporate assumptions about the covariance structure of all data points, as well as the spatial extent and distribution of statistical effects, and the method to correct for multiple tests. While these numerous tests are not independent from another, the extent of their spatial covariance structure is difficult to assess and depends on preprocessing steps, such as image smoothing but is also on the data and the specific research question. Due to the high number of single data points, the obtained result is not a single statistical estimate with an effect size but rather a highly individual three-dimensional distribution of effect sizes around a peak localization. Simulation-based power analysis approaches have been previously suggested to address this problem. However, valid simulations require assumptions about valid spatial distributions of effects (contingent on regional anatomical peculiarities and on the specific research question), often difficult to assess and many developed power analysis tools have been discontinued. To date the utilization of power analysis is extremely rare in MRI research.</p>
-<p>Without proper power estimation, justifying sample size becomes challenging. As in other fields of research the statistical power ultimately depends on the expected effect size. Recent large-scale investigations in the domain of mental health neuroimaging suggest that maximum underlying effect sizes are very small across various neuroimaging modalities <span class="citation" data-cites="MarekEtAl2022 WinterEtAl2022">(below 2% explained variance, <a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>; <a href="references.html#ref-WinterEtAl2022" role="doc-biblioref">Winter et al., 2022</a>)</span> and could require thousands of individuals to obtain robust and replicable statistical estimates <span class="citation" data-cites="MarekEtAl2022">(<a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>)</span>. In contrast, given the labor-intensive and costly nature of MRI assessments, most MRI studies tend to have small sample sizes, making them likely underpowered <span class="citation" data-cites="ButtonEtAl2013">(<a href="references.html#ref-ButtonEtAl2013" role="doc-biblioref">Button et al., 2013</a>)</span>. Smaller samples may be suitable however, for research questions where the neurobiological effect sizes are expected to be larger, such as in psychosis research or when using highly individually tailored or within-subject designs <span class="citation" data-cites="LynchEtAl2024 MarekEtAl2022 RosenbergFinn2022 SpisakEtAl2023">(<a href="references.html#ref-LynchEtAl2024" role="doc-biblioref">Lynch et al., 2024</a>; <a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>; <a href="references.html#ref-RosenbergFinn2022" role="doc-biblioref">Rosenberg &amp; Finn, 2022</a>; <a href="references.html#ref-SpisakEtAl2023" role="doc-biblioref">Spisak et al., 2023</a>)</span>.</p>
+<p>Without proper power estimation, justifying sample size becomes challenging. As in other fields of research the statistical power ultimately depends on the expected effect size. Recent large-scale investigations in the domain of mental health neuroimaging suggest that maximum underlying effect sizes are very small across various neuroimaging modalities <span class="citation" data-cites="MarekEtAl2022 WinterEtAl2022">(below 2% explained variance, <a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>; <a href="references.html#ref-WinterEtAl2022" role="doc-biblioref">Winter et al., 2022</a>)</span> and could require thousands of individuals to obtain robust and replicable statistical estimates <span class="citation" data-cites="MarekEtAl2022">(<a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>)</span>. In contrast, given the labor-intensive and costly nature of MRI assessments, most MRI studies tend to have small sample sizes, making them likely underpowered <span class="citation" data-cites="ButtonEtAl2013">(<a href="references.html#ref-ButtonEtAl2013" role="doc-biblioref"><span class="nocase">Button et al.</span>, 2013</a>)</span>. Smaller samples may be suitable however, for research questions where the neurobiological effect sizes are expected to be larger, such as in psychosis research or when using highly individually tailored or within-subject designs <span class="citation" data-cites="LynchEtAl2024 MarekEtAl2022 RosenbergFinn2022 SpisakEtAl2023">(<a href="references.html#ref-LynchEtAl2024" role="doc-biblioref"><span class="nocase">Lynch et al.</span>, 2024</a>; <a href="references.html#ref-MarekEtAl2022" role="doc-biblioref">Marek et al., 2022</a>; <a href="references.html#ref-RosenbergFinn2022" role="doc-biblioref">Rosenberg &amp; Finn, 2022</a>; <a href="references.html#ref-SpisakEtAl2023" role="doc-biblioref">Spisak et al., 2023</a>)</span>.</p>
 </section>
-<section id="criteria-of-replication-success" class="level3" data-number="9.0.4">
-<h3 data-number="9.0.4" class="anchored" data-anchor-id="criteria-of-replication-success"><span class="header-section-number">9.0.4</span> Criteria of Replication Success</h3>
+<section id="criteria-for-replication-success" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="criteria-for-replication-success"><span class="header-section-number">9.4</span> Criteria for Replication Success</h2>
 <p>Regarding the definition of replication success, the three-dimensional data structure requires special attention when defining replication success. In addition to other possible definitions, it has to be defined where in the brain the criteria of replication success should be met. As discussed above, there is not only one effect size but rather a 3D map with an effect size for each spatial unit (e.g., voxel). <span class="citation" data-cites="GoltermannAltegoer2025">Goltermann &amp; Altegoer (<a href="references.html#ref-GoltermannAltegoer2025" role="doc-biblioref">2025</a>)</span> describe a variety of potential criteria focusing on statistical significance in accordance with different spatial definitions revolving around the original finding. These include significance either at the peak voxel location (where the effect in the original study had the largest effect size), or in a ROI that can be defined in terms of spatial proximity to this peak voxel (for example a 15mm sphere with the peak voxel as a center) or in terms of an anatomically defined region where the original effect was found (for example anywhere in the hippocampus). Another possibility is the definition of a ROI directly deducted from the original results mask, if available (i.e., the original thresholded mask). Each of these spatial definitions comes with important limitations. For example, the meaning of proximity could be judged very different in different locations in the brain, as some anatomically or functionally defined structures may vary in size and distinctiveness (e.g., comparing the small and clearly-defined amygdala with a large and difficult to define dorsolateral prefrontal cortex). Thus, it may be necessary to combine several criteria in a systematic and/or subjective manner.</p>
 <p>It should be noted that these criteria apply to voxel-based analyses. For other neuroimaging techniques, such as segmentation-based MRI analysis, diffusion tensor imaging (white matter integrity), or functional connectivity metrics, other criteria for replication success may be necessary.</p>
 </section>
-<section id="open-science-practices-in-neuroimaging" class="level3" data-number="9.0.5">
-<h3 data-number="9.0.5" class="anchored" data-anchor-id="open-science-practices-in-neuroimaging"><span class="header-section-number">9.0.5</span> Open Science Practices in Neuroimaging</h3>
+<section id="open-science-practices-in-neuroimaging" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="open-science-practices-in-neuroimaging"><span class="header-section-number">9.5</span> Open Science Practices in Neuroimaging</h2>
 <p>While suggestions on open science practices and replication studies are not fundamentally different from other research areas, their necessity for neuroimaging studies could be even more pressing and there are some peculiarities to consider. Due to the high number of researcher degrees of freedom the utilization of automated preprocessing pipelines is highly advisable <span class="citation" data-cites="EstebanEtAl2019">(e.g., <a href="references.html#ref-EstebanEtAl2019" role="doc-biblioref">Esteban et al., 2019</a>)</span>, ideally in combination with containerized toolbox environments for preprocessing and analysis <span class="citation" data-cites="RentonEtAl2024">(<a href="references.html#ref-RentonEtAl2024" role="doc-biblioref">Renton et al., 2024</a>)</span>. In face of reproducibility challenges the transparent publication of preprocessing and analysis scripts becomes even more vital. While the publication of data is advised whenever possible, this can be difficult when sensitive patient data is included and whenever anonymization is difficult. For example, while this is currently subject of debate, MRI-derived brain scans may retain fingerprint-like identifiable features, even when removing the face from the image <span class="citation" data-cites="JwaEtAl2024 AbramianEklund2019">(<a href="references.html#ref-AbramianEklund2019" role="doc-biblioref">Abramian &amp; Eklund, 2019</a>; <a href="references.html#ref-JwaEtAl2024" role="doc-biblioref">Jwa et al., 2024</a>)</span>. When the publication of raw data is not possible, comprehensive statistical brain maps (i.e., the statistical results in each voxel) should be made publicly available in non-thresholded form <span class="citation" data-cites="TaylorEtAl2023">(<a href="references.html#ref-TaylorEtAl2023" role="doc-biblioref">Taylor et al., 2023</a>)</span> and/or data can be published in aggregated form (e.g., summarized for one brain region). Preregistrations can and should be used to make the exploitation of researcher degrees of freedom more transparent. To facilitate preregistrations in neuroimaging, there are multiple templates available. To incorporate all the specifics coming with MRI studies Beyer, Flannery et al. <span class="citation" data-cites="BeyerEtAl2021">(<a href="references.html#ref-BeyerEtAl2021" role="doc-biblioref">2021</a>)</span> developed a fMRI specific template, which can be assessed here:<a href="https://doi.org/10.23668/psycharchives.5121"></a><a href="https://doi.org/10.23668/psycharchives.5121">https://doi.org/10.23668/psycharchives.5121</a>. For replication research, preregistrations should contain a definition of replication success criteria that take into consideration the spatial dimension of results. Overall, open science practices and replications are still extremely rare in neuroimaging research despite their pressing relevance. Finally, there are also unique tensions to be navigated between open science practices in neuroimaging and the ongoing climate crisis, for example the sustainability of data sharing <span class="citation" data-cites="PuhlmannEtAl2025">(see <a href="references.html#ref-PuhlmannEtAl2025" role="doc-biblioref">Puhlmann et al., 2025</a> for a perspective)</span>.</p>
 
 
@@ -363,7 +367,7 @@ Beyer, F., Flannery, J., Gau, R., Janssen, L., Schaare, L., Hartmann, H., Nilson
 Botvinik-Nezer, R., Holzmeister, F., Camerer, C. F., Dreber, A., Huber, J., Johannesson, M., &amp; Rieck, J. R. (2020). Variability in the analysis of a single neuroimaging dataset by many teams. <em>Nature</em>, <em>582</em>(7810), 84–88.
 </div>
 <div id="ref-ButtonEtAl2013" class="csl-entry" role="listitem">
-Button, K., Ioannidis, J., Mokrysz, C., et al. (2013). Power failure: Why small sample size undermines the reliability of neuroscience. <em>Nature Reviews Neuroscience</em>, <em>14</em>, 365–376. <a href="https://doi.org/10.1038/nrn3475">https://doi.org/10.1038/nrn3475</a>
+<span class="nocase">Button, K., Ioannidis, J., Mokrysz, C., et al.</span> (2013). Power failure: Why small sample size undermines the reliability of neuroscience. <em>Nature Reviews Neuroscience</em>, <em>14</em>, 365–376. <a href="https://doi.org/10.1038/nrn3475">https://doi.org/10.1038/nrn3475</a>
 </div>
 <div id="ref-EstebanEtAl2019" class="csl-entry" role="listitem">
 Esteban, O., Markiewicz, C. J., Blair, R. W., Moodie, C. A., Isik, A. I., Erramuzpe, A., &amp; Gorgolewski, K. J. (2019). fMRIPrep: A robust preprocessing pipeline for functional MRI. <em>Nature Methods</em>, <em>16</em>(1), 111–116.
@@ -384,7 +388,7 @@ Jwa, A. S., Koyejo, O., &amp; Poldrack, R. A. (2024). Demystifying the likelihoo
 Leehr, E. J., Seeger, F. R., Böhnlein, J., Gathmann, B., Straube, T., Roesmann, K., &amp; Lueken, U. (2024). Association between resting-state connectivity patterns in the defensive system network and treatment response in spider phobia—a replication approach. <em>Translational Psychiatry</em>, <em>14</em>(1), 137.
 </div>
 <div id="ref-LynchEtAl2024" class="csl-entry" role="listitem">
-Lynch, C. J., Elbau, I. G., Ng, T., et al. (2024). Frontostriatal salience network expansion in individuals in depression. <em>Nature</em>, <em>633</em>, 624–633. <a href="https://doi.org/10.1038/s41586-024-07805-2">https://doi.org/10.1038/s41586-024-07805-2</a>
+<span class="nocase">Lynch, C. J., Elbau, I. G., Ng, T., et al.</span> (2024). Frontostriatal salience network expansion in individuals in depression. <em>Nature</em>, <em>633</em>, 624–633. <a href="https://doi.org/10.1038/s41586-024-07805-2">https://doi.org/10.1038/s41586-024-07805-2</a>
 </div>
 <div id="ref-MarekEtAl2022" class="csl-entry" role="listitem">
 Marek, S., Tervo-Clemmens, B., Calabro, F. J., Montez, D. F., Kay, B. P., Hatoum, A. S., &amp; Dosenbach, N. U. (2022). Reproducible brain-wide association studies require thousands of individuals. <em>Nature</em>, <em>603</em>(7902), 654–660.
@@ -415,239 +419,248 @@ Zhou, X., Wu, R., Zeng, Y., Qi, Z., Ferraro, S., Xu, L., &amp; Becker, B. (2022)
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
       }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-      }
+      });
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
         }
-        return container.innerHTML
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -655,185 +668,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./publishing.html" class="pagination-link" aria-label="Communicating and Publishing">

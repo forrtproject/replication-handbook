@@ -251,7 +251,7 @@ book:
       chapters:
         - background.qmd
         - understanding.qmd
-    - part: "The Replication Process"
+    - part: "The Reproduction and Replication Process"
       chapters:
         - choosing_study.qmd
         - planning.qmd
@@ -288,6 +288,7 @@ format:
     theme:
       light: [cosmo, theme.scss]
     fig-cap-location: top
+    link-external-newwindow: true
 
   pdf:
     documentclass: scrbook

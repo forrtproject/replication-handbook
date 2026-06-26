@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.53">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>3&nbsp; Choosing the Target Study – Handbook for Reproduction and Replication Studies</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -54,15 +57,16 @@ div.csl-indent {
 <link href="./planning.html" rel="next">
 <link href="./understanding.html" rel="prev">
 <link href="./images/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8f2481fac337f33222e91caf6a1fd681.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -92,7 +96,7 @@ div.csl-indent {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -105,7 +109,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -123,7 +127,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -132,7 +136,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./choosing_study.html">The Replication Process</a></li><li class="breadcrumb-item"><a href="./choosing_study.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Choosing the Target Study</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./choosing_study.html">The Reproduction and Replication Process</a></li><li class="breadcrumb-item"><a href="./choosing_study.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Choosing the Target Study</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -198,7 +202,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">The Replication Process</span></a>
+ <span class="menu-text">The Reproduction and Replication Process</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -326,7 +330,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./choosing_study.html">The Replication Process</a></li><li class="breadcrumb-item"><a href="./choosing_study.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Choosing the Target Study</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./choosing_study.html">The Reproduction and Replication Process</a></li><li class="breadcrumb-item"><a href="./choosing_study.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Choosing the Target Study</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Choosing the Target Study</span></h1>
 </div>
@@ -371,18 +375,18 @@ window.Quarto = {
 </section>
 <section id="uncertainty" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="uncertainty"><span class="header-section-number">3.3</span> Uncertainty</h2>
-<p>The more uncertain the original study’s outcome is, the higher the potential of knowledge gained from reproduction and replication. Although no findings are definitive, research reports differ in the strength of the evidence they present [e.g., Registered Reports<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> are typically more convincing than non preregistered studies, <span class="citation" data-cites="SoderbergEtAl2021">Soderberg et al. (<a href="references.html#ref-SoderbergEtAl2021" role="doc-biblioref">2021</a>)</span>]. Similarly, sample size (within a given field) has been proposed as an indicator of evidence strength <span class="citation" data-cites="IsagerEtAl2021">(<a href="references.html#ref-IsagerEtAl2021" role="doc-biblioref">Isager et al., 2021</a>)</span>. <span class="citation" data-cites="PittelkowEtAl2021">Pittelkow et al. (<a href="references.html#ref-PittelkowEtAl2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="PittelkowEtAl2023">Pittelkow et al. (<a href="references.html#ref-PittelkowEtAl2023" role="doc-biblioref">2023</a>)</span> and <span class="citation" data-cites="FieldEtAl2019">Field et al. (<a href="references.html#ref-FieldEtAl2019" role="doc-biblioref">2019</a>)</span> all argued for using the current strength of evidence in favour of the original claim as an important element that features into the choosing a replication target. However, the degree of uncertainty can be uncertain or misjudged: In some areas of research a hypothesis had been claimed to be confirmed hundreds of times and yet, large-scale replication effort could not support the original hypothesis so that after hundreds of studies the existence of the phenomenon was still unknown <span class="citation" data-cites="FrieseEtAl2019">(e.g., <a href="references.html#ref-FrieseEtAl2019" role="doc-biblioref">Friese et al., 2019</a>)</span>. Meta-analyses allow some tests for uncertainty (e.g.&nbsp;via correction of bias, evaluation of risk of bias, or estimates of heterogeneity). Although there are numerous ways to meta-analytically evaluate the expected replicability of a set of claims, none of them is as solid as a well-designed replication attempt <span class="citation" data-cites="CarterEtAl2019">(<a href="references.html#ref-CarterEtAl2019" role="doc-biblioref">Carter et al., 2019</a>)</span>. Other heuristics to estimate robustness reproducibility and replicability of sets of findings have been proposed. They include the caliper test, relative proximity, or <em>z</em>-curve <span class="citation" data-cites="BartosSchimmack2022 AdlerEtAl2023">(<a href="references.html#ref-BartosSchimmack2022" role="doc-biblioref">Bartoš &amp; Schimmack, 2022</a>; see <a href="references.html#ref-AdlerEtAl2023" role="doc-biblioref">Adler et al., 2023</a>, for an overview and a ShinyApp that combines these tools)</span>. Individual findings can be assessed through forensic meta-science tests <span class="citation" data-cites="Heathers2025">(for an overview, see <a href="references.html#ref-Heathers2025" role="doc-biblioref">Heathers, 2025</a>)</span>, and through the assessment of papers for reporting issues, such as those identified by <em>statcheck</em> <span class="citation" data-cites="NuijtenPolanin2020 papercheckR">(<a href="references.html#ref-papercheckR" role="doc-biblioref">DeBruine &amp; Lakens, 2025</a>; <a href="references.html#ref-NuijtenPolanin2020" role="doc-biblioref">Nuijten &amp; Polanin, 2020</a>)</span>. Moreover, methods such as <em>sum of p-values</em> <span class="citation" data-cites="HeldEtAl2024">(<a href="references.html#ref-HeldEtAl2024" role="doc-biblioref">Held et al., 2024</a>)</span> and Bayesian re-analysis can be applied to help determine the degree of evidence for a given effect an original study might contain <span class="citation" data-cites="FieldEtAl2019 PittelkowEtAl2021">(<a href="references.html#ref-FieldEtAl2019" role="doc-biblioref">Field et al., 2019</a>; <a href="references.html#ref-PittelkowEtAl2021" role="doc-biblioref">Pittelkow et al., 2021</a>)</span>.</p>
+<p>The more uncertain the original study’s outcome is, the higher the potential of knowledge gained from reproduction and replication. Although no findings are definitive, research reports differ in the strength of the evidence they present [e.g., Registered Reports<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> are typically more convincing than non preregistered studies, <span class="citation" data-cites="SoderbergEtAl2021"><span class="nocase">Soderberg et al.</span> (<a href="references.html#ref-SoderbergEtAl2021" role="doc-biblioref">2021</a>)</span>]. Similarly, sample size (within a given field) has been proposed as an indicator of evidence strength <span class="citation" data-cites="IsagerEtAl2021">(<a href="references.html#ref-IsagerEtAl2021" role="doc-biblioref"><span class="nocase">Isager et al.</span>, 2021</a>)</span>. <span class="citation" data-cites="PittelkowEtAl2021">Pittelkow et al. (<a href="references.html#ref-PittelkowEtAl2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="PittelkowEtAl2023">Pittelkow et al. (<a href="references.html#ref-PittelkowEtAl2023" role="doc-biblioref">2023</a>)</span> and <span class="citation" data-cites="FieldEtAl2019">Field et al. (<a href="references.html#ref-FieldEtAl2019" role="doc-biblioref">2019</a>)</span> all argued for using the current strength of evidence in favour of the original claim as an important element that features into the choosing a replication target. However, the degree of uncertainty can be uncertain or misjudged: In some areas of research a hypothesis had been claimed to be confirmed hundreds of times and yet, large-scale replication effort could not support the original hypothesis so that after hundreds of studies the existence of the phenomenon was still unknown <span class="citation" data-cites="FrieseEtAl2019">(e.g., <a href="references.html#ref-FrieseEtAl2019" role="doc-biblioref">Friese et al., 2019</a>)</span>. Meta-analyses allow some tests for uncertainty (e.g.&nbsp;via correction of bias, evaluation of risk of bias, or estimates of heterogeneity). Although there are numerous ways to meta-analytically evaluate the expected replicability of a set of claims, none of them is as solid as a well-designed replication attempt <span class="citation" data-cites="CarterEtAl2019">(<a href="references.html#ref-CarterEtAl2019" role="doc-biblioref">Carter et al., 2019</a>)</span>. Other heuristics to estimate robustness reproducibility and replicability of sets of findings have been proposed. They include the caliper test, relative proximity, or <em>z</em>-curve <span class="citation" data-cites="BartosSchimmack2022 AdlerEtAl2023">(<a href="references.html#ref-BartosSchimmack2022" role="doc-biblioref">Bartoš &amp; Schimmack, 2022</a>; see <a href="references.html#ref-AdlerEtAl2023" role="doc-biblioref">Adler et al., 2023</a>, for an overview and a ShinyApp that combines these tools)</span>. Individual findings can be assessed through forensic meta-science tests — techniques such as GRIM, SPRITE, and statistical consistency checks that detect impossible or implausible values in published results <span class="citation" data-cites="Heathers2025">(for an overview, see <a href="references.html#ref-Heathers2025" role="doc-biblioref">Heathers, 2025</a>)</span>, and through the assessment of papers for reporting issues, such as those identified by <em>statcheck</em> <span class="citation" data-cites="NuijtenPolanin2020 papercheckR">(<a href="references.html#ref-papercheckR" role="doc-biblioref">DeBruine &amp; Lakens, 2025</a>; <a href="references.html#ref-NuijtenPolanin2020" role="doc-biblioref">Nuijten &amp; Polanin, 2020</a>)</span>. Moreover, methods such as <em>sum of p-values</em> <span class="citation" data-cites="HeldEtAl2024">(<a href="references.html#ref-HeldEtAl2024" role="doc-biblioref">Held et al., 2024</a>)</span> and Bayesian re-analysis can be applied to help determine the degree of evidence for a given effect an original study might contain <span class="citation" data-cites="FieldEtAl2019 PittelkowEtAl2021">(<a href="references.html#ref-FieldEtAl2019" role="doc-biblioref">Field et al., 2019</a>; <a href="references.html#ref-PittelkowEtAl2021" role="doc-biblioref">Pittelkow et al., 2021</a>)</span>.</p>
 <p>If the original paper reports multiple studies for the same phenomenon, researchers should check the proportion of significant studies and whether all of them confirm the hypothesis. More studies reduce the overall statistical power (power deflation). Provided the hypothesis is correct, a single study may test it with 90% power, that is, the statistical analysis will indicate the correctness of the hypothesis with a probability of .9. Now, if 10 studies are run with 90% power each, the chances of all of them supporting the hypothesis (even if it is true) are <span class="math inline">\(0.9^{10} \approx 0.35\)</span>. For 80%, even finding five significant findings in a row is fairly unlikely (<span class="math inline">\(0.8^{5} \approx 0.33\)</span>). Thus, studies reporting a set of many and only significant findings when each of the studies does not have very high power should be taken with caution <span class="citation" data-cites="Francis2012 Schimmack2012 LakensEtz2017">(see also <a href="references.html#ref-Francis2012" role="doc-biblioref">Francis, 2012</a>; <a href="references.html#ref-LakensEtz2017" role="doc-biblioref">Lakens &amp; Etz, 2017</a>; <a href="references.html#ref-Schimmack2012" role="doc-biblioref">Schimmack, 2012</a>)</span>.</p>
-<p>For large parts of the literature and given the overall low replicability rate in many fields <span class="citation" data-cites="Soto2019">(though not all, e.g., <a href="references.html#ref-Soto2019" role="doc-biblioref">Soto, 2019</a>)</span>, the mere lack of a reproduction or close replication by independent researchers can be used as an argument for uncertainty <span class="citation" data-cites="PittelkowEtAl2023">(e.g., <a href="references.html#ref-PittelkowEtAl2023" role="doc-biblioref">Pittelkow et al., 2023</a>)</span>. If a study has only been replicated by the original authors, it can be indicative of nobody else being interested in the phenomenon (i.e., low replication value) or nobody else being able to provide evidence for it (i.e., high uncertainty). For example, it is possible that reports of failed replications are held back by reviewers due to an aversion to null findings, replications, or findings criticizing their own work.</p>
+<p>For large parts of the literature and given the overall low replicability rate in many fields, the mere lack of a reproduction or close replication by independent researchers can be used as an argument for uncertainty <span class="citation" data-cites="PittelkowEtAl2023">(e.g., <a href="references.html#ref-PittelkowEtAl2023" role="doc-biblioref">Pittelkow et al., 2023</a>)</span>, though it <em>might</em> also indicate that nobody beyond the original orders is interested in the phenomenon. However, it is also possible that replications have been attempted but not published, for instance when reviewers show an aversion to null findings, replications, or findings criticizing their own work.</p>
 <p>As replications can also be used to probe a phenomenon’s generalizability, a lack of variety in study designs can motivate a replication attempt. If there is reason to assume that a phenomenon is highly dependent on context (e.g., works only for graduate students, with English-speaking people, when people are incentivized, for the chosen stimuli, …), it can be replicated and extended in other contexts. More generally, when background factors are introduced to a study (e.g., there was a positive correlation in study X but researchers suspect it to vanish under condition M), the original finding needs to be replicated in a part of the new study for the argument to work. An added benefit of this is to help avoid later claims of ‘hidden moderators’ in original studies; an argument which has been used previously to refute the validity of replication study results <span class="citation" data-cites="ZwaanEtAl2018">(<a href="references.html#ref-ZwaanEtAl2018" role="doc-biblioref">Zwaan et al., 2018</a>)</span>.</p>
 <p>Finally, uncertainty can be the result of a lack of specificity in the original report: If there are details missing that cannot be retrieved anymore (e.g., researchers involved in the original study cannot be reached), a replication can develop, test and share a comprehensive set of materials. For example, Chartrand and Bargh’s <span class="citation" data-cites="ChartrandBargh1999">(<a href="references.html#ref-ChartrandBargh1999" role="doc-biblioref">1999</a>)</span> seminal study on the <em>chameleon effect</em> requires many materials but none of them are openly available. Accordingly, <span class="citation" data-cites="PittelkowEtAl2023">Pittelkow et al. (<a href="references.html#ref-PittelkowEtAl2023" role="doc-biblioref">2023</a>)</span> identified the clarity of the original study protocol as an important element that features into the decision of replication study selection. Reconstructing these materials and documenting a procedure would, thus, be a valuable contribution of a replication study.</p>
 <p><strong><em>Theoretical contribution</em></strong></p>
-<p>In some cases, theories are so vague that a failed replication would likely be criticized for misunderstanding the theory <span class="citation" data-cites="BaumeisterVohs2016">(e.g., <a href="references.html#ref-BaumeisterVohs2016" role="doc-biblioref">Baumeister &amp; Vohs, 2016</a>)</span>. This suggests that the target theory was not well specified. If accepted as a reason not to replicate, it can discourage any form of replication despite the target finding being relevant. Instead, replication researchers can ask original authors for feedback on the study protocol before collecting data to try to ensure that it tests (and then articulates) the intended theory. They can also engage in adversarial collaboration or “red teaming” <span class="citation" data-cites="CowanEtAl2020 ClarkEtAl2022 CorcoranEtAl2023">(<a href="references.html#ref-ClarkEtAl2022" role="doc-biblioref">Clark et al., 2022</a>; <a href="references.html#ref-CorcoranEtAl2023" role="doc-biblioref">Corcoran et al., 2023</a>; e.g., <a href="references.html#ref-CowanEtAl2020" role="doc-biblioref">Cowan et al., 2020</a>)</span>, that is work together with the original authors to design a study that they agree would be able to corroborate the original claim, or to call it into doubt.</p>
+<p>In some cases, theories are so vague that a failed replication would likely be criticized for misunderstanding the theory <span class="citation" data-cites="BaumeisterVohs2016">(e.g., <a href="references.html#ref-BaumeisterVohs2016" role="doc-biblioref">Baumeister &amp; Vohs, 2016</a>)</span>. This suggests that the target theory was not well specified. If accepted as a reason not to replicate, it can discourage any form of replication despite the target finding being relevant. Instead, replication researchers can ask original authors for feedback on the study protocol before collecting data to try to ensure that it tests (and then articulates) the intended theory. They can also engage in adversarial collaboration or “red teaming” <span class="citation" data-cites="CowanEtAl2020 ClarkEtAl2022 CorcoranEtAl2023">(e.g., <a href="references.html#ref-CowanEtAl2020" role="doc-biblioref">Cowan et al., 2020</a>; <a href="references.html#ref-ClarkEtAl2022" role="doc-biblioref">Clark et al., 2022</a>; <a href="references.html#ref-CorcoranEtAl2023" role="doc-biblioref">Corcoran et al., 2023</a>)</span>, that is work together with the original authors to design a study that they agree would be able to corroborate the original claim, or to call it into doubt.</p>
 <p>Nevertheless, it has been argued that because so many original studies are flawed, the theories built upon them are weak, or contaminated. This, in turn, can lead to flawed replication studies, especially in the case of theory that aims to explain phenomena <span class="citation" data-cites="FieldEtAl2024">(<a href="references.html#ref-FieldEtAl2024" role="doc-biblioref">Field et al., 2024</a>)</span>, risking a vicious cycle in which successful replications potentially perpetuate flaws across studies.</p>
 <p><strong><em>Availability of reproductions and replications</em></strong></p>
 <p>While a single replication (or robustness reproduction) cannot provide conclusive evidence in regard to the veracity of original claims, the first numerical reproduction, and arguably also the first robustness reproduction and replication adds the greatest value in terms of reducing uncertainty. Therefore, the search for existing reproductions and replications is a key part of the selection of a target study.</p>
-<p>Although there is no comprehensive database with reproductions yet, researchers can check resources such as the Institute for Replication’s discussion paper series <span class="citation" data-cites="BrodeurEtAl2024b">(<a href="references.htmlhttps://i4replication.org/discussion_paper.html" class="uri" role="doc-biblioref">https://i4replication.org/discussion_paper.html</a>, cf. <a href="references.html#ref-BrodeurEtAl2024b" role="doc-biblioref">Brodeur et al., 2024</a>)</span>, the ReplicationWiki <span class="citation" data-cites="Hoeffler2017">(<a href="references.html#ref-Hoeffler2017" role="doc-biblioref">Höffler, 2017</a>)</span>, the CODECHECK register <span class="citation" data-cites="NuestEglen2021">(<a href="references.htmlhttps://codecheck.org.uk/register/" class="uri" role="doc-biblioref">https://codecheck.org.uk/register/</a>, cf. <a href="references.html#ref-NuestEglen2021" role="doc-biblioref">Nüst &amp; Eglen, 2021</a>)</span>, or the Social Science Reproduction Platform (<a href="https://www.socialsciencereproduction.org" class="uri">https://www.socialsciencereproduction.org</a>).</p>
-<p>With regard to replications, researchers can browse the FORRT Replication Database <span class="citation" data-cites="RoselerEtAl2024">(<a href="references.htmlhttps://forrt.org/apps/fred_explorer.html" class="uri" role="doc-biblioref">https://forrt.org/apps/fred_explorer.html</a>, cf. <a href="references.html#ref-RoselerEtAl2024" role="doc-biblioref">Röseler et al., 2024</a>)</span>, though this does not (yet) provide a replacement for manual searches. The following table provides an overview of different types of <em>reproducibility checks</em>.</p>
+<p>Although there is no comprehensive database with reproductions yet, researchers can check resources such as the Institute for Replication’s discussion paper series <span class="citation" data-cites="BrodeurEtAl2024b">(<a href="https://i4replication.org/discussion_paper.html" class="uri">https://i4replication.org/discussion_paper.html</a>, cf. <a href="references.html#ref-BrodeurEtAl2024b" role="doc-biblioref">Brodeur et al., 2024</a>)</span>, the ReplicationWiki <span class="citation" data-cites="Hoeffler2017">(<a href="references.html#ref-Hoeffler2017" role="doc-biblioref">Höffler, 2017</a>)</span>, the CODECHECK register <span class="citation" data-cites="NuestEglen2021">(<a href="https://codecheck.org.uk/register/" class="uri">https://codecheck.org.uk/register/</a>, cf. <a href="references.html#ref-NuestEglen2021" role="doc-biblioref">Nüst &amp; Eglen, 2021</a>)</span>, or the Social Science Reproduction Platform (<a href="https://www.socialsciencereproduction.org" class="uri">https://www.socialsciencereproduction.org</a>).</p>
+<p>With regard to replications, researchers can browse the FORRT Replication Database <span class="citation" data-cites="RoselerEtAl2024">(<a href="https://forrt.org/apps/fred_explorer.html" class="uri">https://forrt.org/apps/fred_explorer.html</a>, cf. <a href="references.html#ref-RoselerEtAl2024" role="doc-biblioref">Röseler et al., 2024</a>)</span>, though this does not (yet) provide a replacement for manual searches. The following table provides an overview of different types of <em>reproducibility checks</em>.</p>
 <table class="caption-top table">
 <caption>Types of Reproducibility Checks</caption>
 <thead>
@@ -442,7 +446,8 @@ window.Quarto = {
 <section id="potential-researcher-bias" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="potential-researcher-bias"><span class="header-section-number">3.4</span> (Potential) Researcher Bias</h2>
 <p>Researchers typically work in relatively small communities to investigate the same phenomenon. These researchers are invested in their work and can be influenced by certain researcher biases, such as confirmation bias <span class="citation" data-cites="Mahoney1977">(the tendency to preferentially seek out, evaluate and recall information that supports one’s existing beliefs, see <a href="references.html#ref-Mahoney1977" role="doc-biblioref">Mahoney, 1977</a>)</span> and motivated reasoning <span class="citation" data-cites="HardwickeWagenmakers2023 MunafoEtAl2020">(generating post-hoc rationalizations that frame previous decisions in a favourable light, see <a href="references.html#ref-HardwickeWagenmakers2023" role="doc-biblioref">Hardwicke &amp; Wagenmakers, 2023</a>; <a href="references.html#ref-MunafoEtAl2020" role="doc-biblioref">Munafò et al., 2020</a>)</span>. In some cases, researchers profit off their work and the (perceived) replicability of their findings may be associated with personal financial gain. Such conflicts of interest should be disclosed, but this is not always the case <span class="citation" data-cites="HeireneEtAl2024">(see <a href="references.html#ref-HeireneEtAl2024" role="doc-biblioref">Heirene et al., 2024</a>)</span>.</p>
-<p>However, replication researchers are just as prone to bias as original authors can be. Certain studies are more likely to be chosen for replication than others <span class="citation" data-cites="Pennington2023 Yarkoni2013">(see <a href="references.html#ref-Pennington2023" role="doc-biblioref">Pennington, 2023</a>; <a href="references.html#ref-Yarkoni2013" role="doc-biblioref">Yarkoni, 2013</a>)</span>, and there <em>may</em> be a publication bias in replication studies in favor of nonsignificant findings <span class="citation" data-cites="BerinskyEtAl2021">(<a href="references.html#ref-BerinskyEtAl2021" role="doc-biblioref">Berinsky et al., 2021</a>)</span>, though there is no empirical evidence for this yet. Nevertheless, greater interest in failed replications seems very likely, incentivizing replication researchers to apply questionable research practices (QRPs) so that the results are nonsignificant <span class="citation" data-cites="Protzko2018 BaumeisterEtAl2022">(<a href="references.html#ref-BaumeisterEtAl2022" role="doc-biblioref">Baumeister et al., 2022</a>; “null hacking,” <a href="references.html#ref-Protzko2018" role="doc-biblioref">Protzko, 2018</a>)</span>. The problems of <em>p</em>-hacking and null-hacking can mostly be solved through preregistration and the use of Registered (Replication) Reports <span class="citation" data-cites="BrodeurEtAl2024b SoderbergEtAl2021">(e.g., <a href="references.html#ref-BrodeurEtAl2024b" role="doc-biblioref">Brodeur et al., 2024</a>; <a href="references.html#ref-SoderbergEtAl2021" role="doc-biblioref">Soderberg et al., 2021</a>)</span>. Another type of bias is that researchers may be interested in replicating specific studies because of personal admiration towards a study or envy towards a colleague.</p>
+<p>However, replication researchers are just as prone to bias as original authors can be. There <em>may</em> be a publication bias in replication studies in favor of nonsignificant findings <span class="citation" data-cites="BerinskyEtAl2021">(<a href="references.html#ref-BerinskyEtAl2021" role="doc-biblioref">Berinsky et al., 2021</a>)</span>, though there is no empirical evidence for this yet. Nevertheless, greater interest in failed replications seems likely, incentivizing replication researchers to apply questionable research practices (QRPs) so that the results are nonsignificant <span class="citation" data-cites="Protzko2018 BaumeisterEtAl2022">(“null hacking”, <a href="references.html#ref-Protzko2018" role="doc-biblioref">Protzko, 2018</a>; <a href="references.html#ref-BaumeisterEtAl2022" role="doc-biblioref">Baumeister et al., 2022</a>)</span>. The problems of <em>p</em>-hacking and null-hacking can mostly be solved through preregistration and the use of Registered (Replication) Reports <span class="citation" data-cites="BrodeurEtAl2024b SoderbergEtAl2021">(e.g., <a href="references.html#ref-BrodeurEtAl2024b" role="doc-biblioref">Brodeur et al., 2024</a>; <a href="references.html#ref-SoderbergEtAl2021" role="doc-biblioref"><span class="nocase">Soderberg et al.</span>, 2021</a>)</span>. Another type of bias is that researchers may be interested in replicating specific studies because of personal admiration towards a study or envy towards a colleague.</p>
+<p>Even in the absence of such biases, the selection of replication targets can affect the conclusions drawn from replication research. Individual replication efforts tend to target studies that replicators doubt or find surprising. Large-scale projects sometimes use approximately random sampling <span class="citation" data-cites="OpenScienceCollab2015">(e.g., <a href="references.html#ref-OpenScienceCollab2015" role="doc-biblioref">Open Science Collaboration, 2015</a>)</span>, but might also use purposive sampling to address specific research questions <span class="citation" data-cites="KleinEtAl2014">(e.g., the focus on replicable findings in <a href="references.html#ref-KleinEtAl2014" role="doc-biblioref">Klein et al., 2014</a>)</span>. The non-random nature of most target selection means that aggregate replication rates should usually not be taken as representative of a field’s overall replicability <span class="citation" data-cites="KuehbergerSchulteMecklenbeck2018">(<a href="references.html#ref-KuehbergerSchulteMecklenbeck2018" role="doc-biblioref">Kühberger &amp; Schulte-Mecklenbeck, 2018</a>)</span>.</p>
 </section>
 <section id="feasibility" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="feasibility"><span class="header-section-number">3.5</span> Feasibility</h2>
@@ -528,7 +533,7 @@ Höffler, J. H. (2017). ReplicationWiki: Improving transparency in social scienc
 Isager, P. M., Aert, R. C. M. van, Bahník, Š., Brandt, M. J., DeSoto, K. A., Giner-Sorolla, R., Krueger, J. I., Perugini, M., Ropovik, I., Veer, A. E. van ’t, Vranka, M., &amp; Lakens, D. (2023). Deciding what to replicate: A decision model for replication study selection under resource and knowledge constraints. <em>Psychological Methods</em>, <em>28</em>(2), 438–451. <a href="https://doi.org/10.1037/met0000438">https://doi.org/10.1037/met0000438</a>
 </div>
 <div id="ref-IsagerEtAl2021" class="csl-entry" role="listitem">
-Isager, P. M., Veer, A. E. van’t, Lakens, D., et al. (2021). Replication value as a function of citation impact and sample size. <em>MetaArXiv</em>. <a href="https://doi.org/10.31222/osf.io/knjea">https://doi.org/10.31222/osf.io/knjea</a>
+<span class="nocase">Isager, P. M., Veer, A. E. van’t, Lakens, D., et al.</span> (2021). Replication value as a function of citation impact and sample size. <em>MetaArXiv</em>. <a href="https://doi.org/10.31222/osf.io/knjea">https://doi.org/10.31222/osf.io/knjea</a>
 </div>
 <div id="ref-JacowitzKahneman1995" class="csl-entry" role="listitem">
 Jacowitz, K. E., &amp; Kahneman, D. (1995). Measures of anchoring in estimation tasks. <em>Personality and Social Psychology Bulletin</em>, <em>21</em>(11), 1161–1166. <a href="https://doi.org/10.1177/01461672952111004">https://doi.org/10.1177/01461672952111004</a>
@@ -541,6 +546,9 @@ Karhulahti, V., Martončik, M., &amp; Adamkovic, M. (2024). <em>Pre-replication 
 </div>
 <div id="ref-KleinEtAl2014" class="csl-entry" role="listitem">
 Klein, R. A., Ratliff, K. A., Vianello, M., Adams Jr, R. B., Bahník, Š., Bernstein, M. J., &amp; Nosek, B. A. (2014). Investigating variation in replicability. <em>Social Psychology</em>. <a href="https://doi.org/10.1027/1864-9335/a000178">https://doi.org/10.1027/1864-9335/a000178</a>
+</div>
+<div id="ref-KuehbergerSchulteMecklenbeck2018" class="csl-entry" role="listitem">
+Kühberger, A., &amp; Schulte-Mecklenbeck, M. (2018). Selecting target papers for replication. <em>Behavioral and Brain Sciences</em>. <a href="https://doi.org/10.1017/s0140525x18000742">https://doi.org/10.1017/s0140525x18000742</a>
 </div>
 <div id="ref-LakensEtz2017" class="csl-entry" role="listitem">
 Lakens, D., &amp; Etz, A. J. (2017). Too true to be bad: When sets of studies with significant and nonsignificant findings are probably true. <em>Social Psychological and Personality Science</em>, <em>8</em>(8), 875–881. <a href="https://doi.org/10.1177/1948550617693058">https://doi.org/10.1177/1948550617693058</a>
@@ -559,9 +567,6 @@ Nüst, D., &amp; Eglen, S. J. (2021). CODECHECK: An open science initiative for 
 </div>
 <div id="ref-OpenScienceCollab2015" class="csl-entry" role="listitem">
 Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. <em>Science</em>, <em>349</em>(6251), aac4716. <a href="https://doi.org/10.1126/science.aac4716">https://doi.org/10.1126/science.aac4716</a>
-</div>
-<div id="ref-Pennington2023" class="csl-entry" role="listitem">
-Pennington, C. R. (2023). <em>A student’s guide to open science: Using the replication crisis to reform psychology</em>. Open University Press.
 </div>
 <div id="ref-PittelkowEtAl2023" class="csl-entry" role="listitem">
 Pittelkow, M. M., Field, S. M., Isager, P. M., Veer, T. van’t, A. E. Anderson, Cole, S. N., &amp; Van Ravenzwaaij, D. (2023). The process of replication target selection in psychology: What to consider? <em>Royal Society Open Science</em>, <em>10</em>(2), 210586. <a href="https://doi.org/10.1098/rsos.210586">https://doi.org/10.1098/rsos.210586</a>
@@ -585,16 +590,10 @@ Röseler, L., Schütz, A., Blank, P. A., Dück, M., Fels, S., Kupfer, J., Scheel
 Schimmack, U. (2012). The ironic effect of significant results on the credibility of multiple-study articles. <em>Psychological Methods</em>, <em>17</em>(4), 551. <a href="https://doi.org/10.1037/a0029487">https://doi.org/10.1037/a0029487</a>
 </div>
 <div id="ref-SoderbergEtAl2021" class="csl-entry" role="listitem">
-Soderberg, C. K., Errington, T. M., Schiavone, S. R., et al. (2021). Initial evidence of research quality of registered reports compared with the standard publishing model. <em>Nature Human Behaviour</em>, <em>5</em>, 990–997. <a href="https://doi.org/10.1038/s41562-021-01142-4">https://doi.org/10.1038/s41562-021-01142-4</a>
-</div>
-<div id="ref-Soto2019" class="csl-entry" role="listitem">
-Soto, C. J. (2019). How replicable are links between personality traits and consequential life outcomes? The life outcomes of personality replication project. <em>Psychological Science</em>, <em>30</em>(5), 711–727. <a href="https://doi.org/10.1177/0956797619831612">https://doi.org/10.1177/0956797619831612</a>
+<span class="nocase">Soderberg, C. K., Errington, T. M., Schiavone, S. R., et al.</span> (2021). Initial evidence of research quality of registered reports compared with the standard publishing model. <em>Nature Human Behaviour</em>, <em>5</em>, 990–997. <a href="https://doi.org/10.1038/s41562-021-01142-4">https://doi.org/10.1038/s41562-021-01142-4</a>
 </div>
 <div id="ref-WilkinsonEtAl2016" class="csl-entry" role="listitem">
 Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Baak, A., &amp; Mons, B. (2016). The FAIR guiding principles for scientific data management and stewardship. <em>Scientific Data</em>, <em>3</em>(1), 1–9. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>
-</div>
-<div id="ref-Yarkoni2013" class="csl-entry" role="listitem">
-Yarkoni, T. (2013). <span>“What we can and can’t learn from the many labs replication project.”</span> <em>Talyarkoni.org/Blog</em>.
 </div>
 <div id="ref-ZwaanEtAl2018" class="csl-entry" role="listitem">
 Zwaan, R. A., Etz, A., Lucas, R. E., &amp; Donnellan, M. B. (2018). Making replication mainstream. <em>Behavioral and Brain Sciences</em>, <em>41</em>, e120. <a href="https://doi.org/10.1017/S0140525X17001972">https://doi.org/10.1017/S0140525X17001972</a>
@@ -610,239 +609,248 @@ Zwaan, R. A., Etz, A., Lucas, R. E., &amp; Donnellan, M. B. (2018). Making repli
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
       }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-      }
+      });
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
         }
-        return container.innerHTML
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -850,185 +858,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./understanding.html" class="pagination-link" aria-label="Understanding Replications and Reproductions">
