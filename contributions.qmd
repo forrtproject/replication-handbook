@@ -33,3 +33,9 @@ LR received funding from the University of Münster and the ‘Landesinitiative 
 This work is an initiative from The Framework for Open and Reproducible Research Training (FORRT; <https://forrt.org>), and all core-team authors are active members of FORRT’s Replication Hub ([https://forrt.org/replication-hub](https://forrt.org/replication-hub/)).
 
 We thank Patrick Smela for valuable ideas on defining replication success and Abel Brodeur for suggestions about definitions and the relationship between reproducibility and replicability.
+
+# Use of AI
+
+We used ChatGPT 4.1 to support the preparation of this work. Specifically, it helped us move text from Google Docs into Quarto, create the .bib reference file, and obtain feedback on an earlier draft. We also used it for formatting the Quarto book, for example to generate the style.css file that sets the background colour and font. This list reflects the AI uses documented so far and may not be exhaustive.
+
+<!-- TODO (authors): confirm and extend this list of AI uses before release -->
