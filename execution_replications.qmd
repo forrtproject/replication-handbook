@@ -156,7 +156,7 @@ direction would falsify the null hypothesis.
 
 External knowledge can be incorporated into sample size planning
 (uninformative / flat priors; heterogeneity; shrinkage) using the R
-package BayesRepDesign [@PawelEtAl2023]. Moreover, Micheloud and Held
+package BayesRepDesign [@PawelEtAl2026]. Moreover, Micheloud and Held
 [-@MicheloudHeld2022] provide a method for incorporating an original
 study’s uncertainty into power calculations. With interim analyses
 (e.g., sequential testing) , a replication study can also be stopped
@@ -258,8 +258,8 @@ be reported and justified exhaustively.
     replication projects made use of click workers (e.g., via MTurk) or
     use student samples. Replicators should consider if using such
     samples satisfy their needs and evaluate which platform to use (for
-    best practices and ethical considerations, see
-    @KapitanyKavanagh2023. Even if the original study used such a
+    best practices and ethical considerations, see @KapitanyKavanagh2026).
+    Even if the original study used such a
     convenience population, changing to a different convenience
     population may require tweaks to maintain comparability, e.g. with
     regard to participant attentiveness and engagement with the

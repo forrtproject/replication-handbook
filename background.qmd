@@ -26,7 +26,7 @@ counts <- read.csv("data/flora_replication_counts.csv")
 plot_replication_growth(counts)
 ```
 
-While the number of replication and reproduction studies has increased, the overall proportion of them is still very small, with reviews finding that replications make up well below 1% of published papers [@PerryEtAl2022]. Moreover, much of the guidance on replications is still being developed [@ClarkeEtAl2024] and in narrow parts of science, which leads to fragmentation, siloing, and potentially inconsistent information.
+While the number of replication and reproduction studies has increased, the overall proportion of them is still very small, with reviews finding that replications make up well below 1% of published papers [@PerryEtAl2022]. Moreover, much of the guidance on replications is still being developed [@ClarkeEtAl2026] and in narrow parts of science, which leads to fragmentation, siloing, and potentially inconsistent information.
 
 Here we attempt to integrate useful guidelines [e.g.,
 @BlockKuckertz2018; @JekelEtAl2020] into a comprehensive overview that
