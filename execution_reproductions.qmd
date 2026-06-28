@@ -106,7 +106,15 @@ While preregistration of a reproduction may seem paradoxical when data are alrea
 
 ## Deviations
 
-To increase trust in the reported results, reproduction researchers need to report them in a transparent way, in a possible preregistration and the final report. Ideally, all changes to the original procedure are explained, justified, and hypotheses about their expected effect on the outcomes are reported.
+Reproductions may aim to test whether the precise same approach yields the
+same result, or whether deliberate deviations make a difference. Either approach
+requires being mindful and transparent about deviations. Each planned change
+should be explained, justified, and accompanied by a hypothesis about
+its expected effect on the outcomes, ideally in a preregistration. Where deviations only become
+necessary during the analysis, they should still be reported
+transparently in the final report. Documenting all such changes, whether
+planned or emergent, increases trust in the reproduction, and makes it easier to interpret its results.
+
 ## Analysis
 
 The main part of the reproduction is the analysis. Factors that are

@@ -15,8 +15,11 @@ influenced by its relevance, theoretical or societal impact, and
 citation history. High uncertainty in the original results increases the
 potential knowledge gain from replication, while limited reporting,
 multiple prior studies, or contextual specificity may further motivate
-replication. Researchers must also consider feasibility, including data
-availability, resources, and technical requirements. Potential
+replication. Post-publication discussions—such as comments, critiques,
+or prior replication attempts—can further inform whether and how a study
+is worth repeating. Researchers must also consider feasibility,
+including data availability, resources, and technical requirements.
+Potential
 researcher biases, such as confirmation bias or conflicts of interest,
 highlight the importance of preregistration and transparent
 documentation. Clear justification and systematic frameworks can ensure
@@ -29,6 +32,9 @@ that replication efforts are efficient and trustworthy.
 
 -   Which factors determine whether a study is worth reproducing or
     replicating?
+
+-   How can post-publication discussions inform the choice of a target
+    study?
 
 -   How can practical constraints and potential biases influence the
     selection of replication targets?
@@ -245,6 +251,28 @@ types of *reproducibility checks*.
 | Post publication (e.g., [I4R](https://i4replication.org), [Replication Research](http://replicationresearch.org), [JOPD](https://openpsychologydata.metajnl.com/), [JRR](https://scipost.org/JRobustRep/about)) | Independent Resesarcher | Selection by independent researcher, possibly nomination by journal | Reproducibilityor Robustness Report as preprint or in a journal | Public report | Post-publication |
 
 : Types of Reproducibility Checks
+
+## Post-Publication Conversations
+
+When evaluating a potential target study, additional knowledge should be
+taken into account, such as any discussions of the original finding.
+There can be other studies citing the original studies, criticizing
+them, disconfirming their underlying theory, identifying errors,
+reinterpreting the finding, or making suggestions for replications. All
+of these might highlight considerations that need to be taken into
+account when deciding whether a study is worth repeating and, later, when
+designing a study that *robustly* tests the original claim or its
+generalisability.
+
+Thus, researchers should look for post-publication discussions on the
+target study such as published comments and reviews, blog posts, or
+discussions on social media. These can often be found via Altmetric
+(<https://www.altmetric.com>) or other tools that allow researchers to
+quickly identify discussions on social media or news outlets beyond
+scientific journals ([PubPeer](https://pubpeer.com),
+[Hypothes.is](https://web.hypothes.is), or the in-development platform
+[Alphaxiv.org](https://www.alphaxiv.org/); for a review see
+@HenriquesEtAl2023).
 
 ## (Potential) Researcher Bias
 

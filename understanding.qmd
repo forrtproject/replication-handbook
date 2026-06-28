@@ -1,5 +1,5 @@
 ---
-title: "Understanding Replications and Reproductions"
+title: "Understanding Reproductions and Replications"
 ---
 
 ::: {.callout-tip icon="false"}
@@ -84,7 +84,7 @@ replication/reproduction study is often not straightforward, but may
 depend on the success criteria applied. This is discussed in
 @sec-success-criteria.
 
-## Types of replication {#sec-types-replication}
+## Closeness and Similarity {#sec-types-replication}
 
 We heavily rely on the typology provided by @HueffmeierEtAl2016 where different types of replications are defined by the *closeness* or *similarity* between original and replication study. Determining what constitutes closeness or similarity is context-specific and relies on a detailed understanding of the original study. Similarity cannot be evaluated without a theory about the concepts involved. For example, the concept of age can differ strongly between replications of historical, psychological, or biological studies, leading to different measures of the concept itself and thus different judgments about the similarity of an object’s age.
 
@@ -145,13 +145,3 @@ In terms of Schöch [-@Schoch2023], who defines an overarching type of
 concerned with the same question as a previous study, use the same
 (close replication) or a similar (conceptual replication) method and use
 different data (otherwise they are reproductions).
-
-## Types of reproduction
-
-Reproductions can be numerical reproductions, testing whether the same
-data, code and software lead to the same results, or robustness
-reproductions, extending the original analysis and exploring the central
-finding’s limits [@DreberJohannesson2024]. Most reproductions would
-include both a numerical reproduction as baseline and then a robustness
-reproduction, unless the numerical reproduction is not possible due to a
-lack of code or software.
