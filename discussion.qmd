@@ -172,6 +172,26 @@ Whether that generalises to the setting of the original study needs to
 be considered in light of theory, and might be a legitimate matter of
 contention.
 
+These difficulties point to a partly irreducible source of disagreement
+about replication success. Because experimental control is limited and
+the space of possible moderators is vast, experts often cannot decide
+unambiguously whether divergent results reflect a genuine failure to
+replicate or a violation of the *ceteris paribus* assumption between the
+original study and the replication — a version of Collins' experimenter's
+regress that Sarisoy [-@Sarisoy2025] examines in detail. On this account,
+sustained disagreement about whether a replication succeeded can reflect
+legitimate normative judgements that researchers make when the evidence
+underdetermines the conclusion, rather than poor research practice.
+Sarisoy argues that such disagreements become more tractable once
+researchers are transparent about a replication's intended *epistemic
+function* — whether it is designed to test the reliability (stability) of
+an effect, to probe a specific validity threat, or to assess
+generalisation to a new context — because each function carries different
+standards for what would count as success. Declaring this purpose, in
+addition to pre-specifying which effects are of primary interest (see
+@sec-success-criteria), helps to recast debates as disagreements about
+what a replication was meant to show.
+
 ## The Role of Differences for the Interpretation of Findings {#sec-differences-and-interpretation}
 
 Each replication outcome should be evaluated in the light of its
