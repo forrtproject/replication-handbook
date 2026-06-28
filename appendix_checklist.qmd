@@ -2,18 +2,155 @@
 title: "Reproduction and Replication Checklist"
 ---
 
-The checklist below summarises the handbook's core recommendations for
-planning, conducting, and reporting reproductions and replications.
+The checklist below operationalises the handbook's core recommendations
+into concrete steps for planning, conducting, and reporting reproductions
+and replications. The groupings follow the stages of the reproduction and
+replication process, and each item is phrased so that it can be ticked off
+once it has been addressed. Not every item applies to every project (for
+example, reproductions and replications have different requirements), so
+use the list as a prompt rather than a set of universal requirements.
 
 ## Checklist {#sec-checklist}
 
-- [ ] Justify choice of target study and claims
-- [ ] Choose a reproduction/replication type that aligns with your aims
-- [ ] Gather and review all relevant materials
-- [ ] Reproduce before you replicate, where possible
-- [ ] Discuss all updates, changes, and extensions of the original materials (as close as possible, as updated as necessary)
-- [ ] Preregister your study and analysis plan
-- [ ] Predetermine conditions for success and failure
-- [ ] Use balanced language when describing the outcomes
-- [ ] Carefully evaluate outcomes and potential reasons for divergences
-- [ ] Report your research comprehensively and openly accessible
+### Justify choice of target study and claims
+
+- [ ] Stated the goal of the project (e.g., assessing a finding's
+  reliability, building on it, or resolving doubts) and whether the target
+  was selected top-down (representing a field) or bottom-up (driven by a
+  specific study)
+- [ ] Identified the specific claim(s) and effect(s) that the study will
+  target, and justified why they matter
+- [ ] Documented the target study's value (e.g., citations, theoretical
+  relevance, societal or practical implications)
+- [ ] Assessed the uncertainty around the original claim (e.g., strength of
+  evidence, sample size, number and significance pattern of prior studies)
+- [ ] Searched for existing reproductions and replications (e.g., the FORRT
+  Replication Database, ReplicationWiki, the Institute for Replication
+  papers, the CODECHECK register)
+- [ ] Reviewed post-publication discussions of the target study (e.g.,
+  published comments, PubPeer, Altmetric, blog posts)
+- [ ] Considered potential researcher biases and disclosed any conflicts of
+  interest relevant to the choice of target
+- [ ] Confirmed feasibility before committing (data availability, achievable
+  sample size, resources, equipment, and expertise)
+
+### Choose a reproduction or replication type that aligns with your aims
+
+- [ ] Clarified whether the aim is to verify a method or analysis
+  (reproduction) or to test a finding or theory anew (replication)
+- [ ] Selected a specific type that matches the aim (e.g., computational,
+  recoding, or robustness reproduction, multiverse analysis, internal
+  replication, close replication, close replication with extension, or
+  conceptual replication), drawing on the types described in the
+  Understanding chapter
+- [ ] Assembled a team with the expertise and resources the chosen type
+  requires
+
+### Gather and review all relevant materials
+
+- [ ] Obtained the original report and any supplementary materials
+- [ ] Located the original data and analysis code, or requested a
+  replication package from the original authors or the journal's data
+  editor (templates for contacting authors are in the Templates appendix)
+- [ ] Respected the licences attached to any reused data and materials, and
+  sought approval where a licence does not permit reuse or alteration
+- [ ] Checked whether shared data meet the FAIR criteria (findable,
+  accessible, interoperable, reusable)
+- [ ] Reviewed the original study protocol for the detail needed to
+  reproduce or replicate it, and noted what is missing
+
+### Reproduce before you replicate, where possible
+
+- [ ] Attempted a numerical reproduction with the original data and code,
+  setting a seed where analyses rely on random numbers
+- [ ] Where no code is available, reconstructed the analyses from the report
+  (recoding reproduction), paying attention to exclusions, transformations,
+  and the handling of missing data
+- [ ] Ran robustness reproductions by varying analytical choices that are
+  not dictated by the theory (e.g., outlier thresholds, age ranges,
+  subsetting)
+- [ ] Where neither data nor code is available, screened the original for
+  statistical inconsistencies using automated tools (e.g., statcheck,
+  papercheck)
+- [ ] Where the original was preregistered, checked whether the reported
+  analyses followed the preregistered plan
+- [ ] Recorded the software and package versions used (e.g., R's
+  `sessionInfo()` or Python's `session_info.show()`) and reported
+  reproducibility indicators comparing original and reproduction results
+
+### Discuss all updates, changes, and extensions of the original materials
+
+- [ ] Stayed as close as possible to the original study, deviating only
+  where necessary
+- [ ] Documented and justified every deviation (e.g., reconstructing
+  unspecified materials, updating deprecated stimuli, translating
+  materials, changing the sample, or updating methods and apparatus)
+- [ ] Where materials were translated or effect sizes will be compared
+  across samples, tested measurement invariance rather than assuming it
+- [ ] Added controls, manipulation checks, or attention checks where they
+  help to interpret the results
+- [ ] Piloted new materials or procedures to check that instructions are
+  clear and that all data are recorded, without using pilots to estimate
+  effect sizes
+- [ ] Where reporting was incomplete, consulted the original authors on the
+  protocol before collecting data
+
+### Preregister your study and analysis plan
+
+- [ ] Preregistered the hypotheses, design, and a full analysis plan
+  (ideally with analysis code tested on simulated or pilot data) before
+  collecting or accessing the data
+- [ ] Justified the sample size rather than simply matching the original,
+  using an approach suited to replication (e.g., the small telescopes
+  approach, equivalence testing against a smallest effect size of interest,
+  a Bayesian design method, or meta-analytic estimates)
+- [ ] Considered publishing as a Registered Report to guard against
+  publication bias
+- [ ] Planned how amendments and deviations from the preregistration will be
+  documented, with version history preserved
+
+### Predetermine conditions for success and failure
+
+- [ ] Specified which effects are of primary interest and how results will
+  be aggregated, noting that requiring several effects to agree reduces
+  statistical power
+- [ ] Defined the criterion that will distinguish replication success from
+  failure (e.g., effect-size comparison, significance, or equivalence), as
+  discussed in the Discussion chapter
+- [ ] Specified any sequential or gating conditions (e.g., a manipulation
+  check that must pass before replicability is evaluated)
+
+### Use balanced language when describing the outcomes
+
+- [ ] Used descriptive and impersonal language, avoiding overstated claims
+  of "success" or "failure"
+- [ ] Took the historical context of the original study into account when
+  commenting on its reporting, data sharing, or brevity
+- [ ] Where results diverged, invited a comment from the original authors (a
+  template is in the Templates appendix)
+
+### Carefully evaluate outcomes and potential reasons for divergences
+
+- [ ] Compared original and replication (or reproduction) results using the
+  predefined success criteria
+- [ ] Examined the raw data for distributional anomalies and careless
+  responding, and reported the results of control or attention checks
+- [ ] Where results diverged, discussed threats to statistical conclusion,
+  internal, construct, and external validity in both the original and the
+  new study
+- [ ] Evaluated each outcome in light of the closeness between the studies
+  and the relevant theory (inductive and deductive interpretations)
+- [ ] Moved beyond a general appeal to hidden moderators when interpreting a
+  failure to replicate
+
+### Report your research comprehensively and openly accessible
+
+- [ ] Reported the methods and results comprehensively, following relevant
+  standards (e.g., the TOP guidelines and, in psychology, the JARS
+  reporting standards)
+- [ ] Shared the preregistration, analysis plan, analysis code, materials,
+  and data (within ethical and legal limits) under an open licence
+- [ ] Published the report so that it is openly accessible (e.g., as a
+  preprint) and citable
+- [ ] Made the findings discoverable for others (e.g., an entry in the FORRT
+  Replication Database or a comment on the original study via PubPeer)
