@@ -125,6 +125,22 @@ close replications more directly test the credibility of original
 results, while conceptual replications that vary features of the design
 are concerned with generalizability.
 
+A related line of work isolates the analysis stage by holding the data
+fixed. In so-called many-analyst studies, multiple independent teams
+analyse the same dataset to test the same hypothesis, yet reach divergent
+conclusions. @SilberzahnEtAl2018 had numerous teams estimate whether
+football referees are more likely to give red cards to dark-skinned
+players, and the teams reported a wide spread of effect estimates despite
+working from identical data. @BotvinikNezerEtAl2020 observed comparable
+variability when many teams tested hypotheses on a single neuroimaging
+dataset, and @BreznauEtAl2022 described a “hidden universe of
+uncertainty” across the many teams that analysed the same survey data.
+Because the data are held constant, this variability stems from analytic
+flexibility alone, which matters for interpreting reproductions and
+replications: even when the same data are reanalysed, defensible
+differences in modelling decisions can move a result from supporting to
+contradicting the original claim.
+
 Note that @NosekErrington2020 define replication as a study “for which
 any outcome would be considered diagnostic evidence about a claim from
 prior research”. This can lead to issues when the original claim is not
