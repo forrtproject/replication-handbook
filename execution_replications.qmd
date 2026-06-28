@@ -39,21 +39,22 @@ to ensure credible comparison between original and replication findings.
 
 ## Preregistration and Registered (Replication) Reports
 
-Due to the replications being met with skepticism, we encourage
+Because replications are often met with skepticism, we encourage
 researchers to adhere to the highest standards of openness and
-transparency. This includes preregistering the replication including the
-analysis plan (ideally with an analysis code that was tested beforehand
-using data from test runs or simulations), and criteria for the results
-to distinguish between a replication success and failure. A
-preregistration without an analysis plan provides no safeguard against
-*p*-hacking [@BrodeurEtAl2024a]. Beware that these criteria can be
+transparency. For replications, the part of a preregistration that does
+the most work is the specification of success criteria: a clear, advance
+statement of what results would count as a replication success and what
+would count as a failure. This should be paired with an analysis plan
+(ideally with analysis code that was tested beforehand using data from
+test runs or simulations), since a preregistration without an analysis
+plan provides no safeguard against *p*-hacking [@BrodeurEtAl2024a]. Beware that these criteria can be
 structured sequentially. For example, if there is a manipulation check,
 it can be defined that it has to work for the replicability to actually
 be evaluated. Boyce et al. [-@BoyceEtAl2024] also found that repeating
 unsuccessful replications did not change the outcomes unless obvious
 weaknesses were fixed.
 
-There is a specific preregistration template by Brandt et al. [-@BrandtEtAl2014] but it may not fit the structure of some studies beyond social psychology (e.g., personality science or cognitive psychology; for a list of preregistration templates see [https://osf.io/7xrn9](https://osf.io/7xrn9) and [https://osf.io/zab38/wiki/home](https://osf.io/zab38/wiki/home)). Replications can also be published as Registered Reports, where methods are reviewed before data is collected, and a decision about publication is made based on the importance of the research question and the quality of the methods, rather than the results. This can improve the rigour of the methods and the credibility of the results. It can also reduce any bias in favour or against null results, as the nature of results should no longer influence the final acceptance decision, though specific policies vary across journals. A list of journals offering Registered Reports (not specifically for replications) is [available online](https://docs.google.com/spreadsheets/d/1D4_k-8C_UENTRtbPzXfhjEyu3BfLxdOsn9j-otrO870/edit#gid=0). 
+There is a specific preregistration template by Brandt et al. [-@BrandtEtAl2014] but it may not fit the structure of some studies beyond social psychology (e.g., personality science or cognitive psychology; for a list of preregistration templates see [https://osf.io/7xrn9](https://osf.io/7xrn9) and [https://osf.io/zab38/wiki/home](https://osf.io/zab38/wiki/home)). Replications can also be published as Registered Reports, where the methods are peer-reviewed and accepted for publication before data are collected. This format is especially valuable for replications: because the acceptance decision no longer depends on the nature of the results, it reduces bias for or against the null findings that replications so often produce, though specific policies vary across journals. A list of journals offering Registered Reports (not specifically for replications) is [available online](https://docs.google.com/spreadsheets/d/1D4_k-8C_UENTRtbPzXfhjEyu3BfLxdOsn9j-otrO870/edit#gid=0). 
 
 A special review platform for Registered Reports is *Peer Community in
 Registered Reports* (PCI-RR; <https://rr.peercommunityin.org>) where a
@@ -92,23 +93,40 @@ central, or clearly specify other methods for aggregation across results
 
 ### Small Telescopes Approach
 
-The idea behind the small telescopes approach [@Simonsohn2015] is that a
-replication study should be precise but how far this precision exceeds
-the original study should be limited. Specifically, the replication
-study should be able to detect an effect size for which the original
-study had insufficient power (usually 33%). If that effect size can be
-ruled out, the original study can be treated as uninformative, as with
-such low power, the result becomes more likely to have been a false
-positive.
+The small telescopes approach [@Simonsohn2015] reframes what a
+replication has to demonstrate. Instead of asking only whether the
+replication itself reaches significance, it asks whether the original
+study was ever in a position to detect the effect it claimed. The
+benchmark for this judgement is the effect size that the original study
+had only 33% power to detect, often labelled d33, that is, the effect
+for which a study of the original's sample size would have produced a
+significant result only one time in three. An effect smaller than d33 is
+one that the original design could not reliably have found, so a study
+reporting it carries little evidentiary value. The replication is
+therefore powered not to reproduce the original point estimate, but to
+test whether the true effect is at least as large as d33. The metaphor
+is one of telescope size: a finding that can only be resolved with a
+large instrument (a large sample) was probably not genuinely seen by the
+small instrument (the underpowered original) that first reported it.
 
-This approach is based on the notion that replications should assess the
+This approach rests on the notion that replications should assess the
 evidentiary value of the original study, and that the ‘burden of proof’
 shifts back to proponents of a hypothesis if their evidence is shown to
-be very weak. It is particularly appropriate when original studies are
-very imprecise. In that case, a replication that finds a much smaller
-effect may well still be compatible with the (wide) confidence interval
-of the original study, and it might be impossible to reject the original
-claim on that basis.
+be very weak. If the replication can rule out an effect as large as d33,
+the original finding is treated as uninformative, because at such low
+power a significant original result is more likely to have been a false
+positive than a detection of a real effect. The approach is particularly
+appropriate when original studies are very imprecise. In that case, a
+replication that finds a much smaller effect may well still be compatible
+with the (wide) confidence interval of the original study, so that it
+might be impossible to reject the original claim on that basis. The
+approach also offers one interpretive lens for large-scale replication
+efforts: the Reproducibility Project: Psychology [@OpenScienceCollab2015]
+found that replication effect sizes were typically markedly smaller than
+those originally reported, and the small telescopes logic gives a
+principled criterion for when such shrinkage is large enough to conclude
+that the original study could not have provided reliable evidence in the
+first place.
 
 As an example, @SchultzeEtAl2018 [Figure 4] found an effect in three
 studies with an average effect size of *r* = -.11, 95% CI \[-.22,
@@ -214,9 +232,16 @@ sufficient detail to allow for a replication [@AguinisSolarino2019;
 @ErringtonEtAl2021a]. Second, scientific progress in the form of new
 methods and insights and cultural changes might require replication
 researchers to make changes or additions to their study. Third, obvious
-errors must be corrected. We elaborate on a number of reasons to deviate
-from an original study. In the replication report, all deviations should
-be reported and justified exhaustively.
+errors must be corrected. Whether a given change actually threatens the
+replication depends on the interpretive lens introduced in
+@sec-types-replication: from an inductive, phenomenon-focused
+perspective, any departure from the original procedure may alter the
+result, whereas from a deductive, theory-focused perspective, only
+changes that bear on the underlying theory are consequential. Keeping
+this distinction in view helps researchers judge which deviations are
+trivial and which demand careful justification. We elaborate on a number
+of reasons to deviate from an original study. In the replication report,
+all deviations should be reported and justified exhaustively.
 
 -   [Unspecific original
     materials:]{style="text - decoration: underline;"} If the original
@@ -312,15 +337,16 @@ values or participants’ qualitative responses. Importantly, small pilot
 studies should never be used to derive effect sizes for power analyses
 as their results are too imprecise.
 
-For instance, researchers should follow general best practices for their
-replications including piloting their study on a few participants to
-ensure that the instructions are clear, that the procedure works
-smoothly (e.g., website loads appropriately), and that all necessary
-data are recorded. A debriefing survey where pilot participants are
-asked about their experience, the clarity of instructions, and the
-clarity of any user interface, can help to identify some issues that
-could undermine the replication. See Frank et al. (2025, chapter 12.3.1)
-for further discussion on piloting studies.
+Beyond these design-level decisions, piloting also serves a more routine
+purpose that applies to almost any replication. Even a handful of
+participants can reveal whether the instructions are clear, whether the
+procedure runs smoothly (e.g., the website loads appropriately), and
+whether all necessary data are recorded. Adding a debriefing survey, in
+which pilot participants are asked about their experience and the clarity
+of the instructions and any user interface, extends these checks to
+issues that might otherwise surface only once the full study is underway,
+when they could undermine the replication. See Frank et al. (2025,
+chapter 12.3.1) for further discussion on piloting studies.
 
 ### Collaborating and Consulting with the Original Authors
 
