@@ -104,6 +104,16 @@ planned analyses.
 
 While preregistration of a reproduction may seem paradoxical when data are already accessible, it remains valuable as a (personal) commitment device: specifying the analysis plan in advance keeps researchers accountable and helps produce robust reproductions. If the data could already have been accessed, some readers may discount the registration, yet we would recommend to still start with this.
 
+## Deviations
+
+Deviations from the original procedure should be anticipated and, where
+possible, pre-specified in the preregistration: each planned change
+should be explained, justified, and accompanied by a hypothesis about
+its expected effect on the outcomes. Where deviations only become
+necessary during the analysis, they should still be reported
+transparently in the final report. Documenting all such changes, whether
+planned or emergent, increases trust in the reproduction.
+
 ## Analysis
 
 The main part of the reproduction is the analysis. Factors that are
@@ -129,13 +139,6 @@ of these indicators in the form of a reproducibility dashboard and
 specification curves [@SimonsohnEtAl2020; see also @MazeiEtAl2025]. We
 strongly recommend reproduction researchers to consult the respective
 resources for further details.
-
-Deviations from the original procedure typically arise during the
-analysis. To increase trust in the reported results, reproduction
-researchers need to report any such deviations in a transparent way, in
-a possible preregistration and the final report. Ideally, all changes to
-the original procedure are explained, justified, and hypotheses about
-their expected effect on the outcomes are reported.
 
 ## Discussion
 
