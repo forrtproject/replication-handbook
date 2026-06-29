@@ -106,15 +106,19 @@ While preregistration of a reproduction may seem paradoxical when data are alrea
 
 To develop and register the analysis protocol without being steered by the
 results, researchers can work on a masked version of the data in which the
-outcome (or condition) is randomly shuffled across cases, breaking the
-pairing between each record and its result. Such a masked dataset preserves
-the marginal distribution of each variable and the structural information
-needed to build and debug the analysis pipeline, for example variable types,
-value ranges, missing-data patterns, and the code paths that each step
-exercises, while withholding the directional relationships between predictors
-and outcomes. Finalising the protocol on this masked version, and only then
-applying it to the intact data, reduces the risk that analytic choices are
-consciously or unconsciously adjusted to produce a particular result.
+outcome column is randomly shuffled across cases, breaking the link between
+each record and its result. Shuffling an experimental condition or treatment
+label is only appropriate with design-aware masking. Such a masked dataset
+preserves the marginal distributions of the shuffled and unchanged variables,
+while often retaining enough structural information to build and debug much of
+the analysis pipeline, for example variable types, value ranges, missing-data
+patterns, and the code paths that each step exercises, while withholding the
+directional relationships between predictors and outcomes. For clustered,
+paired, longitudinal, blocked, or stratified designs, any shuffling should
+respect the relevant design structure. Finalising the protocol on this masked
+version, and only then applying it to the intact data, can reduce the risk
+that analytic choices are consciously or unconsciously adjusted to produce a
+particular result.
 
 ## Deviations
 
