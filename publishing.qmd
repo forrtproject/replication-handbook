@@ -24,8 +24,8 @@ publication. For example, sharing data was much more difficult in the
 
 Communicating a replication and formally publishing it in a
 peer-reviewed journal are distinct, complementary activities, and they
-are not mutually exclusive. Researchers can make their findings visible
-and citable without a traditional journal, they can pursue journal
+are not mutually exclusive. Researchers can make their findings visible,
+linkable, and in some cases citable without a traditional journal, they can pursue journal
 publication, or they can do both. @tbl-reporting-options lists the main
 options, and researchers can choose one, several, or all of them. The
 first two options, the FORRT Replication Database and PubPeer, make a
@@ -50,10 +50,11 @@ complementary rather than competing choices.
 For researchers who pursue traditional journal publication, the journals
 that published the original studies are a natural target, in accordance
 with the *pottery-barn rule* [@Srivastava2012], under which a journal
-that published an original finding should also publish replications of
-it. In our experience, however, many journals reject replications due to
-their lack of novelty, and many are not yet interested in replications
-at all. Partly in response, journals dedicated to replications have
+that published an original finding should consider publishing
+methodologically sound replications of findings it originally published.
+In our experience, however, many journals reject replications due to
+their lack of novelty, and some remain reluctant to consider
+replications. Partly in response, journals dedicated to replications have
 emerged, and @tbl-rep-journals lists active examples. Note that the
 Journal of Reproducibility in Neuroscience
 (<https://jrn.trialanderror.org>) has been discontinued and AIS
@@ -61,8 +62,8 @@ Transactions on Replication Research (<https://aisel.aisnet.org/trr/>)
 has been moved into a journal that is not specialized on repetitions.
 Researchers can also submit a preprint to a PCI community (see
 <https://peercommunityin.org/current-pcis>), a preprint peer-review
-service, and several journals are PCI-friendly, meaning that they
-publish articles recommended by the respective PCI.
+service, and several journals are PCI-friendly, meaning they may
+consider or publish articles recommended by the respective PCI.
 
 Many institutions and libraries recommend adding a CC-BY disclaimer on
 journal submissions that give the researchers the right to use the
