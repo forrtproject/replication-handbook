@@ -181,7 +181,7 @@ original study and the replication — a version of Collins' experimenter's
 regress that Sarisoy [-@Sarisoy2025] examines in detail. On this account,
 sustained disagreement about whether a replication succeeded can reflect
 legitimate normative judgements that researchers make when the evidence
-underdetermines the conclusion, rather than poor research practice.
+underdetermines the conclusion, rather than necessarily indicating poor research practice.
 Sarisoy argues that such disagreements become more tractable once
 researchers are transparent about a replication's intended *epistemic
 function* — whether it is designed to test the reliability (stability) of
