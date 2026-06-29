@@ -36,8 +36,9 @@ use the list as a prompt rather than a set of universal requirements.
 
 ### Choose a reproduction or replication type that aligns with your aims
 
-- [ ] Clarified whether the aim is to verify a method or analysis
-  (reproduction) or to test a finding or theory anew (replication)
+- [ ] Clarified whether the aim is to reproduce results using the original
+  data, code, materials, or analysis specification (reproduction) or to test
+  a finding or theory anew (replication)
 - [ ] Selected a specific type that matches the aim (e.g., computational,
   recoding, or robustness reproduction, multiverse analysis, internal
   replication, close replication, close replication with extension, or
@@ -85,10 +86,11 @@ use the list as a prompt rather than a set of universal requirements.
 - [ ] Documented and justified every deviation (e.g., reconstructing
   unspecified materials, updating deprecated stimuli, translating
   materials, changing the sample, or updating methods and apparatus)
-- [ ] Where materials were translated or effect sizes will be compared
-  across samples, tested measurement invariance rather than assuming it
+- [ ] Where translated multi-item measures or comparable latent constructs
+  are used, tested measurement invariance where feasible
 - [ ] Added controls, manipulation checks, or attention checks where they
-  help to interpret the results
+  help to interpret the results and do not materially change the target
+  procedure
 - [ ] Piloted new materials or procedures to check that instructions are
   clear and that all data are recorded, without using pilots to estimate
   effect sizes
@@ -99,7 +101,7 @@ use the list as a prompt rather than a set of universal requirements.
 
 - [ ] Preregistered the hypotheses, design, and a full analysis plan
   (ideally with analysis code tested on simulated or pilot data) before
-  collecting or accessing the data
+  collecting new data or conducting outcome-relevant confirmatory analyses
 - [ ] Justified the sample size rather than simply matching the original,
   using an approach suited to replication (e.g., the small telescopes
   approach, equivalence testing against a smallest effect size of interest,
@@ -112,8 +114,8 @@ use the list as a prompt rather than a set of universal requirements.
 ### Predetermine conditions for success and failure
 
 - [ ] Specified which effects are of primary interest and how results will
-  be aggregated, noting that requiring several effects to agree reduces
-  statistical power
+  be aggregated, noting that conjunctive criteria requiring several
+  effects all to meet a threshold can reduce statistical power
 - [ ] Defined the criterion that will distinguish replication success from
   failure (e.g., effect-size comparison, significance, or equivalence), as
   discussed in the Discussion chapter
