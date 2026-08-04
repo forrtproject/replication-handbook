@@ -46,7 +46,7 @@ fields may have different specialized requirements on these topics.
 Generally, false-positive findings are likely driven by a combination of
 low statistical power, a high number of researcher degrees of freedom
 and statistical tests, and biased motivation towards obtaining positive
-(i.e., significant) results [@Ioannidis2005]. Most of these factors are
+(i.e., significant) results [@Eklund2016, @Ioannidis2005]. Most of these factors are
 arguably aggravated in MRI studies, making replication research in this
 field particularly relevant albeit challenging. In addition, the
 analyzed data and obtained findings are characterized by a
@@ -68,8 +68,7 @@ available. It has been shown that different preprocessing toolboxes can
 lead to fundamentally different results, even when aiming to harmonize
 all parameters [@ZhouEtAl2022], and that different teams analyzing the
 same dataset can arrive at different final conclusions dependent on the
-used pipeline [@BotvinikNezerEtAl2020]. Furthermore, a large variety of
-operationalizations of neurobiological targets is available. For
+used pipeline [@BotvinikNezerEtAl2020]. These findings emphasize the need for standardized and containerized preprocessing pipelines (for a further discussion see 9.0.5). Furthermore, a large variety of operationalizations of neurobiological targets is available. For
 example, cerebral gray matter structure could be investigated as
 voxel-wise gray matter, segmentation-based regional cortical surface,
 thickness or gyrification.
@@ -90,14 +89,17 @@ preprocessing steps, such as image smoothing, but also on the data and
 the specific research question. Due to the high number of single data
 points, the obtained result is not a single statistical estimate with an
 effect size but rather a highly individual three-dimensional
-distribution of effect sizes around a peak localization.
-Simulation-based power analysis approaches have been previously
+distribution of effect sizes around a peak localization. These characteristics make conventional power calculations difficult to implement and have contributed to the discontinuation of several early neuroimaging power analysis tools (e.g., https://jeanettemumford.org/fmripower/).
+
+
+To address these challenges, simulation-based power analysis approaches have been previously
 suggested to address this problem. However, valid simulations require
 assumptions about valid spatial distributions of effects (contingent on
 regional anatomical peculiarities and on the specific research
 question), often difficult to assess and many developed power analysis
-tools have been discontinued. To date the utilization of power analysis
-is extremely rare in MRI research.
+tools have been discontinued. One example for such a simulation-based tool is fmrism [@Ellis2020]. As an alternative to voxel-wise power estimation, @Durnez2016 proposed estimating power based on the prevalence of active peaks, an approach with more favorable statistical properties that facilitates practical sample size estimation. The complexity outlined above has limited the practical applicability of many proposed tools, several of which have since been discontinued. Therefore, the utilization of power anal-ysis is extremely rare in MRI research despite all the endeavors made. 
+
+Given these limitations, continued methodological development is needed to make power analysis more practical and applicable for neuroimaging studies. 
 
 Without proper power estimation, justifying sample size becomes
 challenging. As in other fields of research the statistical power
