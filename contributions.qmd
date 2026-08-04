@@ -2,21 +2,28 @@
 title: "Author Contributions"
 ---
 
-| No. | Author | Contribution (CRediT) | Affiliation |
-|:---|:-------------------------------|:----------------------|:------------|
-| 1 | Röseler, Lukas* ✉ [{{< fa brands orcid >}}](https://orcid.org/0000-0002-6446-1901) | Conceptualization, Project Administration, Writing – original draft, Writing – review & editing | Münster Center for Open Science, University of Münster |
-| 2 | Wallrich, Lukas* ✉ [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2121-5177) | Writing – original draft, Writing – review & editing | Birkbeck Business School, University of London |
-| 3 | Hartmann, Helena [{{< fa brands orcid >}}](https://orcid.org/0000-0002-1331-6683) | Writing – original draft, Writing – review & editing | Department for Neurology and Center for Translational Neuro- and Behavioral Sciences (C-TNBS), University Hospital Essen |
-| 4 | Altegoer, Luisa [{{< fa brands orcid >}}](https://orcid.org/0000-0001-8466-7328) | Writing – review & editing | University of Münster, Institute for Translational Psychiatry |
-| 5 | Boyce, Veronica [{{< fa brands orcid >}}](https://orcid.org/0000-0002-8890-2775) | Writing – review & editing | Department of Psychology, Stanford University |
-| 6 | Field, Sarahanne M. [{{< fa brands orcid >}}](https://orcid.org/0000-0001-7874-1261) | Writing – review & editing | Department of Pedagogy, University of Groningen |
-| 7 | Goltermann, Janik [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3087-1002) | Writing – review & editing | University of Münster, Institute for Translational Psychiatry |
-| 8 | Hüffmeier, Joachim [{{< fa brands orcid >}}](https://orcid.org/0000-0002-0490-7035) | Writing – review & editing | TU Dortmund University |
-| 9 | Pennington, Charlotte R. [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5259-642X) | Writing – review & editing | School of Psychology, Aston University, Birmingham |
-| 10 | Pittelkow, Merle-Marie [{{< fa brands orcid >}}](https://orcid.org/0000-0002-7487-7898) | Writing – review & editing | Berlin Institute of Health at Charité – Universitätsmedizin Berlin |
-| 11 | Silverstein, Priya [{{< fa brands orcid >}}](https://orcid.org/0000-0003-0095-339X) | Writing – review & editing | Center for Neuroscience and Cell Biology, University of Coimbra; Institute for Globally Distributed Open Research and Education |
-| 12 | van Ravenzwaaij, Don [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5030-4091) | Writing – review & editing | Department of Psychology, University of Groningen |
-| 13 | Azevedo, Flavio [{{< fa brands orcid >}}](https://orcid.org/0000-0001-9000-8513) | Writing – original draft, Writing – review & editing | University of Utrecht, Department of Interdisciplinary Social Science |
+This handbook contains some chapters that were authored by a subset of the team and reviewed by the rest and other chapters that were co-written by almost the entire team.
+
+| No. | Author | Contribution (CRediT) | (Co-)written Parts and Chapters | Affiliation |
+|:-------------|:---------------|:-------------|---------------|:-------------|
+| 1 | Röseler, Lukas\* ✉ [{{< fa brands orcid >}}](https://orcid.org/0000-0002-6446-1901) | Conceptualization, Project Administration, Writing – original draft, Writing – review & editing | Foundations, The Reproduction and Replication Process, Communicating and Publishing, Conclusion and Checklist | Münster Center for Open Science, University of Münster |
+| 2 | Wallrich, Lukas\* ✉ [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2121-5177) | Writing – original draft, Writing – review & editing | Foundations, The Reproduction and Replication Process, Communicating and Publishing, Conclusion and Checklist | Birkbeck Business School, University of London |
+| 3 | Hartmann, Helena [{{< fa brands orcid >}}](https://orcid.org/0000-0002-1331-6683) | Writing – original draft, Writing – review & editing | Foundations, The Reproduction and Replication Process, Communicating and Publishing, Conclusion and Checklist | Department for Neurology and Center for Translational Neuro- and Behavioral Sciences (C-TNBS), University Hospital Essen |
+| 4 | Altegoer, Luisa [{{< fa brands orcid >}}](https://orcid.org/0000-0001-8466-7328) | Writing – review & editing | Field-Specific Replication Challenges: An example from MRI research | University of Münster, Institute for Translational Psychiatry |
+| 5 | Boyce, Veronica [{{< fa brands orcid >}}](https://orcid.org/0000-0002-8890-2775) | Writing – review & editing | Foundations, The Reproduction and Replication Process, Communicating and Publishing, Conclusion and Checklist | Department of Psychology, Stanford University |
+| 6 | Brohmer, Hilmar [{{< fa brands orcid >}}](https://orcid.org/0000-0001-7763-4229) | Writing – original draft, Writing – review & editing | On the Perks and Challenges of Organizing a Multi-Lab Study | Graz Open Science Initiative, University of Graz, Graz & Empirical Social Sciences, Vorarlberg University of Applied Science, Dornbirn |
+| 7 | Field, Sarahanne M. [{{< fa brands orcid >}}](https://orcid.org/0000-0001-7874-1261) | Writing – review & editing | Choosing the Target Study | Department of Pedagogy, University of Groningen |
+| 8 | Goltermann, Janik [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3087-1002) | Writing – review & editing | Field-Specific Replication Challenges: An example from MRI research | University of Münster, Institute for Translational Psychiatry |
+| 9 | Hüffmeier, Joachim [{{< fa brands orcid >}}](https://orcid.org/0000-0002-0490-7035) | Writing – review & editing | Planning and Conducting Reproductions and Replications | TU Dortmund University |
+| 10 | Moser, Victoria [{{< fa brands orcid >}}](https://orcid.org/0009-0004-1727-9308) | Writing – original draft, Writing – review & editing | Key Takeaways | Münster Center for Open Science, University of Münster |
+| 11 | Pennington, Charlotte R. [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5259-642X) | Writing – review & editing | Foundations, The Reproduction and Replication Process, Communicating and Publishing, Conclusion and Checklist | School of Psychology, Aston University, Birmingham |
+| 12 | Pittelkow, Merle-Marie [{{< fa brands orcid >}}](https://orcid.org/0000-0002-7487-7898) | Writing – review & editing | Choosing the Target Study | Berlin Institute of Health at Charité – Universitätsmedizin Berlin |
+| 13 | Schöch, Christof [{{< fa brands orcid >}}](https://orcid.org/0000-0002-4557-2753) | Writing – original draft, Writing – review & editing | Challenges for Repeatability Research in Computational Literary Studies | Trier Center for Digital Humanities, University of Trier |
+| 14 | Silverstein, Priya [{{< fa brands orcid >}}](https://orcid.org/0000-0003-0095-339X) | Writing – review & editing | Foundations, The Reproduction and Replication Process, Communicating and Publishing, Conclusion and Checklist | Center for Neuroscience and Cell Biology, University of Coimbra; Institute for Globally Distributed Open Research and Education |
+| 15 | van Ravenzwaaij, Don [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5030-4091) | Writing – review & editing | Choosing the Target Study | Department of Psychology, University of Groningen |
+| 16 | Wagge, Jordan R. [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5105-2084) | Writing – original draft, Writing – review & editing | Teaching Replication | School of Psychology, Avila University |
+| 17 | Willoughby, Lisa M. | Writing – original draft, Writing – review & editing | Teaching Replication | Department of Psychology, Saint Louis University |
+| 18 | Azevedo, Flavio [{{< fa brands orcid >}}](https://orcid.org/0000-0001-9000-8513) | Writing – original draft, Writing – review & editing | Foundations, The Reproduction and Replication Process, Communicating and Publishing, Conclusion and Checklist | University of Utrecht, Department of Interdisciplinary Social Science |
 
 *\*shared first authorship*
 
