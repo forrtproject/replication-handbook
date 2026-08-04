@@ -97,7 +97,7 @@ suggested to address this problem. However, valid simulations require
 assumptions about valid spatial distributions of effects (contingent on
 regional anatomical peculiarities and on the specific research
 question), often difficult to assess and many developed power analysis
-tools have been discontinued. One example for such a simulation-based tool is fmrism [@Ellis2020]. As an alternative to voxel-wise power estimation, @Durnez2016 proposed estimating power based on the prevalence of active peaks, an approach with more favorable statistical properties that facilitates practical sample size estimation. The complexity outlined above has limited the practical applicability of many proposed tools, several of which have since been discontinued. Therefore, the utilization of power anal-ysis is extremely rare in MRI research despite all the endeavors made. 
+tools have been discontinued. One example for such a simulation-based tool is fmrism [@Ellis2020]. As an alternative to voxel-wise power estimation, @Durnez2016 proposed estimating power based on the prevalence of active peaks, an approach with more favorable statistical properties that facilitates practical sample size estimation. The complexity outlined above has limited the practical applicability of many proposed tools, several of which have since been discontinued. Therefore, the utilization of power analysis is extremely rare in MRI research despite all the endeavors made. 
 
 Given these limitations, continued methodological development is needed to make power analysis more practical and applicable for neuroimaging studies. 
 
