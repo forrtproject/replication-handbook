@@ -83,19 +83,21 @@ special attention should be paid to processing steps such as exclusion
 of outliers, transformation of variables, and handling of missing data.
 However, in many research areas information on these steps is often
 incomplete [@FieldEtAl2019]; older research tends to be especially
-limited in terms of the methodological details they provide. In
-addition, we recommend testing the robustness of the original finding by
-making small alterations to the data processing and analyses procedure
-(*robustness reproductions*). For example, if the analyses were run for
-a subset of the data (e.g., participants aged 21 to 30 or without
-outliers ± 3 standard deviations), this subset can be changed (e.g.,
-participants aged 18 to 30 or without outliers ± 2 standard deviations).
-Here, the initial focus should be on choices that are not determined by
-the *theory* that is presented, though this can also be used to explore
-the generalisability of some aspects of theory. Finally, if the original
+limited in terms of the methodological details they provide. If the original
 study was preregistered and the original code is available, reproduction
-researchers can check whether the original analyses adhere to the
+researchers can also check whether the original analyses adhere to the
 preregistered analysis plan.
+
+Beyond reproducing the original analyses as reported, we recommend testing
+the robustness of the original finding by making small alterations to the
+data processing and analyses procedure (*robustness reproductions*). For
+example, if the analyses were run for a subset of the data (e.g.,
+participants aged 21 to 30 or without outliers ± 3 standard deviations),
+this subset can be changed (e.g., participants aged 18 to 30 or without
+outliers ± 2 standard deviations). Here, the initial focus should be on
+choices that are not determined by the *theory* that is presented, though
+this can also be used to explore the generalisability of some aspects of
+theory.
 
 If neither code nor data are available (or shared by the authors), no
 reproduction is possible. Researchers can still use automated tools to
