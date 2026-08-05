@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta name="robots" content="noindex, nofollow">
+
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="How to carry out reproductions and replications in the social, cognitive, and behavioral sciences">
+
+<title>[Archived] 7&nbsp; Discussion – Handbook for Reproduction and Replication Studies</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./publishing.html" rel="next">
+<link href="./execution_replications.html" rel="prev">
+<link href="./images/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-4ec7246897d00c06100498262f8bc0a3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+<div id="legacy-banner" role="note" style="background:#fff3cd;border-bottom:2px solid #f0ad4e;color:#5c4400;padding:0.6rem 1rem;font-size:0.95rem;line-height:1.4;text-align:center;">
+<strong>Archived version of 29 August 2025.</strong> This is the version of the Handbook that was submitted for peer review, kept online as a reference point for reviewers. It is no longer updated, please read the <a href="https://forrt.org/replication-handbook/" style="color:#5c4400;text-decoration:underline;font-weight:600;">current version</a>.
+</div>
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./choosing_study.html">The Replication Process</a></li><li class="breadcrumb-item"><a href="./discussion.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Discussion</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Handbook for Reproduction and Replication Studies</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/forrtproject/replication_guide/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./Handbook-for-Reproduction-and-Replication-Studies.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Foundations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./background.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Background</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./understanding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Replications and Reproductions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Replication Process</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./choosing_study.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Choosing the Target Study</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./planning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Planning and Conducting Reproductions and Replications</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./execution_reproductions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Execution of Reproductions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./execution_replications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Execution of Replications</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./discussion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Advanced Topics and Applications</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publishing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Communicating and Publishing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./field_specific_mri.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Field-Specific Replication Challenges: An example from MRI research</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Conclusion and Checklist</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contributions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Author Contributions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix_templates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Email templates</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-success-criteria" id="toc-sec-success-criteria" class="nav-link active" data-scroll-target="#sec-success-criteria"><span class="header-section-number">7.1</span> Defining and Determining Replication Success</a></li>
+  <li><a href="#interpreting-divergent-results-replication-failures" id="toc-interpreting-divergent-results-replication-failures" class="nav-link" data-scroll-target="#interpreting-divergent-results-replication-failures"><span class="header-section-number">7.2</span> Interpreting Divergent Results (Replication Failures)</a>
+  <ul class="collapse">
+  <li><a href="#hidden-moderator-account" id="toc-hidden-moderator-account" class="nav-link" data-scroll-target="#hidden-moderator-account"><span class="header-section-number">7.2.1</span> Hidden Moderator Account</a></li>
+  </ul></li>
+  <li><a href="#sec-differences-and-interpretation" id="toc-sec-differences-and-interpretation" class="nav-link" data-scroll-target="#sec-differences-and-interpretation"><span class="header-section-number">7.3</span> The Role of Differences for the Interpretation of Findings</a></li>
+  <li><a href="#comments-from-the-original-studys-authors" id="toc-comments-from-the-original-studys-authors" class="nav-link" data-scroll-target="#comments-from-the-original-studys-authors"><span class="header-section-number">7.4</span> Comments from the Original Study’s Authors</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./choosing_study.html">The Replication Process</a></li><li class="breadcrumb-item"><a href="./discussion.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Discussion</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Discussion</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="sec-success-criteria" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="sec-success-criteria"><span class="header-section-number">7.1</span> Defining and Determining Replication Success</h2>
+<p>There is no strong consensus yet on what constitutes a replication success and some approaches can be biased <span class="citation" data-cites="SchauerHedges2021">(<a href="references.html#ref-SchauerHedges2021" role="doc-biblioref">Schauer and Hedges 2021</a>)</span> or imprecise <span class="citation" data-cites="PatilEtAl2016b">(<a href="references.html#ref-PatilEtAl2016b" role="doc-biblioref">Patil, Peng, and Leek 2016</a>)</span>. Like in classical null hypothesis significance testing (NHST), replication researchers face the trade-off between dichotomizing something that is not dichotomous (success vs.&nbsp;failure) and making a clear decision about the outcome. On the one hand this is a question about statistical choices and their interpretation, namely how to compare original and replication effect sizes (or <em>p</em>-values) and how to interpret differences. On the other hand, it is a more complex question about how to interpret a mixed pattern of results, where some results are consistent across original and replication, while others are not. Here, it is important for replication researchers to specify which effects are of primary interest in their preregistration, and how they will aggregate results, noting that requiring multiple effects to yield the same result will reduce statistical power.</p>
+<p>Below, we present different approaches to assessing replication success as summarized by Heyard et al. <span class="citation" data-cites="HeyardEtAl2025 MuradchanianEtAl2021 RoselerWallrich2024 ErringtonEtAl2021a">(<a href="references.html#ref-HeyardEtAl2025" role="doc-biblioref">2025</a>; see also <a href="references.html#ref-MuradchanianEtAl2021" role="doc-biblioref">Muradchanian et al. 2021</a>; <a href="references.html#ref-RoselerWallrich2024" role="doc-biblioref">Röseler and Wallrich 2024</a>; <a href="references.html#ref-ErringtonEtAl2021a" role="doc-biblioref">Errington et al. 2021</a>, Table 1)</span></p>
+<div class="cell">
+<div id="tbl-rep-success-criteria" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rep-success-criteria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;7.1: Criteria to operationalize replication success (excerpt from <span class="citation" data-cites="HeyardEtAl2025">Heyard et al. (<a href="references.html#ref-HeyardEtAl2025" role="doc-biblioref">2025</a>, Table 4)</span>) For full references and descriptions, see the <a href="http://rachelheyard.com/reproducibility_metrics/#table">original table</a>. Reused in accordance with the CC-BY license of the article.
+</figcaption>
+<div aria-describedby="tbl-rep-success-criteria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 56%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Question answered</th>
+<th style="text-align: left;">Type of Reproducibility investigated</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Bayes Factor: Independent Jeffreys-Zellner-Siow BF test</td>
+<td style="text-align: left;">“What is the evidence for the effect being present or absent in light of a replication attempt, given that we know relatively little about the expected effect size beforehand?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bayes Factor: Equality-of-effect-size BF test</td>
+<td style="text-align: left;">“What is the evidence for the effect size in the replication attempt being equal vs.&nbsp;unequal to the effect size in the original study?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bayes Factor: Fixed-effect meta-analysis BF Test</td>
+<td style="text-align: left;">“When pooling all data, what is the evidence for the effect being present vs.&nbsp;absent?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Replication Bayes factor</td>
+<td style="text-align: left;">“What is the evidence for the effect from the replication attempt being comparable to what was found in the original study, or absent?” - “Are the replication results more consistent with the original study or with a null effect?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Significance criterion</td>
+<td style="text-align: left;">“Do the original and replication study both find a statistical significant effect in the same direction?”</td>
+<td style="text-align: left;">Different data - same analysis; Same data - different analysis; Different data - different analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Difference in effect size</td>
+<td style="text-align: left;">“To which degree do the effects from a replication study mirror the original”</td>
+<td style="text-align: left;">Different data - same analysis; Same data - different analysis; Different data - different analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Confidence interval: original effect in replication 95% CI</td>
+<td style="text-align: left;">“Given an original effect size, (what is the probability that) does a repetition of the experiment, with an independent sample of participants, produce(s) a CI that overlaps with the original effect?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Confidence interval: replication effect in original 95%CI</td>
+<td style="text-align: left;">“Given an effect size and 95% CI, (what is the probability that) does a repetition of the experiment, with an independent sample of participants, give(s) an effect that falls within the original CI?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Prediction interval: replication effect in original 95% prediction interval</td>
+<td style="text-align: left;">“Do the findings from the replication study align with a reasonable expectation, given the observed variation in the original study and replication study?” - “Are the replication estimates statistically consistent with the original estimates?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Small Telescopes</td>
+<td style="text-align: left;">“Are the replication results consistent with an effect size big enough to have been detectable in the original?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Meta-analysis</td>
+<td style="text-align: left;">“Given an original-replication study pair, does the pooled effect align with that of the original study?” - “Given a set of replications, is the effect size reproducible across studies?”</td>
+<td style="text-align: left;">Different data - same analysis; Same data - different analysis; Different data - different analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Equivalence testing</td>
+<td style="text-align: left;">“For the replication of an original null finding, does the replication study find an effect that is equally negligible?” - “Are the results from the replication statistically equivalent to the results of the original study?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Minimum effect testing</td>
+<td style="text-align: left;">“Is the replication effect size significantly different from a minimal effect size of interest, required to support the original study?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Causal replication framework</td>
+<td style="text-align: left;">“How can a replication failure be interpreted, from a causal perspective”</td>
+<td style="text-align: left;">Different data - same analysis; Different data - different analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Text-based machine learning model to estimate reproducibility</td>
+<td style="text-align: left;">“Given the text of an original paper, what is the probability of replication success?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Prediction market</td>
+<td style="text-align: left;">“What do the participants in a prediction market predict as the probability that the original findings will replicate?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Presence/Absence of elements ensuring reproducibility,via proxies</td>
+<td style="text-align: left;">“Do the design, methods and reporting of the original paper align with community standards of reproducible and transparent research?”</td>
+<td style="text-align: left;">Same data - same analysis; Same data - different analysis; Different data - same analysis; Different data - different analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Quantified reproducibility assessment, QRA</td>
+<td style="text-align: left;">“After performing multiple measurements of an object, what is the precision of the measured quantity obtained?”</td>
+<td style="text-align: left;">Same data - same analysis; Different data - same analysis; Same data - different analysis; Different data - different analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Jaccard similarity coefficient</td>
+<td style="text-align: left;">“By what extent do the results of two (or more) fMRI experiments overlap?”</td>
+<td style="text-align: left;">Same data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sceptical <span class="math inline">\(p\)</span>-value</td>
+<td style="text-align: left;">“To what extent are the results of a replication study in conflict with the beliefs of a sceptic of the original study?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Modified Brinley plot</td>
+<td style="text-align: left;">“Given a pre-specified desired effect and multiple replications, what is the share of replications that, represented graphically, achieve the desired effect?”</td>
+<td style="text-align: left;">Same data - same analysis; Same data - different analysis; Different data - same analysis; Different data - different analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Likelihood-based approach for reproducibility</td>
+<td style="text-align: left;">“Given a theoretically interesting effect size derived from the original study, what is the evidence for or against replicating this effect?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bayesian mixture model for reproducibility rate</td>
+<td style="text-align: left;">“Given the results (<span class="math inline">\(p\)</span>-values) from a set of original and replication studies, what is the rate of reproducibility, and how is it related to certain aspects of the experiments?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Unified framework for estimating the credibility of published research</td>
+<td style="text-align: left;">“For a specific published research work, what is the evidence for its credibility measured on four different dimensions: method and data transparency, analytic reproducibility, analytic robustness and effect reproducibility?”</td>
+<td style="text-align: left;">Same data - same analysis; Same data - different analysis; Different data - same analysis; Different data - different analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Reproducibility scale of workflow execution - Tonkaz</td>
+<td style="text-align: left;">“Given a certain original research paper with results based on computation, can the workflow to generate the results be executed and verified?”</td>
+<td style="text-align: left;">Same data - same analysis; Same data - different analysis; Different data - same analysis; Different data - different analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mean relative effect size</td>
+<td style="text-align: left;">“What is the average ratio of replication study effects to original study effects?”</td>
+<td style="text-align: left;">Different data - same analysis; Same data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Correlation between effects</td>
+<td style="text-align: left;">“Do the replication studies and the original studies produce effects that are correlated?”</td>
+<td style="text-align: left;">Different data - same analysis; Same data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fragility Index</td>
+<td style="text-align: left;">“Given the results of an original study were significant, what is the smallest change in the original data that is needed to deem the results non-significant? and vice-versa for original null results” - “How fragile are the original results to small changes in the underlying data?”</td>
+<td style="text-align: left;">Same data - different analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Externally standardized residuals</td>
+<td style="text-align: left;">“Is the original study consistent with the replication(s)?” - “Are all studies included in a meta-analysis replicable?”</td>
+<td style="text-align: left;">Different data - same analysis; Same data - different analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Snapshot hybrid</td>
+<td style="text-align: left;">“After replicating an original study, what is the evidence for a null, small, medium or large effect?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bayesian Evidence Synthesis</td>
+<td style="text-align: left;">“Given several conceptual replications with substantial diversity in data, design and methods but investigating the same theory, what is the evidence underlying a certain theory of interest?”</td>
+<td style="text-align: left;">Different data - different analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Design analysis</td>
+<td style="text-align: left;">“Given the results of an original study and an effect of a hypothetical replication study, what is the probability of the estimate being in the wrong direction, and what is the factor by which the magnitude of the effect is overestimated?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Reproducibility Maps</td>
+<td style="text-align: left;">“For fMRI research, how many and which of the truly active voxels were strongly reproduced?”</td>
+<td style="text-align: left;">Same data - same analysis; Same data - different analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Continuously cumulating meta-analytic approach</td>
+<td style="text-align: left;">“Given subsequent replications that were performed to date, what is the current evidence for an effect?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Correspondence test</td>
+<td style="text-align: left;">“To what extent does the effect size from the replication study differ or is equivalent to that of the original study?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Z-curve</td>
+<td style="text-align: left;">“Do all studies combined provide credible evidence for a phenomenon?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cross-validation methods</td>
+<td style="text-align: left;">“To what extent can the stability of a result be trusted, and to what extent can the result be generalized?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Network Comparison Test, NCT</td>
+<td style="text-align: left;">“Given two network structures, how similar are they to each other?”</td>
+<td style="text-align: left;">Same data - same analysis; Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Leave-one-out error</td>
+<td style="text-align: left;">“Given a deep learning model, how generalizable are its results?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Subjective reproducibility assessment</td>
+<td style="text-align: left;">“Does the replication team consider the replication as successful?” - “To what extent does the replication team trust in the reproducibility of a finding?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I squared - <span class="math inline">\(I^2\)</span></td>
+<td style="text-align: left;">“Given a set of replications, to what extent is the total variation across study results due to heterogeneity?” - “How consistent are the results across replications?”</td>
+<td style="text-align: left;">Different data - same analysis; Different data - different analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Credibility analysis</td>
+<td style="text-align: left;">“How credible are the results of a study, in a Bayesian framework?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Consistency of original with replications, <span class="math inline">\(P_{\mbox{orig}}\)</span></td>
+<td style="text-align: left;">“To what extent are the replication effect sizes consistent with the effect size of an original study?”</td>
+<td style="text-align: left;">Different data - same analysis; Different data - different analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Proportion of population effects agreeing in direction with the original, <span class="math inline">\(\hat{P}_{&gt;0}\)</span></td>
+<td style="text-align: left;">“To what extent do the replication effect sizes agree with the sign found in the original study?”</td>
+<td style="text-align: left;">Different data - same analysis; Different data - different analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RepliCATS</td>
+<td style="text-align: left;">“How reliable do experts believe the claims from an original finding are?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RepeAT - Repeatability Assessment Tool</td>
+<td style="text-align: left;">“Does the presented research align with community standards of reproducible biomedical research, using electronic health records?”</td>
+<td style="text-align: left;">Same data - same analysis; Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P interval</td>
+<td style="text-align: left;">“Given the results of an original study, what is the range of <span class="math inline">\(p\)</span>-values a replication (following the same design) would lie in with 80% probability?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RipetaScore</td>
+<td style="text-align: left;">“Given certain trust in research, reproducibility and professionalism quality indicators, how high does a paper score?”</td>
+<td style="text-align: left;">Same data - same analysis; Different data - same analysis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bland-Altman Plot</td>
+<td style="text-align: left;">“Do the effects estimated in several original-replication study pairs agree with each other?” - “How good is the agreement between repeated measures/studies?”</td>
+<td style="text-align: left;">Same data - same analysis; Same data - different analysis; Different data - same analysis; Different data - different analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sceptical Bayes Factor</td>
+<td style="text-align: left;">“In light of the replication data, at which level of evidence can an advocate of the original study convince a sceptic?”</td>
+<td style="text-align: left;">Different data - same analysis</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="interpreting-divergent-results-replication-failures" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="interpreting-divergent-results-replication-failures"><span class="header-section-number">7.2</span> Interpreting Divergent Results (Replication Failures)</h2>
+<p>When replications succeed, the original claim gains further credence (as long as the methods are sound). However, when replications fail, many explanations and interpretations can be advanced, which need to be carefully considered and discussed in a report. While replication failure can highlight issues with statistical conclusion validity in the original studies <span class="citation" data-cites="JohnEtAl2012 NelsonEtAl2018 SimmonsEtAl2011">(<a href="references.html#ref-JohnEtAl2012" role="doc-biblioref">John, Loewenstein, and Prelec 2012</a>; <a href="references.html#ref-NelsonEtAl2018" role="doc-biblioref">Nelson, Simmons, and Simonsohn 2018</a>; <a href="references.html#ref-SimmonsEtAl2011" role="doc-biblioref">Simmons, Nelson, and Simonsohn 2011</a>)</span>, other explanations need to be considered, including issues with internal, external, and construct validity in both original and replication studies <span class="citation" data-cites="FabrigarEtAl2020 VazireEtAl2022">(<a href="references.html#ref-FabrigarEtAl2020" role="doc-biblioref">Fabrigar, Wegener, and Petty 2020</a>; <a href="references.html#ref-VazireEtAl2022" role="doc-biblioref">Vazire, Schiavone, and Bottesini 2022</a>)</span>. For example, internal validity is threatened when attrition rates differ between experimental conditions in original or replication studies, creating potential confounds in the interpretation of treatment effects <span class="citation" data-cites="ZhouFishbach2016">(<a href="references.html#ref-ZhouFishbach2016" role="doc-biblioref">Zhou and Fishbach 2016</a>)</span>. Construct validity is threatened when original or replication studies use unvalidated ad-hoc measures, fail to employ validated manipulations of the target construct, or when differences in sample characteristics between original and replication studies mean that manipulations and measures do not work as intended <span class="citation" data-cites="FabrigarEtAl2020 FiedlerEtAl2021 FlakeFried2020">(<a href="references.html#ref-FabrigarEtAl2020" role="doc-biblioref">Fabrigar, Wegener, and Petty 2020</a>; <a href="references.html#ref-FiedlerEtAl2021" role="doc-biblioref">Fiedler, McCaughey, and Prager 2021</a>; <a href="references.html#ref-FlakeFried2020" role="doc-biblioref">Flake and Fried 2020</a>)</span>. External validity is threatened when original findings do not generalize to the specifics of the replication study due to person and context differences between studies that moderate the effect. Thus, before making statements about the original finding’s robustness and generalizability, replication researchers need to critically discuss potential methodological shortcomings in both original studies and replication attempts that limit statistical conclusion, internal, external, and construct validity.</p>
+<section id="hidden-moderator-account" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="hidden-moderator-account"><span class="header-section-number">7.2.1</span> Hidden Moderator Account</h3>
+<p>One challenge for replication researchers is the identification of hidden/unknown confounds that may influence or bias the phenomenon under study. Each study has a set of potential extraneous or unknown moderator variables that is unique to it. These may seem trivial, such as the brightness of an experimental laboratory, or important, such as a cultural difference between the replicating and original studies. Yet even seemingly trivial differences <em>could </em>potentially change results. Often statistical and methodological choices are made to circumvent or attenuate these issues. However, for some paradigms, these variables could be unknown to the original researcher <span class="citation" data-cites="Fiedler2011">(<a href="references.html#ref-Fiedler2011" role="doc-biblioref">Fiedler 2011</a>)</span>. These are referred to in the literature as unknown moderators, background variables, hidden moderators or fringe variables. While they are always a way to reject unpleasant replication results, they can potentially bias replications, which highlights that a single replication is never entirely conclusive (though it might raise enough doubts that researchers do not see the value in addressing the remaining uncertainty). It should be noted that the same argument <em>could </em>be applied to raise doubts about any original study, questioning whether the effect is really due to the hypothesised cause or due to some hidden moderator or background variable. Clearly a skeptic who stops at that level would not be taken very seriously, so that it is important to move conversations about replication failure beyond general suspicion of hidden moderators.</p>
+<p><span class="citation" data-cites="Bargh2006">(<a href="references.html#ref-Bargh2006" role="doc-biblioref">Bargh 2006</a>)</span> suggested that the evidence generated by empirical findings far outweighs the resources of (social) psychology to conceptualize and understand the mechanisms underlying their effects. Therefore, boundary conditions are not easily specified, which can impact both direct and conceptual replication success. Replication failure indicates that the original claim does not generalise to the setting of the replication. Whether that generalises to the setting of the original study needs to be considered in light of theory, and might be a legitimate matter of contention.</p>
+</section>
+</section>
+<section id="sec-differences-and-interpretation" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="sec-differences-and-interpretation"><span class="header-section-number">7.3</span> The Role of Differences for the Interpretation of Findings</h2>
+<p>Each replication outcome should be evaluated in the light of its closeness, which is why all deviations with the respective reasons and, if possible, their potential impact on the results should be discussed. Existing theories may help assess whether a deviation should affect the outcomes. For example, most psychological theories are agnostic towards age so that a different distribution of participants’ age will be unproblematic in most cases. Researchers may choose to evaluate replications from both phenomenon-focused / inductive and theory-focused / deductive views. Different types of interpretations are listed in <span class="quarto-unresolved-ref">?fig-success-interpretation</span> and integrated from previous accounts by Borgstede and Scholz <span class="citation" data-cites="BorgstedeScholz2021">(<a href="references.html#ref-BorgstedeScholz2021" role="doc-biblioref">Borgstede and Scholz 2021</a>)</span> and Freese and Peterson <span class="citation" data-cites="FreesePeterson2017">(<a href="references.html#ref-FreesePeterson2017" role="doc-biblioref">Freese and Peterson 2017, fig. 3</a>)</span>.</p>
+<p><img src="images/eH3_Image_5.png" id="fig-success-interpretation" class="img-fluid" alt="Interpretation of replication outcomes depend on similarity of closeness and results as well as the view (inductive vs.&nbsp;deductive).">{.lightbox}</p>
+<p><em>Note.</em></p>
+<ul>
+<li><p>Inductive or phenomenon-oriented views assume minimal generalizability of the original finding. For example, they cannot cast doubts on the original finding unless the replication is highly similar to the original study.</p></li>
+<li><p>Deductive or theory-oriented views assume maximal generality of a theory. For example, different results (i.e., replication failures) cast doubts on the <em>theory</em> regardless of the replication type.</p></li>
+</ul>
+</section>
+<section id="comments-from-the-original-studys-authors" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="comments-from-the-original-studys-authors"><span class="header-section-number">7.4</span> Comments from the Original Study’s Authors</h2>
+<p>If the replication results do not converge with the original results, replication researchers can reach out to the original study’s authors and ask for a comment that they can publish together with the replication report. A template for asking for a comment is in the appendix. Note that some journals (e.g., <em>Journal of Comments and Replications in Economics</em>) require such statements at the time of submission.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Bargh2006" class="csl-entry" role="listitem">
+Bargh, J. A. 2006. <span>“What Have We Been Priming All These Years? On the Development, Mechanisms, and Ecology of Nonconscious Social Behavior.”</span> <em>European Journal of Social Psychology</em> 36 (2): 147–68. <a href="https://doi.org/10.1002/ejsp.336">https://doi.org/10.1002/ejsp.336</a>.
+</div>
+<div id="ref-BorgstedeScholz2021" class="csl-entry" role="listitem">
+Borgstede, M., and M. Scholz. 2021. <span>“Quantitative and Qualitative Approaches to Generalization and Replication–a Representationalist View.”</span> <em>Frontiers in Psychology</em> 12: 605191. <a href="https://doi.org/10.3389/fpsyg.2021.605191">https://doi.org/10.3389/fpsyg.2021.605191</a>.
+</div>
+<div id="ref-ErringtonEtAl2021a" class="csl-entry" role="listitem">
+Errington, T. M., A. Denis, N. Perfito, E. Iorns, and B. A. Nosek. 2021. <span>“Challenges for Assessing Replicability in Preclinical Cancer Biology.”</span> <em>eLife</em> 10: e67995. <a href="https://doi.org/10.7554/eLife.67995">https://doi.org/10.7554/eLife.67995</a>.
+</div>
+<div id="ref-FabrigarEtAl2020" class="csl-entry" role="listitem">
+Fabrigar, L. R., D. T. Wegener, and R. E. Petty. 2020. <span>“A Validity-Based Framework for Understanding Replication in Psychology.”</span> <em>Personality and Social Psychology Review</em> 24 (4): 316–44. <a href="https://doi.org/10.1177/1088868320931366">https://doi.org/10.1177/1088868320931366</a>.
+</div>
+<div id="ref-Fiedler2011" class="csl-entry" role="listitem">
+Fiedler, K. 2011. <span>“Voodoo Correlations Are Everywhere—Not Only in Neuroscience.”</span> <em>Perspectives on Psychological Science</em> 6 (2): 163–71. <a href="https://doi.org/10.1177/1745691611400237">https://doi.org/10.1177/1745691611400237</a>.
+</div>
+<div id="ref-FiedlerEtAl2021" class="csl-entry" role="listitem">
+Fiedler, K., L. McCaughey, and J. Prager. 2021. <span>“Quo Vadis, Methodology? The Key Role of Manipulation Checks for Validity Control and Quality of Science.”</span> <em>Perspectives on Psychological Science</em> 16 (4): 816–26. <a href="https://doi.org/10.1177/1745691620970602">https://doi.org/10.1177/1745691620970602</a>.
+</div>
+<div id="ref-FlakeFried2020" class="csl-entry" role="listitem">
+Flake, J. K., and E. I. Fried. 2020. <span>“Measurement Schmeasurement: Questionable Measurement Practices and How to Avoid Them.”</span> <em>Advances in Methods and Practices in Psychological Science</em> 3 (4): 456–65. <a href="https://doi.org/10.1177/2515245920952393">https://doi.org/10.1177/2515245920952393</a>.
+</div>
+<div id="ref-FreesePeterson2017" class="csl-entry" role="listitem">
+Freese, J., and D. Peterson. 2017. <span>“Replication in Social Science.”</span> <em>Annual Review of Sociology</em> 43 (1): 147–65. <a href="https://doi.org/10.1146/annurev-soc-060116-053450">https://doi.org/10.1146/annurev-soc-060116-053450</a>.
+</div>
+<div id="ref-HeyardEtAl2025" class="csl-entry" role="listitem">
+Heyard, R., S. Pawel, J. Frese, B. Voelkl, H. Würbel, S. McCann, and S. Zellers. 2025. <span>“A Scoping Review on Metrics to Quantify Reproducibility: A Multitude of Questions Leads to a Multitude of Metrics.”</span> <em>Royal Society Open Science</em> 12 (7): 242076. <a href="https://doi.org/10.1098/rsos.242076">https://doi.org/10.1098/rsos.242076</a>.
+</div>
+<div id="ref-JohnEtAl2012" class="csl-entry" role="listitem">
+John, L. K., G. Loewenstein, and D. Prelec. 2012. <span>“Measuring the Prevalence of Questionable Research Practices with Incentives for Truth Telling.”</span> <em>Psychological Science</em> 23 (5): 524–32. <a href="https://doi.org/10.1177/0956797611430953">https://doi.org/10.1177/0956797611430953</a>.
+</div>
+<div id="ref-MuradchanianEtAl2021" class="csl-entry" role="listitem">
+Muradchanian, J., R. Hoekstra, H. Kiers, and D. van Ravenzwaaij. 2021. <span>“How Best to Quantify Replication Success? A Simulation Study on the Comparison of Replication Success Metrics.”</span> <em>Royal Society Open Science</em> 8 (5): 201697. <a href="https://doi.org/10.1098/rsos.201697">https://doi.org/10.1098/rsos.201697</a>.
+</div>
+<div id="ref-NelsonEtAl2018" class="csl-entry" role="listitem">
+Nelson, L. D., J. Simmons, and U. Simonsohn. 2018. <span>“Psychology’s Renaissance.”</span> <em>Annual Review of Psychology</em> 69 (1): 511–34. <a href="https://doi.org/10.1146/annurev-psych-122216-011836">https://doi.org/10.1146/annurev-psych-122216-011836</a>.
+</div>
+<div id="ref-PatilEtAl2016b" class="csl-entry" role="listitem">
+Patil, P., R. D. Peng, and J. T. Leek. 2016. <span>“What Should Researchers Expect When They Replicate Studies? A Statistical View of Replicability in Psychological Science.”</span> <em>Perspectives on Psychological Science</em> 11 (4): 539–44. <a href="https://doi.org/10.1177/1745691616646366">https://doi.org/10.1177/1745691616646366</a>.
+</div>
+<div id="ref-RoselerWallrich2024" class="csl-entry" role="listitem">
+Röseler, L., and L. Wallrich. 2024. <em>FReD: Interfaces to the FORRT Replication Database</em>. <a href="http://forrt.org/FReD/">http://forrt.org/FReD/</a>.
+</div>
+<div id="ref-SchauerHedges2021" class="csl-entry" role="listitem">
+Schauer, J. M., and L. V. Hedges. 2021. <span>“Reconsidering Statistical Methods for Assessing Replication.”</span> <em>Psychological Methods</em> 26 (1): 127–39. <a href="https://doi.org/10.1037/met0000302">https://doi.org/10.1037/met0000302</a>.
+</div>
+<div id="ref-SimmonsEtAl2011" class="csl-entry" role="listitem">
+Simmons, J. P., L. D. Nelson, and U. Simonsohn. 2011. <span>“False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant.”</span> <em>Psychological Science</em> 22 (11): 1359–66. <a href="https://doi.org/10.1177/0956797611417632">https://doi.org/10.1177/0956797611417632</a>.
+</div>
+<div id="ref-VazireEtAl2022" class="csl-entry" role="listitem">
+Vazire, S., S. R. Schiavone, and J. G. Bottesini. 2022. <span>“Credibility Beyond Replicability: Improving the Four Validities in Psychological Science.”</span> <em>Current Directions in Psychological Science</em> 31 (2): 162–68. <a href="https://doi.org/10.1177/09637214211067779">https://doi.org/10.1177/09637214211067779</a>.
+</div>
+<div id="ref-ZhouFishbach2016" class="csl-entry" role="listitem">
+Zhou, Haotian, and Ayelet Fishbach. 2016. <span>“The Pitfall of Experimenting on the Web: How Unattended Selective Attrition Leads to Surprising (yet False) Research Conclusions.”</span> <em>Journal of Personality and Social Psychology</em> 111 (4): 493–504. <a href="https://doi.org/10.1037/pspa0000056">https://doi.org/10.1037/pspa0000056</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./execution_replications.html" class="pagination-link" aria-label="Execution of Replications">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Execution of Replications</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./publishing.html" class="pagination-link" aria-label="Communicating and Publishing">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Communicating and Publishing</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Röseler, L.*, Wallrich, L.*, Hartmann, H., Hüffmeier, J., Goltermann, J., Pennington, C. R., Boyce, V., Field, S. M., Pittelkow, M.-M., Silverstein, P., van Ravenzwaaij, D., Azevedo, F. (2025). Handbook for Reproduction and Replication Studies. Retrieved from https://forrt.org/replication_guide. https://doi.org/10.5281/zenodo.16990115 *shared first authorship</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
