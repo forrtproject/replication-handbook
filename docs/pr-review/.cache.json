@@ -1,0 +1,203 @@
+{
+ "43": {
+  "head": "b97730a52550d20f6aea879befd211003cf1356d",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 43,
+   "title": "Make checklist items concrete and actionable (#23)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/43",
+   "author": "LukasWallrich",
+   "updated": "2026-06-29",
+   "branch": "content/issue-23-concrete-checklist",
+   "chapters": [
+    {
+     "file": "appendix_checklist.qmd",
+     "title": "Reproduction and Replication Checklist",
+     "href": "43/appendix_checklist.html",
+     "hunks": 68
+    }
+   ],
+   "otherFiles": []
+  }
+ },
+ "42": {
+  "head": "4de17b7b3f7ca20f85bd6668dcf791d3bdf2f492",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 42,
+   "title": "Broaden replication-rate evidence base and caveat the estimate (Ch1, #14)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/42",
+   "author": "LukasWallrich",
+   "updated": "2026-06-29",
+   "branch": "content/issue-14-replication-rate-evidence",
+   "chapters": [
+    {
+     "file": "background.qmd",
+     "title": "Background",
+     "href": "42/background.html",
+     "hunks": 2
+    }
+   ],
+   "otherFiles": [
+    "references.bib"
+   ]
+  }
+ },
+ "41": {
+  "head": "d91cf31ba701a84590e2883ac3f57240d34b694b",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 41,
+   "title": "Ch4/5: own paragraph for robustness reproductions; shuffled-data protocol suggestion (#18)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/41",
+   "author": "LukasWallrich",
+   "updated": "2026-06-29",
+   "branch": "content/issue-18-ch5-reproductions",
+   "chapters": [
+    {
+     "file": "execution_reproductions.qmd",
+     "title": "Execution of Reproductions",
+     "href": "41/execution_reproductions.html",
+     "hunks": 1
+    },
+    {
+     "file": "planning.qmd",
+     "title": "Planning and Conducting Reproductions and Replications",
+     "href": "41/planning.html",
+     "hunks": 2
+    }
+   ],
+   "otherFiles": []
+  }
+ },
+ "40": {
+  "head": "0a5be2e984845790a6eeac608abe240dd8d52ce5",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 40,
+   "title": "Ch6 revisions: Small Telescopes clarity, OSC link, Piloting, framework tie-in (#19)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/40",
+   "author": "LukasWallrich",
+   "updated": "2026-06-29",
+   "branch": "content/issue-19-ch6-replications",
+   "chapters": [
+    {
+     "file": "execution_replications.qmd",
+     "title": "Execution of Replications",
+     "href": "40/execution_replications.html",
+     "hunks": 8
+    }
+   ],
+   "otherFiles": []
+  }
+ },
+ "39": {
+  "head": "9ad114e657d7023ea332c7cba532f6be77177a18",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 39,
+   "title": "Add many-analyst findings alongside Landy et al. (Ch2, #15)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/39",
+   "author": "LukasWallrich",
+   "updated": "2026-06-29",
+   "branch": "content/issue-15-many-analyst",
+   "chapters": [
+    {
+     "file": "understanding.qmd",
+     "title": "Understanding Reproductions and Replications",
+     "href": "39/understanding.html",
+     "hunks": 1
+    }
+   ],
+   "otherFiles": [
+    "references.bib"
+   ]
+  }
+ },
+ "38": {
+  "head": "19585ea01e7cd13aa2159315679fbc311d433272",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 38,
+   "title": "Add Use of AI statement (#2)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/38",
+   "author": "LukasWallrich",
+   "updated": "2026-06-28",
+   "branch": "content/issue-2-use-of-ai",
+   "chapters": [
+    {
+     "file": "contributions.qmd",
+     "title": "Author Contributions",
+     "href": "38/contributions.html",
+     "hunks": 3
+    }
+   ],
+   "otherFiles": []
+  }
+ },
+ "37": {
+  "head": "ef2386f510bdd9fb2d738e282c923acec16874ac",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 37,
+   "title": "Ch3 editorial fixes: structure, replication packages ref, Soto claim (#16)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/37",
+   "author": "LukasWallrich",
+   "updated": "2026-06-28",
+   "branch": "content/issue-16-choosing-study",
+   "chapters": [
+    {
+     "file": "choosing_study.qmd",
+     "title": "Choosing the Target Study",
+     "href": "37/choosing_study.html",
+     "hunks": 7
+    }
+   ],
+   "otherFiles": []
+  }
+ },
+ "36": {
+  "head": "3e7755735ee060654a10d1ba4bd58a953068cca5",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 36,
+   "title": "Separate publishing from other communication (Ch8, #21)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/36",
+   "author": "LukasWallrich",
+   "updated": "2026-06-29",
+   "branch": "content/issue-21-publishing-communication",
+   "chapters": [
+    {
+     "file": "publishing.qmd",
+     "title": "Communicating and Publishing",
+     "href": "36/publishing.html",
+     "hunks": 3
+    }
+   ],
+   "otherFiles": []
+  }
+ },
+ "35": {
+  "head": "10b7bfa852982508defa75437efd708c9217425d",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 35,
+   "title": "Extend discussion of disagreement about replication success (#4)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/35",
+   "author": "LukasWallrich",
+   "updated": "2026-06-29",
+   "branch": "content/issue-4-disagreement-replication-success",
+   "chapters": [
+    {
+     "file": "discussion.qmd",
+     "title": "Discussion",
+     "href": "35/discussion.html",
+     "hunks": 1
+    }
+   ],
+   "otherFiles": [
+    "references.bib"
+   ]
+  }
+ }
+}

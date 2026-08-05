@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Handbook PR review</title>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --panel: #fff;
+    --line: #dfe3e8;
+    --ink: #1f2328;
+    --muted: #656d76;
+    --accent: #1a73e8;
+    --ins: #34a853;
+    --del: #d93025;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: flex; flex-direction: column;
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--ink); background: var(--bg);
+  }
+
+  header {
+    background: var(--panel); border-bottom: 1px solid var(--line);
+    padding: .5rem .9rem; display: flex; align-items: center; gap: .8rem; flex-wrap: wrap;
+  }
+  .brand { font-weight: 650; letter-spacing: -.01em; white-space: nowrap; }
+  .brand span { color: var(--muted); font-weight: 400; }
+
+  .pills { display: flex; gap: .3rem; flex-wrap: wrap; flex: 1 1 auto; }
+  .pill {
+    border: 1px solid var(--line); background: #fff; color: var(--ink);
+    border-radius: 999px; padding: .25rem .7rem; cursor: pointer; font: inherit;
+    display: flex; align-items: center; gap: .35rem;
+  }
+  .pill:hover { border-color: #b9c0c8; }
+  .pill[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .pill b { font-weight: 650; }
+  .pill .label {
+    max-width: 20rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .pill .count {
+    background: #eef1f4; color: var(--muted); border-radius: 999px;
+    padding: 0 .38rem; font-size: 11px;
+  }
+  .pill[aria-selected="true"] .count { background: rgba(255,255,255,.25); color: #fff; }
+
+  .nav { display: flex; align-items: center; gap: .35rem; }
+  .nav button {
+    border: 1px solid var(--line); background: #fff; border-radius: 6px;
+    padding: .3rem .6rem; cursor: pointer; font: inherit;
+  }
+  .nav button:hover { border-color: #b9c0c8; background: #f3f5f7; }
+  .nav .primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .nav .primary:hover { background: #1666d0; }
+  #counter { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 5.5em; text-align: center; }
+
+  main { flex: 1 1 auto; display: flex; min-height: 0; }
+  aside {
+    width: 260px; flex: 0 0 260px; background: var(--panel);
+    border-right: 1px solid var(--line); overflow-y: auto; padding: .8rem;
+  }
+  aside h2 {
+    font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
+    color: var(--muted); margin: .2rem 0 .5rem;
+  }
+  .chapter {
+    display: block; width: 100%; text-align: left; border: 0; background: none;
+    font: inherit; padding: .45rem .55rem; border-radius: 6px; cursor: pointer;
+    color: var(--ink); border-left: 3px solid transparent;
+  }
+  .chapter:hover { background: #f1f3f5; }
+  .chapter[aria-selected="true"] { background: #e8f0fe; border-left-color: var(--accent); font-weight: 600; }
+  .chapter small { display: block; color: var(--muted); font-weight: 400; }
+
+  .meta { margin-top: 1rem; padding-top: .8rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 12.5px; }
+  .meta a { color: var(--accent); }
+  .meta p { margin: .35rem 0; }
+  .legend span { display: inline-block; padding: 0 .25rem; border-radius: 2px; }
+  .legend .i { background: #d6f5df; box-shadow: inset 0 -2px 0 var(--ins); }
+  .legend .d { background: #ffe0e0; color: #8a1c1c; text-decoration: line-through; }
+
+  label.toggle { display: flex; align-items: center; gap: .35rem; color: var(--muted); cursor: pointer; }
+
+  iframe { flex: 1 1 auto; border: 0; background: #fff; }
+  .empty { margin: auto; color: var(--muted); text-align: center; padding: 3rem; }
+  kbd {
+    background: #eef1f4; border: 1px solid var(--line); border-bottom-width: 2px;
+    border-radius: 4px; padding: 0 .3rem; font-size: 11px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">PR review <span>· tracked changes</span></div>
+  <div class="pills" id="pills" role="tablist"></div>
+  <div class="nav">
+    <label class="toggle"><input type="checkbox" id="showDel" checked> deletions</label>
+    <button id="prev" title="Previous change (p)">&#8593;</button>
+    <span id="counter">– / –</span>
+    <button id="next" class="primary" title="Next change (n)">Next change &#8595;</button>
+  </div>
+</header>
+
+<main>
+  <aside>
+    <h2>Chapters in this PR</h2>
+    <div id="chapters"></div>
+    <div class="meta" id="meta"></div>
+  </aside>
+  <iframe id="view" title="Chapter with tracked changes"></iframe>
+</main>
+
+<script>
+const DATA = [
+ {
+  "number": 43,
+  "title": "Make checklist items concrete and actionable (#23)",
+  "url": "https://github.com/forrtproject/replication-handbook/pull/43",
+  "author": "LukasWallrich",
+  "updated": "2026-06-29",
+  "branch": "content/issue-23-concrete-checklist",
+  "chapters": [
+   {
+    "file": "appendix_checklist.qmd",
+    "title": "Reproduction and Replication Checklist",
+    "href": "43/appendix_checklist.html",
+    "hunks": 68
+   }
+  ],
+  "otherFiles": []
+ },
+ {
+  "number": 42,
+  "title": "Broaden replication-rate evidence base and caveat the estimate (Ch1, #14)",
+  "url": "https://github.com/forrtproject/replication-handbook/pull/42",
+  "author": "LukasWallrich",
+  "updated": "2026-06-29",
+  "branch": "content/issue-14-replication-rate-evidence",
+  "chapters": [
+   {
+    "file": "background.qmd",
+    "title": "Background",
+    "href": "42/background.html",
+    "hunks": 2
+   }
+  ],
+  "otherFiles": [
+   "references.bib"
+  ]
+ },
+ {
+  "number": 41,
+  "title": "Ch4/5: own paragraph for robustness reproductions; shuffled-data protocol suggestion (#18)",
+  "url": "https://github.com/forrtproject/replication-handbook/pull/41",
+  "author": "LukasWallrich",
+  "updated": "2026-06-29",
+  "branch": "content/issue-18-ch5-reproductions",
+  "chapters": [
+   {
+    "file": "execution_reproductions.qmd",
+    "title": "Execution of Reproductions",
+    "href": "41/execution_reproductions.html",
+    "hunks": 1
+   },
+   {
+    "file": "planning.qmd",
+    "title": "Planning and Conducting Reproductions and Replications",
+    "href": "41/planning.html",
+    "hunks": 2
+   }
+  ],
+  "otherFiles": []
+ },
+ {
+  "number": 40,
+  "title": "Ch6 revisions: Small Telescopes clarity, OSC link, Piloting, framework tie-in (#19)",
+  "url": "https://github.com/forrtproject/replication-handbook/pull/40",
+  "author": "LukasWallrich",
+  "updated": "2026-06-29",
+  "branch": "content/issue-19-ch6-replications",
+  "chapters": [
+   {
+    "file": "execution_replications.qmd",
+    "title": "Execution of Replications",
+    "href": "40/execution_replications.html",
+    "hunks": 8
+   }
+  ],
+  "otherFiles": []
+ },
+ {
+  "number": 39,
+  "title": "Add many-analyst findings alongside Landy et al. (Ch2, #15)",
+  "url": "https://github.com/forrtproject/replication-handbook/pull/39",
+  "author": "LukasWallrich",
+  "updated": "2026-06-29",
+  "branch": "content/issue-15-many-analyst",
+  "chapters": [
+   {
+    "file": "understanding.qmd",
+    "title": "Understanding Reproductions and Replications",
+    "href": "39/understanding.html",
+    "hunks": 1
+   }
+  ],
+  "otherFiles": [
+   "references.bib"
+  ]
+ },
+ {
+  "number": 38,
+  "title": "Add Use of AI statement (#2)",
+  "url": "https://github.com/forrtproject/replication-handbook/pull/38",
+  "author": "LukasWallrich",
+  "updated": "2026-06-28",
+  "branch": "content/issue-2-use-of-ai",
+  "chapters": [
+   {
+    "file": "contributions.qmd",
+    "title": "Author Contributions",
+    "href": "38/contributions.html",
+    "hunks": 3
+   }
+  ],
+  "otherFiles": []
+ },
+ {
+  "number": 37,
+  "title": "Ch3 editorial fixes: structure, replication packages ref, Soto claim (#16)",
+  "url": "https://github.com/forrtproject/replication-handbook/pull/37",
+  "author": "LukasWallrich",
+  "updated": "2026-06-28",
+  "branch": "content/issue-16-choosing-study",
+  "chapters": [
+   {
+    "file": "choosing_study.qmd",
+    "title": "Choosing the Target Study",
+    "href": "37/choosing_study.html",
+    "hunks": 7
+   }
+  ],
+  "otherFiles": []
+ },
+ {
+  "number": 36,
+  "title": "Separate publishing from other communication (Ch8, #21)",
+  "url": "https://github.com/forrtproject/replication-handbook/pull/36",
+  "author": "LukasWallrich",
+  "updated": "2026-06-29",
+  "branch": "content/issue-21-publishing-communication",
+  "chapters": [
+   {
+    "file": "publishing.qmd",
+    "title": "Communicating and Publishing",
+    "href": "36/publishing.html",
+    "hunks": 3
+   }
+  ],
+  "otherFiles": []
+ },
+ {
+  "number": 35,
+  "title": "Extend discussion of disagreement about replication success (#4)",
+  "url": "https://github.com/forrtproject/replication-handbook/pull/35",
+  "author": "LukasWallrich",
+  "updated": "2026-06-29",
+  "branch": "content/issue-4-disagreement-replication-success",
+  "chapters": [
+   {
+    "file": "discussion.qmd",
+    "title": "Discussion",
+    "href": "35/discussion.html",
+    "hunks": 1
+   }
+  ],
+  "otherFiles": [
+   "references.bib"
+  ]
+ }
+];
+const pills = document.getElementById("pills");
+const chapterList = document.getElementById("chapters");
+const meta = document.getElementById("meta");
+const view = document.getElementById("view");
+const counter = document.getElementById("counter");
+const showDel = document.getElementById("showDel");
+
+let prIndex = 0, chapterIndex = 0;
+
+function prHunks(pr) {
+  return pr.chapters.reduce((n, c) => n + c.hunks, 0);
+}
+
+function renderPills() {
+  pills.innerHTML = "";
+  DATA.forEach((pr, i) => {
+    const b = document.createElement("button");
+    b.className = "pill";
+    b.setAttribute("role", "tab");
+    b.setAttribute("aria-selected", i === prIndex);
+    b.innerHTML = `<b>#${pr.number}</b> <span class="label">${pr.title.replace(/</g, "&lt;")}</span>` +
+                  `<span class="count">${prHunks(pr)}</span>`;
+    b.title = pr.title;
+    b.onclick = () => selectPR(i);
+    pills.appendChild(b);
+  });
+}
+
+function renderChapters() {
+  const pr = DATA[prIndex];
+  chapterList.innerHTML = "";
+  pr.chapters.forEach((c, i) => {
+    const b = document.createElement("button");
+    b.className = "chapter";
+    b.setAttribute("aria-selected", i === chapterIndex);
+    b.innerHTML = `${c.title.replace(/</g, "&lt;")}<small>${c.file} · ${c.hunks} change${c.hunks === 1 ? "" : "s"}</small>`;
+    b.onclick = () => selectChapter(i);
+    chapterList.appendChild(b);
+  });
+
+  const other = pr.otherFiles.length
+    ? `<p>Also changed (not shown): ${pr.otherFiles.join(", ")}</p>` : "";
+  meta.innerHTML = `
+    <p><a href="${pr.url}" target="_blank" rel="noopener">Open PR #${pr.number} on GitHub &#8599;</a></p>
+    <p>${pr.author ? "by " + pr.author + " · " : ""}updated ${pr.updated}<br><code>${pr.branch}</code></p>
+    ${other}
+    <p class="legend"><span class="i">inserted</span> <span class="d">deleted</span></p>
+    <p><kbd>n</kbd>/<kbd>p</kbd> next/previous change · <kbd>&larr;</kbd><kbd>&rarr;</kbd> switch chapter</p>`;
+}
+
+function selectPR(i, chapter = 0) {
+  prIndex = i;
+  chapterIndex = chapter;
+  renderPills();
+  renderChapters();
+  loadChapter();
+}
+
+function selectChapter(i) {
+  chapterIndex = i;
+  renderChapters();
+  loadChapter();
+}
+
+function loadChapter() {
+  const c = DATA[prIndex].chapters[chapterIndex];
+  counter.textContent = "– / –";
+  view.src = c.href;
+  location.hash = `pr=${DATA[prIndex].number}&ch=${chapterIndex}`;
+}
+
+function send(type) {
+  view.contentWindow.postMessage({ type, show: showDel.checked }, "*");
+}
+
+document.getElementById("next").onclick = () => send("diff:next");
+document.getElementById("prev").onclick = () => send("diff:prev");
+showDel.onchange = () => send("diff:deletions");
+
+window.addEventListener("message", (e) => {
+  const m = e.data || {};
+  if (m.type === "diff:ready" || m.type === "diff:position") {
+    counter.textContent = m.total
+      ? `${m.index >= 0 ? m.index + 1 : "–"} / ${m.total}`
+      : "no changes";
+    if (m.type === "diff:ready" && !showDel.checked) send("diff:deletions");
+  } else if (m.type === "diff:key") {
+    handleKey(m.key);
+  }
+});
+
+function handleKey(key) {
+  const chapters = DATA[prIndex].chapters;
+  if (key === "ArrowRight") selectChapter((chapterIndex + 1) % chapters.length);
+  else if (key === "ArrowLeft") selectChapter((chapterIndex - 1 + chapters.length) % chapters.length);
+  else if (key === "[") selectPR((prIndex - 1 + DATA.length) % DATA.length);
+  else if (key === "]") selectPR((prIndex + 1) % DATA.length);
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === "n" || e.key === "j") { send("diff:next"); e.preventDefault(); }
+  else if (e.key === "p" || e.key === "k") { send("diff:prev"); e.preventDefault(); }
+  else handleKey(e.key);
+});
+
+if (!DATA || !DATA.length) {
+  document.querySelector("main").innerHTML =
+    '<div class="empty">No pull requests built yet.<br>Run <code>python3 tools/pr-review/build_review.py</code>.</div>';
+} else {
+  const m = /pr=(\d+)(?:&ch=(\d+))?/.exec(location.hash);
+  const i = m ? DATA.findIndex((p) => p.number === +m[1]) : -1;
+  selectPR(i >= 0 ? i : 0, m && m[2] ? +m[2] : 0);
+}
+</script>
+</body>
+</html>
