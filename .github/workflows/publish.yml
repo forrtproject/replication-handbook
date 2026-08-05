@@ -23,8 +23,16 @@ jobs:
 
       - run: Rscript -e 'install.packages(c("dplyr", "knitr", "rmarkdown", "ggplot2", "readr"))'
 
+      - name: Stash archived legacy site
+        run: cp -r docs/legacy "${RUNNER_TEMP}/legacy"
+
       - name: Render site into docs/
         run: quarto render --output-dir docs
+
+      - name: Restore archived legacy site
+        run: |
+          rm -rf docs/legacy
+          cp -r "${RUNNER_TEMP}/legacy" docs/legacy
 
       - name: Remove first page from PDF (due to title page issue)
         run: |
