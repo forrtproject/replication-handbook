@@ -44,14 +44,14 @@
   }
  },
  "41": {
-  "head": "d91cf31ba701a84590e2883ac3f57240d34b694b",
+  "head": "06346751350b4aff13073a03ae30ecc632996896",
   "tool": "9d514d406092",
   "entry": {
    "number": 41,
    "title": "Ch4/5: own paragraph for robustness reproductions; shuffled-data protocol suggestion (#18)",
    "url": "https://github.com/forrtproject/replication-handbook/pull/41",
    "author": "LukasWallrich",
-   "updated": "2026-06-29",
+   "updated": "2026-08-05",
    "branch": "content/issue-18-ch5-reproductions",
    "chapters": [
     {
@@ -67,7 +67,9 @@
      "hunks": 2
     }
    ],
-   "otherFiles": []
+   "otherFiles": [
+    "references.bib"
+   ]
   }
  },
  "40": {
