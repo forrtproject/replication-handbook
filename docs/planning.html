@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -63,10 +66,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8f2481fac337f33222e91caf6a1fd681.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cf2f61b72bfe7991692b9b3cc73e34ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -165,7 +168,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./understanding.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Replications and Reproductions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Reproductions and Replications</span></span></a>
   </div>
 </li>
       </ul>
@@ -237,7 +240,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Conclusion and Checklist</span></a>
+ <span class="menu-text">Conclusion</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -268,14 +271,20 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./appendix_checklist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Reproduction and Replication Checklist</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./contributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Author Contributions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Author Contributions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix_templates.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Email templates</span></span></a>
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Email templates</span></span></a>
   </div>
 </li>
       </ul>
@@ -290,9 +299,8 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#post-publication-conversations" id="toc-post-publication-conversations" class="nav-link active" data-scroll-target="#post-publication-conversations"><span class="header-section-number">4.1</span> Post Publication Conversations</a></li>
-  <li><a href="#reproduction-before-replication" id="toc-reproduction-before-replication" class="nav-link" data-scroll-target="#reproduction-before-replication"><span class="header-section-number">4.2</span> Reproduction before Replication</a></li>
-  <li><a href="#close-replication-before-conceptual-replication" id="toc-close-replication-before-conceptual-replication" class="nav-link" data-scroll-target="#close-replication-before-conceptual-replication"><span class="header-section-number">4.3</span> Close replication before conceptual replication</a></li>
+  <li><a href="#reproduction-before-replication" id="toc-reproduction-before-replication" class="nav-link active" data-scroll-target="#reproduction-before-replication"><span class="header-section-number">4.1</span> Reproduction before Replication</a></li>
+  <li><a href="#close-replication-before-conceptual-replication" id="toc-close-replication-before-conceptual-replication" class="nav-link" data-scroll-target="#close-replication-before-conceptual-replication"><span class="header-section-number">4.2</span> Close replication before conceptual replication</a></li>
   </ul>
 </nav>
     </div>
@@ -341,12 +349,11 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Key takeaways</strong></p>
-<p>Reproductions and replications require clarifying whether the aim is to verify a method or test a broader theory, as this determines the choice between close and conceptual approaches. Selecting the appropriate type and assembling a capable team are important early steps. Planning should also consider post-publication discussions, as critiques or prior replication attempts may reveal methodological or theoretical issues relevant to the design.</p>
+<p>Reproductions and replications require clarifying whether the aim is to verify a method or test a broader theory, as this determines the choice between close and conceptual approaches. Selecting the appropriate type and assembling a capable team are important early steps.</p>
 <p>Before conducting a replication, reproduction should be assessed by attempting to recreate the original results. This helps identify errors, inconsistencies, or limited robustness. When possible, numerical reproductions and robustness checks should be performed; otherwise, analyses must be reconstructed from the report, or statistical inconsistencies screened using automated tools. Replication efforts should generally begin with close replications before moving to broader, theory-oriented extensions.</p>
 <p><em>After this chapter, you will know:</em></p>
 <ul>
 <li><p>Why is it recommended to conduct reproductions before replication studies?</p></li>
-<li><p>How can post-publication discussions influence the design of replication studies?</p></li>
 <li><p>Why should close replications generally precede conceptual replications?</p></li>
 </ul>
 </div>
@@ -396,17 +403,17 @@ Table&nbsp;4.1: Types of repetitive research ordered by reproduction and replica
 <tr class="odd">
 <td>Internal replication</td>
 <td>Replicate one of your own studies as closely as possible</td>
-<td>Demonstrate one’s findings’ generalizability across studies and rule out fear of false-positives (e.g., for new discoveries)</td>
+<td>Demonstrate generalizability across studies; rule out false-positives (e.g., for new discoveries)</td>
 </tr>
 <tr class="even">
 <td>Close / direct / exact replication</td>
 <td>Conduct a new study (based on work by other researchers) that is as close as possible to the original study</td>
-<td>Rule out fear of the original finding being a false-positive, validate original materials or design, check generalizability/external validity for theoretically irrelevant variables (e.g., population, year of data collection)</td>
+<td>Rule out a false-positive original finding, validate original materials or design, check generalizability/external validity for theoretically irrelevant variables (e.g., population, year of data collection)</td>
 </tr>
 <tr class="odd">
 <td>Close replication with extension</td>
 <td>Add a variable or procedure to a close replication</td>
-<td>Rule out fear of the original finding being a false-positive, test generalizability of original finding</td>
+<td>Rule out a false-positive original finding, test generalizability of original finding</td>
 </tr>
 <tr class="even">
 <td>Conceptual / constructive replication</td>
@@ -418,13 +425,8 @@ Table&nbsp;4.1: Types of repetitive research ordered by reproduction and replica
 </div>
 </figure>
 </div>
-<section id="post-publication-conversations" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="post-publication-conversations"><span class="header-section-number">4.1</span> Post Publication Conversations</h2>
-<p>When planning the replication study, additional knowledge should be taken into account such as any discussions of the original finding. There can be other studies citing the original studies, criticizing them, disconfirming their underlying theory, identifying errors, reinterpreting the finding, or making suggestions for replications. All of these might highlight considerations that need to be taken into account when designing a replication study that <em>robustly</em> tests the original claim or its generalisability.</p>
-<p>Thus, replication researchers should look for post-publication discussions on the target study such as published comments and reviews, blog posts, or discussions on social media. These can often be found via Altmetric (<a href="https://www.altmetric.com" class="uri">https://www.altmetric.com</a>) or other tools that allow researchers to quickly identify discussions on social media or news outlets beyond scientific journals (<a href="https://pubpeer.com">PubPeer</a>, <a href="https://web.hypothes.is">Hypothes.is</a>, or the in-development platform <a href="https://www.alphaxiv.org/">Alphaxiv.org</a>; for a review see <span class="citation" data-cites="HenriquesEtAl2023">Henriques et al. (<a href="references.html#ref-HenriquesEtAl2023" role="doc-biblioref">2023</a>)</span>.</p>
-</section>
-<section id="reproduction-before-replication" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="reproduction-before-replication"><span class="header-section-number">4.2</span> Reproduction before Replication</h2>
+<section id="reproduction-before-replication" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="reproduction-before-replication"><span class="header-section-number">4.1</span> Reproduction before Replication</h2>
 <p>Many features of a replication study rest on the correctness of the original report. A reproduction allows researchers to investigate this by being able to uncover coding errors, fraud, robustness to analytical decisions, and generalizability. To make efficient use of resources, we encourage researchers to investigate the original finding’s reproducibility and robustness first. In other words, ideally, reproductions should take place before planning and conducting a replication study. Depending on the availability of the code and data, these can take several minutes to weeks.</p>
 <p>If the original code and dataset are available, researchers can try to <em>numerically reproduce</em> the results. Beware, however, that differences in software versions or default settings may lead to slight deviations or require corrections in some cases <span class="citation" data-cites="BrodeurEtAl2024b">(for a large-scale test of reproducibility see <a href="references.html#ref-BrodeurEtAl2024b" role="doc-biblioref">Brodeur et al., 2024</a>)</span>. Similarly, the lack of a set seed for random number generators can mean that analyses relying on random numbers (e.g., bootstrapping) cannot be exactly reproduced. If no analysis script is available, analyses need to be recreated from the descriptions in the report (<em>recoding reproduction</em>). In this case, special attention should be paid to processing steps such as exclusion of outliers, transformation of variables, and handling of missing data. However, in many research areas information on these steps is often incomplete <span class="citation" data-cites="FieldEtAl2019">(<a href="references.html#ref-FieldEtAl2019" role="doc-biblioref">Field et al., 2019</a>)</span>; older research tends to be especially limited in terms of the methodological details they provide. In addition, we recommend testing the robustness of the original finding by making small alterations to the data processing and analyses procedure (<em>robustness reproductions</em>). For example, if the analyses were run for a subset of the data (e.g., participants aged 21 to 30 or without outliers ± 3 standard deviations), this subset can be changed (e.g., participants aged 18 to 30 or without outliers ± 2 standard deviations). Here, the initial focus should be on choices that are not determined by the <em>theory</em> that is presented, though this can also be used to explore the generalisability of some aspects of theory. Finally, if the original study was preregistered and the original code is available, reproduction researchers can check whether the original analyses adhere to the preregistered analysis plan.</p>
 <p>If neither code nor data are available (or shared by the authors), no reproduction is possible. Researchers can still use automated tools to compare reported <em>p</em>-values with those that can be computed from test statistics via the website statcheck.io (where documents may be uploaded), the corresponding R package <span class="citation" data-cites="NuijtenPolanin2020">(<a href="references.html#ref-NuijtenPolanin2020" role="doc-biblioref">Nuijten &amp; Polanin, 2020</a>)</span>, or papercheck <span class="citation" data-cites="papercheckR">(<a href="references.html#ref-papercheckR" role="doc-biblioref">DeBruine &amp; Lakens, 2025</a>)</span>, which is still actively maintained.</p>
@@ -439,8 +441,8 @@ Figure&nbsp;4.1: Decision tree to choose between types of reproductions dependin
 </figure>
 </div>
 </section>
-<section id="close-replication-before-conceptual-replication" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="close-replication-before-conceptual-replication"><span class="header-section-number">4.3</span> Close replication before conceptual replication</h2>
+<section id="close-replication-before-conceptual-replication" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="close-replication-before-conceptual-replication"><span class="header-section-number">4.2</span> Close replication before conceptual replication</h2>
 <p>If the goal is to increase the generalizability of a specific finding, we also suggest starting with replications that adhere as close as possible to the original study (e.g., close replications) and only later conduct conceptual replications. Based on <span class="citation" data-cites="HueffmeierEtAl2016">Hüffmeier et al. (<a href="references.html#ref-HueffmeierEtAl2016" role="doc-biblioref">2016</a>)</span>, we propose the typology and order of replication attempts in <a href="#fig-replication-sequence" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>. Importantly, replications at any stage should not compromise any aspects of an original study, but rather—at the latest from the third study stage (constructive replications) onwards—try to improve one or more aspects of the original study, such as “[…] more valid measures, more critical control variables, a more realistic task, a more representative sample, or a design that allows for stronger conclusions regarding causality” <span class="citation" data-cites="KohlerCortina2021">(<a href="references.html#ref-KohlerCortina2021" role="doc-biblioref">Köhler &amp; Cortina, 2021, p. 494</a>)</span>. Köhler and Cortina term such replications “constructive replications” and caution against the conduct of “quasi-random” replications that vary features without clear rationale.</p>
 <p>Finally, there may be cases where the sequence of replications is not necessary, or where the context of the replication team requires a focus on generalisability to a specific context (see <a href="discussion.html#sec-differences-and-interpretation" class="quarto-xref"><span>Section 7.3</span></a>).</p>
 <div id="fig-replication-sequence" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -477,9 +479,6 @@ Field, S. M., Hoekstra, R., Bringmann, L., &amp; Ravenzwaaij, D. van. (2019). Wh
 </div>
 <div id="ref-HawkinsEtAl2018" class="csl-entry" role="listitem">
 Hawkins, R. X., Smith, E. N., Au, C., Arias, J. M., Catapano, R., Hermann, E., &amp; Frank, M. C. (2018). Improving the replicability of psychological science through pedagogy. <em>Advances in Methods and Practices in Psychological Science</em>, <em>1</em>(1), 7–18. <a href="https://doi.org/10.1177/2515245917740427">https://doi.org/10.1177/2515245917740427</a>
-</div>
-<div id="ref-HenriquesEtAl2023" class="csl-entry" role="listitem">
-Henriques, S. O., Rzayeva, N., Pinfield, S., &amp; Waltman, L. (2023). <em>Preprint review services: Disrupting the scholarly communication landscape?</em> <a href="https://doi.org/10.31235/osf.io/8c6xm">https://doi.org/10.31235/osf.io/8c6xm</a>
 </div>
 <div id="ref-HueffmeierEtAl2016" class="csl-entry" role="listitem">
 Hüffmeier, J., Mazei, J., &amp; Schultze, T. (2016). Reconceptualizing replication as a sequence of different studies: A replication typology. <em>Journal of Experimental Social Psychology</em>, <em>66</em>, 81–92. <a href="https://doi.org/10.1016/j.jesp.2015.09.009">https://doi.org/10.1016/j.jesp.2015.09.009</a>

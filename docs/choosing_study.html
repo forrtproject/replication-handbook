@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -63,10 +66,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8f2481fac337f33222e91caf6a1fd681.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cf2f61b72bfe7991692b9b3cc73e34ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -96,7 +99,7 @@ div.csl-indent {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -194,7 +197,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./understanding.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Replications and Reproductions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Reproductions and Replications</span></span></a>
   </div>
 </li>
       </ul>
@@ -266,7 +269,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Conclusion and Checklist</span></a>
+ <span class="menu-text">Conclusion</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -297,14 +300,20 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./appendix_checklist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Reproduction and Replication Checklist</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./contributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Author Contributions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Author Contributions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix_templates.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Email templates</span></span></a>
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Email templates</span></span></a>
   </div>
 </li>
       </ul>
@@ -322,8 +331,9 @@ window.Quarto = {
   <li><a href="#determining-reproduction-and-replication-value" id="toc-determining-reproduction-and-replication-value" class="nav-link active" data-scroll-target="#determining-reproduction-and-replication-value"><span class="header-section-number">3.1</span> Determining Reproduction and Replication Value</a></li>
   <li><a href="#value" id="toc-value" class="nav-link" data-scroll-target="#value"><span class="header-section-number">3.2</span> Value</a></li>
   <li><a href="#uncertainty" id="toc-uncertainty" class="nav-link" data-scroll-target="#uncertainty"><span class="header-section-number">3.3</span> Uncertainty</a></li>
-  <li><a href="#potential-researcher-bias" id="toc-potential-researcher-bias" class="nav-link" data-scroll-target="#potential-researcher-bias"><span class="header-section-number">3.4</span> (Potential) Researcher Bias</a></li>
-  <li><a href="#feasibility" id="toc-feasibility" class="nav-link" data-scroll-target="#feasibility"><span class="header-section-number">3.5</span> Feasibility</a></li>
+  <li><a href="#post-publication-conversations" id="toc-post-publication-conversations" class="nav-link" data-scroll-target="#post-publication-conversations"><span class="header-section-number">3.4</span> Post-Publication Conversations</a></li>
+  <li><a href="#potential-researcher-bias" id="toc-potential-researcher-bias" class="nav-link" data-scroll-target="#potential-researcher-bias"><span class="header-section-number">3.5</span> (Potential) Researcher Bias</a></li>
+  <li><a href="#feasibility" id="toc-feasibility" class="nav-link" data-scroll-target="#feasibility"><span class="header-section-number">3.6</span> Feasibility</a></li>
   </ul>
 </nav>
     </div>
@@ -372,11 +382,12 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Key takeaways</strong></p>
-<p>Choosing a target study for reproduction or replication depends on the goals, which can range from assessing the overall reliability of a field to verifying specific findings. Large-scale projects often adopt a top-down approach, selecting studies to represent a field, while individual researchers usually follow a bottom-up approach driven by interest in particular studies. The value of a target study is influenced by its relevance, theoretical or societal impact, and citation history. High uncertainty in the original results increases the potential knowledge gain from replication, while limited reporting, multiple prior studies, or contextual specificity may further motivate replication. Researchers must also consider feasibility, including data availability, resources, and technical requirements. Potential researcher biases, such as confirmation bias or conflicts of interest, highlight the importance of preregistration and transparent documentation. Clear justification and systematic frameworks can ensure that replication efforts are efficient and trustworthy.</p>
+<p>Choosing a target study for reproduction or replication depends on the goals, which can range from assessing the overall reliability of a field to verifying specific findings. Large-scale projects often adopt a top-down approach, selecting studies to represent a field, while individual researchers usually follow a bottom-up approach driven by interest in particular studies. The value of a target study is influenced by its relevance, theoretical or societal impact, and citation history. High uncertainty in the original results increases the potential knowledge gain from replication, while limited reporting, multiple prior studies, or contextual specificity may further motivate replication. Post-publication discussions—such as comments, critiques, or prior replication attempts—can further inform whether and how a study is worth repeating. Researchers must also consider feasibility, including data availability, resources, and technical requirements. Potential researcher biases, such as confirmation bias or conflicts of interest, highlight the importance of preregistration and transparent documentation. Clear justification and systematic frameworks can ensure that replication efforts are efficient and trustworthy.</p>
 <p><em>After this chapter, you will know:</em></p>
 <ul>
 <li><p>How do top-down and bottom-up approaches differ when choosing a study to replicate?</p></li>
 <li><p>Which factors determine whether a study is worth reproducing or replicating?</p></li>
+<li><p>How can post-publication discussions inform the choice of a target study?</p></li>
 <li><p>How can practical constraints and potential biases influence the selection of replication targets?</p></li>
 </ul>
 </div>
@@ -390,7 +401,7 @@ Tip
 </section>
 <section id="value" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="value"><span class="header-section-number">3.2</span> Value</h2>
-<p>The original study should be somehow relevant for the replication to have value <span class="citation" data-cites="KarhulahtiEtAl2024">(e.g., <a href="references.html#ref-KarhulahtiEtAl2024" role="doc-biblioref">Karhulahti et al., 2024</a>)</span>. It may have started a research stream. For example, Jacowitz and Kahneman’s <span class="citation" data-cites="JacowitzKahneman1995">(<a href="references.html#ref-JacowitzKahneman1995" role="doc-biblioref">1995</a>)</span> studies on anchoring and adjustment were fundamental for how anchoring effects are investigated today, and were therefore replicated by <span class="citation" data-cites="KleinEtAl2014">Klein et al. (<a href="references.html#ref-KleinEtAl2014" role="doc-biblioref">2014</a>)</span>. Field et al. <span class="citation" data-cites="FieldEtAl2019">(<a href="references.html#ref-FieldEtAl2019" role="doc-biblioref">2019</a>)</span> propose a method for the selection of replication studies that features the theoretical importance of the original study result. Relevance may be evidenced by many citations as they show that many studies are building on the finding, testing similar hypotheses, or criticizing the study. Note that a study could also be cited as a negative example or study that has not been replicated or retracted for some reason. Isager et al. [<span class="citation" data-cites="IsagerEtAl2021">(<a href="references.html#ref-IsagerEtAl2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="IsagerEtAl2023">(<a href="references.html#ref-IsagerEtAl2023" role="doc-biblioref">2023</a>)</span>] suggest deciding what to replicate based on sample size and citation count <span class="citation" data-cites="PittelkowEtAl2025">(but see <a href="references.html#ref-PittelkowEtAl2025" role="doc-biblioref">Pittelkow et al., 2025</a>)</span>. In a Delphi study examining consensus among psychologists that had conducted empirical replications on what should influence the decision of what study to replicate, elements that came up were the importance of the original study for research (as indicated by citations, the phenomenon being over- or understudied, and the impact factor of the journal), the theoretical relevance of the study, and the implications of the original study for practice, policy, or clinical work <span class="citation" data-cites="PittelkowEtAl2023">(<a href="references.html#ref-PittelkowEtAl2023" role="doc-biblioref">Pittelkow et al., 2023</a>)</span>. The relevance of societal impact was also stressed by <span class="citation" data-cites="Bekkers2024">(<a href="references.html#ref-Bekkers2024" role="doc-biblioref">2024</a>)</span>, as a study may have a high value for a societal problem (e.g., a new vaccine or a repeated test of a claim that is relevant in the political discourse such as criminality among immigrants).</p>
+<p>The original study should be somehow relevant for the replication to have value <span class="citation" data-cites="KarhulahtiEtAl2024">(e.g., <a href="references.html#ref-KarhulahtiEtAl2024" role="doc-biblioref">Karhulahti et al., 2024</a>)</span>. It may have started a research stream. For example, Jacowitz and Kahneman’s <span class="citation" data-cites="JacowitzKahneman1995">(<a href="references.html#ref-JacowitzKahneman1995" role="doc-biblioref">1995</a>)</span> studies on anchoring and adjustment were fundamental for how anchoring effects are investigated today, and were therefore replicated by <span class="citation" data-cites="KleinEtAl2014">Klein et al. (<a href="references.html#ref-KleinEtAl2014" role="doc-biblioref">2014</a>)</span>. Field et al. <span class="citation" data-cites="FieldEtAl2019">(<a href="references.html#ref-FieldEtAl2019" role="doc-biblioref">2019</a>)</span> propose a method for the selection of replication studies that features the theoretical importance of the original study result. Relevance may be evidenced by many citations as they show that many studies are building on the finding, testing similar hypotheses, or criticizing the study. Note that a study could also be cited as a negative example or study that has not been replicated or retracted for some reason. Isager et al. [<span class="citation" data-cites="IsagerEtAl2021">(<a href="references.html#ref-IsagerEtAl2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="IsagerEtAl2023">(<a href="references.html#ref-IsagerEtAl2023" role="doc-biblioref">2023</a>)</span>] suggest deciding what to replicate based on sample size and citation count <span class="citation" data-cites="PittelkowEtAl2025">(but see <a href="references.html#ref-PittelkowEtAl2025" role="doc-biblioref">Pittelkow et al., 2025</a>)</span>. In a Delphi study examining consensus among psychologists that had conducted empirical replications on what should influence the decision of what study to replicate, elements that came up were the importance of the original study for research (as indicated by citations, the phenomenon being over- or understudied, and the impact factor of the journal), the theoretical relevance of the study, and the implications of the original study for practice, policy, or clinical work <span class="citation" data-cites="PittelkowEtAl2023">(<a href="references.html#ref-PittelkowEtAl2023" role="doc-biblioref">Pittelkow et al., 2023</a>)</span>. The relevance of societal impact was also stressed by <span class="citation" data-cites="Bekkers2024">Bekkers (<a href="references.html#ref-Bekkers2024" role="doc-biblioref">2024</a>)</span>, as a study may have a high value for a societal problem (e.g., a new vaccine or a repeated test of a claim that is relevant in the political discourse such as criminality among immigrants).</p>
 <p>For scientists reproducing or replicating a study because they are interested in building on its findings (including if they wish to build upon their own original findings), their interest to build on it may be a sufficient indicator of its relevance to their research program.</p>
 </section>
 <section id="uncertainty" class="level2" data-number="3.3">
@@ -405,7 +416,7 @@ Tip
 <p>Nevertheless, it has been argued that because so many original studies are flawed, the theories built upon them are weak, or contaminated. This, in turn, can lead to flawed replication studies, especially in the case of theory that aims to explain phenomena <span class="citation" data-cites="FieldEtAl2024">(<a href="references.html#ref-FieldEtAl2024" role="doc-biblioref">Field et al., 2024</a>)</span>, risking a vicious cycle in which successful replications potentially perpetuate flaws across studies.</p>
 <p><strong><em>Availability of reproductions and replications</em></strong></p>
 <p>While a single replication (or robustness reproduction) cannot provide conclusive evidence in regard to the veracity of original claims, the first numerical reproduction, and arguably also the first robustness reproduction and replication adds the greatest value in terms of reducing uncertainty. Therefore, the search for existing reproductions and replications is a key part of the selection of a target study.</p>
-<p>Although there is no comprehensive database with reproductions yet, researchers can check resources such as the Institute for Replication’s discussion paper series <span class="citation" data-cites="BrodeurEtAl2024b">(<a href="https://i4replication.org/discussion_paper.html" class="uri">https://i4replication.org/discussion_paper.html</a>, cf. <a href="references.html#ref-BrodeurEtAl2024b" role="doc-biblioref">Brodeur et al., 2024</a>)</span>, the ReplicationWiki <span class="citation" data-cites="Hoeffler2017">(<a href="references.html#ref-Hoeffler2017" role="doc-biblioref">Höffler, 2017</a>)</span>, the CODECHECK register <span class="citation" data-cites="NuestEglen2021">(<a href="https://codecheck.org.uk/register/" class="uri">https://codecheck.org.uk/register/</a>, cf. <a href="references.html#ref-NuestEglen2021" role="doc-biblioref">Nüst &amp; Eglen, 2021</a>)</span>, or the Social Science Reproduction Platform (<a href="https://www.socialsciencereproduction.org" class="uri">https://www.socialsciencereproduction.org</a>).</p>
+<p>Although there is no comprehensive database with reproductions yet, researchers can check resources such as the Institute for Replication’s discussion paper series <span class="citation" data-cites="BrodeurEtAl2024b">(<a href="https://www.i4replication.org/papers" class="uri">https://www.i4replication.org/papers</a>, cf. <a href="references.html#ref-BrodeurEtAl2024b" role="doc-biblioref">Brodeur et al., 2024</a>)</span>, the ReplicationWiki <span class="citation" data-cites="Hoeffler2017">(<a href="references.html#ref-Hoeffler2017" role="doc-biblioref">Höffler, 2017</a>)</span>, the CODECHECK register <span class="citation" data-cites="NuestEglen2021">(<a href="https://codecheck.org.uk/register/" class="uri">https://codecheck.org.uk/register/</a>, cf. <a href="references.html#ref-NuestEglen2021" role="doc-biblioref">Nüst &amp; Eglen, 2021</a>)</span>, or the Social Science Reproduction Platform (<a href="https://www.socialsciencereproduction.org" class="uri">https://www.socialsciencereproduction.org</a>).</p>
 <p>With regard to replications, researchers can browse the FORRT Replication Database <span class="citation" data-cites="RoselerEtAl2024">(<a href="https://forrt.org/apps/fred_explorer.html" class="uri">https://forrt.org/apps/fred_explorer.html</a>, cf. <a href="references.html#ref-RoselerEtAl2024" role="doc-biblioref">Röseler et al., 2024</a>)</span>, though this does not (yet) provide a replacement for manual searches. The following table provides an overview of different types of <em>reproducibility checks</em>.</p>
 <table class="caption-top table">
 <caption>Types of Reproducibility Checks</caption>
@@ -463,14 +474,19 @@ Tip
 </tbody>
 </table>
 </section>
-<section id="potential-researcher-bias" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="potential-researcher-bias"><span class="header-section-number">3.4</span> (Potential) Researcher Bias</h2>
+<section id="post-publication-conversations" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="post-publication-conversations"><span class="header-section-number">3.4</span> Post-Publication Conversations</h2>
+<p>When evaluating a potential target study, additional knowledge should be taken into account, such as any discussions of the original finding. There can be other studies citing the original studies, criticizing them, disconfirming their underlying theory, identifying errors, reinterpreting the finding, or making suggestions for replications. All of these might highlight considerations that need to be taken into account when deciding whether a study is worth repeating and, later, when designing a study that <em>robustly</em> tests the original claim or its generalisability.</p>
+<p>Thus, researchers should look for post-publication discussions on the target study such as published comments and reviews, blog posts, or discussions on social media. These can often be found via Altmetric (<a href="https://www.altmetric.com" class="uri">https://www.altmetric.com</a>) or other tools that allow researchers to quickly identify discussions on social media or news outlets beyond scientific journals (<a href="https://pubpeer.com">PubPeer</a>, <a href="https://web.hypothes.is">Hypothes.is</a>, or the in-development platform <a href="https://www.alphaxiv.org/">Alphaxiv.org</a>; for a review see <span class="citation" data-cites="HenriquesEtAl2023">Henriques et al. (<a href="references.html#ref-HenriquesEtAl2023" role="doc-biblioref">2023</a>)</span>).</p>
+</section>
+<section id="potential-researcher-bias" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="potential-researcher-bias"><span class="header-section-number">3.5</span> (Potential) Researcher Bias</h2>
 <p>Researchers typically work in relatively small communities to investigate the same phenomenon. These researchers are invested in their work and can be influenced by certain researcher biases, such as confirmation bias <span class="citation" data-cites="Mahoney1977">(the tendency to preferentially seek out, evaluate and recall information that supports one’s existing beliefs, see <a href="references.html#ref-Mahoney1977" role="doc-biblioref">Mahoney, 1977</a>)</span> and motivated reasoning <span class="citation" data-cites="HardwickeWagenmakers2023 MunafoEtAl2020">(generating post-hoc rationalizations that frame previous decisions in a favourable light, see <a href="references.html#ref-HardwickeWagenmakers2023" role="doc-biblioref">Hardwicke &amp; Wagenmakers, 2023</a>; <a href="references.html#ref-MunafoEtAl2020" role="doc-biblioref">Munafò et al., 2020</a>)</span>. In some cases, researchers profit off their work and the (perceived) replicability of their findings may be associated with personal financial gain. Such conflicts of interest should be disclosed, but this is not always the case <span class="citation" data-cites="HeireneEtAl2024">(see <a href="references.html#ref-HeireneEtAl2024" role="doc-biblioref">Heirene et al., 2024</a>)</span>.</p>
 <p>However, replication researchers are just as prone to bias as original authors can be. There <em>may</em> be a publication bias in replication studies in favor of nonsignificant findings <span class="citation" data-cites="BerinskyEtAl2021">(<a href="references.html#ref-BerinskyEtAl2021" role="doc-biblioref">Berinsky et al., 2021</a>)</span>, though there is no empirical evidence for this yet. Nevertheless, greater interest in failed replications seems likely, incentivizing replication researchers to apply questionable research practices (QRPs) so that the results are nonsignificant <span class="citation" data-cites="Protzko2018 BaumeisterEtAl2022">(“null hacking”, <a href="references.html#ref-Protzko2018" role="doc-biblioref">Protzko, 2018</a>; <a href="references.html#ref-BaumeisterEtAl2022" role="doc-biblioref">Baumeister et al., 2022</a>)</span>. The problems of <em>p</em>-hacking and null-hacking can mostly be solved through preregistration and the use of Registered (Replication) Reports <span class="citation" data-cites="BrodeurEtAl2024b SoderbergEtAl2021">(e.g., <a href="references.html#ref-BrodeurEtAl2024b" role="doc-biblioref">Brodeur et al., 2024</a>; <a href="references.html#ref-SoderbergEtAl2021" role="doc-biblioref"><span class="nocase">Soderberg et al.</span>, 2021</a>)</span>. Another type of bias is that researchers may be interested in replicating specific studies because of personal admiration towards a study or envy towards a colleague.</p>
 <p>Even in the absence of such biases, the selection of replication targets can affect the conclusions drawn from replication research. Individual replication efforts tend to target studies that replicators doubt or find surprising. Large-scale projects sometimes use approximately random sampling <span class="citation" data-cites="OpenScienceCollab2015">(e.g., <a href="references.html#ref-OpenScienceCollab2015" role="doc-biblioref">Open Science Collaboration, 2015</a>)</span>, but might also use purposive sampling to address specific research questions <span class="citation" data-cites="KleinEtAl2014">(e.g., the focus on replicable findings in <a href="references.html#ref-KleinEtAl2014" role="doc-biblioref">Klein et al., 2014</a>)</span>. The non-random nature of most target selection means that aggregate replication rates should usually not be taken as representative of a field’s overall replicability <span class="citation" data-cites="KuehbergerSchulteMecklenbeck2018">(<a href="references.html#ref-KuehbergerSchulteMecklenbeck2018" role="doc-biblioref">Kühberger &amp; Schulte-Mecklenbeck, 2018</a>)</span>.</p>
 </section>
-<section id="feasibility" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="feasibility"><span class="header-section-number">3.5</span> Feasibility</h2>
+<section id="feasibility" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="feasibility"><span class="header-section-number">3.6</span> Feasibility</h2>
 <p>Reproductions require the original dataset. We recommend that researchers check whether the journal that published the original study has a data editor or reproducibility manager who has done a reproducibility check or provides a <em>replication package</em>. A replication package is a collection of materials to allow reproduction of the original results. Ideally, the dataset in the replication package, or shared separately, adheres to the FAIR criteria <span class="citation" data-cites="WilkinsonEtAl2016">(<a href="references.html#ref-WilkinsonEtAl2016" role="doc-biblioref">Wilkinson et al., 2016</a>)</span>, that is, it should be findable, accessible, interoperable, and reusable. Otherwise, the reproduction author would need to send a data sharing request to the original authors. In any case, they may need to consult with the original authors regarding software versions and code that does not work anymore due to changes in the software.</p>
 <p>While original data is not necessary for replications, thorough documentation of the original study is highly beneficial. Moreover, replication researchers should evaluate whether they can achieve the target sample size, which is often a multiple of the original sample size (see section <a href="?tab=t.0#heading=h.r1a225ca00xn">Sample Size Determination</a>). <span class="citation" data-cites="PittelkowEtAl2023">Pittelkow et al. (<a href="references.html#ref-PittelkowEtAl2023" role="doc-biblioref">2023</a>)</span> identified the resources available to the replicating team in terms of funding, time, equipment, and (if relevant) previous experience and expertise as important elements that feature into the replication study selection. When choosing a target study, researchers should try to anticipate practical problems, and should restrict their choice of replication target to align with their lab resources in order to prevent ‘secondary’ research waste <span class="citation" data-cites="FieldEtAl2019">(<a href="references.html#ref-FieldEtAl2019" role="doc-biblioref">Field et al., 2019</a>)</span>. Specifically, some studies may be difficult to replicate (e.g., longitudinal studies). Other studies, such as those conducted with the use of highly technical, restricted, or expensive equipment, such as studies involving MRI scanning, might require expertise and knowledge that is not represented in all potential replication research teams <span class="citation" data-cites="FieldEtAl2019">(<a href="references.html#ref-FieldEtAl2019" role="doc-biblioref">Field et al., 2019</a>)</span>.</p>
 <p>Moreover, there are no established standards for replications in some fields yet. In that case, replications may add less to the reduction of uncertainty and replicators need to propose methods. For example, replications with response-surface-analyses are not as established as those with <em>t</em>-tests for two-group study designs. Furthermore, the complexity of the data types can pose challenges for definitions of successful replications, such as in neuroimaging research (e.g., MRI studies) which often implicates outcome variables with an additional spatial component.</p>
@@ -545,6 +561,9 @@ Heirene, R., LaPlante, D., Louderback, E., Keen, B., Bakker, M., Serafimovska, A
 </div>
 <div id="ref-HeldEtAl2024" class="csl-entry" role="listitem">
 Held, L., Pawel, S., &amp; Micheloud, C. (2024). The assessment of replicability using the sum of p-values. <em>Royal Society Open Science</em>, <em>11</em>(8), 240149. <a href="https://doi.org/10.1098/rsos.240149">https://doi.org/10.1098/rsos.240149</a>
+</div>
+<div id="ref-HenriquesEtAl2023" class="csl-entry" role="listitem">
+Henriques, S. O., Rzayeva, N., Pinfield, S., &amp; Waltman, L. (2023). <em>Preprint review services: Disrupting the scholarly communication landscape?</em> <a href="https://doi.org/10.31235/osf.io/8c6xm">https://doi.org/10.31235/osf.io/8c6xm</a>
 </div>
 <div id="ref-Hoeffler2017" class="csl-entry" role="listitem">
 Höffler, J. H. (2017). ReplicationWiki: Improving transparency in social sciences research. <em>D-Lib Magazine</em>, <em>23</em>(3), 1. <a href="https://doi.org/10.1045/march2017-hoeffler">https://doi.org/10.1045/march2017-hoeffler</a>
@@ -1035,8 +1054,8 @@ Zwaan, R. A., Etz, A., Lucas, R. E., &amp; Donnellan, M. B. (2018). Making repli
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./understanding.html" class="pagination-link" aria-label="Understanding Replications and Reproductions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Replications and Reproductions</span></span>
+      <a href="./understanding.html" class="pagination-link" aria-label="Understanding Reproductions and Replications">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Reproductions and Replications</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

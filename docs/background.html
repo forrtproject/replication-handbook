@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -63,10 +66,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8f2481fac337f33222e91caf6a1fd681.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cf2f61b72bfe7991692b9b3cc73e34ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -165,7 +168,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./understanding.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Replications and Reproductions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Reproductions and Replications</span></span></a>
   </div>
 </li>
       </ul>
@@ -237,7 +240,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Conclusion and Checklist</span></a>
+ <span class="menu-text">Conclusion</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -268,14 +271,20 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./appendix_checklist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Reproduction and Replication Checklist</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./contributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Author Contributions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Author Contributions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix_templates.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Email templates</span></span></a>
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Email templates</span></span></a>
   </div>
 </li>
       </ul>
@@ -325,17 +334,21 @@ div.csl-indent {
 <p>“<em>The proof established by the test must have a specific form, namely, repeatability. The issue of the experiment must be a statement of the hypothesis, the conditions of test, and the results, in such form that another experimenter, from the description alone, may be able to repeat the experiment. Nothing is accepted as proof, in psychology or in any other science, which does not conform to this requirement</em>.” – <span class="citation" data-cites="Dunlap1926">(<a href="references.html#ref-Dunlap1926" role="doc-biblioref">Dunlap, 1926</a>)</span></p>
 <p>Repeatability is the cornerstone of many sciences: Although scientific claims are often assumed to be robust, without explicit reproduction and replication — that is, retesting a hypothesis with the same (reproduction) or different (replication) data — it remains unclear whether this assumption holds.</p>
 <p>Cumulative science without repetition is costly: building on unreliable findings leads to research waste and misdirected effort. The aim of this guide is to empower researchers to conduct high-quality reproductions and replications and thereby contribute to making their fields of research more cumulative and robust. Issues of replicability have been discussed across many disciplines, such as psychology <span class="citation" data-cites="OpenScienceCollab2015">(<a href="references.html#ref-OpenScienceCollab2015" role="doc-biblioref">Open Science Collaboration, 2015</a>)</span>, economics <span class="citation" data-cites="DreberJohannesson2024">(<a href="references.html#ref-DreberJohannesson2024" role="doc-biblioref">Dreber &amp; Johannesson, 2024</a>)</span>, biology <span class="citation" data-cites="ErringtonEtAl2021b">(<a href="references.html#ref-ErringtonEtAl2021b" role="doc-biblioref">Errington et al., 2021</a>)</span>, marketing <span class="citation" data-cites="UrminskyDietvorst2024">(<a href="references.html#ref-UrminskyDietvorst2024" role="doc-biblioref">Urminsky &amp; Dietvorst, 2024</a>)</span>, linguistics <span class="citation" data-cites="McManus2024">(<a href="references.html#ref-McManus2024" role="doc-biblioref">McManus, 2024</a>)</span>, computer science <span class="citation" data-cites="HummelManner2024">(<a href="references.html#ref-HummelManner2024" role="doc-biblioref">Hummel &amp; Manner, 2024</a>)</span> and epidemiology <span class="citation" data-cites="LashEtAl2018">(<a href="references.html#ref-LashEtAl2018" role="doc-biblioref">Lash et al., 2018</a>)</span> and the number of replications has been rising sharply (see <a href="#fig-replication-growth" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>, which shows replications only as there is no comprehensive database for reproductions yet).</p>
+<div class="cell">
+<div class="cell-output-display">
 <div id="fig-replication-growth" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-replication-growth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.1: Number of replication studies by year of publication, based on the FORRT Library of Replication Attempts (FLoRA) as of April 17, 2026.
+Figure&nbsp;1.1: Number of replication studies by year of publication, based on the FORRT Library of Replication Attempts (FLoRA) as of 20 June 2026. The figure is regenerated from FLoRA by <code>R/fig_replication_growth.R</code>; the book renders it from the committed snapshot <code>data/flora_replication_counts.csv</code>.
 </figcaption>
 <div aria-describedby="fig-replication-growth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/3Rx_Image_1.jpeg" class="img-fluid figure-img">
+<img src="background_files/figure-html/fig-replication-growth-1.png" class="img-fluid figure-img" width="672">
 </div>
 </figure>
 </div>
-<p>While the number of replication and reproduction studies has increased, the overall proportion of them is still very small, with reviews finding that replications make up well below 1% of published papers <span class="citation" data-cites="PerryEtAl2022">(<a href="references.html#ref-PerryEtAl2022" role="doc-biblioref">Perry et al., 2022</a>)</span>. Moreover, much of the guidance on replications is still being developed <span class="citation" data-cites="ClarkeEtAl2024">(<a href="references.html#ref-ClarkeEtAl2024" role="doc-biblioref">Clarke et al., 2024</a>)</span> and in narrow parts of science, which leads to fragmentation, siloing, and potentially inconsistent information.</p>
+</div>
+</div>
+<p>While the number of replication and reproduction studies has increased, the overall proportion of them is still very small, with reviews finding that replications make up well below 1% of published papers <span class="citation" data-cites="PerryEtAl2022">(<a href="references.html#ref-PerryEtAl2022" role="doc-biblioref">Perry et al., 2022</a>)</span>. Moreover, much of the guidance on replications is still being developed <span class="citation" data-cites="ClarkeEtAl2026">(<a href="references.html#ref-ClarkeEtAl2026" role="doc-biblioref">Clarke et al., 2026</a>)</span> and in narrow parts of science, which leads to fragmentation, siloing, and potentially inconsistent information.</p>
 <p>Here we attempt to integrate useful guidelines <span class="citation" data-cites="BlockKuckertz2018 JekelEtAl2020">(e.g., <a href="references.html#ref-BlockKuckertz2018" role="doc-biblioref">Block &amp; Kuckertz, 2018</a>; <a href="references.html#ref-JekelEtAl2020" role="doc-biblioref">Jekel et al., 2020</a>)</span> into a comprehensive overview that allows diverse fields to profit from each other. In sum, this guide provides information about the entire process of research allowing researchers at all career stages to plan, conduct, and publish reproduction and replication studies. We limit our scope to quantitative research, given that the concept of reproducibility and replicability itself is highly contested among qualitative researchers <span class="citation" data-cites="MakelEtAl2012 ColeEtAl2024 Pownall2022 Bennett2021">(see <a href="references.html#ref-MakelEtAl2012" role="doc-biblioref">Makel et al., 2012</a>; <a href="references.html#ref-Bennett2021" role="doc-biblioref">Bennett, 2021</a>; <a href="references.html#ref-ColeEtAl2024" role="doc-biblioref">Cole et al., 2024</a>; <a href="references.html#ref-Pownall2022" role="doc-biblioref">Pownall, 2022</a>)</span>.</p>
 
 
@@ -346,8 +359,8 @@ Bennett, E. A. (2021). Open science from a qualitative, feminist perspective: Ep
 <div id="ref-BlockKuckertz2018" class="csl-entry" role="listitem">
 Block, J., &amp; Kuckertz, A. (2018). Seven principles of effective replication studies: Strengthening the evidence base of management research. <em>Management Review Quarterly</em>, <em>68</em>(4), 355–359. <a href="https://doi.org/10.1007/s11301-018-0149-3">https://doi.org/10.1007/s11301-018-0149-3</a>
 </div>
-<div id="ref-ClarkeEtAl2024" class="csl-entry" role="listitem">
-Clarke, B., Lee, P. Y. (K. )., Schiavone, S. R., Rhemtulla, M., &amp; Vazire, S. (2024). The prevalence of direct replication articles in top-ranking psychology journals. <em>American Psychologist</em>. <a href="https://doi.org/10.1037/amp0001385">https://doi.org/10.1037/amp0001385</a>
+<div id="ref-ClarkeEtAl2026" class="csl-entry" role="listitem">
+Clarke, B., Lee, P. Y. (K. )., Schiavone, S. R., Rhemtulla, M., &amp; Vazire, S. (2026). The prevalence of direct replication articles in top-ranking psychology journals. <em>American Psychologist</em>, <em>81</em>(2). <a href="https://doi.org/10.1037/amp0001385">https://doi.org/10.1037/amp0001385</a>
 </div>
 <div id="ref-ColeEtAl2024" class="csl-entry" role="listitem">
 Cole, N. L., Ulpts, S., Bochynska, A., Kormann, E., Good, M., Leitner, B., &amp; Ross-Hellauer, T. (2024). <em>Reproducibility and replicability of qualitative research: An integrative review of concepts, barriers and enablers</em>. <a href="https://doi.org/10.31222/osf.io/n5zkw_v1">https://doi.org/10.31222/osf.io/n5zkw_v1</a>
@@ -803,8 +816,8 @@ Urminsky, O., &amp; Dietvorst, B. J. (2024). Taking the full measure: Integratin
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./understanding.html" class="pagination-link" aria-label="Understanding Replications and Reproductions">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Replications and Reproductions</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./understanding.html" class="pagination-link" aria-label="Understanding Reproductions and Replications">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Reproductions and Replications</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

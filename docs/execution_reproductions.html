@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -63,10 +66,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8f2481fac337f33222e91caf6a1fd681.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cf2f61b72bfe7991692b9b3cc73e34ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -165,7 +168,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./understanding.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Replications and Reproductions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Reproductions and Replications</span></span></a>
   </div>
 </li>
       </ul>
@@ -237,7 +240,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Conclusion and Checklist</span></a>
+ <span class="menu-text">Conclusion</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -268,14 +271,20 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./appendix_checklist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Reproduction and Replication Checklist</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./contributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Author Contributions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Author Contributions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix_templates.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Email templates</span></span></a>
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Email templates</span></span></a>
   </div>
 </li>
       </ul>
@@ -295,7 +304,8 @@ div.csl-indent {
   <li><a href="#identification-of-claims" id="toc-identification-of-claims" class="nav-link" data-scroll-target="#identification-of-claims"><span class="header-section-number">5.3</span> Identification of Claims</a></li>
   <li><a href="#preregistration" id="toc-preregistration" class="nav-link" data-scroll-target="#preregistration"><span class="header-section-number">5.4</span> Preregistration</a></li>
   <li><a href="#deviations" id="toc-deviations" class="nav-link" data-scroll-target="#deviations"><span class="header-section-number">5.5</span> Deviations</a></li>
-  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">5.6</span> Discussion</a></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis"><span class="header-section-number">5.6</span> Analysis</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">5.7</span> Discussion</a></li>
   </ul>
 </nav>
     </div>
@@ -355,14 +365,14 @@ Tip
 </div>
 <section id="gathering-resources" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="gathering-resources"><span class="header-section-number">5.1</span> Gathering resources</h2>
-<p>Prerequisites for reproduction studies are available data and ideally also code. These are usually linked within the manuscript and shared via repositories (e.g., Zenodo, OSF.io, github.com, gitlab.com) or they are part of the supplemental materials that are listed on the article’s website. In special cases, an entire original manuscript may be reproducible and written in Markdown language. Researchers searching for target studies to reproduce can check topfactor.org and filter for Data transparency level 3 <span class="citation" data-cites="topfactorDataSharing">(<a href="references.html#ref-topfactorDataSharing" role="doc-biblioref">Leibniz Institute for the Social Sciences, 2023</a>, will no longer be updated)</span>. They can also use the extensive database of economics studies with available data compiled by Sebastian Kranz <span class="citation" data-cites="KranzDataList">(<a href="references.html#ref-KranzDataList" role="doc-biblioref">Kranz, 2025</a>)</span>.</p>
+<p>Prerequisites for reproduction studies are available data and ideally also code. These are usually linked within the manuscript and shared via repositories (e.g., Zenodo, OSF.io, github.com, gitlab.com) or they are part of the supplemental materials that are listed on the article’s website. In special cases, an entire original manuscript may be reproducible and written in Markdown language. Researchers searching for target studies to reproduce can check topfactor.org and filter for Data transparency level 3 <span class="citation" data-cites="topfactorDataSharing">(<a href="references.html#ref-topfactorDataSharing" role="doc-biblioref">Leibniz Institute for the Social Sciences, 2023</a>, will no longer be updated)</span>. They can also use the extensive database of economics studies with available data compiled by Sebastian Kranz <span class="citation" data-cites="KranzDataList">(<a href="references.html#ref-KranzDataList" role="doc-biblioref">2025</a>)</span>.</p>
 <p>If data are not publicly available, researchers can contact the authors of the original study. In this case, we recommend them to adhere to <em>Guide for Accelerating Computational Reproducibility in the Social Sciences</em> (ACRE) guidelines for constructive communication <span class="citation" data-cites="BITSS2020">(<a href="references.html#ref-BITSS2020" role="doc-biblioref">Berkeley Initiative for Transparency in the Social Sciences, 2020</a>)</span>.</p>
 <p>When re-using data, researchers need to respect licenses. Generally, research data should be licensed openly, that is re-use and alteration should be permitted, likely requiring citation of the original resource (e.g., CC-BY 4.0 Attribution). Note, however, that non-derivative licenses may prohibit reproductions; in that case separate approval would be required from the copyright holder.</p>
 <p>When it comes to reporting, Ankel-Peters et al. <span class="citation" data-cites="AnkelPetersEtAl2025">(<a href="references.html#ref-AnkelPetersEtAl2025" role="doc-biblioref">2025</a>)</span> provide a table for reporting results from the computational reproduction that includes resource availability (e.g., raw data, cleaning code, analysis code).</p>
 </section>
 <section id="contacting-authors" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="contacting-authors"><span class="header-section-number">5.2</span> Contacting Authors</h2>
-<p>Reproduction authors may have to contact the original authors if there is something missing. It will often be necessary to contact the authors more than once because missing descriptions of details of the original study only become apparent once the replication study is planned. In most cases, the original paper identifies one of the authors as “corresponding author” with an e-mail address. We recommend a quick web search to check if this is the current email address, as researchers frequently change institutions and thus e-mail addresses. Sometimes, it may be most helpful to write to the last authors instead, who tend to have more stable e-mail addresses, or to copy all authors into the email. Templates for asking for materials and sharing replication results can be found in Section <a href="appendix_templates.html" class="quarto-xref"><span>Appendix B</span></a>. Note that original authors may not respond due to institutional changes or not being active in academia anymore.</p>
+<p>Reproduction authors may have to contact the original authors if there is something missing. It will often be necessary to contact the authors more than once because missing descriptions of details of the original study only become apparent once the replication study is planned. In most cases, the original paper identifies one of the authors as “corresponding author” with an e-mail address. We recommend a quick web search to check if this is the current email address, as researchers frequently change institutions and thus e-mail addresses. Sometimes, it may be most helpful to write to the last authors instead, who tend to have more stable e-mail addresses, or to copy all authors into the email. Templates for asking for materials and sharing replication results can be found in Section <a href="appendix_templates.html" class="quarto-xref"><span>Appendix C</span></a>. Note that original authors may not respond due to institutional changes or not being active in academia anymore.</p>
 </section>
 <section id="identification-of-claims" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="identification-of-claims"><span class="header-section-number">5.3</span> Identification of Claims</h2>
@@ -375,12 +385,15 @@ Tip
 </section>
 <section id="deviations" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="deviations"><span class="header-section-number">5.5</span> Deviations</h2>
-<p>To increase trust in the reported results, reproduction researchers need to report them in a transparent way, in a possible preregistration and the final report. Ideally, all changes to the original procedure are explained, justified, and hypotheses about their expected effect on the outcomes are reported. ## Analysis</p>
+<p>Reproductions may aim to test whether the precise same approach yields the same result, or whether deliberate deviations make a difference. Either approach requires being mindful and transparent about deviations. Each planned change should be explained, justified, and accompanied by a hypothesis about its expected effect on the outcomes, ideally in a preregistration. Where deviations only become necessary during the analysis, they should still be reported transparently in the final report. Documenting all such changes, whether planned or emergent, increases trust in the reproduction, and makes it easier to interpret its results.</p>
+</section>
+<section id="analysis" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="analysis"><span class="header-section-number">5.6</span> Analysis</h2>
 <p>The main part of the reproduction is the analysis. Factors that are potentially relevant for reproduction success include the software of the machine that is running the code as well as versions of the software and additional packages or plug-ins. For example, users of the open source software R can get a comprehensive overview of the program version and their machine using the function sessionInfo(), which should be included in supplementary materials. For python users, a package has been developed to run a similar function session_info.show() (<a href="https://gitlab.com/joelostblom/session_info" class="uri">https://gitlab.com/joelostblom/session_info</a>).</p>
 <p>Apart from a numerical reproduction where the same code is used, reproduction researchers can explore alternative ways that should and should not affect the results, test new hypotheses or theories, and run exploratory analyses. Their report should be clearly structured to discern these methods. Finally, for statistical analyses, the reproduction report should include reproducibility indicators <span class="citation" data-cites="DreberJohannesson2024">(<a href="references.html#ref-DreberJohannesson2024" role="doc-biblioref">Dreber &amp; Johannesson, 2024</a>)</span> that summarize statistical significance and relative effect sizes across the original and reproduction results. Ankel-Peters et al. <span class="citation" data-cites="AnkelPetersEtAl2025">(<a href="references.html#ref-AnkelPetersEtAl2025" role="doc-biblioref">2025</a>)</span> recommend a visual summary of these indicators in the form of a reproducibility dashboard and specification curves <span class="citation" data-cites="SimonsohnEtAl2020 MazeiEtAl2025">(<a href="references.html#ref-SimonsohnEtAl2020" role="doc-biblioref">Simonsohn et al., 2020</a>; see also <a href="references.html#ref-MazeiEtAl2025" role="doc-biblioref">Mazei et al., 2025</a>)</span>. We strongly recommend reproduction researchers to consult the respective resources for further details.</p>
 </section>
-<section id="discussion" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="discussion"><span class="header-section-number">5.6</span> Discussion</h2>
+<section id="discussion" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="discussion"><span class="header-section-number">5.7</span> Discussion</h2>
 <p>The discussion section should include a clear evaluation of the reproduction success on different levels <span class="citation" data-cites="AnkelPetersEtAl2025">(<a href="references.html#ref-AnkelPetersEtAl2025" role="doc-biblioref">Ankel-Peters et al., 2025</a>)</span>. Researchers should report possible reasons for failure (e.g., objective coding errors, changes in software packages) and the role of differences between the original and the reproduction studies’ results with respect to their conclusions. Finally, if the original authors provided comments, the reproduction report should include a discussion of them.</p>
 
 
@@ -392,7 +405,7 @@ Ankel-Peters, J., Brodeur, A., Dreber, A., Johannesson, M., Neubauer, F., &amp; 
 Berinsky, A. J., Druckman, J. N., &amp; Yamamoto, T. (2021). Publication biases in replication studies. <em>Political Analysis</em>, <em>29</em>(3), 370–384. <a href="https://doi.org/10.1017/pan.2020.34">https://doi.org/10.1017/pan.2020.34</a>
 </div>
 <div id="ref-BITSS2020" class="csl-entry" role="listitem">
-Berkeley Initiative for Transparency in the Social Sciences. (2020). <em>Guide for advancing computational reproducibility in the social sciences</em>. <a href="https://bitss.github.io/ACRE/">https://bitss.github.io/ACRE/</a>
+Berkeley Initiative for Transparency in the Social Sciences. (2020). <em>Guide for advancing computational reproducibility in the social sciences</em>. Retrieved June 20, 2026, from <a href="https://bitss.github.io/ACRE/">https://bitss.github.io/ACRE/</a>
 </div>
 <div id="ref-BrodeurEtAl2024a" class="csl-entry" role="listitem">
 Brodeur, A., Cook, N. M., Hartley, J. S., &amp; Heyes, A. (2024). Do preregistration and preanalysis plans reduce p-hacking and publication bias? Evidence from 15,992 test statistics and suggestions for improvement. <em>Journal of Political Economy Microeconomics</em>, <em>2</em>(3), 527–561. <a href="https://doi.org/10.1086/730455">https://doi.org/10.1086/730455</a>

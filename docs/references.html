@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -53,7 +56,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./contributions.html" rel="next">
+<link href="./appendix_checklist.html" rel="next">
 <link href="./conclusion.html" rel="prev">
 <link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -62,10 +65,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8f2481fac337f33222e91caf6a1fd681.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cf2f61b72bfe7991692b9b3cc73e34ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -164,7 +167,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./understanding.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Replications and Reproductions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding Reproductions and Replications</span></span></a>
   </div>
 </li>
       </ul>
@@ -236,7 +239,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Conclusion and Checklist</span></a>
+ <span class="menu-text">Conclusion</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -267,14 +270,20 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./appendix_checklist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Reproduction and Replication Checklist</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./contributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Author Contributions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Author Contributions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix_templates.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Email templates</span></span></a>
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Email templates</span></span></a>
   </div>
 </li>
       </ul>
@@ -398,7 +407,7 @@ biases in replication studies. <em>Political Analysis</em>,
 <div id="ref-BITSS2020" class="csl-entry" role="listitem">
 Berkeley Initiative for Transparency in the Social Sciences. (2020).
 <em>Guide for advancing computational reproducibility in the social
-sciences</em>. <a href="https://bitss.github.io/ACRE/">https://bitss.github.io/ACRE/</a>
+sciences</em>. Retrieved June 20, 2026, from <a href="https://bitss.github.io/ACRE/">https://bitss.github.io/ACRE/</a>
 </div>
 <div id="ref-BeyerEtAl2021" class="csl-entry" role="listitem">
 Beyer, F., Flannery, J., Gau, R., Janssen, L., Schaare, L., Hartmann,
@@ -491,10 +500,11 @@ Keep your enemies close: Adversarial collaborations will improve
 behavioral science. <em>Journal of Applied Research in Memory and
 Cognition</em>, <em>11</em>(1), 1. <a href="https://doi.org/10.1037/mac0000004">https://doi.org/10.1037/mac0000004</a>
 </div>
-<div id="ref-ClarkeEtAl2024" class="csl-entry" role="listitem">
+<div id="ref-ClarkeEtAl2026" class="csl-entry" role="listitem">
 Clarke, B., Lee, P. Y. (K. )., Schiavone, S. R., Rhemtulla, M., &amp;
-Vazire, S. (2024). The prevalence of direct replication articles in
-top-ranking psychology journals. <em>American Psychologist</em>. <a href="https://doi.org/10.1037/amp0001385">https://doi.org/10.1037/amp0001385</a>
+Vazire, S. (2026). The prevalence of direct replication articles in
+top-ranking psychology journals. <em>American Psychologist</em>,
+<em>81</em>(2). <a href="https://doi.org/10.1037/amp0001385">https://doi.org/10.1037/amp0001385</a>
 </div>
 <div id="ref-ColeEtAl2024" class="csl-entry" role="listitem">
 Cole, N. L., Ulpts, S., Bochynska, A., Kormann, E., Good, M., Leitner,
@@ -540,12 +550,29 @@ Dunlap, K. (1926). The experimental methods of psychology. In C.
 Murchison (Ed.), <em>Psychologies of 1925</em> (pp. 331–351). Clark
 University Press. <a href="https://doi.org/10.1037/11020-022">https://doi.org/10.1037/11020-022</a>
 </div>
+<div id="ref-Durnez2016" class="csl-entry" role="listitem">
+Durnez, J., Degryse, J., Moerkerke, B., Seurinck, R., Sochat, V.,
+Poldrack, R. A., &amp; Nichols, T. E. (2016). Power and sample size
+calculations for fMRI studies based on the prevalence of active peaks.
+<em>BioRxiv</em>, 049429. <a href="https://doi.org/10.1101/049429">https://doi.org/10.1101/049429</a>
+</div>
 <div id="ref-EbersoleEtAl2020" class="csl-entry" role="listitem">
 Ebersole, C. R., Mathur, M. B., Baranski, E., Bart-Plange, D. J.,
 Buttrick, N. R., Chartier, C. R., &amp; Szecsi, P. (2020). Many labs 5:
 Testing pre-data-collection peer review as an intervention to increase
 replicability. <em>Advances in Methods and Practices in Psychological
 Science</em>, <em>3</em>(3), 309–331. <a href="https://doi.org/10.1177/2515245920958687">https://doi.org/10.1177/2515245920958687</a>
+</div>
+<div id="ref-Eklund2016" class="csl-entry" role="listitem">
+Eklund, A., Nichols, T. E., &amp; Knutsson, H. (2016). Cluster failure:
+Why fMRI inferences for spatial extent have inflated false-positive
+rates. <em>Proceedings of the National Academy of Sciences</em>,
+<em>113</em>(28), 7900–7905. <a href="https://doi.org/10.1073/pnas.1602413113">https://doi.org/10.1073/pnas.1602413113</a>
+</div>
+<div id="ref-Ellis2020" class="csl-entry" role="listitem">
+Ellis, C. T., Baldassano, C., Schapiro, A. C., Cai, M. B., &amp; Cohen,
+J. D. (2020). Facilitating open-science with realistic fMRI simulation:
+Validation and application. <em>PeerJ</em>, <em>8</em>, e8564. <a href="https://doi.org/10.7717/peerj.8564">https://doi.org/10.7717/peerj.8564</a>
 </div>
 <div id="ref-ErringtonEtAl2021a" class="csl-entry" role="listitem">
 Errington, T. M., Denis, A., Perfito, N., Iorns, E., &amp; Nosek, B. A.
@@ -610,6 +637,11 @@ in Methods and Practices in Psychological Science</em>, <em>3</em>(4),
 Francis, G. (2012). Too good to be true: Publication bias in two
 prominent studies from experimental psychology. <em>Psychonomic Bulletin
 &amp; Review</em>, <em>19</em>, 151–156. <a href="https://doi.org/10.3758/s13423-012-0227-9">https://doi.org/10.3758/s13423-012-0227-9</a>
+</div>
+<div id="ref-FrankEtAl2025" class="csl-entry" role="listitem">
+Frank, M. C., Braginsky, M., Cachia, J., Coles, N., &amp; Hardwicke, T.
+E. (2025). <em>Experimentology: An open science approach to experimental
+psychology methods</em>. MIT Press. <a href="https://doi.org/10.25936/3JP6-5M50">https://doi.org/10.25936/3JP6-5M50</a>
 </div>
 <div id="ref-FreesePeterson2017" class="csl-entry" role="listitem">
 Freese, J., &amp; Peterson, D. (2017). Replication in social science.
@@ -705,10 +737,6 @@ reproducibility studies in computer science. <em>Proceedings of the 16th
 ZEUS Workshop on Services and Their Composition (ZEUS 2024)(CEUR)</em>,
 <em>3673</em>.
 </div>
-<div id="ref-Ioannidis2005" class="csl-entry" role="listitem">
-Ioannidis, J. P. (2005). Why most published research findings are false.
-<em>PLoS Medicine</em>, <em>2</em>(8), e124.
-</div>
 <div id="ref-IsagerEtAl2023" class="csl-entry" role="listitem">
 Isager, P. M., Aert, R. C. M. van, Bahník, Š., Brandt, M. J., DeSoto, K.
 A., Giner-Sorolla, R., Krueger, J. I., Perugini, M., Ropovik, I., Veer,
@@ -752,6 +780,11 @@ regulatory analysis. <em>Imaging Neuroscience</em>, <em>2</em>. <a href="https:/
 Kamermans, K. L., Dudda, L., Daikoku, T., &amp; Verheyen, S. (2025).
 <em>The is-ought problem in deciding what to replicate: Which motives
 guide current replication practices?</em> <a href="https://doi.org/10.31234/osf.io/6xdy2_v2">https://doi.org/10.31234/osf.io/6xdy2_v2</a>
+</div>
+<div id="ref-KapitanyKavanagh2026" class="csl-entry" role="listitem">
+Kapitány, R., &amp; Kavanagh, C. M. (2026). <em>Best practices and
+ethical considerations for crowd-sourced data in the behavioral
+sciences</em>. <a href="https://doi.org/10.31219/osf.io/sn5gh">https://doi.org/10.31219/osf.io/sn5gh</a>
 </div>
 <div id="ref-KarhulahtiEtAl2024" class="csl-entry" role="listitem">
 Karhulahti, V., Martončik, M., &amp; Adamkovic, M. (2024).
@@ -969,9 +1002,10 @@ researchers expect when they replicate studies? A statistical view of
 replicability in psychological science. <em>Perspectives on
 Psychological Science</em>, <em>11</em>(4), 539–544. <a href="https://doi.org/10.1177/1745691616646366">https://doi.org/10.1177/1745691616646366</a>
 </div>
-<div id="ref-PawelEtAl2023" class="csl-entry" role="listitem">
-Pawel, S., Consonni, G., &amp; Held, L. (2023). Bayesian approaches to
-designing replication studies. <em>Psychological Methods</em>. <a href="https://doi.org/10.1037/met0000604">https://doi.org/10.1037/met0000604</a>
+<div id="ref-PawelEtAl2026" class="csl-entry" role="listitem">
+Pawel, S., Consonni, G., &amp; Held, L. (2026). Bayesian approaches to
+designing replication studies. <em>Psychological Methods</em>,
+<em>31</em>(1). <a href="https://doi.org/10.1037/met0000604">https://doi.org/10.1037/met0000604</a>
 </div>
 <div id="ref-PerryEtAl2022" class="csl-entry" role="listitem">
 Perry, T., Morris, R., &amp; Lea, R. (2022). A decade of replication
@@ -1042,7 +1076,7 @@ Psychology</em>, <em>92</em>, 104066. <a href="https://doi.org/10.1016/j.jesp.20
 </div>
 <div id="ref-RoselerWallrich2024" class="csl-entry" role="listitem">
 Röseler, L., &amp; Wallrich, L. (2024). <em>FReD: Interfaces to the
-FORRT replication database</em>. <a href="http://forrt.org/FReD/">http://forrt.org/FReD/</a>
+FORRT replication database</em>. Retrieved June 20, 2026, from <a href="https://forrt.org/fred/">https://forrt.org/fred/</a>
 </div>
 <div id="ref-RosenbergFinn2022" class="csl-entry" role="listitem">
 Rosenberg, M. D., &amp; Finn, E. S. (2022). How to establish robust
@@ -1111,7 +1145,8 @@ E4–E7. <a href="https://doi.org/10.1038/s41586-023-05745-x">https://doi.org/10
 </div>
 <div id="ref-Srivastava2012" class="csl-entry" role="listitem">
 Srivastava, S. (2012). <em>A pottery barn rule for scientific
-journals</em>. <em>The Hardest Science</em> blog. <a href="https://thehardestscience.com/2012/09/27/a-pottery-barn-rule-for-scientific-journals">https://thehardestscience.com/2012/09/27/a-pottery-barn-rule-for-scientific-journals</a>
+journals</em>. <em>The Hardest Science</em> blog. Retrieved June 20,
+2026, from <a href="https://thehardestscience.com/2012/09/27/a-pottery-barn-rule-for-scientific-journals">https://thehardestscience.com/2012/09/27/a-pottery-barn-rule-for-scientific-journals</a>
 </div>
 <div id="ref-Syed2023" class="csl-entry" role="listitem">
 Syed, M. (2023). <em>Replication or generalizability? How flexible
@@ -1170,7 +1205,7 @@ Wagenmakers, E.-J., Gronau, Q. F., &amp; Vandekerckhove, J. (2019).
 </div>
 <div id="ref-Wallrich2025" class="csl-entry" role="listitem">
 Wallrich, L. (2025). <em>Small telescopes for higher-power
-replications</em>. Personal blog. <a href="https://www.lukaswallrich.coffee/blog/small-telescopes-for-higher-power-replications/">https://www.lukaswallrich.coffee/blog/small-telescopes-for-higher-power-replications/</a>
+replications</em>. Personal blog. Retrieved June 20, 2026, from <a href="https://www.lukaswallrich.coffee/blog/small-telescopes-for-higher-power-replications/">https://www.lukaswallrich.coffee/blog/small-telescopes-for-higher-power-replications/</a>
 </div>
 <div id="ref-WardEtAl2023" class="csl-entry" role="listitem">
 Ward, M. K., &amp; Meade, A. W. (2023). Dealing with careless responding
@@ -1630,8 +1665,8 @@ Making replication mainstream. <em>Behavioral and Brain Sciences</em>,
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./contributions.html" class="pagination-link" aria-label="Author Contributions">
-        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Author Contributions</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./appendix_checklist.html" class="pagination-link" aria-label="Reproduction and Replication Checklist">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Reproduction and Replication Checklist</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
