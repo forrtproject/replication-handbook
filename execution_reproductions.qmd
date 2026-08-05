@@ -106,14 +106,14 @@ While preregistration of a reproduction may seem paradoxical when data are alrea
 
 To develop and register the analysis protocol without being steered by the
 results, researchers can work on a masked version of the data, for instance
-one in which the outcome is randomly shuffled across cases. Simple shuffling
-may not be enough, particularly if the protocol needs to test distributional
-assumptions, and in such cases the masked data should be generated in a way
-that takes the design and structure of the data into account, for which
-@Quintana2020 offers a helpful tutorial. Finalising the protocol on this
-masked version, and only then applying it to the intact data, can reduce the
-risk that analytic choices are consciously or unconsciously adjusted to
-produce a particular result.
+one in which the outcome is randomly shuffled across cases. This preserves
+the distribution of each variable, so most of the analysis pipeline can be
+written and debugged, but it breaks the relationships between variables, so
+checks that depend on them, such as residual diagnostics, can only be run on
+the intact data and should be specified as decision rules in the protocol.
+Finalising the protocol on this masked version, and only then applying it to
+the intact data, can reduce the risk that analytic choices are consciously or
+unconsciously adjusted to produce a particular result.
 
 ## Deviations
 
