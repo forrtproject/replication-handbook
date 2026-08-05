@@ -2,3 +2,6 @@
 .Rproj.user
 
 **/*.quarto_ipynb
+
+/pr-review/
+__pycache__/

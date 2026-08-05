@@ -1,0 +1,75 @@
+/* Tracked-changes styling for the PR review site. */
+
+.diff-ins,
+.diff-del {
+  border-radius: 2px;
+  padding: 0 1px;
+  scroll-margin-top: 4rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.diff-ins {
+  background: #d6f5df;
+  box-shadow: inset 0 -2px 0 #34a853;
+  text-decoration: none;
+}
+
+.diff-del {
+  background: #ffe0e0;
+  color: #8a1c1c;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.diff-ins-block,
+.diff-del-block {
+  border-left: 4px solid;
+  padding: 0.4rem 0.8rem;
+  margin: 0.6rem 0;
+  border-radius: 0 3px 3px 0;
+  scroll-margin-top: 4rem;
+}
+
+.diff-ins-block {
+  border-color: #34a853;
+  background: #eefaf1;
+}
+
+.diff-del-block {
+  border-color: #d93025;
+  background: #fdeeee;
+}
+
+.diff-del-block > * {
+  opacity: 0.75;
+}
+
+/* the change you jumped to */
+.diff-current.diff-ins { background: #b7ecc6; }
+.diff-current.diff-del { background: #ffc7c7; }
+.diff-current {
+  box-shadow: inset 0 -2px 0 #1a73e8;
+  animation: diff-flash 1.2s ease-out;
+}
+
+.diff-current.diff-ins-block,
+.diff-current.diff-del-block {
+  border-color: #1a73e8;
+  box-shadow: none;
+}
+
+@keyframes diff-flash {
+  from { filter: brightness(0.88) saturate(1.6); }
+}
+
+body.hide-deletions .diff-del,
+body.hide-deletions .diff-del-block {
+  display: none;
+}
+
+/* deletions in headings should not distort the outline */
+h1 .diff-del, h2 .diff-del, h3 .diff-del, h4 .diff-del {
+  font-size: 0.9em;
+  font-weight: normal;
+}
