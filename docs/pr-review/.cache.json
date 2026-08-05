@@ -44,7 +44,7 @@
   }
  },
  "41": {
-  "head": "06346751350b4aff13073a03ae30ecc632996896",
+  "head": "66aedd861c8fbfd9fa9eed6a05f8b682fee0b5e2",
   "tool": "9d514d406092",
   "entry": {
    "number": 41,
@@ -67,9 +67,7 @@
      "hunks": 2
     }
    ],
-   "otherFiles": [
-    "references.bib"
-   ]
+   "otherFiles": []
   }
  },
  "40": {
