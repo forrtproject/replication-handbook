@@ -47,29 +47,6 @@
    "otherFiles": []
   }
  },
- "40": {
-  "head": "e71da0235ea2dbf25254592a351599f6fef4f609",
-  "tool": "9d514d406092",
-  "entry": {
-   "number": 40,
-   "title": "Ch6 revisions: Small Telescopes clarity, OSC link, Piloting, framework tie-in (#19)",
-   "url": "https://github.com/forrtproject/replication-handbook/pull/40",
-   "author": "LukasWallrich",
-   "updated": "2026-08-13",
-   "branch": "content/issue-19-ch6-replications",
-   "chapters": [
-    {
-     "file": "execution_replications.qmd",
-     "title": "Execution of Replications",
-     "href": "40/execution_replications.html",
-     "hunks": 9
-    }
-   ],
-   "otherFiles": [
-    "metaror_todo.md"
-   ]
-  }
- },
  "38": {
   "head": "19585ea01e7cd13aa2159315679fbc311d433272",
   "tool": "9d514d406092",
