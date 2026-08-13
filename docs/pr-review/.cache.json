@@ -20,35 +20,6 @@
    "otherFiles": []
   }
  },
- "41": {
-  "head": "7c5097000b36a73923314faa6406ea09abab94be",
-  "tool": "9d514d406092",
-  "entry": {
-   "number": 41,
-   "title": "Ch4/5: own paragraph for robustness reproductions; shuffled-data protocol suggestion (#18)",
-   "url": "https://github.com/forrtproject/replication-handbook/pull/41",
-   "author": "LukasWallrich",
-   "updated": "2026-08-13",
-   "branch": "content/issue-18-ch5-reproductions",
-   "chapters": [
-    {
-     "file": "execution_reproductions.qmd",
-     "title": "Execution of Reproductions",
-     "href": "41/execution_reproductions.html",
-     "hunks": 1
-    },
-    {
-     "file": "planning.qmd",
-     "title": "Planning and Conducting Reproductions and Replications",
-     "href": "41/planning.html",
-     "hunks": 2
-    }
-   ],
-   "otherFiles": [
-    "references.bib"
-   ]
-  }
- },
  "38": {
   "head": "19585ea01e7cd13aa2159315679fbc311d433272",
   "tool": "9d514d406092",
