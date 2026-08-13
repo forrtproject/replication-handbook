@@ -92,14 +92,14 @@
   }
  },
  "39": {
-  "head": "9ad114e657d7023ea332c7cba532f6be77177a18",
+  "head": "6c26b3c433b6cf3f8326b243b6b8bc11d55c4ea5",
   "tool": "9d514d406092",
   "entry": {
    "number": 39,
    "title": "Add many-analyst findings alongside Landy et al. (Ch2, #15)",
    "url": "https://github.com/forrtproject/replication-handbook/pull/39",
    "author": "LukasWallrich",
-   "updated": "2026-06-29",
+   "updated": "2026-08-13",
    "branch": "content/issue-15-many-analyst",
    "chapters": [
     {
