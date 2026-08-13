@@ -20,27 +20,6 @@
    "otherFiles": []
   }
  },
- "42": {
-  "head": "882e77f212730bc63b50f462d88d2f97d2acda57",
-  "tool": "9d514d406092",
-  "entry": {
-   "number": 42,
-   "title": "Broaden replication-rate evidence base and caveat the estimate (Ch1, #14)",
-   "url": "https://github.com/forrtproject/replication-handbook/pull/42",
-   "author": "LukasWallrich",
-   "updated": "2026-08-13",
-   "branch": "content/issue-14-replication-rate-evidence",
-   "chapters": [
-    {
-     "file": "background.qmd",
-     "title": "Background",
-     "href": "42/background.html",
-     "hunks": 1
-    }
-   ],
-   "otherFiles": []
-  }
- },
  "41": {
   "head": "66aedd861c8fbfd9fa9eed6a05f8b682fee0b5e2",
   "tool": "9d514d406092",
