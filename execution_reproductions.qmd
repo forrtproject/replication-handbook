@@ -104,6 +104,20 @@ planned analyses.
 
 While preregistration of a reproduction may seem paradoxical when data are already accessible, it remains valuable as a (personal) commitment device: specifying the analysis plan in advance keeps researchers accountable and helps produce robust reproductions. If the data could already have been accessed, some readers may discount the registration, yet we would recommend to still start with this.
 
+To develop and register the analysis protocol without being steered by the
+results, researchers can work on a blinded version of the data, for instance
+one in which the outcome is randomly shuffled across cases while the
+predictors are left intact [@DutilhEtAl2021; @MacCounPerlmutter2015]. The
+distribution of each variable stays intact, as does any collinearity among
+the predictors, so the analysis pipeline can be written, debugged, and
+adapted to peculiarities of the data, while any association with the outcome
+is due to chance alone. Shuffling the condition labels instead is less
+suitable for factorial designs, since mixing groups with different
+distributions can disguise the skew within each of them and prompt the wrong
+transformation. Finalising the protocol on the blinded data, and only then
+applying it unchanged to the intact data, reduces the risk that analytic
+choices are adjusted, consciously or not, to produce a particular result.
+
 ## Deviations
 
 Reproductions may aim to test whether the precise same approach yields the
