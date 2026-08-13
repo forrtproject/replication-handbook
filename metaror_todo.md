@@ -29,7 +29,7 @@ Based on reviews by R1 (Hannah Fraser), R2 (Vittorio Iacovella), R3 (Wolf Vanpae
 - [ ] Figure 1.1: Consider adding a vertical dashed line around 2010 to mark the replication crisis. (R2) (→ #26)
 - [x] Clarify "developed actively" phrasing — currently ambiguous whether this is positive or negative. (R1)
 - [x] Check the 1% replication rate claim (citing Perry et al., 2022) — R2 notes the actual rate appears at least 10x lower in the reference. (R2) **Fact-checked: Perry et al. report overall yearly rates of ~0.2%, with some individual journals reaching 1-2%. Changed to "well below 1%".**
-- [ ] Improve the replication rate discussion - currently based on 1 very narrow paper (education) (Lukas) (→ #14)
+- [x] Improve the replication rate discussion - currently based on 1 very narrow paper (education) (Lukas) (→ #14) **Added Makel et al. (2012), who report 1.07% for the 100 highest-impact psychology journals, alongside Perry et al.'s ~0.2% per year for education. Replication success rates stay out of Chapter 1; they belong to #12.**
 
 
 ### Chapter 2: Understanding Replications and Reproductions
