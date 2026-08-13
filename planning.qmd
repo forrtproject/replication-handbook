@@ -85,7 +85,7 @@ However, in many research areas information on these steps is often
 incomplete [@FieldEtAl2019]; older research tends to be especially
 limited in terms of the methodological details they provide. If the original
 study was preregistered and the original code is available, reproduction
-researchers can also check whether the original analyses adhere to the
+researchers can check whether the original analyses adhere to the
 preregistered analysis plan.
 
 Beyond reproducing the original analyses as reported, we recommend testing
