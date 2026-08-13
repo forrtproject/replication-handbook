@@ -155,28 +155,5 @@
    ],
    "otherFiles": []
   }
- },
- "35": {
-  "head": "10b7bfa852982508defa75437efd708c9217425d",
-  "tool": "9d514d406092",
-  "entry": {
-   "number": 35,
-   "title": "Extend discussion of disagreement about replication success (#4)",
-   "url": "https://github.com/forrtproject/replication-handbook/pull/35",
-   "author": "LukasWallrich",
-   "updated": "2026-06-29",
-   "branch": "content/issue-4-disagreement-replication-success",
-   "chapters": [
-    {
-     "file": "discussion.qmd",
-     "title": "Discussion",
-     "href": "35/discussion.html",
-     "hunks": 1
-    }
-   ],
-   "otherFiles": [
-    "references.bib"
-   ]
-  }
  }
 }
