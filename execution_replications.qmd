@@ -47,10 +47,10 @@ statement of what results would count as a replication success and what
 would count as a failure. This should be paired with an analysis plan
 (ideally with analysis code that was tested beforehand using data from
 test runs or simulations), since a preregistration without an analysis
-plan provides no safeguard against *p*-hacking [@BrodeurEtAl2024a]. Beware that these criteria can be
-structured sequentially. For example, if there is a manipulation check,
-it can be defined that it has to work for the replicability to actually
-be evaluated. Boyce et al. [-@BoyceEtAl2024] also found that repeating
+plan provides no safeguard against *p*-hacking [@BrodeurEtAl2024a].
+Beware that these criteria can be structured sequentially. For example,
+if there is a manipulation check, it can be defined that it has to work
+for the replicability to actually be evaluated. Boyce et al. [-@BoyceEtAl2024] also found that repeating
 unsuccessful replications did not change the outcomes unless obvious
 weaknesses were fixed.
 
@@ -93,40 +93,37 @@ central, or clearly specify other methods for aggregation across results
 
 ### Small Telescopes Approach
 
-The small telescopes approach [@Simonsohn2015] reframes what a
-replication has to demonstrate. Instead of asking only whether the
-replication itself reaches significance, it asks whether the replication can reject effects large enough for the
-original study to have had 33% power to detect them. The
-benchmark for this judgement is the effect size that the original study
-had only 33% power to detect, often labelled d33, that is, the effect
-for which a study of the original's sample size would have produced a
-significant result only one time in three. An effect smaller than d33 is
-one that the original design could not reliably have found, so a study
-reporting it carries little evidentiary value. The replication is
-therefore powered not to reproduce the original point estimate, but to
-test whether the true effect is at least as large as d33. The metaphor
-is one of telescope size: a finding that can only be resolved with a
-large instrument (a large sample) was probably not genuinely seen by the
-small instrument (the underpowered original) that first reported it.
+The small telescopes approach [@Simonsohn2015] changes what a
+replication has to show. Rather than asking whether the replication
+itself reaches significance, it asks whether the original study was ever
+in a position to detect the effect it claimed. The benchmark is the
+effect size that the original had only 33% power to detect, often
+labelled d33, one it would have found significant only about one time in
+three. A replication then tests whether the true effect is smaller than
+d33. The metaphor is telescope size: an object that needs a large
+instrument to resolve was probably not genuinely seen by the small one
+that first reported it.
+
+This is less demanding to plan than it sounds. For a given test and
+alpha, d33 follows from the original sample size alone, so it can be
+worked out without reference to the effect the original reported. The
+sample needed to rule out d33 scales with that same sample size, which
+is why the requirement can be stated as a fixed multiple of the original
+n, as in the example below. That multiple is a result of the power
+calculation, not a shortcut around it.
 
 This approach rests on the notion that replications should assess the
 evidentiary value of the original study, and that the ‘burden of proof’
 shifts back to proponents of a hypothesis if their evidence is shown to
-be very weak. If the replication can rule out an effect as large as d33,
-the original finding is treated as uninformative, because at such low
-power a significant original result provides only weak evidence for an
-effect of the size claimed. The approach is particularly
-appropriate when original studies are very imprecise. In that case, a
-replication that finds a much smaller effect may well still be compatible
-with the (wide) confidence interval of the original study, so that it
-might be impossible to reject the original claim on that basis. The
-approach also offers one interpretive lens for large-scale replication
-efforts: the Reproducibility Project: Psychology [@OpenScienceCollab2015]
-found that replication effect sizes were typically markedly smaller than
-those originally reported, and the small telescopes logic gives a
-principled criterion for concluding, when the replication can rule out
-effects of that size, that the original study could not have provided
-reliable evidence in the first place.
+be very weak. It is particularly appropriate when original studies are
+very imprecise. In that case, a replication that finds a much smaller
+effect may well still be compatible with the (wide) confidence interval
+of the original study, and it might be impossible to reject the original
+claim on that basis. The approach also gives a way to read large-scale
+replication efforts: the Reproducibility Project: Psychology
+[@OpenScienceCollab2015] found replication effects half the magnitude of
+the original ones, and small telescopes turns that pattern into a
+criterion that can be applied study by study.
 
 As an example, @SchultzeEtAl2018 [Figure 4] found an effect in three
 studies with an average effect size of *r* = -.11, 95% CI \[-.22,
@@ -232,17 +229,17 @@ sufficient detail to allow for a replication [@AguinisSolarino2019;
 @ErringtonEtAl2021a]. Second, scientific progress in the form of new
 methods and insights and cultural changes might require replication
 researchers to make changes or additions to their study. Third, obvious
-errors must be corrected. Whether a given change actually threatens the
-replication depends on the interpretive lens introduced in
-@sec-types-replication: from an inductive, phenomenon-focused
-perspective, any departure from the original procedure may alter the
-result, whereas from a deductive, theory-focused perspective, changes are
-consequential insofar as they alter the theoretical construct, mechanism,
-measurement, or boundary conditions being tested. Keeping
-this distinction in view helps researchers judge which deviations are
-trivial and which demand careful justification. We elaborate on a number
-of reasons to deviate from an original study. In the replication report,
-all deviations should be reported and justified exhaustively.
+errors must be corrected. We elaborate on a number of reasons to deviate
+from an original study. In the replication report, all deviations should
+be reported and justified exhaustively.
+
+Whether a given change threatens the replication depends on the
+perspective introduced in @sec-types-replication: from an inductive,
+phenomenon-focused perspective, any departure from the original
+procedure may alter the result, whereas from a deductive, theory-focused
+perspective, changes are consequential insofar as they alter the
+theoretical construct, mechanism, measurement, or boundary conditions
+being tested.
 
 -   [Unspecific original
     materials:]{style="text - decoration: underline;"} If the original
@@ -346,8 +343,8 @@ whether all necessary data are recorded. Adding a debriefing survey, in
 which pilot participants are asked about their experience and the clarity
 of the instructions and any user interface, extends these checks to
 issues that might otherwise surface only once the full study is underway,
-when they could undermine the replication. See Frank et al. (2025,
-chapter 12.3.1) for further discussion on piloting studies.
+when they could undermine the replication. See @FrankEtAl2025
+[chap. 12.3.1] for further discussion on piloting studies.
 
 ### Collaborating and Consulting with the Original Authors
 

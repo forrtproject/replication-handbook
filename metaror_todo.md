@@ -63,12 +63,13 @@ Based on reviews by R1 (Hannah Fraser), R2 (Vittorio Iacovella), R3 (Wolf Vanpae
 
 ### Chapter 6: Execution of Replications
 - [x] Section 6.1: Be cautious about stating "A rejection due to the results is not possible" for Registered Reports — policies vary by journal, and avoid framing RRs solely as publication security. (R2)
-- [ ] Section 6.2.1 (Small Telescope): Rewrite explanation for clarity — currently hard to follow and the "rule of thumb" from Simonsohn 2015 feels insufficiently explained. (R1) (→ #19)
-- [ ] Section 6.2.1: Link Small Telescope approach to the Open Science Collaboration (2015) reproducibility study. (R2) (→ #19)
-- [ ] Section 6.3: Tie changes in methods back to deductive/inductive reasoning and underlying theory. (R1) (→ #19)
-- [ ] Section 6.4 (Piloting): Rewrite to better link the two paragraphs. (R1) (→ #19)
+- [x] Section 6.2.1 (Small Telescope): Rewrite explanation for clarity — currently hard to follow and the "rule of thumb" from Simonsohn 2015 feels insufficiently explained. (R1) (→ #19) **Explained that d33 follows from the original sample size alone, so the required replication sample comes out as a fixed multiple of it.**
+- [x] Section 6.2.1: Link Small Telescope approach to the Open Science Collaboration (2015) reproducibility study. (R2) (→ #19) **Framed as an interpretive lens on the RP:P results. R2's premise that RP:P is a focus of Simonsohn (2015) does not hold: Simonsohn appeared 23 March 2015, RP:P on 28 August 2015, so do not restate the link as something Simonsohn did.**
+- [x] Section 6.3: Tie changes in methods back to deductive/inductive reasoning and underlying theory. (R1) (→ #19)
+- [x] Section 6.4 (Piloting): Rewrite to better link the two paragraphs. (R1) (→ #19)
 - [x] Section 6.4.1 (Collaborating with Original Authors): Reduce examples — keep only the most interesting one and cite the rest. (R1)
-- [ ] Section 6.1: Review for replication-specific content — much of it is general preregistration advice that may already be familiar to the target audience. (R3) (→ #19)
+- [x] Section 6.1: Review for replication-specific content — much of it is general preregistration advice that may already be familiar to the target audience. (R3) (→ #19)
+- [ ] Section 6.1: R1 calls the sequential-criteria, manipulation-check and Boyce et al. material "incomplete advice about how to implement preregistration" and would prefer a pointer to resources instead (`metaror_reviews.md:69`). Decide whether to cut it. (R1)
 - [x] Deviations from preregistration: Give them their own section header in Chapter 6 (as done in Chapter 5) for consistency. (R1)
 
 ### Chapter 7: Discussion
