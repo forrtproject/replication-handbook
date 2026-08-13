@@ -141,6 +141,20 @@ interested in building on its findings (including if they wish to build
 upon their own original findings), their interest to build on it may be
 a sufficient indicator of its relevance to their research program.
 
+Replications can also be used to probe a phenomenon’s
+generalizability, so a lack of variety in study designs can motivate a
+replication attempt. If there is reason to assume that a phenomenon is
+highly dependent on context (e.g., works only for graduate students,
+with English-speaking people, when people are incentivized, for the
+chosen stimuli, …), it can be replicated and extended in other contexts.
+More generally, when background factors are introduced to a study (e.g.,
+there was a positive correlation in study X but researchers suspect it
+to vanish under condition M), the original finding needs to be
+replicated in a part of the new study for the argument to work. An added
+benefit of this is to help avoid later claims of ‘hidden moderators’ in
+original studies, an argument which has been used previously to refute
+the validity of replication study results [@ZwaanEtAl2018].
+
 ## Uncertainty
 
 The more uncertain the original study’s outcome is, the higher the potential of knowledge gained from reproduction and replication. Although no findings are definitive, research reports differ in the strength of the evidence they present \[e.g., Registered Reports[^choosing_study-1] are typically more convincing than non preregistered studies, @SoderbergEtAl2021\]. Similarly, sample size (within a given field) has been proposed as an indicator of evidence strength [@IsagerEtAl2021]. @PittelkowEtAl2021, @PittelkowEtAl2023 and @FieldEtAl2019 all argued for using the current strength of evidence in favour of the original claim as an important element that features into the choosing a replication target. However, the degree of uncertainty can be uncertain or misjudged: In some areas of research a hypothesis had been claimed to be confirmed hundreds of times and yet, large-scale replication effort could not support the original hypothesis so that after hundreds of studies the existence of the phenomenon was still unknown [e.g., @FrieseEtAl2019]. Meta-analyses allow some tests for uncertainty (e.g. via correction of bias, evaluation of risk of bias, or estimates of heterogeneity). Although there are numerous ways to meta-analytically evaluate the expected replicability of a set of claims, none of them is as solid as a well-designed replication attempt [@CarterEtAl2019]. Other heuristics to estimate robustness reproducibility and replicability of sets of findings have been proposed. They include the caliper test, relative proximity, or *z*-curve [@BartosSchimmack2022; see @AdlerEtAl2023, for an overview and a ShinyApp that combines these tools]. Individual findings can be assessed through forensic meta-science tests — techniques such as GRIM, SPRITE, and statistical consistency checks that detect impossible or implausible values in published results [for an overview, see @Heathers2025], and through the assessment of papers for reporting issues, such as those identified by *statcheck* [@NuijtenPolanin2020; @papercheckR]. Moreover, methods such as *sum of p-values* [@HeldEtAl2024] and Bayesian re-analysis can be applied to help determine the degree of evidence for a given effect an original study might contain [@FieldEtAl2019; @PittelkowEtAl2021].
@@ -170,20 +184,6 @@ power should be taken with caution [see also @Francis2012;
 
 For large parts of the literature and given the overall low replicability rate in many fields, the mere lack of a reproduction or close replication by independent researchers can be used as an argument for uncertainty [e.g., @PittelkowEtAl2023], though it *might* also indicate that nobody beyond the original orders is interested in the phenomenon. However, it is also possible that replications have been attempted but not published, for instance when reviewers show an aversion to null findings, replications, or findings criticizing their own work.
 
-As replications can also be used to probe a phenomenon’s
-generalizability, a lack of variety in study designs can motivate a
-replication attempt. If there is reason to assume that a phenomenon is
-highly dependent on context (e.g., works only for graduate students,
-with English-speaking people, when people are incentivized, for the
-chosen stimuli, …), it can be replicated and extended in other contexts.
-More generally, when background factors are introduced to a study (e.g.,
-there was a positive correlation in study X but researchers suspect it
-to vanish under condition M), the original finding needs to be
-replicated in a part of the new study for the argument to work. An added
-benefit of this is to help avoid later claims of ‘hidden moderators’ in
-original studies; an argument which has been used previously to refute
-the validity of replication study results [@ZwaanEtAl2018].
-
 Finally, uncertainty can be the result of a lack of specificity in the
 original report: If there are details missing that cannot be retrieved
 anymore (e.g., researchers involved in the original study cannot be
@@ -196,7 +196,7 @@ features into the decision of replication study selection.
 Reconstructing these materials and documenting a procedure would, thus,
 be a valuable contribution of a replication study.
 
-***Theoretical contribution***
+### Theoretical contribution
 
 In some cases, theories are so vague that a failed replication would
 likely be criticized for misunderstanding the theory [e.g.,
@@ -218,7 +218,7 @@ case of theory that aims to explain phenomena [@FieldEtAl2024], risking
 a vicious cycle in which successful replications potentially perpetuate
 flaws across studies.
 
-***Availability of reproductions and replications***
+### Availability of reproductions and replications
 
 While a single replication (or robustness reproduction) cannot provide
 conclusive evidence in regard to the veracity of original claims, the
@@ -300,7 +300,10 @@ researchers check whether the journal that published the original study
 has a data editor or reproducibility manager who has done a
 reproducibility check or provides a *replication package*. A replication
 package is a collection of materials to allow reproduction of the
-original results. Ideally, the dataset in the replication package, or
+original results, and locating and assembling these materials is the
+starting point of any reproduction (see the [Gathering
+resources](execution_reproductions.qmd#gathering-resources) section that
+opens the Execution of Reproductions chapter). Ideally, the dataset in the replication package, or
 shared separately, adheres to the FAIR criteria [@WilkinsonEtAl2016],
 that is, it should be findable, accessible, interoperable, and reusable.
 Otherwise, the reproduction author would need to send a data sharing
