@@ -56,9 +56,9 @@ Based on reviews by R1 (Hannah Fraser), R2 (Vittorio Iacovella), R3 (Wolf Vanpae
 
 ### Chapter 5: Execution of Reproductions
 - [x] Section 5.4 (Preregistration): Remove or substantially revise the paragraph about fraudulent preregistration claims — it's confused and not relevant to whether one should preregister. (R1)
-- [ ] Section 5.4: Consider suggesting development of reproduction protocol on randomly re-ordered data (preserves distributional info without directional results). (R1) (→ #18)
+- [x] Section 5.4: Consider suggesting development of reproduction protocol on randomly re-ordered data (preserves distributional info without directional results). (R1) (→ #18) **Added as blinded analysis, citing Dutilh et al. (2021) and MacCoun and Perlmutter (2015). Shuffle the outcome and leave the predictors intact, which is their recommendation for regression designs; shuffling condition labels can warp within-cell distributions.**
 - [x] Section 5.5 (Deviations): Remove the sentence about journal requirements (e.g., JOPD, Journal of Robustness Reports) — it doesn't relate to deviations. (R1)
-- [ ] Section 5.2: Give the "Reproduction before Replication" subsection about robustness reproductions its own paragraph. (R1) (→ #18)
+- [x] Section 5.2: Give the "Reproduction before Replication" subsection about robustness reproductions its own paragraph. (R1) (→ #18) **Now §4.2 in planning.qmd after the restructure.**
 - [ ] Add discussion of what "the same" means (or reference where it's discussed later). (R1) (→ #28)
 
 ### Chapter 6: Execution of Replications
