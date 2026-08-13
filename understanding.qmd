@@ -125,23 +125,26 @@ close replications more directly test the credibility of original
 results, while conceptual replications that vary features of the design
 are concerned with generalizability.
 
-A related line of work isolates the analysis stage by holding the data
-fixed. In so-called many-analyst studies, multiple independent teams
-analyse the same dataset to test the same hypothesis, yet reach divergent
-conclusions. @SilberzahnEtAl2018 had numerous teams estimate whether
-football referees are more likely to give red cards to dark-skinned
-players, and the teams reported a wide spread of effect estimates despite
-working from identical data. @BotvinikNezerEtAl2020 observed substantial
-variability when many teams tested hypotheses on a single neuroimaging
-dataset, and @BreznauEtAl2022 described a “hidden universe of
-uncertainty” across the many teams that analysed the same survey data.
-Because the data are held constant, this variability cannot be attributed
-to differences in data collection and instead reflects choices made in the
-analysis pipeline, which matters for interpreting reproductions and
-replications: even when the same data are reanalysed, defensible
-differences in modelling decisions can change effect estimates, their
-uncertainty, statistical significance, and sometimes the direction of the
-substantive conclusion.
+Analytic choices form a further dimension of similarity, which the
+taxonomy in @fig-taxonomy-similarity does not cover. Many-analyst studies
+isolate it by giving independent teams the same data and the same
+hypothesis, so that any variation in the results has to come from the
+analysis. @SilberzahnEtAl2018 asked 29 teams whether football referees
+are more likely to give red cards to dark-skin-toned players; the
+estimated effects ranged from 0.89 to 2.93 in odds-ratio units, and 20
+teams reported a significant positive effect while 9 did not. Among 70
+teams analysing a single neuroimaging dataset, no two chose the same
+workflow, and the results of the hypothesis tests varied accordingly
+[@BotvinikNezerEtAl2020]. @BreznauEtAl2022 gave 73 teams the same survey
+data to test whether higher immigration reduces support for social
+policies; the teams reached widely diverging numerical estimates and
+substantive conclusions, and researchers’ expertise and prior beliefs
+barely predicted where a team landed. Working from the same data
+therefore does not guarantee the same result. Only a numerical
+reproduction, which reuses the original code, holds the analysis fixed as
+well; every other repetition varies along this dimension, whether or not
+that is intended. Robustness reproductions, discussed in later chapters,
+turn this variation into a deliberate test.
 
 Note that @NosekErrington2020 define replication as a study “for which
 any outcome would be considered diagnostic evidence about a claim from
