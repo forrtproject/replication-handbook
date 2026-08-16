@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Execution of Replications</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../libs/clipboard/clipboard.min.js"></script>
+<script src="../libs/quarto-html/quarto.js" type="module"></script>
+<script src="../libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../libs/quarto-html/popper.min.js"></script>
+<script src="../libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../libs/quarto-html/anchor.min.js"></script>
+<link href="../libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../libs/bootstrap/bootstrap.min.js"></script>
+<link href="../libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../libs/bootstrap/bootstrap-75876cfc9b4c3777c48621ef62661f1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+<style>
+/* Tracked-changes styling for the PR review site. */
+
+.diff-ins,
+.diff-del {
+  border-radius: 2px;
+  padding: 0 1px;
+  scroll-margin-top: 4rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.diff-ins {
+  background: #d6f5df;
+  box-shadow: inset 0 -2px 0 #34a853;
+  text-decoration: none;
+}
+
+.diff-del {
+  background: #ffe0e0;
+  color: #8a1c1c;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.diff-ins-block,
+.diff-del-block {
+  border-left: 4px solid;
+  padding: 0.4rem 0.8rem;
+  margin: 0.6rem 0;
+  border-radius: 0 3px 3px 0;
+  scroll-margin-top: 4rem;
+}
+
+.diff-ins-block {
+  border-color: #34a853;
+  background: #eefaf1;
+}
+
+.diff-del-block {
+  border-color: #d93025;
+  background: #fdeeee;
+}
+
+.diff-del-block > * {
+  opacity: 0.75;
+}
+
+/* the change you jumped to */
+.diff-current.diff-ins { background: #b7ecc6; }
+.diff-current.diff-del { background: #ffc7c7; }
+.diff-current {
+  box-shadow: inset 0 -2px 0 #1a73e8;
+  animation: diff-flash 1.2s ease-out;
+}
+
+.diff-current.diff-ins-block,
+.diff-current.diff-del-block {
+  border-color: #1a73e8;
+  box-shadow: none;
+}
+
+@keyframes diff-flash {
+  from { filter: brightness(0.88) saturate(1.6); }
+}
+
+body.hide-deletions .diff-del,
+body.hide-deletions .diff-del-block {
+  display: none;
+}
+
+/* deletions in headings should not distort the outline */
+h1 .diff-del, h2 .diff-del, h3 .diff-del, h4 .diff-del {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+</style>
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#preregistration-and-registered-replication-reports" id="toc-preregistration-and-registered-replication-reports" class="nav-link active" data-scroll-target="#preregistration-and-registered-replication-reports">Preregistration and Registered (Replication) Reports</a>
+  <ul class="collapse">
+  <li><a href="#deviations-from-the-preregistration" id="toc-deviations-from-the-preregistration" class="nav-link" data-scroll-target="#deviations-from-the-preregistration">Deviations from the Preregistration</a></li>
+  </ul></li>
+  <li><a href="#sample-size-determination" id="toc-sample-size-determination" class="nav-link" data-scroll-target="#sample-size-determination">Sample Size Determination</a>
+  <ul class="collapse">
+  <li><a href="#small-telescopes-approach" id="toc-small-telescopes-approach" class="nav-link" data-scroll-target="#small-telescopes-approach">Small Telescopes Approach</a></li>
+  <li><a href="#equivalence-testing" id="toc-equivalence-testing" class="nav-link" data-scroll-target="#equivalence-testing">Equivalence Testing</a></li>
+  <li><a href="#bayesian-approach" id="toc-bayesian-approach" class="nav-link" data-scroll-target="#bayesian-approach">Bayesian Approach</a></li>
+  <li><a href="#meta-analytical-estimates" id="toc-meta-analytical-estimates" class="nav-link" data-scroll-target="#meta-analytical-estimates">Meta-Analytical Estimates</a></li>
+  <li><a href="#multilab-replications" id="toc-multilab-replications" class="nav-link" data-scroll-target="#multilab-replications">Multilab Replications</a></li>
+  </ul></li>
+  <li><a href="#changes-in-the-methods" id="toc-changes-in-the-methods" class="nav-link" data-scroll-target="#changes-in-the-methods">Changes in the Methods</a></li>
+  <li><a href="#piloting" id="toc-piloting" class="nav-link" data-scroll-target="#piloting">Piloting</a>
+  <ul class="collapse">
+  <li><a href="#collaborating-and-consulting-with-the-original-authors" id="toc-collaborating-and-consulting-with-the-original-authors" class="nav-link" data-scroll-target="#collaborating-and-consulting-with-the-original-authors">Collaborating and Consulting with the Original Authors</a></li>
+  </ul></li>
+  <li><a href="#adversarial-collaborations" id="toc-adversarial-collaborations" class="nav-link" data-scroll-target="#adversarial-collaborations"><span class="diff-del" data-hunk="1">Adversarial Collaborations</span></a></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Execution of Replications</h1>
+<p class="subtitle lead">PR #72 · tracked changes</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Key takeaways</strong></p>
+<p>High standards of transparency are essential when executing replications, including detailed preregistration of hypotheses, analysis plans, and success criteria, ideally through Registered Reports to prevent publication bias. Sample size justification should go beyond simply matching the original study, as informative replications typically require larger samples to detect smaller effects or provide evidence for the null hypothesis. Approaches such as the small telescopes framework, equivalence testing based on a smallest effect size of interest, Bayesian design methods, meta-analytical estimates, and multilab replications (collaborations) offer structured strategies for planning adequately powered studies. Although close adherence to the original methodology is central, deviations may be necessary due to incomplete reporting, outdated materials, translation issues, improved methods, or justified corrections; all changes must be transparently documented. Piloting can identify procedural flaws but should not be used to estimate effect sizes. Analytical decisions should closely follow the original procedures while incorporating contemporary best practices, with robustness checks and transparent handling of exclusions to ensure credible comparison between original and replication findings.</p>
+<p><em>After this chapter, you will know:</em></p>
+<ul>
+<li><p>How should researchers decide whether to replicate a study closely or test it conceptually?</p></li>
+<li><p>Why is it important to clearly document and justify any deviations from the preregistered plan?</p></li>
+<li><p>How can piloting or updating methods improve the quality and interpretability of a replication?</p></li>
+</ul>
+</div>
+</div>
+<section id="preregistration-and-registered-replication-reports" class="level2">
+<h2 class="anchored" data-anchor-id="preregistration-and-registered-replication-reports">Preregistration and Registered (Replication) Reports</h2>
+<p>Because replications are often met with skepticism, we encourage researchers to adhere to the highest standards of openness and transparency. For replications, the part of a preregistration that does the most work is the specification of success criteria: a clear, advance statement of what results would count as a replication success and what would count as a failure. This should be paired with an analysis plan (ideally with analysis code that was tested beforehand using data from test runs or simulations), since a preregistration without an analysis plan provides no safeguard against <em>p</em>-hacking <span class="citation" data-cites="BrodeurEtAl2024a">(<a href="#ref-BrodeurEtAl2024a" role="doc-biblioref">Brodeur et al., 2024</a>)</span>. Beware that these criteria can be structured sequentially. For example, if there is a manipulation check, it can be defined that it has to work for the replicability to actually be evaluated. Boyce et al. <span class="citation" data-cites="BoyceEtAl2024">(<a href="#ref-BoyceEtAl2024" role="doc-biblioref">2024</a>)</span> also found that repeating unsuccessful replications did not change the outcomes unless obvious weaknesses were fixed.</p>
+<p>There is a specific preregistration template by Brandt et al. <span class="citation" data-cites="BrandtEtAl2014">(<a href="#ref-BrandtEtAl2014" role="doc-biblioref">2014</a>)</span> but it may not fit the structure of some studies beyond social psychology (e.g., personality science or cognitive psychology; for a list of preregistration templates see <a href="https://osf.io/7xrn9">https://osf.io/7xrn9</a> and <a href="https://osf.io/zab38/wiki/home">https://osf.io/zab38/wiki/home</a>). Replications can also be published as Registered Reports, where the methods are peer-reviewed and accepted for publication before data are collected. This format is especially valuable for replications: because the acceptance decision no longer depends on the nature of the results, it reduces bias for or against the smaller, null, or inconclusive findings that replications often produce, though specific policies vary across journals. A list of journals offering Registered Reports (not specifically for replications) is <a href="https://docs.google.com/spreadsheets/d/1D4_k-8C_UENTRtbPzXfhjEyu3BfLxdOsn9j-otrO870/edit#gid=0">available online</a>.</p>
+<p>A special review platform for Registered Reports is <em>Peer Community in Registered Reports</em> (PCI-RR; <a href="https://rr.peercommunityin.org" class="uri">https://rr.peercommunityin.org</a>) where a community reviews pre-prints. Once accepted by PCI-RR, authors can decide to publish their paper in participating journals (PCI friendly journals) without another editorial round.</p>
+<section id="deviations-from-the-preregistration" class="level3">
+<h3 class="anchored" data-anchor-id="deviations-from-the-preregistration">Deviations from the Preregistration</h3>
+<p>Replication researchers need to deal with deviations from their preregistration in a transparent way. In principle, there is nothing wrong with deviating from what one had planned but most importantly, all changes should be listed, discussed, and it should be made transparent how the changes affected the results (for recommendations on changes and documentation, see <span class="citation" data-cites="Lakens2024">Lakens (<a href="#ref-Lakens2024" role="doc-biblioref">2024</a>)</span>, and <span class="citation" data-cites="WillrothAtherton2024">Willroth &amp; Atherton (<a href="#ref-WillrothAtherton2024" role="doc-biblioref">2024</a>)</span>). If changes are noticed during the data collection, many platforms also allow the upload of amendments with preserved version history.</p>
+</section>
+</section>
+<section id="sample-size-determination" class="level2">
+<h2 class="anchored" data-anchor-id="sample-size-determination">Sample Size Determination</h2>
+<p>For replication studies, power analyses or other types of sample size justification can be simpler than for studies testing entirely new hypotheses because there already is a study that did what one is planning, with a result that one can refer to. However, we advise against simply using the original study’s sample size. While the maxim for most decisions is “stay as close as possible to the original study”, sample sizes of replication studies usually need to be larger. To be informative, replication failure should provide evidence <em>for</em> a null hypothesis or a substantially smaller effect size, which requires a larger sample. While a general tutorial for sample size justification is provided by Lakens <span class="citation" data-cites="Lakens2022b">(<a href="#ref-Lakens2022b" role="doc-biblioref">2022</a>)</span>, we briefly present approaches that are fit for replication studies.</p>
+<p>As a pair of original and replication studies is usually concerned with multiple effect sizes (e.g., for different scales/items/groups/hypotheses), their number and individual power need to be considered carefully. If the interpretation will rely on the significance of <em>all</em> effect sizes, the total power will be smaller than the power for each individual test. To get along with limited resources, researchers may choose one single effect size and argue that it is central, or clearly specify other methods for aggregation across results (e.g., testing multivariate models).</p>
+<section id="small-telescopes-approach" class="level3">
+<h3 class="anchored" data-anchor-id="small-telescopes-approach">Small Telescopes Approach</h3>
+<p>The small telescopes approach <span class="citation" data-cites="Simonsohn2015">(<a href="#ref-Simonsohn2015" role="doc-biblioref">Simonsohn, 2015</a>)</span> changes what a replication has to show. Rather than asking whether the replication itself reaches significance, it asks whether the original study was ever in a position to detect the effect it claimed. The benchmark is the effect size that the original had only 33% power to detect, often labelled d33, one it would have found significant only about one time in three. A replication then tests whether the true effect is smaller than d33. The metaphor is telescope size: an object that needs a large instrument to resolve was probably not genuinely seen by the small one that first reported it.</p>
+<p>This is less demanding to plan than it sounds. For a given test and alpha, d33 follows from the original sample size alone, so it can be worked out without reference to the effect the original reported. The sample needed to rule out d33 scales with that same sample size, which is why the requirement can be stated as a fixed multiple of the original n, as in the example below. That multiple is a result of the power calculation, not a shortcut around it.</p>
+<p>This approach rests on the notion that replications should assess the evidentiary value of the original study, and that the ‘burden of proof’ shifts back to proponents of a hypothesis if their evidence is shown to be very weak. It is particularly appropriate when original studies are very imprecise. In that case, a replication that finds a much smaller effect may well still be compatible with the (wide) confidence interval of the original study, and it might be impossible to reject the original claim on that basis. The approach also gives a way to read large-scale replication efforts: the Reproducibility Project: Psychology <span class="citation" data-cites="OpenScienceCollab2015">(<a href="#ref-OpenScienceCollab2015" role="doc-biblioref">Open Science Collaboration, 2015</a>)</span> found replication effects half the magnitude of the original ones, and small telescopes turns that pattern into a criterion that can be applied study by study.</p>
+<p>As an example, <span class="citation" data-cites="SchultzeEtAl2018">Schultze et al. (<a href="#ref-SchultzeEtAl2018" role="doc-biblioref">2018, Figure 4</a>)</span> found an effect in three studies with an average effect size of <em>r</em> = -.11, 95% CI [-.22, -.01].</p>
+<p>If we wanted to achieve high power to rule out an effect of -.01, and thus show that the true effect does not fall into their confidence interval, we would need a sample size of 108,218 participants (alpha = 5%, one-tailed test<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> ). Conversely, with the small telescopes approach, we would aim to test whether the replication effect is <em>smaller</em> than the effect which the original study had 33% power to detect, <em>r</em> = -.043 (alpha = 5%, one-tailed test). Simonsohn <span class="citation" data-cites="Simonsohn2015">(<a href="#ref-Simonsohn2015" role="doc-biblioref">2015</a>)</span> showed that this requires a sample 2.5 times as large as the original for 80% power. However, we deem that level of power insufficient for replications, and instead suggest aiming for 95% power (given that a false negative in a replication leads to a wrong claim regarding the absence <em>of an effect</em>). This requires a multiple of 4.5 <span class="citation" data-cites="Wallrich2025">(rather than 2.5, see <a href="#ref-Wallrich2025" role="doc-biblioref">Wallrich, 2025</a>)</span>, so a sample is in this case of 4.5 * 793 = 3,569 participants. If this replication then results in an estimate that is <em>significantly smaller</em> than the effect the original study had 33% power to detect, the small telescopes approach would suggest treating the original study as unable to provide reliable evidence for its claim.</p>
+</section>
+<section id="equivalence-testing" class="level3">
+<h3 class="anchored" data-anchor-id="equivalence-testing">Equivalence Testing</h3>
+<p>If statements can be made about the smallest effect size of interest (SESOI), researchers can aim to test whether the replication effect is smaller than that. Given that the direction is fixed by the original, this simply requires running a one-sided test, e.g., a <em>t</em>-test in the case of a two group design, in the “lesser” direction. If the replication effect size is significantly smaller than the SESOI, the original claim is taken to be refuted in this instance by those who accept that this is really the smallest effect of interest. Lakens et al. <span class="citation" data-cites="LakensEtAl2018">(<a href="#ref-LakensEtAl2018" role="doc-biblioref">2018</a>)</span> provide a practical tutorial on equivalence testing, though they focus on cases where observations in either direction would falsify the null hypothesis.</p>
+</section>
+<section id="bayesian-approach" class="level3">
+<h3 class="anchored" data-anchor-id="bayesian-approach">Bayesian Approach</h3>
+<p>External knowledge can be incorporated into sample size planning (uninformative / flat priors; heterogeneity; shrinkage) using the R package BayesRepDesign <span class="citation" data-cites="PawelEtAl2026">(<a href="#ref-PawelEtAl2026" role="doc-biblioref">Pawel et al., 2026</a>)</span>. Moreover, Micheloud and Held <span class="citation" data-cites="MicheloudHeld2022">(<a href="#ref-MicheloudHeld2022" role="doc-biblioref">2022</a>)</span> provide a method for incorporating an original study’s uncertainty into power calculations. With interim analyses (e.g., sequential testing) , a replication study can also be stopped early and prevent wasting resources <span class="citation" data-cites="WagenmakersEtAl2019">(<a href="#ref-WagenmakersEtAl2019" role="doc-biblioref">Wagenmakers et al., 2019</a>)</span>. However, when planning to use Bayes Factors to make inferences about replication success, it is important to plan to use plausibly narrow priors. Priors that assign substantial likelihood to effects rarely observed (e.g., N(0,1) priors for standardized mean differences in the social sciences) may be taken to unfairly privilege the null hypothesis, which is inappropriate for a study setting out to find support for it.</p>
+</section>
+<section id="meta-analytical-estimates" class="level3">
+<h3 class="anchored" data-anchor-id="meta-analytical-estimates">Meta-Analytical Estimates</h3>
+<p>If the replication study is part of a larger research programme, it is possible to include other studies in the estimate of the (minimum) effect size one wishes to detect/rule out. The target study may be part of a multistudy paper with at least one other study that includes an effect size for the hypothesis of interest. Researchers can compare the effect sizes and possibly pool them to get a more precise estimate <span class="citation" data-cites="McShaneBockenholt2017">(for a related Shiny App, see <a href="#ref-McShaneBockenholt2017" role="doc-biblioref">McShane &amp; Böckenholt, 2017</a>)</span>.</p>
+<p>Metrics such as average effect sizes, heterogeneity, or the confidence interval width are valuable estimates needed for the replication’s sample size justification. If there is a meta-analysis on the general topic, researchers can also use that to inform sample size planning, but should prioritise estimates that aim to correct for publication bias and other QRPs <span class="citation" data-cites="Nagy_2025">(for an overview see <a href="#ref-Nagy_2025" role="doc-biblioref">Nagy et al., 2025</a>)</span>. They should also choose effect sizes from a set of studies that resembles the planned replication study as closely as possible. For correlational effects, researchers can check <a href="metabus.org">metabus.org</a> <span class="citation" data-cites="BoscoEtAl2017">(<a href="#ref-BoscoEtAl2017" role="doc-biblioref">Bosco et al., 2017</a>)</span> to identify similar studies.</p>
+</section>
+<section id="multilab-replications" class="level3">
+<h3 class="anchored" data-anchor-id="multilab-replications">Multilab Replications</h3>
+<p>Multilab replications, that is replications that are conducted by different groups of researchers in different locations adhering to the same protocol, allow researchers to investigate heterogeneity of effects and estimate effect sizes with high precision. There are currently no standards for planning sample sizes for multilab replications. Depending on the specific goals, a power analysis needs to account for possible moderator hypotheses and the desired precision of effect size, heterogeneity estimates, or cultural variables. Note that this often requires large sample sizes for any level of the moderator (e.g., culture, profession). Usually, the different labs are required to collect data from a minimum number of participants. Each lab’s study and all analysis scripts should be preregistered to prevent local and global QRPs such as optional stopping or ad hoc exclusions of single labs.</p>
+</section>
+</section>
+<section id="changes-in-the-methods" class="level2">
+<h2 class="anchored" data-anchor-id="changes-in-the-methods">Changes in the Methods</h2>
+<p>A replication study should closely resemble the original study, in the case of conducting a direct/close replication. However, this is difficult for multiple reasons: First, original studies may not include sufficient detail to allow for a replication <span class="citation" data-cites="AguinisSolarino2019 ErringtonEtAl2021a">(<a href="#ref-AguinisSolarino2019" role="doc-biblioref">Aguinis &amp; Solarino, 2019</a>; <a href="#ref-ErringtonEtAl2021a" role="doc-biblioref">Errington et al., 2021</a>)</span>. Second, scientific progress in the form of new methods and insights and cultural changes might require replication researchers to make changes or additions to their study. Third, obvious errors must be corrected. We elaborate on a number of reasons to deviate from an original study. In the replication report, all deviations should be reported and justified exhaustively.</p>
+<p>Whether a given change threatens the replication depends on the perspective introduced in <strong>?@sec-types-replication</strong>: from an inductive, phenomenon-focused perspective, any departure from the original procedure may alter the result, whereas from a deductive, theory-focused perspective, changes are consequential insofar as they alter the theoretical construct, mechanism, measurement, or boundary conditions being tested.</p>
+<ul>
+<li><p><span style="text - decoration: underline;">Unspecific original materials:</span> If the original study does not specify a key element that is needed for the replication, replication researchers can reach out to the original study’s authors and ask for the details. If this is not possible because authors cannot be reached or they are unwilling/unable to share the materials, new materials must be created. In this case, special attention should be paid to the theory, so that the new materials exhibit both face and construct validity.</p></li>
+<li><p><span style="text - decoration: underline;">Deprecated materials:</span> If a psychological study about person perception published in the 1980s used celebrities, the examples used may no longer have the same status. For example, Mussweiler et al. <span class="citation" data-cites="MussweilerEtAl2000">(<a href="#ref-MussweilerEtAl2000" role="doc-biblioref">2000</a>)</span> used “a 10-year old car (1987 Opel Kadett E)” to be evaluated in German Marks. For a new study, car and currency would have to be replaced as a car’s age is strongly associated with price. Like most studies, the original provides no details about the conditions that a new stimulus would have to meet. Ideally, the theoretical requirements for stimuli should be specified in primary research, where they are not, replication authors need to make their own assumptions and report them explicitly <span class="citation" data-cites="SimonsEtAl2017">(see <a href="#ref-SimonsEtAl2017" role="doc-biblioref">Simons et al., 2017</a>)</span>.</p></li>
+<li><p><span style="text - decoration: underline;">Translation:</span> Most published original studies are in English. If the replication sample’s mother tongue is not English, translation may be necessary. Standards for translation differ strongly even between subfields. For example, when a personality scale is translated, the translated version will usually be validated and tests of invariance will be required. In social psychology, such procedures are less common, and often merely a back-translation is conducted. However, in any field, measurement invariance is required if one wants to compare effect sizes across samples, so that this should be tested rather than assumed where possible.</p></li>
+<li><p><span style="text - decoration: underline;">Necessity of a special sample:</span> Many large-scale replication projects made use of click workers (e.g., via MTurk) or use student samples. Replicators should consider if using such samples satisfy their needs and evaluate which platform to use (for best practices and ethical considerations, see <span class="citation" data-cites="KapitanyKavanagh2026">Kapitány &amp; Kavanagh (<a href="#ref-KapitanyKavanagh2026" role="doc-biblioref">2026</a>)</span>). Even if the original study used such a convenience population, changing to a different convenience population may require tweaks to maintain comparability, e.g.&nbsp;with regard to participant attentiveness and engagement with the paradigm.</p></li>
+<li><p><span style="text - decoration: underline;">Quality of methods and apparatus:</span> Replicating old studies often faces the problem that something new has been discovered that should be taken into account. If a specific tool or method is used, there may be another recent method that is more reliable. For example, software for eye tracking studies from the early 2000s is now deprecated; there is new hardware and software that researchers will use. This might also apply to analysis methods, yet where possible, both the results from the original methods as well as state-of-the-art methods should be reported; where a choice has to be made, it is essential that invalid methods are avoided while comparability is maintained as far as possible. Finally, if the original finding’s generalizability is tested, new items or tasks that vary more or less systematically can be added to compare results for the original parts versus these extensions (though order effects have to be carefully considered, as a second manipulation might affect participants differently from a first manipulation)</p></li>
+<li><p><span style="text - decoration: underline;">Adding checks:</span> Doing a replication often implies some uncertainty in the results, so it is wise to include checks that will be helpful to interpret the results, especially if they are negative. For example, if there are occurrences that would make the results meaningless, it is good to have a way to measure them and incorporate that into the study. This could include positive or negative controls (items that are diagnostic of the method rather than the question of interest), manipulation checks (generally placed <em>after</em> the critical parts of the experiment), or attention checks. See <span class="citation" data-cites="FrankEtAl2025">Frank et al. (<a href="#ref-FrankEtAl2025" role="doc-biblioref">2025, Chapter 12.3</a>)</span> for further discussion.</p></li>
+</ul>
+</section>
+<section id="piloting" class="level2">
+<h2 class="anchored" data-anchor-id="piloting">Piloting</h2>
+<p>If considerable resources are linked to the full execution of a replication (e.g., in a Registered Replication Report), or when new materials are used, researchers may want to consider piloting it (or parts of it) first. For multi-lab replications, researchers may want to consider a sequential study order in contrast to a simultaneous design: As Buttliere <span class="citation" data-cites="Buttliere2024">(<a href="#ref-Buttliere2024" role="doc-biblioref">2024</a>)</span> put it: “Who gets better results, 39 people doing it the first time or one person doing it 39 times?” (p.4) Beware that piloting may not be of value if it is simply an under-powered version of the study; instead it may be used to identify flaws in the methodology or test assumptions about the distribution of values or participants’ qualitative responses. Importantly, small pilot studies should never be used to derive effect sizes for power analyses as their results are too imprecise.</p>
+<p>Beyond these design-level decisions, piloting also serves a more routine purpose that applies to almost any replication. Even a handful of participants can reveal whether the instructions are clear, whether the procedure runs smoothly (e.g., the website loads appropriately), and whether all necessary data are recorded. Adding a debriefing survey, in which pilot participants are asked about their experience and the clarity of the instructions and any user interface, extends these checks to issues that might otherwise surface only once the full study is underway, when they could undermine the replication. See <span class="citation" data-cites="FrankEtAl2025">Frank et al. (<a href="#ref-FrankEtAl2025" role="doc-biblioref">2025, Chapter 12.3.1</a>)</span> for further discussion on piloting studies.</p>
+<section id="collaborating-and-consulting-with-the-original-authors" class="level3">
+<h3 class="anchored" data-anchor-id="collaborating-and-consulting-with-the-original-authors">Collaborating and Consulting with the Original Authors</h3>
+<p>To reduce the chance that a failure to replicate is dismissed by the original study’s authors afterwards by pointing out a flaw in the method, researchers can consult with the original authors before running the study. However, in the past, this still has not kept the original authors from dismissing a replication as an inadequate test of a hypothesis <span class="citation" data-cites="BaumeisterVohs2016">(<a href="#ref-BaumeisterVohs2016" role="doc-biblioref">Baumeister &amp; Vohs, 2016</a>)</span>. Note that replication researchers have even been accused of “null hacking” <span class="citation" data-cites="Protzko2018">(<a href="#ref-Protzko2018" role="doc-biblioref">Protzko, 2018</a>)</span> although little evidence exists for this claim <span class="citation" data-cites="BerinskyEtAl2021">(<a href="#ref-BerinskyEtAl2021" role="doc-biblioref">Berinsky et al., 2021</a>)</span>. While involving original authors can help in creating a good study when reporting is poor, ideally original studies should be reported in sufficient detail for others to replicate them without further involving the original authors. Historically, the relationship between involvement of original authors and the average replication effect size is not clear (although there have been lab effects in some cases <span class="citation" data-cites="PowersEtAl2013">(<a href="#ref-PowersEtAl2013" role="doc-biblioref">Powers et al., 2013</a>)</span>. This is showcased here in a few examples:</p>
+<p>The evidence on whether involving original authors affects replication outcomes is mixed. In Many Labs 5, <span class="citation" data-cites="EbersoleEtAl2020">Ebersole et al. (<a href="#ref-EbersoleEtAl2020" role="doc-biblioref">2020</a>)</span> had original authors comment on replication protocols for ten effects from the Reproducibility Project, yet “the revised protocols produced effect sizes similar to those of the RP:P protocols (Δr = .002 or .014, depending on analytic approach).” In contrast, <span class="citation" data-cites="MacGiollaEtAl2024">Mac Giolla et al. (<a href="#ref-MacGiollaEtAl2024" role="doc-biblioref">2024</a>)</span> found that for social priming studies, “the strongest predictor of replication success was whether or not the replication team included at least one of the authors of the original paper.” Other studies have found varying results: some suggest lab effects <span class="citation" data-cites="PowersEtAl2013">(<a href="#ref-PowersEtAl2013" role="doc-biblioref">Powers et al., 2013</a>)</span>, while others found null effects of original authors’ involvement on replication outcomes <span class="citation" data-cites="McCarthyEtAl2021 VohsEtAl2021 ColesEtAl2022 KleinEtAl2014">(e.g., <a href="#ref-McCarthyEtAl2021" role="doc-biblioref">McCarthy et al., 2021</a>; <a href="#ref-ColesEtAl2022" role="doc-biblioref"><span class="nocase">Coles et al.</span>, 2022</a>; <a href="#ref-KleinEtAl2014" role="doc-biblioref">Klein et al., 2014</a>; <a href="#ref-VohsEtAl2021" role="doc-biblioref">Vohs et al., 2021</a>)</span>.</p>
+</section>
+</section>
+<section id="adversarial-collaborations" class="level2">
+<h2 class="anchored" data-anchor-id="adversarial-collaborations"><span class="diff-del" data-hunk="1">Adversarial Collaborations</span></h2>
+<p><span class="diff-del" data-hunk="2">Although they are not specific to replication projects, researchers have often issued calls for adversarial collaborations <span class="citation" data-cites="ClarkEtAl2022 CowanEtAl2020 CorcoranEtAl2023">(<a href="#ref-ClarkEtAl2022" role="doc-biblioref">Clark et al., 2022</a>; <a href="#ref-CorcoranEtAl2023" role="doc-biblioref">Corcoran et al., 2023</a>; <a href="#ref-CowanEtAl2020" role="doc-biblioref">Cowan et al., 2020</a>)</span>. Thereby, groups of researchers can collaborate and try to settle conflicting views by designing and conducting a study designed to settle a debate. A related idea are “red teams” where experts are invited to critique the analysis plan, without becoming authors and thus without a conflict of interest in terms of desired results <span class="citation" data-cites="LakensEtAl2018">(<a href="#ref-LakensEtAl2018" role="doc-biblioref">2018</a>)</span>.</span></p>
+<p><span class="diff-ins" data-hunk="3">Adversarial collaboration is one structured way of working with the original authors <span class="citation" data-cites="ClarkEtAl2022 CowanEtAl2020 CorcoranEtAl2023">(<a href="#ref-ClarkEtAl2022" role="doc-biblioref">Clark et al., 2022</a>; <a href="#ref-CorcoranEtAl2023" role="doc-biblioref">Corcoran et al., 2023</a>; <a href="#ref-CowanEtAl2020" role="doc-biblioref">Cowan et al., 2020</a>)</span>. It suits conceptual replications in particular, where the two sides often disagree about the theory itself or about the conditions under which the effect should hold. Both sides jointly design a study that each accepts as a fair test of the claim, and agree in advance on which patterns of results would count as support for which position. Settling the criteria for interpretation before the data are collected leaves less room for either side to explain away the outcome afterwards.</span></p>
+</section>
+<section id="analysis" class="level2">
+<h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
+<p>Analyses of replication results are often a compromise or a combination of the original analysis and the current state-of-the-art. Generally, replication studies should follow the original analysis plan as closely as possible. That does not only concern statistical procedures but also data processing (e.g., exclusion of outliers, transformation and computation of variables). Even when following the original analysis plan for their confirmatory analysis, researchers should still follow best practices and examine their raw data to check for distributional anomalies to detect whether participants might be inattentive, guessing or speeding, and report relevant sensitivity checks where helpful. Some things to check for include theory-agnostic condition/manipulation checks (e.g., were participants faster in the condition focused on speed?) and the results of attention checks or control trials. Generally, it is advisable not to remove participants from the main analysis on that basis, but instead to confirm that the rates of non-compliance are acceptably low and to report robustness to the exclusion of these participants. See Ward and Meade <span class="citation" data-cites="WardEtAl2023">(<a href="#ref-WardEtAl2023" role="doc-biblioref">2023</a>)</span> for a comprehensive review of strategies for assessing and responding to careless responding.</p>
+<p>At times, methodological advances may suggest that the original statistical tests are not robust. In such cases, researchers may want to run both the test that the original study used, as well as the statistical approach that is most appropriate by today’s standards (for instance, both the <em>t</em>-test that can be compared with the original, and the mixed-effect model that is justified by the study design). Where original data is available, or can be obtained from the original authors, researchers might be able to also update the analyses in the original study, which facilitates interpretation.</p>
+<p>Where original statistical analyses are fundamentally flawed, replication researchers are faced with a difficult choice. For instance, it has been convincingly demonstrated that the famous Dunning-Kruger effect <span class="citation" data-cites="KrugerEtAl1999">(<a href="#ref-KrugerEtAl1999" role="doc-biblioref">Kruger &amp; Dunning, 1999</a>)</span> is based on analyses strongly influenced by a statistical artifact, namely regression to the mean <span class="citation" data-cites="GignacEtAl2020">(<a href="#ref-GignacEtAl2020" role="doc-biblioref">Gignac &amp; Zajenkowski, 2020</a>)</span>. In such a context, one may want to report results based on the original methods alongside more robust tests, yet needs to be very careful to frame them in a way that “replication success” cannot be claimed in the absence of evidence for the original claim.</p>
+<p>Exclusion criteria are another area where there may be tension between the original study and current best practices. Typically, it makes sense to run the analysis both ways to check for robustness, yet one analysis choice should be preregistered as the central analysis.</p>
+<p>Naturally, original and replication results should be compared. Unstandardized values can be informative with respect to sample characteristics (e.g., overall reaction times). How to do this analytically depends on the choice of success criteria discussed in the next section.</p>
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-AguinisSolarino2019" class="csl-entry" role="listitem">
+Aguinis, H., &amp; Solarino, A. M. (2019). Transparency and replicability in qualitative research: The case of interviews with elite informants. <em>Strategic Management Journal</em>, <em>40</em>(8), 1291–1315. <a href="https://doi.org/10.1002/smj.3015">https://doi.org/10.1002/smj.3015</a>
+</div>
+<div id="ref-BaumeisterVohs2016" class="csl-entry" role="listitem">
+Baumeister, R. F., &amp; Vohs, K. D. (2016). Misguided effort with elusive implications. <em>Perspectives on Psychological Science</em>, <em>11</em>(4), 574–575. <a href="https://doi.org/10.1177/1745691616652878">https://doi.org/10.1177/1745691616652878</a>
+</div>
+<div id="ref-BerinskyEtAl2021" class="csl-entry" role="listitem">
+Berinsky, A. J., Druckman, J. N., &amp; Yamamoto, T. (2021). Publication biases in replication studies. <em>Political Analysis</em>, <em>29</em>(3), 370–384. <a href="https://doi.org/10.1017/pan.2020.34">https://doi.org/10.1017/pan.2020.34</a>
+</div>
+<div id="ref-BoscoEtAl2017" class="csl-entry" role="listitem">
+Bosco, F. A., Uggerslev, K. L., &amp; Steel, P. (2017). MetaBUS as a vehicle for facilitating meta-analysis. <em>Human Resource Management Review</em>, <em>27</em>(1), 237–254. <a href="https://doi.org/10.1016/j.hrmr.2016.09.013">https://doi.org/10.1016/j.hrmr.2016.09.013</a>
+</div>
+<div id="ref-BoyceEtAl2024" class="csl-entry" role="listitem">
+Boyce, V., Prystawski, B., Abutto, A. B., Chen, E. M., Chen, Z., Chiu, H., &amp; Frank, M. C. (2024). <em>Estimating the replicability of psychology experiments after an initial failure to replicate</em>. <a href="https://doi.org/10.31234/osf.io/an3yb">https://doi.org/10.31234/osf.io/an3yb</a>
+</div>
+<div id="ref-BrandtEtAl2014" class="csl-entry" role="listitem">
+Brandt, M. J., IJzerman, H., Dijksterhuis, A., Farach, F. J., Geller, J., Giner-Sorolla, R., &amp; Van’t Veer, A. (2014). The replication recipe: What makes for a convincing replication? <em>Journal of Experimental Social Psychology</em>, <em>50</em>, 217–224. <a href="https://doi.org/10.1016/j.jesp.2013.10.005">https://doi.org/10.1016/j.jesp.2013.10.005</a>
+</div>
+<div id="ref-BrodeurEtAl2024a" class="csl-entry" role="listitem">
+Brodeur, A., Cook, N. M., Hartley, J. S., &amp; Heyes, A. (2024). Do preregistration and preanalysis plans reduce p-hacking and publication bias? Evidence from 15,992 test statistics and suggestions for improvement. <em>Journal of Political Economy Microeconomics</em>, <em>2</em>(3), 527–561. <a href="https://doi.org/10.1086/730455">https://doi.org/10.1086/730455</a>
+</div>
+<div id="ref-Buttliere2024" class="csl-entry" role="listitem">
+Buttliere, B. (2024). <em>Was this registered report pilot tested? Examination of vaidis, sleegers, van leeuwen, DeMarree, ... &amp; priolo, d. (2024)</em>. <a href="https://doi.org/10.31234/osf.io/c6r8x">https://doi.org/10.31234/osf.io/c6r8x</a>
+</div>
+<div id="ref-ClarkEtAl2022" class="csl-entry" role="listitem">
+Clark, C. J., Costello, T., Mitchell, G., &amp; Tetlock, P. E. (2022). Keep your enemies close: Adversarial collaborations will improve behavioral science. <em>Journal of Applied Research in Memory and Cognition</em>, <em>11</em>(1), 1. <a href="https://doi.org/10.1037/mac0000004">https://doi.org/10.1037/mac0000004</a>
+</div>
+<div id="ref-ColesEtAl2022" class="csl-entry" role="listitem">
+<span class="nocase">Coles, N. A., March, D. S., Marmolejo-Ramos, F., et al.</span> (2022). A multi-lab test of the facial feedback hypothesis by the many smiles collaboration. <em>Nature Human Behaviour</em>, <em>6</em>, 1731–1742. <a href="https://doi.org/10.1038/s41562-022-01458-9">https://doi.org/10.1038/s41562-022-01458-9</a>
+</div>
+<div id="ref-CorcoranEtAl2023" class="csl-entry" role="listitem">
+Corcoran, A. W., Hohwy, J., &amp; Friston, K. J. (2023). Accelerating scientific progress through bayesian adversarial collaboration. <em>Neuron</em>, <em>111</em>(22), 3505–3516. <a href="https://doi.org/10.1016/j.neuron.2023.08.027">https://doi.org/10.1016/j.neuron.2023.08.027</a>
+</div>
+<div id="ref-CowanEtAl2020" class="csl-entry" role="listitem">
+Cowan, N., Belletier, C., Doherty, J. M., Jaroslawska, A. J., Rhodes, S., Forsberg, A., Naveh-Benjamin, M., Barrouillet, P., Camos, V., &amp; Logie, R. H. (2020). How do scientific views change? Notes from an extended adversarial collaboration. <em>Perspectives on Psychological Science</em>, <em>15</em>(4), 1011–1025. <a href="https://doi.org/10.1177/1745691620906415">https://doi.org/10.1177/1745691620906415</a>
+</div>
+<div id="ref-EbersoleEtAl2020" class="csl-entry" role="listitem">
+Ebersole, C. R., Mathur, M. B., Baranski, E., Bart-Plange, D. J., Buttrick, N. R., Chartier, C. R., &amp; Szecsi, P. (2020). Many labs 5: Testing pre-data-collection peer review as an intervention to increase replicability. <em>Advances in Methods and Practices in Psychological Science</em>, <em>3</em>(3), 309–331. <a href="https://doi.org/10.1177/2515245920958687">https://doi.org/10.1177/2515245920958687</a>
+</div>
+<div id="ref-ErringtonEtAl2021a" class="csl-entry" role="listitem">
+Errington, T. M., Denis, A., Perfito, N., Iorns, E., &amp; Nosek, B. A. (2021). Challenges for assessing replicability in preclinical cancer biology. <em>eLife</em>, <em>10</em>, e67995. <a href="https://doi.org/10.7554/eLife.67995">https://doi.org/10.7554/eLife.67995</a>
+</div>
+<div id="ref-FrankEtAl2025" class="csl-entry" role="listitem">
+Frank, M. C., Braginsky, M., Cachia, J., Coles, N., &amp; Hardwicke, T. E. (2025). <em>Experimentology: An open science approach to experimental psychology methods</em>. MIT Press. <a href="https://doi.org/10.25936/3JP6-5M50">https://doi.org/10.25936/3JP6-5M50</a>
+</div>
+<div id="ref-GignacEtAl2020" class="csl-entry" role="listitem">
+Gignac, G. E., &amp; Zajenkowski, M. (2020). The dunning-kruger effect is (mostly) a statistical artefact: Valid approaches to testing the hypothesis with individual differences data. <em>Intelligence</em>, <em>80</em>, 101449. <a href="https://doi.org/10.1016/j.intell.2020.101449">https://doi.org/10.1016/j.intell.2020.101449</a>
+</div>
+<div id="ref-KapitanyKavanagh2026" class="csl-entry" role="listitem">
+Kapitány, R., &amp; Kavanagh, C. M. (2026). <em>Best practices and ethical considerations for crowd-sourced data in the behavioral sciences</em>. <a href="https://doi.org/10.31219/osf.io/sn5gh">https://doi.org/10.31219/osf.io/sn5gh</a>
+</div>
+<div id="ref-KleinEtAl2014" class="csl-entry" role="listitem">
+Klein, R. A., Ratliff, K. A., Vianello, M., Adams Jr, R. B., Bahník, Š., Bernstein, M. J., &amp; Nosek, B. A. (2014). Investigating variation in replicability. <em>Social Psychology</em>. <a href="https://doi.org/10.1027/1864-9335/a000178">https://doi.org/10.1027/1864-9335/a000178</a>
+</div>
+<div id="ref-KrugerEtAl1999" class="csl-entry" role="listitem">
+Kruger, J., &amp; Dunning, D. (1999). Unskilled and unaware of it: How difficulties in recognizing one’s own incompetence lead to inflated self-assessments. <em>Journal of Personality and Social Psychology</em>, <em>77</em>(6), 1121–1134. <a href="https://doi.org/10.1037/0022-3514.77.6.1121">https://doi.org/10.1037/0022-3514.77.6.1121</a>
+</div>
+<div id="ref-Lakens2022b" class="csl-entry" role="listitem">
+Lakens, D. (2022). Sample size justification. <em>Collabra: Psychology</em>, <em>8</em>(1), 33267. <a href="https://doi.org/10.1525/collabra.33267">https://doi.org/10.1525/collabra.33267</a>
+</div>
+<div id="ref-Lakens2024" class="csl-entry" role="listitem">
+Lakens, D. (2024). When and how to deviate from a preregistration. <em>Collabra: Psychology</em>, <em>10</em>(1). <a href="https://doi.org/10.1525/collabra.117094">https://doi.org/10.1525/collabra.117094</a>
+</div>
+<div id="ref-LakensEtAl2018" class="csl-entry" role="listitem">
+Lakens, D., Scheel, A. M., &amp; Isager, P. M. (2018). Equivalence testing for psychological research: A tutorial. <em>Advances in Methods and Practices in Psychological Science</em>, <em>1</em>(2), 259–269. <a href="https://doi.org/10.1177/2515245918770963">https://doi.org/10.1177/2515245918770963</a>
+</div>
+<div id="ref-MacGiollaEtAl2024" class="csl-entry" role="listitem">
+Mac Giolla, E., Karlsson, S., Neequaye, D. A., &amp; Bergquist, M. (2024). Evaluating the replicability of social priming studies. <em>Meta-Psychology</em>, <em>8</em>. <a href="https://doi.org/10.15626/MP.2022.3308">https://doi.org/10.15626/MP.2022.3308</a>
+</div>
+<div id="ref-McCarthyEtAl2021" class="csl-entry" role="listitem">
+McCarthy, R., Gervais, W., Aczel, B., Al-Kire, R. L., Aveyard, M., Marcella Baraldo, S., &amp; Zogmaister, C. (2021). A multi-site collaborative study of the hostile priming effect. <em>Collabra: Psychology</em>, <em>7</em>(1), 18738. <a href="https://doi.org/10.1525/collabra.18738">https://doi.org/10.1525/collabra.18738</a>
+</div>
+<div id="ref-McShaneBockenholt2017" class="csl-entry" role="listitem">
+McShane, B. B., &amp; Böckenholt, U. (2017). Single-paper meta-analysis: Benefits for study summary, theory testing, and replicability. <em>Journal of Consumer Research</em>, <em>43</em>(6), 1048–1063. <a href="https://doi.org/10.1093/jcr/ucw085">https://doi.org/10.1093/jcr/ucw085</a>
+</div>
+<div id="ref-MicheloudHeld2022" class="csl-entry" role="listitem">
+Micheloud, C., &amp; Held, L. (2022). Power calculations for replication studies. <em>Statistical Science</em>, <em>37</em>(3), 369–379. <a href="https://doi.org/10.1214/21-STS828">https://doi.org/10.1214/21-STS828</a>
+</div>
+<div id="ref-MussweilerEtAl2000" class="csl-entry" role="listitem">
+Mussweiler, T., Strack, F., &amp; Pfeiffer, T. (2000). Overcoming the inevitable anchoring effect: Considering the opposite compensates for selective accessibility. <em>Personality and Social Psychology Bulletin</em>, <em>26</em>(9), 1142–1150. <a href="https://doi.org/10.1177/01461672002611010">https://doi.org/10.1177/01461672002611010</a>
+</div>
+<div id="ref-Nagy_2025" class="csl-entry" role="listitem">
+Nagy, T., Hergert, J., Elsherif, M. M., Wallrich, L., Schmidt, K., Waltzer, T., Payne, J. W., Gjoneska, B., Seetahul, Y., Wang, Y. A., Scharfenberg, D., Tyson, G., Yang, Y.-F., Skvortsova, A., Alarie, S., Graves, K., Sotola, L. K., Moreau, D., &amp; Rubínová, E. (2025). Bestiary of questionable research practices in psychology. <em>Advances in Methods and Practices in Psychological Science</em>, <em>8</em>(3). <a href="https://doi.org/10.1177/25152459251348431">https://doi.org/10.1177/25152459251348431</a>
+</div>
+<div id="ref-OpenScienceCollab2015" class="csl-entry" role="listitem">
+Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. <em>Science</em>, <em>349</em>(6251), aac4716. <a href="https://doi.org/10.1126/science.aac4716">https://doi.org/10.1126/science.aac4716</a>
+</div>
+<div id="ref-PawelEtAl2026" class="csl-entry" role="listitem">
+Pawel, S., Consonni, G., &amp; Held, L. (2026). Bayesian approaches to designing replication studies. <em>Psychological Methods</em>, <em>31</em>(1). <a href="https://doi.org/10.1037/met0000604">https://doi.org/10.1037/met0000604</a>
+</div>
+<div id="ref-PowersEtAl2013" class="csl-entry" role="listitem">
+Powers, K. L., Brooks, P. J., Aldrich, N. J., Palladino, M. A., &amp; Alfieri, L. (2013). Effects of video-game play on information processing: A meta-analytic investigation. <em>Psychonomic Bulletin &amp; Review</em>, <em>20</em>(6), 1055–1079. <a href="https://doi.org/10.3758/s13423-013-0418-z">https://doi.org/10.3758/s13423-013-0418-z</a>
+</div>
+<div id="ref-Protzko2018" class="csl-entry" role="listitem">
+Protzko, J. (2018). <em>Null-hacking, a lurking problem</em>. <a href="https://doi.org/10.31234/osf.io/9y3mp">https://doi.org/10.31234/osf.io/9y3mp</a>
+</div>
+<div id="ref-SchultzeEtAl2018" class="csl-entry" role="listitem">
+Schultze, T., Gerlach, T. M., &amp; Rittich, J. C. (2018). Some people heed advice less than others: Agency (but not communion) predicts advice taking. <em>Journal of Behavioral Decision Making</em>, <em>31</em>(3), 430–445. <a href="https://doi.org/10.1002/bdm.2065">https://doi.org/10.1002/bdm.2065</a>
+</div>
+<div id="ref-SimonsEtAl2017" class="csl-entry" role="listitem">
+Simons, D. J., Shoda, Y., &amp; Lindsay, D. S. (2017). Constraints on generality (COG): A proposed addition to all empirical papers. <em>Perspectives on Psychological Science</em>, <em>12</em>(6), 1123–1128. <a href="https://doi.org/10.1177/1745691617708630">https://doi.org/10.1177/1745691617708630</a>
+</div>
+<div id="ref-Simonsohn2015" class="csl-entry" role="listitem">
+Simonsohn, U. (2015). Small telescopes: Detectability and the evaluation of replication results. <em>Psychological Science</em>, <em>26</em>(5), 559–569. <a href="https://doi.org/10.1177/0956797614567341">https://doi.org/10.1177/0956797614567341</a>
+</div>
+<div id="ref-VohsEtAl2021" class="csl-entry" role="listitem">
+Vohs, K. D., Schmeichel, B. J., Lohmann, S., Gronau, Q. F., Finley, A. J., Ainsworth, S. E., Alquist, J. L., Baker, M. D., Brizi, A., Bunyi, A., Butschek, G. J., Campbell, C., Capaldi, J., Cau, C., Chambers, H., Chatzisarantis, N. L. D., Christensen, W. J., Clay, S. L., Curtis, J., &amp; Albarracín, D. (2021). A multisite preregistered paradigmatic test of the ego-depletion effect. <em>Psychological Science</em>, <em>32</em>(10), 1566–1581. <a href="https://doi.org/10.1177/0956797621989733">https://doi.org/10.1177/0956797621989733</a>
+</div>
+<div id="ref-WagenmakersEtAl2019" class="csl-entry" role="listitem">
+Wagenmakers, E.-J., Gronau, Q. F., &amp; Vandekerckhove, J. (2019). <em>Five bayesian intuitions for the stopping rule principle</em>. <a href="https://doi.org/10.31234/osf.io/5ntkd">https://doi.org/10.31234/osf.io/5ntkd</a>
+</div>
+<div id="ref-Wallrich2025" class="csl-entry" role="listitem">
+Wallrich, L. (2025). <em>Small telescopes for higher-power replications</em>. Personal blog. Retrieved June 20, 2026, from <a href="https://www.lukaswallrich.coffee/blog/small-telescopes-for-higher-power-replications/">https://www.lukaswallrich.coffee/blog/small-telescopes-for-higher-power-replications/</a>
+</div>
+<div id="ref-WardEtAl2023" class="csl-entry" role="listitem">
+Ward, M. K., &amp; Meade, A. W. (2023). Dealing with careless responding in survey data: Prevention, identification, and recommended best practices. <em>Annual Review of Psychology</em>, <em>74</em>(1), 577–596. <a href="https://doi.org/10.1146/annurev-psych-040422-045007">https://doi.org/10.1146/annurev-psych-040422-045007</a>
+</div>
+<div id="ref-WillrothAtherton2024" class="csl-entry" role="listitem">
+Willroth, E. C., &amp; Atherton, O. E. (2024). Best laid plans: A guide to reporting preregistration deviations. <em>Advances in Methods and Practices in Psychological Science</em>, <em>7</em>(1), 25152459231213802. <a href="https://doi.org/10.1177/25152459231213802">https://doi.org/10.1177/25152459231213802</a>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Note that a two-tailed test could be applied as well. Given that the original study has a clear effect and direction, one-tailed gives the original authors the benefit of the doubt.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script>
+// In-chapter change navigation, driven by the review shell via postMessage.
+(function () {
+  var SEL = ".diff-ins, .diff-del, .diff-ins-block, .diff-del-block";
+  var current = -1;
+
+  function visibleMarks() {
+    return Array.prototype.filter.call(document.querySelectorAll(SEL), function (el) {
+      return el.offsetParent !== null || el.getClientRects().length > 0;
+    });
+  }
+
+  // One entry per hunk (a hunk may consist of a deletion and an insertion).
+  function hunks() {
+    var seen = Object.create(null);
+    var out = [];
+    visibleMarks().forEach(function (el) {
+      var id = el.getAttribute("data-hunk") || "";
+      if (id && seen[id]) return;
+      if (id) seen[id] = true;
+      out.push(el);
+    });
+    return out;
+  }
+
+  function report() {
+    parent.postMessage(
+      { type: "diff:ready", total: hunks().length, index: current },
+      "*"
+    );
+  }
+
+  function go(target) {
+    var list = hunks();
+    if (!list.length) return;
+    if (target < 0) target = list.length - 1;
+    if (target >= list.length) target = 0;
+    current = target;
+    var el = list[current];
+    document.querySelectorAll(".diff-current").forEach(function (n) {
+      n.classList.remove("diff-current");
+    });
+    var group = el.getAttribute("data-hunk");
+    (group
+      ? document.querySelectorAll('[data-hunk="' + group + '"]')
+      : [el]
+    ).forEach(function (n) {
+      n.classList.add("diff-current");
+    });
+    // explicit scroll: smooth scrollIntoView is unreliable inside an unfocused iframe
+    var top = window.scrollY + el.getBoundingClientRect().top - window.innerHeight * 0.3;
+    var near = Math.abs(top - window.scrollY) < 1500;
+    window.scrollTo({ top: Math.max(top, 0), behavior: near ? "smooth" : "auto" });
+    parent.postMessage(
+      { type: "diff:position", total: list.length, index: current },
+      "*"
+    );
+  }
+
+  window.addEventListener("message", function (e) {
+    var msg = e.data || {};
+    if (msg.type === "diff:next") go(current + 1);
+    else if (msg.type === "diff:prev") go(current - 1);
+    else if (msg.type === "diff:first") go(0);
+    else if (msg.type === "diff:deletions") {
+      document.body.classList.toggle("hide-deletions", !msg.show);
+      current = -1;
+      report();
+    } else if (msg.type === "diff:query") report();
+  });
+
+  // keep keyboard shortcuts working while the iframe has focus
+  document.addEventListener("keydown", function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var tag = (e.target.tagName || "").toLowerCase();
+    if (tag === "input" || tag === "textarea") return;
+    if (e.key === "n" || e.key === "j") { go(current + 1); e.preventDefault(); }
+    else if (e.key === "p" || e.key === "k") { go(current - 1); e.preventDefault(); }
+    else parent.postMessage({ type: "diff:key", key: e.key }, "*");
+  });
+
+  if (document.readyState === "complete") report();
+  else window.addEventListener("load", report);
+})();
+
+</script>
+</body></html>

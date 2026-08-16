@@ -151,5 +151,129 @@
    ],
    "otherFiles": []
   }
+ },
+ "76": {
+  "head": "b943b6283aac039e40ed927b1f037ca9ab4e93f2",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 76,
+   "title": "Add forensic metascience checks to the reproduction intro (#57)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/76",
+   "author": "LukasWallrich",
+   "updated": "2026-08-16",
+   "branch": "content/issue-57-forensic-metascience",
+   "chapters": [
+    {
+     "file": "execution_reproductions.qmd",
+     "title": "Execution of Reproductions",
+     "href": "76/execution_reproductions.html",
+     "hunks": 1
+    },
+    {
+     "file": "planning.qmd",
+     "title": "Planning and Conducting Reproductions and Replications",
+     "href": "76/planning.html",
+     "hunks": 2
+    }
+   ],
+   "otherFiles": [
+    "images/WBn_Image_3.png",
+    "references.bib"
+   ]
+  }
+ },
+ "75": {
+  "head": "82143f42c311056517e5093f2d65ef13d3a87630",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 75,
+   "title": "Add mini meta-analysis guidance for mixed original results (#64)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/75",
+   "author": "LukasWallrich",
+   "updated": "2026-08-16",
+   "branch": "content/issue-64-mixed-results-mini-meta",
+   "chapters": [
+    {
+     "file": "choosing_study.qmd",
+     "title": "Choosing the Target Study",
+     "href": "75/choosing_study.html",
+     "hunks": 1
+    }
+   ],
+   "otherFiles": [
+    "references.bib"
+   ]
+  }
+ },
+ "74": {
+  "head": "a738e694c17acda679e1501bda93558342a5410b",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 74,
+   "title": "Move multiverse analysis into the reproduction analysis section (#56)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/74",
+   "author": "LukasWallrich",
+   "updated": "2026-08-16",
+   "branch": "content/issue-56-multiverse",
+   "chapters": [
+    {
+     "file": "execution_reproductions.qmd",
+     "title": "Execution of Reproductions",
+     "href": "74/execution_reproductions.html",
+     "hunks": 1
+    },
+    {
+     "file": "planning.qmd",
+     "title": "Planning and Conducting Reproductions and Replications",
+     "href": "74/planning.html",
+     "hunks": 2
+    }
+   ],
+   "otherFiles": [
+    "references.bib"
+   ]
+  }
+ },
+ "73": {
+  "head": "87b9e00fb23dc6e2c204ef6f4c56d63ea2a0b347",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 73,
+   "title": "Add a FAIR data box to the Feasibility section (#61)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/73",
+   "author": "LukasWallrich",
+   "updated": "2026-08-16",
+   "branch": "content/issue-61-fair-box",
+   "chapters": [
+    {
+     "file": "choosing_study.qmd",
+     "title": "Choosing the Target Study",
+     "href": "73/choosing_study.html",
+     "hunks": 5
+    }
+   ],
+   "otherFiles": []
+  }
+ },
+ "72": {
+  "head": "426d9f8c4448df9ad7d126b998ff299ef3fb9233",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 72,
+   "title": "Merge adversarial collaborations into the original-authors section (#55)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/72",
+   "author": "LukasWallrich",
+   "updated": "2026-08-16",
+   "branch": "content/issue-55-adversarial-collaborations",
+   "chapters": [
+    {
+     "file": "execution_replications.qmd",
+     "title": "Execution of Replications",
+     "href": "72/execution_replications.html",
+     "hunks": 3
+    }
+   ],
+   "otherFiles": []
+  }
  }
 }
