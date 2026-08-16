@@ -183,18 +183,15 @@ power should be taken with caution [see also @Francis2012;
 @Schimmack2012; @LakensEtz2017].
 
 When the original studies show mixed results, with some significant and
-some not, or with effects of clearly different size, an internal or
-‘mini’ meta-analysis can pool their effect estimates into a single
-estimate with a confidence interval, which is generally more informative
-than a count of significant findings, provided the studies are
-comparable enough and the analysis accounts for their precision and
-heterogeneity [@GohEtAl2016]. Differences between the studies, for
-instance in samples, operationalizations or settings, can generate
-hypotheses about boundary conditions that a replication could
-deliberately test, although such differences are post hoc and often
-confounded, so they do not establish boundary conditions on their own. A
-pooled estimate from a single lab’s own studies can itself be distorted
-by selective reporting, so the caution above still applies
+some not, or effects of clearly different size, an internal or “mini”
+meta-analysis pools their estimates into a single effect size with a
+confidence interval, which conveys the uncertainty better than a count of
+significant findings [@GohEtAl2016]. Differences between the studies, for
+instance in samples, operationalizations or settings, can suggest boundary
+conditions that a replication could test deliberately, though such post
+hoc comparisons generate hypotheses rather than establishing them. A
+pooled estimate from a single lab’s studies can still be distorted by
+selective reporting, so the caution above continues to apply
 [@VosgerauEtAl2019].
 
 For large parts of the literature and given the overall low replicability rate in many fields, the mere lack of a reproduction or close replication by independent researchers can be used as an argument for uncertainty [e.g., @PittelkowEtAl2023], though it *might* also indicate that nobody beyond the original orders is interested in the phenomenon. However, it is also possible that replications have been attempted but not published, for instance when reviewers show an aversion to null findings, replications, or findings criticizing their own work.
