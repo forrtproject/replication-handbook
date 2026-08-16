@@ -69,7 +69,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-cf2f61b72bfe7991692b9b3cc73e34ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-483dd7698bc9c559ef115e0b95f01c88.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -382,6 +382,7 @@ Tip
 <h2 data-number="5.4" class="anchored" data-anchor-id="preregistration"><span class="header-section-number">5.4</span> Preregistration</h2>
 <p>Preregistrations contain a description of the planned study or analysis prior to their execution. This way, they can reduce researchers’ ‘degrees of freedom’. In the case of reproductions, they can prevent QRPs <span class="citation" data-cites="BryanEtAl2019 BerinskyEtAl2021">(e.g., “null hacking”, <a href="references.html#ref-BryanEtAl2019" role="doc-biblioref">Bryan et al., 2019</a>; “gotcha bias”, <a href="references.html#ref-BerinskyEtAl2021" role="doc-biblioref">Berinsky et al., 2021</a>)</span> as long as the entire analysis plan is preregistered <span class="citation" data-cites="BrodeurEtAl2024a">(<a href="references.html#ref-BrodeurEtAl2024a" role="doc-biblioref">Brodeur et al., 2024</a>)</span> and the data have not yet been accessed. While a numerical reproduction with available code does not require preregistration, we recommend a priori specification of all further planned analyses.</p>
 <p>While preregistration of a reproduction may seem paradoxical when data are already accessible, it remains valuable as a (personal) commitment device: specifying the analysis plan in advance keeps researchers accountable and helps produce robust reproductions. If the data could already have been accessed, some readers may discount the registration, yet we would recommend to still start with this.</p>
+<p>To develop and register the analysis protocol without being steered by the results, researchers can work on a blinded version of the data <span class="citation" data-cites="DutilhEtAl2021 MacCounPerlmutter2015">(<a href="references.html#ref-DutilhEtAl2021" role="doc-biblioref">Dutilh et al., 2021</a>; <a href="references.html#ref-MacCounPerlmutter2015" role="doc-biblioref">MacCoun &amp; Perlmutter, 2015</a>)</span>. For regression designs, <span class="citation" data-cites="DutilhEtAl2021">Dutilh et al. (<a href="references.html#ref-DutilhEtAl2021" role="doc-biblioref">2021</a>)</span> recommend shuffling the outcome across cases and leaving the predictors intact, so that the distribution of each variable, and any collinearity among the predictors, stays available to model, while any association with the outcome is due to chance alone. For designs that compare group means they recommend a different scheme: subtracting the cell mean from each observation and masking the labels of the factor levels, which hides the effect while leaving the shape of the distribution within each cell intact. Shuffling cannot do that, since it breaks the association under test, so any check that depends on that association has to be fixed as a decision rule in the protocol rather than inspected on the blinded data. Finalising the protocol on the blinded data, and only then applying it unchanged to the intact data, reduces the risk that analytic choices are adjusted, consciously or not, to produce a particular result.</p>
 </section>
 <section id="deviations" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="deviations"><span class="header-section-number">5.5</span> Deviations</h2>
@@ -416,11 +417,17 @@ Bryan, C. J., Yeager, D. S., &amp; O’Brien, J. M. (2019). Replicator degrees o
 <div id="ref-DreberJohannesson2024" class="csl-entry" role="listitem">
 Dreber, A., &amp; Johannesson, M. (2024). A framework for evaluating reproducibility and replicability in economics. <em>Economic Inquiry</em>. <a href="https://doi.org/10.1111/ecin.13244">https://doi.org/10.1111/ecin.13244</a>
 </div>
+<div id="ref-DutilhEtAl2021" class="csl-entry" role="listitem">
+Dutilh, G., Sarafoglou, A., &amp; Wagenmakers, E.-J. (2021). Flexible yet fair: Blinding analyses in experimental psychology. <em>Synthese</em>, <em>198</em>(S23), 5745–5772. <a href="https://doi.org/10.1007/s11229-019-02456-7">https://doi.org/10.1007/s11229-019-02456-7</a>
+</div>
 <div id="ref-KranzDataList" class="csl-entry" role="listitem">
 Kranz, S. (2025). <em>Extensive database of economics studies with available data</em>. <a href="https://ejd.econ.mathematik.uni-ulm.de/" class="uri">https://ejd.econ.mathematik.uni-ulm.de/</a>.
 </div>
 <div id="ref-topfactorDataSharing" class="csl-entry" role="listitem">
 Leibniz Institute for the Social Sciences. (2023). <em>TOP factor: Open data levels of social science journals</em>. <a href="https://topfactor.org/journals?factor=Data+Transparency" class="uri">https://topfactor.org/journals?factor=Data+Transparency</a>.
+</div>
+<div id="ref-MacCounPerlmutter2015" class="csl-entry" role="listitem">
+MacCoun, R., &amp; Perlmutter, S. (2015). Blind analysis: Hide results to seek the truth. <em>Nature</em>, <em>526</em>(7572), 187–189. <a href="https://doi.org/10.1038/526187a">https://doi.org/10.1038/526187a</a>
 </div>
 <div id="ref-MazeiEtAl2025" class="csl-entry" role="listitem">
 Mazei, J., Hüffmeier, J., &amp; Schultze, T. (2025). Specification curve and reproducibility dashboards for social science research: Recommendations for implementation. <em>Advances in Methods and Practices in Psychological Science</em>.
