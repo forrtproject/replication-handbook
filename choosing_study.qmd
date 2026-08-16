@@ -236,8 +236,8 @@ register [<https://codecheck.org.uk/register/>, cf. @NuestEglen2021], or
 the Social Science Reproduction Platform
 (<https://www.socialsciencereproduction.org>).
 
-With regard to replications, researchers can browse the FORRT
-Replication Database [<https://forrt.org/apps/fred_explorer.html>, cf.
+With regard to replications, researchers can browse the FORRT Library of
+Replication Attempts (FLoRA) [<https://forrt.org/explorer>, cf.
 @RoselerEtAl2024], though this does not (yet) provide a replacement for
 manual searches. The following table provides an overview of different
 types of *reproducibility checks*.
