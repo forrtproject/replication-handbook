@@ -61,5 +61,95 @@
    ],
    "otherFiles": []
   }
+ },
+ "70": {
+  "head": "f0496b34814fdb9bb37bf97c51012a2e2af523ab",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 70,
+   "title": "Note that deviations from a preregistration can affect robustness (#63)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/70",
+   "author": "LukasWallrich",
+   "updated": "2026-08-16",
+   "branch": "content/issue-63-prereg-adherence",
+   "chapters": [
+    {
+     "file": "planning.qmd",
+     "title": "Planning and Conducting Reproductions and Replications",
+     "href": "70/planning.html",
+     "hunks": 1
+    }
+   ],
+   "otherFiles": []
+  }
+ },
+ "69": {
+  "head": "d82b9b0a104edbe8a620f51df2efab9c72525459",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 69,
+   "title": "Remove the reproduction/replication outcome combinations table (#54)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/69",
+   "author": "LukasWallrich",
+   "updated": "2026-08-16",
+   "branch": "content/issue-54-remove-table-2-1",
+   "chapters": [
+    {
+     "file": "understanding.qmd",
+     "title": "Understanding Reproductions and Replications",
+     "href": "69/understanding.html",
+     "hunks": 4
+    }
+   ],
+   "otherFiles": []
+  }
+ },
+ "68": {
+  "head": "2489518008396b5d7d0d071e9c074f06303603eb",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 68,
+   "title": "Rename the FORRT Replication Database to FLoRA (#49)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/68",
+   "author": "LukasWallrich",
+   "updated": "2026-08-16",
+   "branch": "content/issue-49-flora",
+   "chapters": [
+    {
+     "file": "choosing_study.qmd",
+     "title": "Choosing the Target Study",
+     "href": "68/choosing_study.html",
+     "hunks": 1
+    },
+    {
+     "file": "publishing.qmd",
+     "title": "Communicating and Publishing",
+     "href": "68/publishing.html",
+     "hunks": 1
+    }
+   ],
+   "otherFiles": []
+  }
+ },
+ "67": {
+  "head": "d2dc5fb6483c2b11006978aa71dfa86d390d2862",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 67,
+   "title": "Show the How to Cite section only in the PDF (#45)",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/67",
+   "author": "LukasWallrich",
+   "updated": "2026-08-16",
+   "branch": "content/issue-45-landing-cite",
+   "chapters": [
+    {
+     "file": "index.qmd",
+     "title": "index",
+     "href": "67/index.html",
+     "hunks": 3
+    }
+   ],
+   "otherFiles": []
+  }
  }
 }
