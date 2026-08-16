@@ -107,24 +107,19 @@ metascience techniques [for an accessible introduction, see
 accompanying test statistics and degrees of freedom, using the website
 statcheck.io (where documents may be uploaded), the corresponding R
 package [@NuijtenPolanin2020], or papercheck [@papercheckR], which is
-still actively maintained. GRIM tests whether a reported mean could
-arise at all from integer or otherwise granular data, given the sample
-size and the reported precision, and GRIMMER extends the same logic to
-standard deviations. SPRITE constructs hypothetical samples that are
-compatible with the reported summary statistics and with constraints
-such as the bounds of the response scale, which shows whether those
-statistics are possible and what the underlying data would have to look
-like. Further checks compare the numbers reported across a paper, for
+still actively maintained. GRIM and GRIMMER test whether reported means
+and standard deviations are possible at all given the sample size and
+the granularity of the data, and SPRITE constructs hypothetical samples
+compatible with the reported summary statistics and the bounds of the
+response scale. Further checks compare numbers across a paper, for
 instance whether subgroup sizes add up to the stated sample size. Such
-checks can identify results that are inconsistent or impossible under
-their assumptions, which makes them worth raising with the original
-authors, but a flag can also arise from rounding or transcription slips,
-and it does not by itself establish that a finding is wrong; equally,
-results that pass these checks may still fail to replicate. The same
-techniques are introduced under
+checks identify results that are inconsistent or impossible, which are
+worth raising with the original authors, but a flag can also stem from
+rounding or transcription slips and does not by itself establish that a
+finding is wrong, just as passing these checks does not guarantee that
+it will replicate. The same techniques are introduced under
 [Uncertainty](choosing_study.qmd#uncertainty) as an aid to choosing a
-target; here they form the right-hand path of
-@fig-repr-decision-tree.
+target; here they form the right-hand path of @fig-repr-decision-tree.
 
 ![Decision tree to choose between types of reproductions depending on
 available code and
