@@ -325,11 +325,13 @@ These criteria can also guide the search for target studies. Instead of
 selecting a study first and then checking
 whether its data are available, researchers can start from
 well-documented open datasets and locate the papers that were built on
-them. Curated repositories and archives in the social and behavioral
-sciences include the Open Science Framework, Harvard Dataverse, the
-GESIS Data Archive, ICPSR, and the UK Data Service, while the database
-compiled by Sebastian Kranz [-@KranzDataList] serves this purpose in
-economics. Journal data policies work similarly, since journals that
+them. Curated data archives in the social and behavioral sciences
+include the GESIS Data Archive, ICPSR, and the UK Data Service, whose
+holdings are documented to a common standard; general repositories such
+as the Open Science Framework and Harvard Dataverse hold many more
+datasets, though with documentation of variable quality; and the
+database compiled by Sebastian Kranz [-@KranzDataList] serves this
+purpose in economics. Journal data policies work similarly, since journals that
 require data deposit yield a pool of articles whose analyses can be
 checked.
 :::
