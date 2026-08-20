@@ -99,12 +99,27 @@ choices that are not determined by the *theory* that is presented, though
 this can also be used to explore the generalisability of some aspects of
 theory.
 
-If neither code nor data are available (or shared by the authors), no
-reproduction is possible. Researchers can still use automated tools to
-compare reported *p*-values with those that can be computed from test
-statistics via the website statcheck.io (where documents may be
-uploaded), the corresponding R package [@NuijtenPolanin2020], or
-papercheck [@papercheckR], which is still actively maintained.
+If neither code nor data are available (or shared by the authors), a
+reproduction in the strict sense is impossible, but the internal
+consistency of the reported results can still be checked with forensic
+metascience techniques [for an accessible introduction, see
+@Heathers2025]. Reported *p*-values can be recomputed from the
+accompanying test statistics and degrees of freedom, using the website
+statcheck.io (where documents may be uploaded), the corresponding R
+package [@NuijtenPolanin2020], or papercheck [@papercheckR], which is
+still actively maintained. GRIM and GRIMMER test whether reported means
+and standard deviations are possible at all given the sample size and
+the granularity of the data, and SPRITE constructs hypothetical samples
+compatible with the reported summary statistics and the bounds of the
+response scale. Further checks compare numbers across a paper, for
+instance whether subgroup sizes add up to the stated sample size. Such
+checks identify results that are inconsistent or impossible, which are
+worth raising with the original authors, but a flag can also stem from
+rounding or transcription slips and does not by itself establish that a
+finding is wrong, just as passing these checks does not guarantee that
+it will replicate. The same techniques are introduced under
+[Uncertainty](choosing_study.qmd#uncertainty) as an aid to choosing a
+target; here they form the right-hand path of @fig-repr-decision-tree.
 
 ![Decision tree to choose between types of reproductions depending on
 available code and

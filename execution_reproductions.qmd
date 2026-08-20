@@ -58,6 +58,19 @@ should be permitted, likely requiring citation of the original resource
 licenses may prohibit reproductions; in that case separate approval
 would be required from the copyright holder.
 
+Once the data are in hand, the first step is to inspect them rather than
+to run the analysis code straight away. Check value ranges, variable
+codes, labels and missing-value conventions against the codebook, and
+compare the sample size and the exclusions with what the original report
+describes. Look out for anomalies, such as impossible values, duplicated
+rows, or missing-value codes that have been read as observations.
+Recomputing the reported descriptive statistics and applying the
+consistency checks described in the section [Reproduction before
+Replication](planning.qmd#reproduction-before-replication) is also
+informative, although any discrepancy should first be checked against
+the documented exclusions and transformations before it is raised with
+the original authors.
+
 When it comes to reporting, Ankel-Peters et al. [-@AnkelPetersEtAl2025]
 provide a table for reporting results from the computational
 reproduction that includes resource availability (e.g., raw data,
