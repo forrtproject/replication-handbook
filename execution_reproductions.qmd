@@ -158,6 +158,19 @@ specification curves [@SimonsohnEtAl2020; see also @MazeiEtAl2025]. We
 strongly recommend reproduction researchers to consult the respective
 resources for further details.
 
+Where several processing and analysis choices are defensible, a robustness
+reproduction can be extended into a multiverse analysis, which systematically
+evaluates reasonable combinations of those choices and reports the estimates
+obtained across all of them, rather than selecting a single analysis
+[@SteegenEtAl2016]. The specification curve mentioned above is the common way
+to display such a set of estimates, ordered by size and shown alongside the
+analytical choices that produced them, and it can be accompanied by a test of
+whether the observed curve is more extreme than would be expected under a null
+effect [@SimonsohnEtAl2020]. Both approaches make sensitivity to analytical
+choices visible, yet they are resource-intensive and only as informative as
+the specifications they cover, so that set should be justified and, ideally,
+preregistered.
+
 ## Discussion
 
 The discussion section should include a clear evaluation of the
