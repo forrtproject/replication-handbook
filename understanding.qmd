@@ -50,19 +50,7 @@ and the humanities [@Schoch2023].
 
 ## Reproduction and Replication
 
-The terms reproduction and replication are used in different ways between disciplines; for example, in psychology, studies using different data are commonly referred to as replications and studies using the same data are referred to as reproductions, whereas in other fields, such as computational science or economics, these terms may be used in the opposite manner or treated interchangeably [see @MilkowskiEtAl2018; @AnkelPetersEtAl2023]. In this handbook, *replication* is used to refer to efforts involving the analysis of *different data*, and *reproduction* to efforts involving the *same data*. The different data do not necessarily need to be from a different sample but can also constitute distinct (non-overlapping) subsets from the same sample [e.g., incidental or panel data, @HuangHuang2024].
-
-We discuss multiple cases to illustrate the relationship between reproduction and replication in @tbl-rep-outcomes (Note that a similar distinction is made by @TuringWay2025 but uses a less specific terminology for reproductions.)
-
-| Case | Reproducible? | Replicable? | Possible interpretation |
-|------------------|------------------|------------------|------------------|
-| A | Yes | Yes | The original finding is reproducible and generalizable. |
-| B | Yes | No | The original finding is reproducible but not generalizable. |
-| C | No | Yes | The original finding is not reproducible but replicators could determine a scenario where it holds. |
-| D | No | No | The original finding is neither reproducible nor generalizable. |
-
-: Possible combinations of reproduction and replication outcomes.
-{#tbl-rep-outcomes}
+The terms reproduction and replication are used in different ways between disciplines; for example, in psychology, studies using different data are commonly referred to as replications and studies using the same data are referred to as reproductions, whereas in other fields, such as computational science or economics, these terms may be used in the opposite manner or treated interchangeably [see @MilkowskiEtAl2018; @AnkelPetersEtAl2023]. In this handbook, *replication* is used to refer to efforts involving the analysis of *different data*, and *reproduction* to efforts involving the *same data*. The different data do not necessarily need to be from a different sample but can also constitute distinct (non-overlapping) subsets from the same sample [e.g., incidental or panel data, @HuangHuang2024]. A similar distinction between reproductions and replications is made by @TuringWay2025, with a less specific terminology for reproductions.
 
 Reproduction and replication should always be considered together and if possible, *reproduction should come before replication*. This is because, at the early stages of research, reproduction is much more cost efficient; first confirming whether the findings are reproducible can clarify whether a replication is worthwhile. Furthermore, if the research procedure consists of “moving away” from a specific finding in terms of changing the analysis code, materials, and dataset to test its generalizability or boundary conditions, a *numerical reproduction* (using the same data and same code) is the closest possible repetition of a finding and a useful foundation for further steps.
 
