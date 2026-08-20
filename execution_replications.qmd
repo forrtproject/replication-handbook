@@ -366,16 +366,15 @@ showcased here in a few examples:
 
 The evidence on whether involving original authors affects replication outcomes is mixed. In Many Labs 5, @EbersoleEtAl2020 had original authors comment on replication protocols for ten effects from the Reproducibility Project, yet “the revised protocols produced effect sizes similar to those of the RP:P protocols (Δr = .002 or .014, depending on analytic approach).” In contrast, @MacGiollaEtAl2024 found that for social priming studies, “the strongest predictor of replication success was whether or not the replication team included at least one of the authors of the original paper.” Other studies have found varying results: some suggest lab effects [@PowersEtAl2013], while others found null effects of original authors’ involvement on replication outcomes [e.g., @McCarthyEtAl2021; @VohsEtAl2021; @ColesEtAl2022; @KleinEtAl2014].
 
-## Adversarial Collaborations
-
-Although they are not specific to replication projects, researchers have
-often issued calls for adversarial collaborations [@ClarkEtAl2022;
-@CowanEtAl2020; @CorcoranEtAl2023]. Thereby, groups of researchers can
-collaborate and try to settle conflicting views by designing and
-conducting a study designed to settle a debate. A related idea are “red
-teams” where experts are invited to critique the analysis plan, without
-becoming authors and thus without a conflict of interest in terms of
-desired results [-@LakensEtAl2018].
+Adversarial collaboration is one structured way of working with the
+original authors [@ClarkEtAl2022; @CowanEtAl2020; @CorcoranEtAl2023]. It
+suits conceptual replications in particular, where the two sides often
+disagree about the theory itself or about the conditions under which the
+effect should hold. Both sides jointly design a study that each accepts
+as a fair test of the claim, and agree in advance on which patterns of
+results would count as support for which position. Settling the criteria
+for interpretation before the data are collected leaves less room for
+either side to explain away the outcome afterwards.
 
 ## Analysis
 
