@@ -303,13 +303,38 @@ package is a collection of materials to allow reproduction of the
 original results, and locating and assembling these materials is the
 starting point of any reproduction (see the [Gathering
 resources](execution_reproductions.qmd#gathering-resources) section that
-opens the Execution of Reproductions chapter). Ideally, the dataset in the replication package, or
-shared separately, adheres to the FAIR criteria [@WilkinsonEtAl2016],
-that is, it should be findable, accessible, interoperable, and reusable.
-Otherwise, the reproduction author would need to send a data sharing
-request to the original authors. In any case, they may need to consult
-with the original authors regarding software versions and code that does
-not work anymore due to changes in the software.
+opens the Execution of Reproductions chapter). Ideally, the dataset in
+the replication package, or shared separately, meets the FAIR criteria
+described in the box below. Otherwise, the reproduction author would
+need to send a data sharing request to the original authors. In any
+case, they may need to consult with the original authors regarding
+software versions and code that does not work anymore due to changes in
+the software.
+
+::: {.callout-note title="FAIR data as a feasibility check and as a search strategy" icon="false"}
+FAIR data are findable, accessible, interoperable, and reusable
+[@WilkinsonEtAl2016]. In practice, this means a persistent identifier
+such as a DOI, stated access conditions, a codebook with documented
+variables, file formats that can be opened without proprietary software,
+and an explicit license. Data that meet these criteria make a
+reproduction feasible with little involvement from the original authors,
+since what is needed to understand and re-run the analyses travels with
+the dataset.
+
+These criteria can also guide the search for target studies. Instead of
+selecting a study first and then checking
+whether its data are available, researchers can start from
+well-documented open datasets and locate the papers that were built on
+them. Curated data archives in the social and behavioral sciences
+include the GESIS Data Archive, ICPSR, and the UK Data Service, whose
+holdings are documented to a common standard; general repositories such
+as the Open Science Framework and Harvard Dataverse hold many more
+datasets, though with documentation of variable quality; and the
+database compiled by Sebastian Kranz [-@KranzDataList] serves this
+purpose in economics. Journal data policies work similarly, since journals that
+require data deposit yield a pool of articles whose analyses can be
+checked.
+:::
 
 While original data is not necessary for replications, thorough
 documentation of the original study is highly beneficial. Moreover,
