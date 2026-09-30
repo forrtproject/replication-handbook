@@ -44,6 +44,18 @@ The more uncertain the original study’s outcome is, the higher the potential o
 
 If the original paper reports multiple studies for the same phenomenon, researchers should check the proportion of significant studies and whether all of them confirm the hypothesis. More studies reduce the overall statistical power (power deflation). Provided the hypothesis is correct, a single study may test it with 90% power, that is, the statistical analysis will indicate the correctness of the hypothesis with a probability of .9. Now, if 10 studies are run with 90% power each, the chances of all of them supporting the hypothesis (even if it is true) are $0.9^{10} \approx 0.35$. For 80%, even finding five significant findings in a row is fairly unlikely ($0.8^{5} \approx 0.33$). Thus, studies reporting a set of many and only significant findings when each of the studies does not have very high power should be taken with caution [see also @Francis2012; @Schimmack2012; @LakensEtz2017]. For a mix of significant and null-effects in an original study, a mini-meta analysis might be helpful to quantify uncertainty or investigate what differences between studies might be associated with different outcomes.
 
+When the original studies show mixed results, with some significant and
+some not, or effects of clearly different size, an internal or “mini”
+meta-analysis pools their estimates into a single effect size with a
+confidence interval, which conveys the uncertainty better than a count of
+significant findings [@GohEtAl2016]. Differences between the studies, for
+instance in samples, operationalizations or settings, can suggest boundary
+conditions that a replication could test deliberately, though such post
+hoc comparisons generate hypotheses rather than establishing them. A
+pooled estimate from a single lab’s studies can still be distorted by
+selective reporting, so the caution above continues to apply
+[@VosgerauEtAl2019].
+
 For large parts of the literature and given the overall low replicability rate in many fields, the mere lack of a reproduction or close replication by independent researchers can be used as an argument for uncertainty [e.g., @PittelkowEtAl2023], though it *might* also indicate that nobody beyond the original orders is interested in the phenomenon. However, it is also possible that replications have been attempted but not published, for instance when reviewers show an aversion to null findings, replications, or findings criticizing their own work.
 
 Finally, uncertainty can be the result of a lack of specificity in the original report: If there are details missing that cannot be retrieved anymore (e.g., researchers involved in the original study cannot be reached), a replication can develop, test and share a comprehensive set of materials. For example, Chartrand and Bargh’s [-@ChartrandBargh1999] seminal study on the *chameleon effect* requires many materials but none of them are openly available. Accordingly, @PittelkowEtAl2023 identified the clarity of the original study protocol as an important element that features into the decision of replication study selection. Reconstructing these materials and documenting a procedure would, thus, be a valuable contribution of a replication study.
