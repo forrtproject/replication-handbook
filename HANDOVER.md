@@ -56,7 +56,7 @@ Ordered roughly by effort. All are content, so PR each.
 - Umbrella issues #14–#29 track the reviewer todo list (`metaror_todo.md`); tick items there on `main` when a PR merges. Do not open PRs against umbrella issues; open them against the specific sub-issue or name the umbrella in the PR body.
 
 ## Judgment calls already made (do not reopen)
-- FLoRA expansion is "FORRT Library of Replication Attempts" (matches the OSF citation and `background.qmd`), even though the FORRT page header says "Reproduction and Replication Attempts".
+- FLoRA expansion is "FORRT Library of Reproduction and Replication Attempts", always with "Reproduction" first. This matches the OSF dataset title and the FORRT website.
 - OSF and Harvard Dataverse are general repositories, not curated archives; the FAIR box (#73) says so.
 - Figure 4.1 was patched as a raster; if the figure is redrawn for #17, do it in a reproducible format (mermaid or R) and drop the PNG.
 - Red teams are out of scope for the handbook (#55).

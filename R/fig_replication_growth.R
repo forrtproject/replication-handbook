@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 # Regenerate Figure 1.1 — number of replication studies by publication year —
-# from the FORRT Library of Replication Attempts (FLoRA).
+# from the FORRT Library of Reproduction and Replication Attempts (FLoRA).
 #
 # Data source: forrtproject/fred-data, output/flora.csv
 #   (https://github.com/forrtproject/fred-data). The column `year_r` holds the
