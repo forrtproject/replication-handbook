@@ -105,14 +105,14 @@
   }
  },
  "68": {
-  "head": "2489518008396b5d7d0d071e9c074f06303603eb",
+  "head": "579c81a71fec7896a40cdaa54510154339f0bd67",
   "tool": "9d514d406092",
   "entry": {
    "number": 68,
    "title": "Rename the FORRT Replication Database to FLoRA (#49)",
    "url": "https://github.com/forrtproject/replication-handbook/pull/68",
    "author": "LukasWallrich",
-   "updated": "2026-08-16",
+   "updated": "2026-11-09",
    "branch": "content/issue-49-flora",
    "chapters": [
     {
