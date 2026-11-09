@@ -16,7 +16,7 @@ Cumulative science without repetition is costly: building on unreliable findings
 
 ```{r}
 #| label: fig-replication-growth
-#| fig-cap: "Number of replication studies by year of publication, based on the FORRT Library of Replication Attempts (FLoRA) as of 20 June 2026. The figure is regenerated from FLoRA by `R/fig_replication_growth.R`; the book renders it from the committed snapshot `data/flora_replication_counts.csv`."
+#| fig-cap: "Number of replication studies by year of publication, based on the FORRT Library of Reproduction and Replication Attempts (FLoRA) as of 20 June 2026. The figure is regenerated from FLoRA by `R/fig_replication_growth.R`; the book renders it from the committed snapshot `data/flora_replication_counts.csv`."
 #| echo: false
 #| message: false
 #| warning: false
