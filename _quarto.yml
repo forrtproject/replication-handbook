@@ -290,6 +290,7 @@ format:
       light: [cosmo, theme.scss]
     fig-cap-location: top
     link-external-newwindow: true
+    lightbox: true
 
   pdf:
     documentclass: scrbook
