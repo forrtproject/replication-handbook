@@ -275,5 +275,67 @@
    ],
    "otherFiles": []
   }
+ },
+ "78": {
+  "head": "ed389d3e14163787a55ec4dc7f652849458bc481",
+  "tool": "9d514d406092",
+  "entry": {
+   "number": 78,
+   "title": "Add chapters on computational literary studies, multi-lab studies and mentoring student replications",
+   "url": "https://github.com/forrtproject/replication-handbook/pull/78",
+   "author": "LukasRoeseler",
+   "updated": "2026-11-17",
+   "branch": "content/new-chapters",
+   "chapters": [
+    {
+     "file": "contributions.qmd",
+     "title": "Author Contributions",
+     "href": "78/contributions.html",
+     "hunks": 1
+    },
+    {
+     "file": "execution_replications.qmd",
+     "title": "Execution of Replications",
+     "href": "78/execution_replications.html",
+     "hunks": 1
+    },
+    {
+     "file": "field_specific_cls.qmd",
+     "title": "Challenges for Repetitive Research in Computational Literary Studies",
+     "href": "78/field_specific_cls.html",
+     "hunks": 30
+    },
+    {
+     "file": "index.qmd",
+     "title": "index",
+     "href": "78/index.html",
+     "hunks": 2
+    },
+    {
+     "file": "multilab.qmd",
+     "title": "On the Perks and Challenges of Organizing a Multi-Lab Study",
+     "href": "78/multilab.html",
+     "hunks": 51
+    },
+    {
+     "file": "planning.qmd",
+     "title": "Planning and Conducting Reproductions and Replications",
+     "href": "78/planning.html",
+     "hunks": 1
+    },
+    {
+     "file": "teaching_replication.qmd",
+     "title": "Mentoring Student Replications",
+     "href": "78/teaching_replication.html",
+     "hunks": 65
+    }
+   ],
+   "otherFiles": [
+    "_quarto.yml",
+    "images/multilab_concepts.png",
+    "images/multilab_timeline.png",
+    "references.bib"
+   ]
+  }
  }
 }

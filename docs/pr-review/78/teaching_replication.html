@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Mentoring Student Replications</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../libs/clipboard/clipboard.min.js"></script>
+<script src="../libs/quarto-html/quarto.js" type="module"></script>
+<script src="../libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../libs/quarto-html/popper.min.js"></script>
+<script src="../libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../libs/quarto-html/anchor.min.js"></script>
+<link href="../libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../libs/bootstrap/bootstrap.min.js"></script>
+<link href="../libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../libs/bootstrap/bootstrap-847b3464315b002a2e9b9ee4983ef20d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+<style>
+/* Tracked-changes styling for the PR review site. */
+
+.diff-ins,
+.diff-del {
+  border-radius: 2px;
+  padding: 0 1px;
+  scroll-margin-top: 4rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.diff-ins {
+  background: #d6f5df;
+  box-shadow: inset 0 -2px 0 #34a853;
+  text-decoration: none;
+}
+
+.diff-del {
+  background: #ffe0e0;
+  color: #8a1c1c;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.diff-ins-block,
+.diff-del-block {
+  border-left: 4px solid;
+  padding: 0.4rem 0.8rem;
+  margin: 0.6rem 0;
+  border-radius: 0 3px 3px 0;
+  scroll-margin-top: 4rem;
+}
+
+.diff-ins-block {
+  border-color: #34a853;
+  background: #eefaf1;
+}
+
+.diff-del-block {
+  border-color: #d93025;
+  background: #fdeeee;
+}
+
+.diff-del-block > * {
+  opacity: 0.75;
+}
+
+/* the change you jumped to */
+.diff-current.diff-ins { background: #b7ecc6; }
+.diff-current.diff-del { background: #ffc7c7; }
+.diff-current {
+  box-shadow: inset 0 -2px 0 #1a73e8;
+  animation: diff-flash 1.2s ease-out;
+}
+
+.diff-current.diff-ins-block,
+.diff-current.diff-del-block {
+  border-color: #1a73e8;
+  box-shadow: none;
+}
+
+@keyframes diff-flash {
+  from { filter: brightness(0.88) saturate(1.6); }
+}
+
+body.hide-deletions .diff-del,
+body.hide-deletions .diff-del-block {
+  display: none;
+}
+
+/* deletions in headings should not distort the outline */
+h1 .diff-del, h2 .diff-del, h3 .diff-del, h4 .diff-del {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+</style>
+</head>
+
+<body class="quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#selecting-a-study-to-replicate" id="toc-selecting-a-study-to-replicate" class="nav-link active" data-scroll-target="#selecting-a-study-to-replicate"><span class="diff-ins" data-hunk="11">Selecting a Study to Replicate</span></a></li>
+  <li><a href="#contacting-the-original-authors" id="toc-contacting-the-original-authors" class="nav-link" data-scroll-target="#contacting-the-original-authors"><span class="diff-ins" data-hunk="20">Contacting the Original Authors</span></a></li>
+  <li><a href="#determining-sample-size" id="toc-determining-sample-size" class="nav-link" data-scroll-target="#determining-sample-size"><span class="diff-ins" data-hunk="27">Determining Sample Size</span></a></li>
+  <li><a href="#planning-the-research-with-or-without-extension-hypotheses" id="toc-planning-the-research-with-or-without-extension-hypotheses" class="nav-link" data-scroll-target="#planning-the-research-with-or-without-extension-hypotheses"><span class="diff-ins" data-hunk="29">Planning the Research With or Without Extension Hypotheses</span></a></li>
+  <li><a href="#analyzing-a-replication" id="toc-analyzing-a-replication" class="nav-link" data-scroll-target="#analyzing-a-replication"><span class="diff-ins" data-hunk="45">Analyzing a Replication</span></a></li>
+  <li><a href="#disseminating-the-work-presentations-reports-and-open-practices" id="toc-disseminating-the-work-presentations-reports-and-open-practices" class="nav-link" data-scroll-target="#disseminating-the-work-presentations-reports-and-open-practices"><span class="diff-ins" data-hunk="49">Disseminating the Work: Presentations, Reports, and Open Practices</span></a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="diff-ins" data-hunk="56">Conclusion</span></a></li>
+  <li><a href="#sample-two-semester-plan-sec-year-plan" id="toc-sample-two-semester-plan-sec-year-plan" class="nav-link" data-scroll-target="#sample-two-semester-plan-sec-year-plan"><span class="diff-ins" data-hunk="60">Sample Two-Semester Plan {#sec-year-plan}</span></a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mentoring Student Replications</h1>
+<p class="subtitle lead">PR #78 · tracked changes</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="diff-ins" data-hunk="2"><strong>Key takeaways</strong></span></p>
+<p><span class="diff-ins" data-hunk="3">Mentored replications are a good option for student projects: the study design and materials already exist and have been vetted by peer review, so the workload for mentors is lower than for a novel project, while students still learn the full research process. This chapter gives a step-by-step plan for mentoring a replication with students: selecting a feasible study, contacting the original authors, determining the sample size, planning with or without extension hypotheses, analyzing and interpreting results with careful language, and sharing the work through presentations and open science platforms. A checklist summarizes the steps for each phase.</span></p>
+<p><span class="diff-ins" data-hunk="4"><em>After this chapter, you will know:</em></span></p>
+<ul>
+<li><p><span class="diff-ins" data-hunk="5">How does feasibility change when a replication is conducted with students?</span></p></li>
+<li><p><span class="diff-ins" data-hunk="6">How can mentors plan a replication project and support students’ learning goals?</span></p></li>
+<li><p><span class="diff-ins" data-hunk="7">How should students analyze, interpret, and share replication results?</span></p></li>
+</ul>
+</div>
+</div>
+<p><span class="diff-ins" data-hunk="9">Replication is a hallmark of scientific progress, and yet replication work itself is not incentivized properly in science <span class="citation" data-cites="NosekEtAl2012">(<a href="#ref-NosekEtAl2012" role="doc-biblioref">Nosek et al., 2012</a>)</span> and therefore is not done to the extent it likely should be <span class="citation" data-cites="MakelEtAl2012">(<a href="#ref-MakelEtAl2012" role="doc-biblioref">Makel et al., 2012</a>)</span>. In recent years, there have been calls in the field for students to engage in replication work <span class="citation" data-cites="Quintana2021">(<a href="#ref-Quintana2021" role="doc-biblioref">Quintana, 2021</a>)</span> and for instructors and researchers to recognize the value of replication as pedagogy <span class="citation" data-cites="FrankSaxe2012">(<a href="#ref-FrankSaxe2012" role="doc-biblioref">Frank &amp; Saxe, 2012</a>)</span>. Given that time and workload demands are frequently cited barriers to instructors’ participation in undergraduate research mentoring <span class="citation" data-cites="Ferguson2023">(<a href="#ref-Ferguson2023" role="doc-biblioref">Ferguson, 2023</a>)</span>, replication research presents workload-related advantages because of the low requirement related to the development of study design and materials. Additionally, the value in applying replication frameworks with students cannot be disregarded, particularly when one considers how student-conceived projects often lack rigor in their methodological approaches <span class="citation" data-cites="GraheEtAl2012 WaggeEtAl2023">(e.g., <a href="#ref-GraheEtAl2012" role="doc-biblioref">Grahe et al., 2012</a>; <a href="#ref-WaggeEtAl2023" role="doc-biblioref">Wagge et al., 2023</a>)</span>. Because replications replicate methodologies that have been vetted by peer review, the resulting work will likely mirror the level of quality expected in the discipline.</span></p>
+<p><span class="diff-ins" data-hunk="10">Given these potential benefits of mentored replications to students, instructors, and the field, an instructor might find themselves ready to commit to mentoring a replication and in search of a starting point for doing so. In this chapter, we walk through some important considerations for mentoring students through replication studies within psychology: selecting a study, contacting original authors for materials, considering potential extensions, analyzing the outcomes of replications, and interpreting and presenting those outcomes. Instructors from other disciplines may find the discussion broadly useful and adapt pieces of our recommendations to fit within the constraints of their field. The goal of the chapter is for psychology instructors to finish reading it with a step-by-step plan for initiating and mentoring a replication study with students, and we conclude with a checklist (<strong>?@tbl-mentor-checklist</strong>) consolidating these steps. This checklist expands on the <a href="appendix_checklist.qmd">more general checklist</a> presented in the appendix of this handbook to provide more guidance for the mentor/mentee context within a lab or semester.</span></p>
+<section id="selecting-a-study-to-replicate" class="level2">
+<h2 class="anchored" data-anchor-id="selecting-a-study-to-replicate"><span class="diff-ins" data-hunk="11">Selecting a Study to Replicate</span></h2>
+<p><span class="diff-ins" data-hunk="12">In recent years, several papers have suggested criteria for choosing what studies to replicate <span class="citation" data-cites="IsagerEtAl2023 PittelkowEtAl2023">(e.g., <a href="#ref-IsagerEtAl2023" role="doc-biblioref">Isager et al., 2023</a>; <a href="#ref-PittelkowEtAl2023" role="doc-biblioref">Pittelkow et al., 2023</a>)</span>, as does <a href="choosing_study.qmd">Chapter 3 of this handbook</a>; however, when selecting studies to replicate with students, the “feasibility” criterion might shift to prioritize what is most feasible <em>with students</em> - not just for what an undergraduate researcher can reasonably and ethically take on, but also for time constraints considering what can be done within a maximum of a few semesters. <strong>?@tbl-selection</strong> summarizes some of the key practical considerations to make when selecting a study for a mentored replication.</span></p>
+<p><span class="diff-ins" data-hunk="13">Fortunately, in the field of psychology, the Collaborative Replications and Education Project <span class="citation" data-cites="WaggeEtAl2019">(CREP, <a href="#ref-WaggeEtAl2019" role="doc-biblioref">Wagge et al., 2019</a>)</span> is one of the few organizations <span class="citation" data-cites="Wagge2023">(for review of others, see <a href="#ref-Wagge2023" role="doc-biblioref">Wagge, 2023</a>)</span> that selects studies for students to replicate, along with providing crucial elements to help researchers get started, such as study materials and sample protocols. Studies are selected by collating the ten empirical papers from ten different “flagship” journals in psychology that have been cited the most three years prior to selection; those studies are then coded for feasibility, and the leadership team picks the most feasible studies that complement the existing menu of studies to replicate so that students have a range of options to choose from. At any given time, CREP typically has between 6-8 studies to choose from on the menu, and new studies join that list every 12 - 18 months. An updated list of available studies can be found in the Open Science Framework (OSF) project for CREP: <a href="https://osf.io/flaue/wiki?wiki=6auhv">https://osf.io/flaue/wiki?wiki=6auhv</a>. Because both of the authors of this chapter have experience mentoring projects both within and outside of the CREP framework, the rest of the chapter discusses replication mentorship generally but often refers back to “lessons learned” from within the CREP framework that may be helpful for anyone who is mentoring replication research.</span></p>
+<p>“Feasibility” can be defined in a few ways for undergraduate students. For CREP, the guidance for coders is that: 1) the studies be able to be completed within the time constraints of a 16-week semester (ruling out most longitudinal work), 2) the studies should not require equipment or software that is unavailable to most students (ruling out most psychophysiological work), and 3) the studies should not require participants from vulnerable populations (ruling out children and clinical populations). If the study also involves complex modeling or statistical analyses, this is also considered. This limits the pool of potential candidates quite a bit. In any given year, the pool of 100 studies typically gets narrowed down to 8 - 10 studies that are deemed “feasible enough” to be replicated, which gets further narrowed down by the leadership team to 1-3 studies. Importantly, the 100 studies are often coded by undergraduate students or recent graduates who have some experience with CREP, but sometimes studies that appear feasible on the surface slip through to the pool of final candidates, and the leadership team’s perspectives are important when this happens. Over the years since CREP began selecting studies in 2013, the leadership team has also refined its understanding of what students (and their instructors) will consider feasible. For example, some early studies required Matlab or ePrime, and most students do not have access or expertise to use these products.</p>
+<div class="diff-ins-block" data-hunk="15">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Level</th>
+<th style="text-align: left;">Considerations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Study</td>
+<td style="text-align: left;">Complexity of theories and concepts; Complexity of study design; Complexity of analyses; Availability of materials; Relevance to current needs and interests</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Institution/Lab</td>
+<td style="text-align: left;">Regulatory support (e.g., IRB, IACUC); Access to sampling units (human participants, animal, specimens); Research and/or travel funds; Software; Hardware; Space</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mentor</td>
+<td style="text-align: left;">Interest in study; Expertise; Workload commitment; Access to mentor support (e.g., graduate students, seasoned undergraduate students, experts); Learning outcomes (see <strong>?@tbl-outcomes</strong>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Student</td>
+<td style="text-align: left;">Interest in study; Existing knowledge and skills; Motivation to acquire new knowledge and skills; Available time commitment and competing priorities; Affordability (college credit, travel, materials); Educational goals (see <strong>?@tbl-outcomes</strong>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span class="diff-ins" data-hunk="16">: Practical considerations during the study selection process. IRB: Institutional Review Board; IACUC: Institutional Animal Care and Use Committee. {#tbl-selection tbl-colwidths=“[16,84]”}</span></p>
+<p><span class="diff-ins" data-hunk="17">In addition to practical considerations, broader educational goals for engaging in replication research may influence the study selection process. One may ask: What purposes does the replication research process serve for the student? We have identified several possible aims, and present these in <strong>?@tbl-outcomes</strong>. These outcomes are presented in clusters, along with information about which goals, aims, or outcomes they might be associated with from the Characteristics of Excellence in Undergraduate Research (COEUR) produced by the Council for Undergraduate Research (CUR) <span class="citation" data-cites="BlockusEtAl2024">(<a href="#ref-BlockusEtAl2024" role="doc-biblioref">Blockus et al., 2024</a>)</span>, the International Collaboration on Undergraduate Psychology Outcomes <span class="citation" data-cites="ICUPO2025">(<a href="#ref-ICUPO2025" role="doc-biblioref">International Collaboration on Undergraduate Psychology Outcomes, 2025</a>)</span>, and the American Psychological Association (APA) Guidelines for Undergraduate Research 3.0 <span class="citation" data-cites="APA2023">(<a href="#ref-APA2023" role="doc-biblioref">American Psychological Association, 2023</a>)</span>. Importantly, many of the outcomes are sure to be met through any replication study (e.g., “develop tolerance for obstacles and ambiguity in the research process”), while students may identify specific studies that help them meet specific outcomes (e.g., a student wanting to improve their understanding of structural equation modeling might select a study that employs this type of analysis).</span></p>
+<div class="diff-ins-block" data-hunk="18">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Cluster</th>
+<th style="text-align: left;">Outcome</th>
+<th style="text-align: left;">ICUPO</th>
+<th style="text-align: left;">COEUR</th>
+<th style="text-align: left;">APA 3.0</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Disciplinary Knowledge &amp; Methodological Reasoning</td>
+<td style="text-align: left;">Conduct a comprehensive review of existing literature</td>
+<td style="text-align: left;">5.1</td>
+<td style="text-align: left;">3.3</td>
+<td style="text-align: left;">2.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Enhance specialized disciplinary knowledge</td>
+<td style="text-align: left;">1.1</td>
+<td style="text-align: left;">9.1.1</td>
+<td style="text-align: left;">1.1, 1.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Evaluate the strengths and weaknesses of different methodological approaches</td>
+<td style="text-align: left;">2.1</td>
+<td style="text-align: left;">9.1.1</td>
+<td style="text-align: left;">2.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Evaluate the evidentiary value of published findings</td>
+<td style="text-align: left;">5.1</td>
+<td style="text-align: left;">9.1.1</td>
+<td style="text-align: left;">2.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Develop information literacy</td>
+<td style="text-align: left;">5.1</td>
+<td style="text-align: left;">3.3</td>
+<td style="text-align: left;">2.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Technical &amp; analytic skills</td>
+<td style="text-align: left;">Learn specific technical skills, such as laboratory or field techniques or data coding</td>
+<td style="text-align: left;">2.2</td>
+<td style="text-align: left;">9.2.2</td>
+<td style="text-align: left;">5.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Hone existing skills (e.g., data analysis, data visualization)</td>
+<td style="text-align: left;">2.2</td>
+<td style="text-align: left;">9.2.2</td>
+<td style="text-align: left;">2.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Build reproducible analysis documents (e.g., code, syntax)</td>
+<td style="text-align: left;">2.2, 6.3</td>
+<td style="text-align: left;">9.2.2</td>
+<td style="text-align: left;">4.4, 5.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Conduct and interpret a priori power analyses</td>
+<td style="text-align: left;">2.2</td>
+<td style="text-align: left;">9.2.2</td>
+<td style="text-align: left;">2.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Develop tolerance for obstacles and ambiguity in the research process</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">8.2, 8.3</td>
+<td style="text-align: left;">2.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Research Processes, Ethics, and Open Science</td>
+<td style="text-align: left;">Develop understanding of research process aspects not previously known (e.g., IRB, protocols, biohazard transport)</td>
+<td style="text-align: left;">2.2, 3.2</td>
+<td style="text-align: left;">3.6</td>
+<td style="text-align: left;">3.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Appreciate ethical considerations for various research practices</td>
+<td style="text-align: left;">3.2</td>
+<td style="text-align: left;">9.2.1</td>
+<td style="text-align: left;">3.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Preregister hypotheses and analysis plans; distinguish planned from exploratory analyses</td>
+<td style="text-align: left;">2.3</td>
+<td style="text-align: left;">9.2.2</td>
+<td style="text-align: left;">3.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Share materials, data, and code publicly (as appropriate) with documentation</td>
+<td style="text-align: left;">2.3</td>
+<td style="text-align: left;">8.3</td>
+<td style="text-align: left;">3.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Practice transparent reporting, including deviations from preregistered plans</td>
+<td style="text-align: left;">2.2, 2.3</td>
+<td style="text-align: left;">7.1</td>
+<td style="text-align: left;">3.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Communication, Collaboration, &amp; Cultural Responsiveness</td>
+<td style="text-align: left;">Strengthen academic writing skills</td>
+<td style="text-align: left;">6.1</td>
+<td style="text-align: left;">7.1</td>
+<td style="text-align: left;">4.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Present research findings to different audiences</td>
+<td style="text-align: left;">6.1</td>
+<td style="text-align: left;">7.1, 7.2, 7.3, 7.4</td>
+<td style="text-align: left;">4.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Engage in team collaboration and/or team management</td>
+<td style="text-align: left;">6.2</td>
+<td style="text-align: left;">8.5</td>
+<td style="text-align: left;">4.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Work within a distributed, multi-site collaboration (CREP)</td>
+<td style="text-align: left;">6.2, 6.3</td>
+<td style="text-align: left;">8.5</td>
+<td style="text-align: left;">5.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Evaluate whether findings generalize across cultural contexts, and adapt materials/procedures responsively for new populations</td>
+<td style="text-align: left;">4.1, 4.2</td>
+<td style="text-align: left;">9.2.1, 9.2.2</td>
+<td style="text-align: left;">2.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Identity, Self-Knowledge, &amp; Professional Development</td>
+<td style="text-align: left;">Use research experience to explore fit within a specific research career field or subfield</td>
+<td style="text-align: left;">7.3</td>
+<td style="text-align: left;">8.1, 8.2, 8.3</td>
+<td style="text-align: left;">5.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Express intellectual creativity by asking new questions</td>
+<td style="text-align: left;">5.2</td>
+<td style="text-align: left;">8.3</td>
+<td style="text-align: left;">2.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Develop greater understanding of one’s own strengths and weaknesses</td>
+<td style="text-align: left;">7.1</td>
+<td style="text-align: left;">8.3</td>
+<td style="text-align: left;">5.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Develop sense of belongingness and self-efficacy in research spaces</td>
+<td style="text-align: left;">7.1</td>
+<td style="text-align: left;">8.4, 8.6.3</td>
+<td style="text-align: left;">3.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Demonstrate intellectual humility in the interpretation of replication findings</td>
+<td style="text-align: left;">2.3, 7.1</td>
+<td style="text-align: left;">9.2.1</td>
+<td style="text-align: left;">2.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Develop a professional identity through an authentic contribution to the scholarly record</td>
+<td style="text-align: left;">7.3</td>
+<td style="text-align: left;">8.3</td>
+<td style="text-align: left;">5.6</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span class="diff-ins" data-hunk="19">: Potential learning outcomes to consider when selecting a study to replicate, with aligned goals, outcomes and characteristics identified by external bodies (ICUPO, COEUR, APA 3.0). COEUR characteristics are institutional or programmatic; the COEUR column identifies characteristics of programs that may support the listed outcome for students completing research projects, including replication projects. {#tbl-outcomes tbl-colwidths=“[20,46,10,10,14]”}</span></p>
+</section>
+<section id="contacting-the-original-authors" class="level2">
+<h2 class="anchored" data-anchor-id="contacting-the-original-authors"><span class="diff-ins" data-hunk="20">Contacting the Original Authors</span></h2>
+<p><span class="diff-ins" data-hunk="21">Even if your target study’s original materials are available online, we recommend contacting the original authors as an essential piece of the process (see the section on <a href="execution_replications.qmd#collaborating-and-consulting-with-the-original-authors">collaborating and consulting with the original authors</a> in the chapter on executing replications for a more detailed discussion of communicating with the original authors). Contacting original authors can lead to helpful conversations about the nature of the replication, potential moderating variables, and suggestions for meaningful extensions. The original author is going to be the best expert on the work that you are attempting to replicate, and that expertise is valuable. However - there may be potential benefit to students when they do <em>not</em> contact the original author; we discuss these below.</span></p>
+<p><span class="diff-ins" data-hunk="22">In the context of teaching, modeling or encouraging communication with scholars in a field is a valuable thing for students to observe or experience. We (the two authors of this text) have had different experiences contacting original authors: one of us leads a lab that conducts replications and often has not had luck reaching out, while her students have had more luck; the other has directed the CREP for several years and has never <em>not</em> heard back from an original author. Sometimes it does take a bit longer because corresponding authors’ email addresses have changed, someone is on leave and sending autoreplies, or our e-mails have gone to spam mailboxes.</span></p>
+<p><span class="diff-ins" data-hunk="23">The success of CREP in achieving communication with original study authors is likely due to the systematic approach used over the years. Typically, we reach out to the corresponding author first, followed by the first author (if different), then the last author, and then the second and third authors (and so on) until we have a response from someone, typically waiting around a week before reaching out to the next person. Most often, the corresponding author replies quickly. In the e-mails that CREP sends, we are careful to explain our selection process and highlight that we think students will be excited to do this type of research, so that authors will not interpret our replication work as antagonistic, or that we are doing this work because we do not believe the original effect is robust.</span></p>
+<p><span class="diff-ins" data-hunk="24">When reaching out, CREP also asks if instructors have any suggestions for extending the research, such as potential moderating variables. We may also ask them for their opinion on the stimuli; for example, when replicating a study that used stimuli related to the 2016 US Presidential election, we asked if the original author believed we would benefit from updated stimuli. We have found that authors have generally been excited that their work is being replicated, supportive of our work, and quick to provide guidance and suggestions for how students can build on this work.</span></p>
+<p><span class="diff-ins" data-hunk="25">For the author who has not had as much success (~10% of authors responding to either faculty or students), communication has been conducted in a non-systematic manner and often under significant time constraints driven by academic schedules. As a result, the author has at times opted to abandon these pursuits in favor of others with materials readily available or, if there are sufficient methodological details described in the original report, reconstruct study materials to the best of the research teams’ abilities. This latter approach can be used as an educational experience, highlighting the value of open science practices, such as pre-registration, and meeting authorship roles, such as corresponding authors’ responsibilities to inquiries.</span></p>
+<p><span class="diff-ins" data-hunk="26">There may also be another “silver lining” of not being in communication with the original author; students who attempt to piece together their materials and methods without access to them will quickly learn that the “replication recipe” is often incomplete given only what is in the paper itself. This is an important lesson not only for students to see the limitations of Method sections in papers, but also as motivation for their future descriptions to be as detailed as possible. In fact, even when authors have shared their materials, it might be a helpful exercise to have students piece together the methodology on their own before sharing the details with them; this way, they can see the gaps between their methods and the original methods.</span></p>
+</section>
+<section id="determining-sample-size" class="level2">
+<h2 class="anchored" data-anchor-id="determining-sample-size"><span class="diff-ins" data-hunk="27">Determining Sample Size</span></h2>
+<p><span class="diff-ins" data-hunk="28">When conducting any study with students, it is important to conduct an <em>a priori</em> power analysis. An a priori power analysis is a statistical calculation that determines the minimum number of participants needed in order to detect an effect of a specified size, assuming the effect exists. In replication studies, determining effect size is easier because a published study already reports a specific effect size. This reported effect size is what you are replicating. One approach is to assume the original reported effect size is true and plan your replication accordingly. Another approach is the “small telescopes” method <span class="citation" data-cites="Simonsohn2015">(<a href="#ref-Simonsohn2015" role="doc-biblioref">Simonsohn, 2015</a>)</span>. The “small telescopes” approach holds that a small telescope cannot detect faint, distant light, just as a study with too small a sample cannot detect small effects; therefore, if a replication uncovers a small effect that would have gone undetected in the original study due to its sample size, this suggests the original findings may be spurious. The recommendation provided by this approach is to aim for at least 2.5 times the original sample size; the section on <a href="execution_replications.qmd#sample-size-determination">sample size determination</a> in the chapter on executing replications outlines the rationale behind the small telescopes approach in more detail</span></p>
+</section>
+<section id="planning-the-research-with-or-without-extension-hypotheses" class="level2">
+<h2 class="anchored" data-anchor-id="planning-the-research-with-or-without-extension-hypotheses"><span class="diff-ins" data-hunk="29">Planning the Research With or Without Extension Hypotheses</span></h2>
+<p><span class="diff-ins" data-hunk="30">Here, we highlight several practices that we have found worthwhile to prioritize during the planning phase that have strengthened our mentoring efforts when preparing for direct replication studies or one that may involve asking questions beyond the original study, also known as extension hypotheses. For direct replications, the approach is fairly straight-forward as the original study is simply being mirrored. In either case, we have found that students often underestimate the workload involved in conducting research (to be fair, sometimes we do that too). While replication research may require little work with respect to study design, especially when study materials are readily accessible, those involved may incorrectly assume that initiating a replication project similarly requires little work.</span></p>
+<p><span class="diff-ins" data-hunk="31">We recommend establishing a clear, yet flexible, plan early in the mentoring process with students to be an essential part of establishing a strong collaborative understanding of the workload demands expected for the duration of the project from the outset. The plan should reflect alignment around shared desired learning outcomes (see <strong>?@tbl-outcomes</strong>) and estimated effort, along with key project milestones. In course-based undergraduate research experiences (CUREs), such information is often built into a syllabus <span class="citation" data-cites="BrownEtAl2016">(e.g., <a href="#ref-BrownEtAl2016" role="doc-biblioref">Brown et al., 2016</a>)</span>. Finally, for research involving group effort, we recommend including information relevant to various roles students might hold, such as PI, project manager, lab assistant, and the like. A sample two-semester plan used by one author is provided at the end of this chapter (<strong>?@sec-year-plan</strong>) and in addition to offering the student a navigational map, it has the utility of outlining workload demands for the mentor as well.</span></p>
+<p><span class="diff-ins" data-hunk="32">While some extension hypotheses (e.g., using a different population to the original study; testing generalizability) do not require the consideration of new variables or introduction of additional measures, some of them will. Either way, we found that the inclusion of extension hypotheses to be of high value because they provide students with spaces to pursue new questions and ideas, presenting an exciting endeavor supportive of students’ sense of ownership in the research process, an element identified as important to student experiences in research <span class="citation" data-cites="ZouEtAl2023">(<a href="#ref-ZouEtAl2023" role="doc-biblioref">Zou et al., 2023</a>)</span>. Additionally, some programs or courses require some sort of “novelty” or student-led hypotheses for their projects, and an extension hypothesis on a replication project satisfies this requirement.</span></p>
+<p><span class="diff-ins" data-hunk="33">When working with a student interested in developing extension hypotheses, we found it worthwhile to invest effort in ensuring students understand that any new hypothesis asked must be aligned with the original study. Novice researchers often propose new questions without full consideration of their logical connection with the original work. Developing coherently aligned extension hypotheses can require significant mentoring effort, especially early in the process, but we have found that investing in this process has clear pay-offs, resulting in smoother operations and better research outcomes. A set of reflective questions to help students ground their extension hypotheses in the original study may be found in the box below.</span></p>
+<div id="nte-extension-questions" class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note&nbsp;1: <span class="diff-ins" data-hunk="35">Some reflective questions to help students develop extension hypotheses</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><span class="diff-ins" data-hunk="36">What aspect of the original study did you find most interesting?</span></li>
+<li><span class="diff-ins" data-hunk="37">Why do you think the original study is worth replicating?</span></li>
+<li><span class="diff-ins" data-hunk="38">What (if any) extension hypothesis would you like to ask?</span></li>
+<li><span class="diff-ins" data-hunk="39">How does the proposed hypothesis relate to the original study findings?</span></li>
+<li><span class="diff-ins" data-hunk="40">Is this an interesting extension hypothesis for any study, or is it specific to this study?</span></li>
+<li><span class="diff-ins" data-hunk="41">Have others addressed the extension hypothesis question or something similar?</span></li>
+</ol>
+</div>
+</div>
+<p><span class="diff-ins" data-hunk="43">Moreover, although a strong logistical plan is essential, we recommend mentors to assess their own readiness to support students’ learning and growth. Mentor approaches will naturally vary based on individual dispositions, students’ needs, and project demands. To maintain a healthy eye on student development, we encourage incorporating opportunities for students to pause, check in, and reflect on their personal and professional gains at least once during, if not throughout, the research process. The University of Minnesota’s CARES framework (Competence, Autonomy, Relatedness, Equity, and Structure; Clinical and Translational Science Institute, n.d.) for mentoring offers a practical structure that research mentors may readily use. Their free online training modules, including one focused on undergraduate research mentoring, are recommended.</span></p>
+<p><span class="diff-ins" data-hunk="44">Finally, the last step in planning a replication we recommend is completing a preregistration. There are many types of preregistrations available through OSF.io and aspredicted.org, among other public websites. The Open Science Framework (OSF) even offers registrations specific to replications; instructions and templates can be found here: <a href="https://help.osf.io/article/330-welcome-to-registrations">https://help.osf.io/article/330-welcome-to-registrations</a> <span class="citation" data-cites="COS2026">(<a href="#ref-COS2026" role="doc-biblioref">Center for Open Science, 2026</a>)</span>. Of course pre-registration instills open science values with students, but it also can serve as an archive that students (and their mentors) may find useful in the future.</span></p>
+</section>
+<section id="analyzing-a-replication" class="level2">
+<h2 class="anchored" data-anchor-id="analyzing-a-replication"><span class="diff-ins" data-hunk="45">Analyzing a Replication</span></h2>
+<p><span class="diff-ins" data-hunk="46">Once you have completed a replication, it needs to be analyzed (see the <a href="execution_replications.qmd#analysis">analysis section</a> of the chapter on executing replications for a discussion on replication analyses in general). Guiding students through this process and coaching them in how to interpret and talk about replication analyses can be sensitive, and this process deserves attention and careful mentoring. The first step in conducting analyses is to run the same analyses as the original paper, preferably using their analysis script, if it is available. You may also consider conducting a different type of analysis if you and your students decide that the original analyses were not the best or most appropriate to answer the research question - if you do conduct different analyses, these should ideally be preregistered. If not, be transparent in your reporting to model to students that you can diverge from your plan as long as you are clear about why you did it, and don’t limit the reporting to only certain analyses.</span></p>
+<p><span class="diff-ins" data-hunk="47">The larger question that looms is how to interpret your replication analyses in the context of the original findings. If the original authors had a <em>p</em> value of .03, and yours was .06, is this a failure to replicate? We would caution against framing it this way with the students. Instead, we encourage comparing confidence intervals and effect sizes, both informally in discussion and statistically by conducting tests of equivalence. Anderson and Maxwell <span class="citation" data-cites="AndersonMaxwell2016">(<a href="#ref-AndersonMaxwell2016" role="doc-biblioref">2016</a>)</span> walk through the issues in interpreting replications through the lens of statistical significance, and provide guidance for researchers who seek to determine whether their evidence is consistent or inconsistent with the original effect. Lakens and colleagues <span class="citation" data-cites="LakensEtAl2018">(<a href="#ref-LakensEtAl2018" role="doc-biblioref">2018</a>)</span> also provide a tutorial on conducting tests of equivalence, and equivalence testing packages called TOSTER (standing for “two one-sided tests equivalence testing”) exist for statistical software, including R <span class="citation" data-cites="Caldwell2025">(<a href="#ref-Caldwell2025" role="doc-biblioref">Caldwell, 2025</a>)</span>.</span></p>
+<p><span class="diff-ins" data-hunk="48">Regardless of whether you conduct a test of equivalence, we encourage you to guide students in using careful language when discussing “successes” and “failures” in replicating effects, with the hope that this will also help instill in them a nuanced sense of statistical reasoning and null hypothesis statistical testing. It is more helpful to talk about differences in effect sizes or confidence intervals than it might be to simply refer to differences in statistical significance, which can vary based on sample size or other measurement characteristics. Students should be very careful in how they interpret their own failure to replicate a published effect; this can happen for a variety of reasons, and jumping to a conclusion that the effect was erroneous in the original publication is something we want them to avoid. Even when a meta-analysis for direct replications suggests that an effect can not be consistently replicated, we cannot conclude that the original effect was erroneous. This is a good time to remind students that research findings are cumulative, and it is important to examine the weight of the evidence when judging whether effects are robust. The results of statistical analyses following a replication attempt should not be framed as errors on the part of the original study or the replication, but rather, additional evidence that can help inform our understanding of the effect.</span></p>
+</section>
+<section id="disseminating-the-work-presentations-reports-and-open-practices" class="level2">
+<h2 class="anchored" data-anchor-id="disseminating-the-work-presentations-reports-and-open-practices"><span class="diff-ins" data-hunk="49">Disseminating the Work: Presentations, Reports, and Open Practices</span></h2>
+<p><span class="diff-ins" data-hunk="50">Including opportunities for students to share the outcomes of their research beyond the laboratory or classroom can enrich the overall replication research experience. Along with supporting professional skills development <span class="citation" data-cites="Little2020">(e.g., <a href="#ref-Little2020" role="doc-biblioref">Little, 2020</a>)</span>, preparing conference presentations and sharing study information through open science platforms encourages students to engage with their projects more holistically by critically evaluating the rationale, methodology, analytic decisions, and broader implications of the work. Such experiences, particularly presentations, may also foster students’ professional identity development, including increasing research self-efficacy <span class="citation" data-cites="HelmBailey2013">(<a href="#ref-HelmBailey2013" role="doc-biblioref">Helm &amp; Bailey, 2013</a>)</span>.</span></p>
+<p><span class="diff-ins" data-hunk="51">In our experience, these benefits are most salient when students share their work beyond their class or lab, or even their home institution. With respect to conference presentations, financial and other constraints can limit access. The reader may find that, as we have in the midwestern region of the United States (see <strong>?@tbl-conferences</strong>), there are conference opportunities that vary in accessibility and when travel is not feasible, opportunities to present virtually can be an accessible alternative. Virtual conferences that have low registration costs have been gaining in popularity; CREP often offers a free, virtual Summer CREPCON conference where students can present their work from any replication study they completed, and groups like the <a href="https://improvingpsych.org/previous-sips-meetings/">Society for the Improvement of Psychological Science (SIPS)</a> and the <a href="https://bigteamscienceconference.github.io/">Big Team Science Conference (BTS)</a> also regularly offer virtual conferences with low or no cost for student attendees. Any of these virtual conferences would be good places to submit and present replication work.</span></p>
+<p><span class="diff-ins" data-hunk="52">While the information presented thus far may be applied broadly to undergraduate research experiences, our observation is that presenting replication research at conferences has unique advantages. For one, students often have meaningful interactions with others because replication research naturally invites engagement with others who are familiar with the original study. Additionally, students involved in crowd-sourced replication efforts, such as CREP, may find themselves connecting with peers from other institutions working with the same study, creating unique opportunities to build one’s professional network.</span></p>
+<p><span class="diff-ins" data-hunk="53">We also strongly encourage mentors and their mentees to utilize resources like the Open Science Framework (osf.io) or Zenodo to preregister their research, share their materials, and then post their data and results when they have completed their work. The benefit of doing this is not only to build competencies through practicing good, open, and transparent scientific practices, but also that students can include the URLs or DOIs for these projects on their CVs or résumés easily to share their work with future mentors or employers. Most important to the field and the science, though, doing this makes the details of the research and its findings available to future researchers who are interested in the effects, including meta-analytic researchers. In fact, independent OSF CREP projects have been included in an external meta-analysis <span class="citation" data-cites="LehmannEtAl2018">(<a href="#ref-LehmannEtAl2018" role="doc-biblioref">Lehmann et al., 2018</a>)</span>, and it’s likely that more will be included in the future. Posting data and results online, even if not included as part of a peer-reviewed publication, helps make a dent in the “file drawer effect” <span class="citation" data-cites="Rosenthal1979">(<a href="#ref-Rosenthal1979" role="doc-biblioref">Rosenthal, 1979</a>)</span>, which occurs when unpublished results sit somewhere that is inaccessible to other researchers interested in the effect.</span></p>
+<div class="diff-ins-block" data-hunk="54">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Type of Conference</th>
+<th style="text-align: left;">Primary Presenter Audience</th>
+<th style="text-align: left;">Relative Financial Cost</th>
+<th style="text-align: left;">Networking Opportunities</th>
+<th style="text-align: left;">Exposure to Current Research</th>
+<th style="text-align: left;">Professional Development</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">In-house conference</td>
+<td style="text-align: left;">Students</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Regional teaching conference</td>
+<td style="text-align: left;">Students</td>
+<td style="text-align: left;">Moderate</td>
+<td style="text-align: left;">Moderate</td>
+<td style="text-align: left;">Low-to- moderate</td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Regional professional conference</td>
+<td style="text-align: left;">Students &amp; researchers</td>
+<td style="text-align: left;">Moderate- to-High (depends on host city)</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">National professional conference</td>
+<td style="text-align: left;">Students &amp; researchers</td>
+<td style="text-align: left;">Moderate- to-High (depends on host city)</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">International professional conference</td>
+<td style="text-align: left;">Students &amp; researchers</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Moderate- to-High</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span class="diff-ins" data-hunk="55">: Different levels of in-person conference opportunities for undergraduate students. {#tbl-conferences tbl-colwidths=“[22,14,16,16,16,16]”}</span></p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion"><span class="diff-ins" data-hunk="56">Conclusion</span></h2>
+<p><span class="diff-ins" data-hunk="57">We strongly recommend that instructors and research mentors consider replication studies a primary option for student projects. We have both found that replication studies can be work, but in many ways are a lighter “lift” (compared to supervising a more traditional or novel research project) for mentors while remaining (and perhaps even exceeding other types of projects in being) meaningful. Replication is an underperformed step in the scientific process. Through replications, students are exposed to the most cutting-edge methods in the field employed by experts, while having opportunities to engage in the process creatively by forming their own hypotheses through extensions. Additionally, by engaging in open science best practices, including registration and data sharing, students (and their mentors) become contributors to the broader scientific enterprise. In this chapter, we provided specific recommendations based on our experiences supervising student replication projects and working within multi-lab replication site administration. <strong>?@tbl-mentor-checklist</strong> below summarizes the steps we recommend taking in a checklist format during each phase of the research. It is our hope that these recommendations and steps will help encourage you to step into the world of mentoring replications; we find it truly rewarding to know that we are teaching, doing research, and improving the field at the same time.</span></p>
+<div class="diff-ins-block" data-hunk="58">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Phase</th>
+<th style="text-align: left;">Focus</th>
+<th style="text-align: left;">Checklist item</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Selecting a Study</td>
+<td style="text-align: left;">Study-level feasibility</td>
+<td style="text-align: left;">Can the study be completed within your time frame (e.g., one 16-week semester)? Rule out most longitudinal designs.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Study-level feasibility</td>
+<td style="text-align: left;">Are the theories, study design, and analyses at a complexity level the student can handle or productively stretch toward?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Study-level feasibility</td>
+<td style="text-align: left;">Are the original materials available, or obtainable from the authors?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Study-level feasibility</td>
+<td style="text-align: left;">Does the study avoid equipment or software students lack access to (e.g., MatLab, ePrime, psychophysiological equipment)?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Study-level feasibility</td>
+<td style="text-align: left;">Does the study avoid vulnerable populations (children, clinical samples)?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Study-level feasibility</td>
+<td style="text-align: left;">Consider a pre-vetted option: CREP maintains a menu of 6–8 studies already coded for feasibility, with materials and sample protocols.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Institution/lab-level feasibility</td>
+<td style="text-align: left;">Confirm regulatory support (IRB, IACUC) and a realistic approval timeline.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Institution/lab-level feasibility</td>
+<td style="text-align: left;">Confirm access to sampling units (participant pool, animals, specimens, relevant data sets), software, hardware, and space.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Institution/lab-level feasibility</td>
+<td style="text-align: left;">Identify research and/or travel funds if needed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Mentor-level fit</td>
+<td style="text-align: left;">Are you genuinely interested in the study, and is it within (or near) your expertise?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Mentor-level fit</td>
+<td style="text-align: left;">Have you honestly estimated your workload commitment?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Mentor-level fit</td>
+<td style="text-align: left;">Do you have mentoring support to draw on (graduate students, seasoned undergraduates, outside experts)?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Student-level fit</td>
+<td style="text-align: left;">Has the student expressed interest in the study itself, not just the topic area?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Student-level fit</td>
+<td style="text-align: left;">Have you inventoried their existing knowledge and skills, and their motivation to acquire new ones?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Student-level fit</td>
+<td style="text-align: left;">Have you discussed available time, competing priorities, and affordability (college credit, travel, materials)?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Learning outcomes</td>
+<td style="text-align: left;">Identify which outcomes this project should serve (see <strong>?@tbl-outcomes</strong>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Learning outcomes</td>
+<td style="text-align: left;">If the student has a specific skill goal, confirm the selected study actually exercises it</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Contact the Original Authors</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Reach out even if materials are publicly available — it is respectful and can yield insight on moderators and extensions.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Follow the contact sequence: corresponding author → first author → last author → remaining authors, waiting about one week between attempts.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Frame the email as educational and non-antagonistic: explain the selection process and student enthusiasm for the work.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Ask for materials, suggestions for extensions or moderating variables, and opinions on whether stimuli need updating.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">If no response (roughly 10% of cases): pivot to a study with available materials, or recreate materials from the paper’s details — and use the experience to teach why open science practices matter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Determine Sample Size</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Conduct an a priori power analysis before collecting any data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Choose an approach: power to the original reported effect size, or the “small telescopes” benchmark <span class="citation" data-cites="Simonsohn2015">(d₃₃, the effect the original study had 33% power to detect, <a href="#ref-Simonsohn2015" role="doc-biblioref">Simonsohn, 2015</a>)</span>.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">If using small telescopes, target approximately 2.5× the original sample size for 80% power.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">If your achievable sample falls short of 2.5×, plan to acknowledge this limitation explicitly in reporting; the data still contribute to meta-analyses.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Plan the Project</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Build a clear but flexible written plan early: shared learning outcomes, estimated effort, and key project milestones.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Correct the workload misconception up front — “no study design needed” does not mean “little work.”</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">For course-based experiences (CUREs), embed the plan in the syllabus.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">For team projects, define student roles (PI, project manager, lab assistant, and the like).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Schedule regular mentor–student check-ins for the duration of the project.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">If adding extension hypotheses</td>
+<td style="text-align: left;">Verify the extension is logically aligned with the original study, not a bolted-on new question.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">If adding extension hypotheses</td>
+<td style="text-align: left;">Budget substantial mentoring time for extension development early in the process.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">If adding extension hypotheses</td>
+<td style="text-align: left;">Use the reflective questions from Figure 1: What interested you most? Why is the study worth replicating? How does the proposed hypothesis relate to the original findings? Is it study-specific or generic? Has anyone addressed it already?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">If adding extension hypotheses</td>
+<td style="text-align: left;">Check whether the student’s program requires “novelty” — an extension hypothesis satisfies this requirement.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Preregister</td>
+<td style="text-align: left;">Complete a preregistration before data collection. OSF offers replication-specific registration templates; AsPredicted is an alternative.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Analysis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Run the same analyses as the original paper, using the original analysis script if available.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">If running different or better-suited analyses: preregister them, or transparently report the deviation and its rationale — and report all analyses, not a selected subset.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Compare confidence intervals and effect sizes, not just p-values.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Consider formal equivalence testing (tutorial by <span class="citation" data-cites="LakensEtAl2018">Lakens et al. (<a href="#ref-LakensEtAl2018" role="doc-biblioref">2018</a>)</span>; TOSTER package for R and other software).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Coach careful language: avoid “failure to replicate” framing, avoid concluding the original effect was erroneous, and frame results as additional cumulative evidence about the effect.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dissemination</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Identify a presentation venue matched to budget and goals: in-house symposium, regional teaching conference, regional or national professional conference, or free/low-cost virtual options (CREPCON, SIPS, PSA).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Prepare students for the distinctive social dynamics: audiences familiar with the original study and, for CREP projects, peers at other institutions running the same study.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Post materials, data, and results on OSF — even without a journal publication, this is a form of dissemination, combats the file-drawer effect, and feeds future meta-analyses.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Have students add the project URL or DOI to their CV or résumé.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span class="diff-ins" data-hunk="59">: A checklist for mentored student replications. {#tbl-mentor-checklist tbl-colwidths=“[14,20,66]”}</span></p>
+</section>
+<section id="sample-two-semester-plan-sec-year-plan" class="level2">
+<h2 class="anchored" data-anchor-id="sample-two-semester-plan-sec-year-plan"><span class="diff-ins" data-hunk="60">Sample Two-Semester Plan {#sec-year-plan}</span></h2>
+<p><span class="diff-ins" data-hunk="61"><strong>?@tbl-year-plan</strong> shows the timeline used by one of the authors for a two-semester mentored replication project, and <strong>?@tbl-skills-preview</strong> a skills preview that mentors and students can complete together at the start.</span></p>
+<div class="diff-ins-block" data-hunk="62">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Month</th>
+<th style="text-align: left;">Major milestones</th>
+<th style="text-align: left;">Key research activities</th>
+<th style="text-align: left;">Student</th>
+<th style="text-align: left;">Graduate TA</th>
+<th style="text-align: left;">Faculty</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">May</td>
+<td style="text-align: left;">Establish interest with faculty</td>
+<td style="text-align: left;">Planning</td>
+<td style="text-align: left;">Meet with faculty: Discuss possible directions, schedule summer meetings</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Meet and discuss ideas. Find a way forward that includes students’ interests and career aspirations.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">June</td>
+<td style="text-align: left;">Refine extension hypothesis</td>
+<td style="text-align: left;">Planning</td>
+<td style="text-align: left;">Meet with faculty: original study; Meet with faculty: logical connection with original study</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Talk through original study with student. Ensure they have a firm understanding. Then discuss how extension hypothesis fits</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">July</td>
+<td style="text-align: left;">IRB protocol submission</td>
+<td style="text-align: left;">IRB protocol preparation and study preparation</td>
+<td style="text-align: left;">Meet with faculty: work on completing sections of the IRB; Meet with faculty: develop any data collection components (e.g., Qualtrics)</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Work with student and complete IRB. Submit by the end of July.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">August</td>
+<td style="text-align: left;">Ensure all study components are ready; Prepare for team training</td>
+<td style="text-align: left;">Prepare to launch study</td>
+<td style="text-align: left;">Meet with faculty and TA</td>
+<td style="text-align: left;">Learn about the projects; Set up 30 min weekly meetings</td>
+<td style="text-align: left;">Obtain IRB review.; Meet with TA for orientation and expectations; Assign peer mentoring teams</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">September</td>
+<td style="text-align: left;">Train team and assign roles</td>
+<td style="text-align: left;">Data collection commences</td>
+<td style="text-align: left;">Create training plan with TA; Read MPA submission guidelines; Abstract draft 1 with TA review</td>
+<td style="text-align: left;">Support student training plans; Work with student on abstract; Determine team schedule (group meetings and individual testing)</td>
+<td style="text-align: left;">Discuss plan for abstract preparation and offer resources/examples.; Work with TA on scheduling and establishing regular meeting times</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">October</td>
+<td style="text-align: left;">Develop MPA abstract</td>
+<td style="text-align: left;">Data collection continues</td>
+<td style="text-align: left;">Recruit MPA co-authors from team; Abstract drafts continue; Start grant preparations</td>
+<td style="text-align: left;">2 drafts of abstract before faculty review; Help student draft grant submissions</td>
+<td style="text-align: left;">Edit draft of abstract; Edit grant submissions</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">November</td>
+<td style="text-align: left;">Submit MPA abstract; Submit Internal Foundation grant; Submit CUR funding</td>
+<td style="text-align: left;">Data collection continues</td>
+<td style="text-align: left;">Work with team to ensure data collection, scheduling, and other operations moving smoothly; MPA co-authors to be given abstract draft access</td>
+<td style="text-align: left;">Finalize MPA abstract; Finalize grant submission(s)</td>
+<td style="text-align: left;">Finalize MPA abstract; Finalize grant submission(s)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">December</td>
+<td style="text-align: left;">No milestones</td>
+<td style="text-align: left;">Data collection continues</td>
+<td style="text-align: left;">Report total number consented (Fall semester)</td>
+<td style="text-align: left;">Work with students for total number.</td>
+<td style="text-align: left;">Document total number</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">January</td>
+<td style="text-align: left;">Submit Psi Chi Travel Award</td>
+<td style="text-align: left;">Data collection continues</td>
+<td style="text-align: left;">Work with MPA co-authors and TA for weekly 1 hour co-writing sessions for MPA prep</td>
+<td style="text-align: left;">Meet weekly with MPA group for co-writing sessions</td>
+<td style="text-align: left;">Meet with teams for the new semester</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">February</td>
+<td style="text-align: left;">Develop first draft of presentation</td>
+<td style="text-align: left;">Training new lab members; Data collection continues</td>
+<td style="text-align: left;">Work with returning students to train new lab members; MPA presentation should be nearly finished with results section pending</td>
+<td style="text-align: left;">Meet weekly with MPA group for co-writing sessions; Sketch data analysis plan and build out in R or whatever platform.</td>
+<td style="text-align: left;">Join one co-writing session at the end of February to see how things are; Work with TA on analytic plan</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">March</td>
+<td style="text-align: left;">Continue drafting presentation; Start data analyses</td>
+<td style="text-align: left;">Data collection continues</td>
+<td style="text-align: left;">Work with TA and faculty on data analysis plan</td>
+<td style="text-align: left;">Work with faculty and student on data analysis; Work with student on data interpretation and discussion</td>
+<td style="text-align: left;">Work on data analysis for presentation; Work with TA, specifically, on analyses and results</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">April</td>
+<td style="text-align: left;">Present at MPA</td>
+<td style="text-align: left;">Data collection continues Finalize presentation; Present at MPA</td>
+<td style="text-align: left;">Print poster or otherwise finalize presentation; Prepare presentation and practice twice before conference</td>
+<td style="text-align: left;">Work with student to schedule practice sessions with CUBB lab</td>
+<td style="text-align: left;">Support final steps toward presentation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">May</td>
+<td style="text-align: left;">Wrap Up</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Report total number consented (Spring semester)</td>
+<td style="text-align: left;">Work with student for total number.</td>
+<td style="text-align: left;">Document total number</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span class="diff-ins" data-hunk="63">: Sample two-semester plan for a mentored replication project (used by one of the authors). {#tbl-year-plan tbl-colwidths=“[8,15,14,23,17,23]”}</span></p>
+<div class="diff-ins-block" data-hunk="64">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Activity</th>
+<th style="text-align: left;">Priority</th>
+<th style="text-align: left;">Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Using academic databases to find articles</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Obtaining full PDFs through the University library system</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Reading and understanding research articles</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">General expectations around research conduct and ethics</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Scheduling participants</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Scheduling regular research team meetings</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Communicating with research team</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Identifying when to ask for help and when to work independently</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Data entry and data management</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Developing and executing an analysis plan to test hypotheses</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Developing graphs and charts for presentation</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Academic writing for grant applications</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Academic writing for presentation</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Responding to research team emails in a timely way (e.g., 24 hours)</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Allowing others to take on leadership roles where appropriate</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Maintaining momentum over the course of two semesters</td>
+<td style="text-align: left;">Low … High</td>
+<td style="text-align: left;">Low … High</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span class="diff-ins" data-hunk="65">: Skills preview. For each activity, indicate where you feel highly confident and where you feel less confident about doing the following independently or with little help. {#tbl-skills-preview tbl-colwidths=“[64,18,18]”}</span></p>
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-APA2023" class="csl-entry" role="listitem">
+American Psychological Association. (2023). <em><span class="nocase">APA Guidelines for the Undergraduate Psychology Major: Version 3.0</span></em>. <a href="https://www.apa.org/about/policy/undergraduate-psychology-major.pdf">https://www.apa.org/about/policy/undergraduate-psychology-major.pdf</a>
+</div>
+<div id="ref-AndersonMaxwell2016" class="csl-entry" role="listitem">
+Anderson, S. F., &amp; Maxwell, S. E. (2016). There’s more than one way to conduct a replication study: Beyond statistical significance. <em>Psychological Methods</em>, <em>21</em>(1), 1. <a href="https://doi.org/10.1037/met0000051">https://doi.org/10.1037/met0000051</a>
+</div>
+<div id="ref-BlockusEtAl2024" class="csl-entry" role="listitem">
+Blockus, L., Larson, S., &amp; Rowlett, R. S. (2024). <em><span class="nocase">Characteristics of Excellence in Undergraduate Research 2.0</span></em> (W. Dong, L. E. Echegoyen, B. Longmire-Avital, &amp; J. Mekolichick, Eds.). Council on Undergraduate Research.
+</div>
+<div id="ref-BrownEtAl2016" class="csl-entry" role="listitem">
+Brown, A. M., Lewis, S. N., &amp; Bevan, D. R. (2016). <span class="nocase">Development of a structured undergraduate research experience: Framework and implications</span>. <em>Biochemistry and Molecular Biology Education</em>, <em>44</em>(5), 463–474. <a href="https://doi.org/10.1002/bmb.20975">https://doi.org/10.1002/bmb.20975</a>
+</div>
+<div id="ref-Caldwell2025" class="csl-entry" role="listitem">
+Caldwell, A. R. (2025). <em><span>TOSTER: Two One-Sided Tests (TOST) Equivalence Testing</span></em>. <a href="https://CRAN.R-project.org/package=TOSTER">https://CRAN.R-project.org/package=TOSTER</a>
+</div>
+<div id="ref-COS2026" class="csl-entry" role="listitem">
+Center for Open Science. (2026). <em>Welcome to registrations &amp; preregistrations!</em> OSF Support. <a href="https://help.osf.io/article/330-welcome-to-registrations">https://help.osf.io/article/330-welcome-to-registrations</a>
+</div>
+<div id="ref-Ferguson2023" class="csl-entry" role="listitem">
+Ferguson, C. F. (2023). <span class="nocase">Systematic Review of Outcomes for Faculty Mentors in Undergraduate Research</span>. <em>Scholarship and Practice of Undergraduate Research</em>, <em>7</em>(1), 25–34. <a href="https://doi.org/10.18833/spur/7/1/5">https://doi.org/10.18833/spur/7/1/5</a>
+</div>
+<div id="ref-FrankSaxe2012" class="csl-entry" role="listitem">
+Frank, M. C., &amp; Saxe, R. (2012). <span>Teaching Replication</span>. <em>Perspectives on Psychological Science</em>, <em>7</em>(6), 600–604. <a href="https://doi.org/10.1177/1745691612460686">https://doi.org/10.1177/1745691612460686</a>
+</div>
+<div id="ref-GraheEtAl2012" class="csl-entry" role="listitem">
+Grahe, J. E., Reifman, A., Hermann, A. D., Walker, M., Oleson, K. C., Nario-Redmond, M., &amp; Wiebe, R. P. (2012). <span class="nocase">Harnessing the Undiscovered Resource of Student Research Projects</span>. <em>Perspectives on Psychological Science</em>, <em>7</em>(6), 605–607. <a href="https://doi.org/10.1177/1745691612459057">https://doi.org/10.1177/1745691612459057</a>
+</div>
+<div id="ref-HelmBailey2013" class="csl-entry" role="listitem">
+Helm, H. W., &amp; Bailey, K. G. D. (2013). Perceived benefits of presenting undergraduate research at a professional conference. <em>North American Journal of Psychology</em>, <em>15</em>(3), 527–536.
+</div>
+<div id="ref-ICUPO2025" class="csl-entry" role="listitem">
+International Collaboration on Undergraduate Psychology Outcomes. (2025). <em><span class="nocase">International Competences for Undergraduate Psychology (ICUP) Model (Gamma.R3 version)</span></em>. OSF. <a href="https://osf.io/6y38x/">https://osf.io/6y38x/</a>
+</div>
+<div id="ref-IsagerEtAl2023" class="csl-entry" role="listitem">
+Isager, P. M., Aert, R. C. M. van, Bahník, Š., Brandt, M. J., DeSoto, K. A., Giner-Sorolla, R., Krueger, J. I., Perugini, M., Ropovik, I., Veer, A. E. van ’t, Vranka, M., &amp; Lakens, D. (2023). Deciding what to replicate: A decision model for replication study selection under resource and knowledge constraints. <em>Psychological Methods</em>, <em>28</em>(2), 438–451. <a href="https://doi.org/10.1037/met0000438">https://doi.org/10.1037/met0000438</a>
+</div>
+<div id="ref-LakensEtAl2018" class="csl-entry" role="listitem">
+Lakens, D., Scheel, A. M., &amp; Isager, P. M. (2018). Equivalence testing for psychological research: A tutorial. <em>Advances in Methods and Practices in Psychological Science</em>, <em>1</em>(2), 259–269. <a href="https://doi.org/10.1177/2515245918770963">https://doi.org/10.1177/2515245918770963</a>
+</div>
+<div id="ref-LehmannEtAl2018" class="csl-entry" role="listitem">
+Lehmann, G. K., Elliot, A. J., &amp; Calin-Jageman, R. J. (2018). <span class="nocase">Meta-Analysis of the Effect of Red on Perceived Attractiveness</span>. <em>Evolutionary Psychology</em>, <em>16</em>(4). <a href="https://doi.org/10.1177/1474704918802412">https://doi.org/10.1177/1474704918802412</a>
+</div>
+<div id="ref-Little2020" class="csl-entry" role="listitem">
+Little, C. (2020). <span class="nocase">Undergraduate research as a student engagement springboard: Exploring the longer-term reported benefits of participation in a research conference</span>. <em>Educational Research</em>, <em>62</em>(2), 229–245. <a href="https://doi.org/10.1080/00131881.2020.1747360">https://doi.org/10.1080/00131881.2020.1747360</a>
+</div>
+<div id="ref-MakelEtAl2012" class="csl-entry" role="listitem">
+Makel, M. C., Plucker, J. A., &amp; Hegarty, B. (2012). Replications in psychology research: How often do they really occur? <em>Perspectives on Psychological Science</em>, <em>7</em>(6), 537–542. <a href="https://doi.org/10.1177/1745691612460688">https://doi.org/10.1177/1745691612460688</a>
+</div>
+<div id="ref-NosekEtAl2012" class="csl-entry" role="listitem">
+Nosek, B. A., Spies, J. R., &amp; Motyl, M. (2012). <span>Scientific Utopia</span>. <em>Perspectives on Psychological Science</em>, <em>7</em>(6), 615–631. <a href="https://doi.org/10.1177/1745691612459058">https://doi.org/10.1177/1745691612459058</a>
+</div>
+<div id="ref-PittelkowEtAl2023" class="csl-entry" role="listitem">
+Pittelkow, M. M., Field, S. M., Isager, P. M., Veer, T. van’t, A. E. Anderson, Cole, S. N., &amp; Van Ravenzwaaij, D. (2023). The process of replication target selection in psychology: What to consider? <em>Royal Society Open Science</em>, <em>10</em>(2), 210586. <a href="https://doi.org/10.1098/rsos.210586">https://doi.org/10.1098/rsos.210586</a>
+</div>
+<div id="ref-Quintana2021" class="csl-entry" role="listitem">
+Quintana, D. S. (2021). <span class="nocase">Replication studies for undergraduate theses to improve science and education</span>. <em>Nature Human Behaviour</em>, <em>5</em>(9), 1117–1118. <a href="https://doi.org/10.1038/s41562-021-01192-8">https://doi.org/10.1038/s41562-021-01192-8</a>
+</div>
+<div id="ref-Rosenthal1979" class="csl-entry" role="listitem">
+Rosenthal, R. (1979). <span class="nocase">The file drawer problem and tolerance for null results.</span> <em>Psychological Bulletin</em>, <em>86</em>(3), 638–641. <a href="https://doi.org/10.1037/0033-2909.86.3.638">https://doi.org/10.1037/0033-2909.86.3.638</a>
+</div>
+<div id="ref-Simonsohn2015" class="csl-entry" role="listitem">
+Simonsohn, U. (2015). Small telescopes: Detectability and the evaluation of replication results. <em>Psychological Science</em>, <em>26</em>(5), 559–569. <a href="https://doi.org/10.1177/0956797614567341">https://doi.org/10.1177/0956797614567341</a>
+</div>
+<div id="ref-Wagge2023" class="csl-entry" role="listitem">
+Wagge, J. R. (2023). Teaching research methods and statistics. In A. L. Nichols &amp; J. Edlund (Eds.), <em>The cambridge handbook of research methods and statistics for the social and behavioral sciences: Volume 1: Building a program of research</em> (pp. 773–792). Cambridge University Press. <a href="https://doi.org/10.1017/9781009010054.037">https://doi.org/10.1017/9781009010054.037</a>
+</div>
+<div id="ref-WaggeEtAl2019" class="csl-entry" role="listitem">
+Wagge, J. R., Brandt, M. J., Lazarevic, L. B., Legate, N., Christopherson, C., Wiggins, B., &amp; Grahe, J. E. (2019). <span class="nocase">Publishing Research With Undergraduate Students via Replication Work: The Collaborative Replications and Education Project</span>. <em>Frontiers in Psychology</em>, <em>10</em>. <a href="https://doi.org/10.3389/fpsyg.2019.00247">https://doi.org/10.3389/fpsyg.2019.00247</a>
+</div>
+<div id="ref-WaggeEtAl2023" class="csl-entry" role="listitem">
+Wagge, J. R., Hurst, M. A., Brandt, M. J., Lazarevic, L. B., Legate, N., &amp; Grahe, J. E. (2023). <span class="nocase">Teaching Research in Principle and in Practice: What Do Psychology Instructors Think of Research Projects in Their Courses?</span> <em>Psychology Learning &amp; Teaching</em>, <em>22</em>(1), 4–19. <a href="https://doi.org/10.1177/14757257221101942">https://doi.org/10.1177/14757257221101942</a>
+</div>
+<div id="ref-ZouEtAl2023" class="csl-entry" role="listitem">
+Zou, T. X. P., Susanto, J., Wahab, A. A., Hong, N., Chiu, C. S. T., &amp; Leung, L. Y. Y. (2023). <span class="nocase">What made undergraduate research experiences significant: a collaborative critical incident analysis with student co-researchers</span>. <em>Higher Education Research &amp; Development</em>, <em>42</em>(7), 1808–1823. <a href="https://doi.org/10.1080/07294360.2022.2157799">https://doi.org/10.1080/07294360.2022.2157799</a>
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script>
+// In-chapter change navigation, driven by the review shell via postMessage.
+(function () {
+  var SEL = ".diff-ins, .diff-del, .diff-ins-block, .diff-del-block";
+  var current = -1;
+
+  function visibleMarks() {
+    return Array.prototype.filter.call(document.querySelectorAll(SEL), function (el) {
+      return el.offsetParent !== null || el.getClientRects().length > 0;
+    });
+  }
+
+  // One entry per hunk (a hunk may consist of a deletion and an insertion).
+  function hunks() {
+    var seen = Object.create(null);
+    var out = [];
+    visibleMarks().forEach(function (el) {
+      var id = el.getAttribute("data-hunk") || "";
+      if (id && seen[id]) return;
+      if (id) seen[id] = true;
+      out.push(el);
+    });
+    return out;
+  }
+
+  function report() {
+    parent.postMessage(
+      { type: "diff:ready", total: hunks().length, index: current },
+      "*"
+    );
+  }
+
+  function go(target) {
+    var list = hunks();
+    if (!list.length) return;
+    if (target < 0) target = list.length - 1;
+    if (target >= list.length) target = 0;
+    current = target;
+    var el = list[current];
+    document.querySelectorAll(".diff-current").forEach(function (n) {
+      n.classList.remove("diff-current");
+    });
+    var group = el.getAttribute("data-hunk");
+    (group
+      ? document.querySelectorAll('[data-hunk="' + group + '"]')
+      : [el]
+    ).forEach(function (n) {
+      n.classList.add("diff-current");
+    });
+    // explicit scroll: smooth scrollIntoView is unreliable inside an unfocused iframe
+    var top = window.scrollY + el.getBoundingClientRect().top - window.innerHeight * 0.3;
+    var near = Math.abs(top - window.scrollY) < 1500;
+    window.scrollTo({ top: Math.max(top, 0), behavior: near ? "smooth" : "auto" });
+    parent.postMessage(
+      { type: "diff:position", total: list.length, index: current },
+      "*"
+    );
+  }
+
+  window.addEventListener("message", function (e) {
+    var msg = e.data || {};
+    if (msg.type === "diff:next") go(current + 1);
+    else if (msg.type === "diff:prev") go(current - 1);
+    else if (msg.type === "diff:first") go(0);
+    else if (msg.type === "diff:deletions") {
+      document.body.classList.toggle("hide-deletions", !msg.show);
+      current = -1;
+      report();
+    } else if (msg.type === "diff:query") report();
+  });
+
+  // keep keyboard shortcuts working while the iframe has focus
+  document.addEventListener("keydown", function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var tag = (e.target.tagName || "").toLowerCase();
+    if (tag === "input" || tag === "textarea") return;
+    if (e.key === "n" || e.key === "j") { go(current + 1); e.preventDefault(); }
+    else if (e.key === "p" || e.key === "k") { go(current - 1); e.preventDefault(); }
+    else parent.postMessage({ type: "diff:key", key: e.key }, "*");
+  });
+
+  if (document.readyState === "complete") report();
+  else window.addEventListener("load", report);
+})();
+
+</script>
+</body></html>

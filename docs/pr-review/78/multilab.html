@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>On the Perks and Challenges of Organizing a Multi-Lab Study</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../libs/clipboard/clipboard.min.js"></script>
+<script src="../libs/quarto-html/quarto.js" type="module"></script>
+<script src="../libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../libs/quarto-html/popper.min.js"></script>
+<script src="../libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../libs/quarto-html/anchor.min.js"></script>
+<link href="../libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../libs/bootstrap/bootstrap.min.js"></script>
+<link href="../libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../libs/bootstrap/bootstrap-847b3464315b002a2e9b9ee4983ef20d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+<style>
+/* Tracked-changes styling for the PR review site. */
+
+.diff-ins,
+.diff-del {
+  border-radius: 2px;
+  padding: 0 1px;
+  scroll-margin-top: 4rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.diff-ins {
+  background: #d6f5df;
+  box-shadow: inset 0 -2px 0 #34a853;
+  text-decoration: none;
+}
+
+.diff-del {
+  background: #ffe0e0;
+  color: #8a1c1c;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.diff-ins-block,
+.diff-del-block {
+  border-left: 4px solid;
+  padding: 0.4rem 0.8rem;
+  margin: 0.6rem 0;
+  border-radius: 0 3px 3px 0;
+  scroll-margin-top: 4rem;
+}
+
+.diff-ins-block {
+  border-color: #34a853;
+  background: #eefaf1;
+}
+
+.diff-del-block {
+  border-color: #d93025;
+  background: #fdeeee;
+}
+
+.diff-del-block > * {
+  opacity: 0.75;
+}
+
+/* the change you jumped to */
+.diff-current.diff-ins { background: #b7ecc6; }
+.diff-current.diff-del { background: #ffc7c7; }
+.diff-current {
+  box-shadow: inset 0 -2px 0 #1a73e8;
+  animation: diff-flash 1.2s ease-out;
+}
+
+.diff-current.diff-ins-block,
+.diff-current.diff-del-block {
+  border-color: #1a73e8;
+  box-shadow: none;
+}
+
+@keyframes diff-flash {
+  from { filter: brightness(0.88) saturate(1.6); }
+}
+
+body.hide-deletions .diff-del,
+body.hide-deletions .diff-del-block {
+  display: none;
+}
+
+/* deletions in headings should not distort the outline */
+h1 .diff-del, h2 .diff-del, h3 .diff-del, h4 .diff-del {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+</style>
+</head>
+
+<body class="quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#from-restricted-samples-to-mls-a-historical-abstract" id="toc-from-restricted-samples-to-mls-a-historical-abstract" class="nav-link active" data-scroll-target="#from-restricted-samples-to-mls-a-historical-abstract"><span class="diff-ins" data-hunk="10">From restricted samples to MLS: a historical abstract</span></a></li>
+  <li><a href="#reasons-for-conducting-an-mls" id="toc-reasons-for-conducting-an-mls" class="nav-link" data-scroll-target="#reasons-for-conducting-an-mls"><span class="diff-ins" data-hunk="16">Reasons for Conducting an MLS</span></a></li>
+  <li><a href="#multiple-conceptions-for-good-practice-studies" id="toc-multiple-conceptions-for-good-practice-studies" class="nav-link" data-scroll-target="#multiple-conceptions-for-good-practice-studies"><span class="diff-ins" data-hunk="21">Multiple conceptions for “good-practice” studies</span></a></li>
+  <li><a href="#the-process-of-an-mls" id="toc-the-process-of-an-mls" class="nav-link" data-scroll-target="#the-process-of-an-mls"><span class="diff-ins" data-hunk="31">The process of an MLS</span></a></li>
+  <li><a href="#final-thoughts-and-conclusion" id="toc-final-thoughts-and-conclusion" class="nav-link" data-scroll-target="#final-thoughts-and-conclusion"><span class="diff-ins" data-hunk="49">Final Thoughts and Conclusion</span></a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">On the Perks and Challenges of Organizing a Multi-Lab Study</h1>
+<p class="subtitle lead">PR #78 · tracked changes</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="diff-ins" data-hunk="2"><strong>Key takeaways</strong></span></p>
+<p><span class="diff-ins" data-hunk="3">Multi-lab studies (MLSs) let several laboratories run the same study, which yields larger and more diverse samples and more conclusive evidence than any single study. They are especially valuable when combined with replication and with Registered Reports. This experience report describes the process: building a small and committed core team, planning the design and preregistration, deciding whether to involve the original authors, securing ethics approval and a repository, recruiting collaborators, ensuring similar study conditions, supporting teams with unequal resources, and communicating regularly. MLSs take considerable time, but the robustness of the results, the checks and balances, and the lasting research networks make them worthwhile.</span></p>
+<p><span class="diff-ins" data-hunk="4"><em>After this chapter, you will know:</em></span></p>
+<ul>
+<li><p><span class="diff-ins" data-hunk="5">Why and when is an MLS a good choice, and how does it relate to replications and Registered Reports?</span></p></li>
+<li><p><span class="diff-ins" data-hunk="6">Which steps does the organization of an MLS involve?</span></p></li>
+<li><p><span class="diff-ins" data-hunk="7">What challenges should a core team anticipate?</span></p></li>
+</ul>
+</div>
+</div>
+<p><span class="diff-ins" data-hunk="9">The advent of multi-lab studies (MLSs) – scientific studies conducted collaboratively by several laboratories or teams of scientists – can be seen as one of the many consequences of the Replication Crisis <span class="citation" data-cites="ForscherEtAl2023">(<a href="#ref-ForscherEtAl2023" role="doc-biblioref">Forscher et al., 2023</a>)</span>. Drawing on my own experiences, I aim to provide insights into how to organize an MLS. I do so in the form of an experience report, as several comprehensive guidelines on how to develop large-scale collaborative research projects already exist <span class="citation" data-cites="BaumgartnerEtAl2023 VaidisEtAl2026">(see, e.g., <a href="#ref-BaumgartnerEtAl2023" role="doc-biblioref">Baumgartner et al., 2023</a>; <a href="#ref-VaidisEtAl2026" role="doc-biblioref">Vaidis et al., 2026</a>)</span>. First, I briefly introduce the concept of MLSs and situate it within the historical context of the Replication Crisis. Second, drawing on my experience <span class="citation" data-cites="BrohmerEtAl2024">(<a href="#ref-BrohmerEtAl2024" role="doc-biblioref">Brohmer et al., 2024</a>)</span>, I discuss why and under which circumstances conducting an MLS is useful. Third, I distinguish MLSs from other good research practices – namely replications and Registered Reports, which can also be combined with an MLS. Finally, I describe the process of conducting an MLS in detail, including challenges that should be considered when organizing such a study. I do so in the hope that this article inspires more researchers to conduct MLSs in the future.</span></p>
+<section id="from-restricted-samples-to-mls-a-historical-abstract" class="level2">
+<h2 class="anchored" data-anchor-id="from-restricted-samples-to-mls-a-historical-abstract"><span class="diff-ins" data-hunk="10">From restricted samples to MLS: a historical abstract</span></h2>
+<p><span class="diff-ins" data-hunk="11">In the past, researchers in the social and behavioral sciences, including psychology, often conducted experimental studies on a relatively small scale. Such small samples were associated with substantial sampling variability, which could distort true effects – or null effects – in both positive and negative directions <span class="citation" data-cites="ButtonEtAl2013">(e.g., <a href="#ref-ButtonEtAl2013" role="doc-biblioref"><span class="nocase">Button et al.</span>, 2013</a>)</span>, ultimately limiting the strength of the conclusions that could be drawn. Moreover, because these studies predominantly relied on student samples from Western Europe and the United States, they rarely accounted for cultural variation.</span></p>
+<p><span class="diff-ins" data-hunk="12">Such restricted sampling practices used to be common in many areas of psychology, largely due to environmental constraints. To put this into perspective, frequent communication between university laboratories only became common – and, in many cases, possible – in the mid-1990s, when the internet and email entered the mass market. Since then, organizing collaborative efforts has no longer been limited to meetings at conferences or correspondence by letter. Furthermore, online survey platforms only became widely available and accepted in the mid- to late 2010s, when stable broadband internet access became accessible to larger segments of society, first through home computers and later through smartphones. Before that time, much research involving questionnaires, reading tasks, or visual materials had to be conducted in university laboratories, through face-to-face interviews, via landline telephone calls (excluding visual presentations), by fax, or through postal mail (i.e., hard copies physically distributed to the public, often in collaboration with local authorities). Today, laboratory studies remain important, particularly when sophisticated equipment or procedures are required (e.g., eye tracking, EEG, fMRI, VR, or reaction-time experiments). In contrast, questionnaire-based research has largely migrated online.</span></p>
+<p><span class="diff-ins" data-hunk="13">It was not until the emergence of concerns about non-replicable research findings in 2011 and 2012 that restricted sampling practices came under scrutiny (alongside other issues related to the Replication Crisis). In particular, the seminal papers of the <em>Many Labs</em> project <span class="citation" data-cites="KleinEtAl2014">(<a href="#ref-KleinEtAl2014" role="doc-biblioref">Klein et al., 2014</a>)</span> and the <em>Open Science Collaboration</em> <span class="citation" data-cites="OpenScienceCollab2015">(<a href="#ref-OpenScienceCollab2015" role="doc-biblioref">2015</a>)</span> sparked initial interest in collaborative efforts to replicate prominent findings in psychological research. Furthermore, aided by the early involvement of Perspectives on Psychological Science <span class="citation" data-cites="SimonsEtAl2014">(one of psychology’s flagship journals, <a href="#ref-SimonsEtAl2014" role="doc-biblioref">Simons et al., 2014</a>)</span>, several multi-lab replication studies were conducted, sometimes using samples 15 to 20 times larger than those of the original studies. More often than not, these studies yielded effects that were substantially smaller (or close to zero) compared to the large effects reported in the original papers.</span></p>
+<p><span class="diff-ins" data-hunk="14">Between 2015 and 2025, the concept of MLSs evolved even further. First, the <em>Psychological Science Accelerator</em> (https://psysciacc.org/) was founded to facilitate the organization of MLSs on a global scale. MLSs also rose to global prominence when a team of 40,000 scientists analyzed emotional effects during the COVID-19 pandemic <span class="citation" data-cites="WangEtAl2021">(e.g., <a href="#ref-WangEtAl2021" role="doc-biblioref">Wang et al., 2021</a>)</span>. Second, proponents of big-team science developed innovative add-ons for MLSs, such as prediction markets <span class="citation" data-cites="CamererEtAl2018">(<a href="#ref-CamererEtAl2018" role="doc-biblioref">Camerer et al., 2018</a>)</span> and adversarial-collaboration approaches <span class="citation" data-cites="NosekErrington2020b NatureEditorial2025">(<a href="#ref-NatureEditorial2025" role="doc-biblioref">Nature, 2025</a>; <a href="#ref-NosekErrington2020b" role="doc-biblioref">Nosek &amp; Errington, 2020</a>)</span>, which were used to contribute to heated debates surrounding controversial psychological effects. Third, the usefulness of such approaches spread to more resource-intensive subfields of psychology, such as neuroscience. Although organizing studies involving complex setups or hard-to-reach populations presents substantial challenges, many collaborating teams did not shy away from these endeavors (see, e.g., an EEG replication project on language comprehension by <span class="citation" data-cites="NieuwlandEtAl2018">Nieuwland et al. (<a href="#ref-NieuwlandEtAl2018" role="doc-biblioref">2018</a>)</span> and the ManyBabies collaboration by <span class="citation" data-cites="ByersHeinleinEtAl2020">Byers-Heinlein et al. (<a href="#ref-ByersHeinleinEtAl2020" role="doc-biblioref">2020</a>)</span>).</span></p>
+<p><span class="diff-ins" data-hunk="15">Since then, the field has entered a phase of consolidation, as MLSs have become increasingly common, slowly but steadily. Looking at the number of MLSs published in the prominent journal <em>Advances in Methods and Practices in Psychological Science</em> shows that, between 2019 and 2024, there were typically two to three multi-lab studies per year (excluding another large ManyLabs project). In 2025, this number rose to six.</span></p>
+</section>
+<section id="reasons-for-conducting-an-mls" class="level2">
+<h2 class="anchored" data-anchor-id="reasons-for-conducting-an-mls"><span class="diff-ins" data-hunk="16">Reasons for Conducting an MLS</span></h2>
+<p><span class="diff-ins" data-hunk="17">Although this gradual upward trend is encouraging, it also shows that MLSs are still more the exception than the rule in the field. This is not surprising, as such projects can easily be perceived as cumbersome, and the amount of work required from the principal investigators may seem enormous. Indeed, these studies typically take significantly more time to prepare, conduct, manage, and write up than an individual study. The MLSs with small to medium-sized core teams, that I have been participating with, which did not conduct these studies as their primary research, required about 4 to 5 years in total from planning to publication. Teams with the sole focus on such projects may require 1 to 3 years.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> But this is only one side of the coin.</span></p>
+<p><span class="diff-ins" data-hunk="18">The other side of the coin is much brighter: research questions can be addressed collaboratively in MLSs, implying that the resulting findings are likely to provide more robust and conclusive evidence for the phenomenon of interest – regardless of whether the outcome is a large effect or a null finding. No individual study could realistically provide such a level of credibility. In this way, MLSs may fulfill Merton’s scientific norm of communality <span class="citation" data-cites="Merton1942">(<a href="#ref-Merton1942" role="doc-biblioref">Merton, 1942</a>)</span> far better than any form of individualized research. Consequently, they are well suited both for investigating new effects, for example in time-sensitive situations where evidence is needed to inform the public (e.g., during COVID-19), and for replication projects aimed at obtaining new evidence regarding the presence (or absence) of an effect already reported in the literature.</span></p>
+<p><span class="diff-ins" data-hunk="19">Moreover, an MLS can ensure a higher degree of checks and balances. Throughout the research process, many eyes review research data, manuscripts, code, and study setups and may identify inconsistencies, typographical errors, coding issues, or incorrect translations of materials. As errors are inevitable in human work, detecting such issues can substantially improve the quality of the final output. In one example, a Master’s student of mine who helped collect data for an MLS <span class="citation" data-cites="VaidisEtAl2024">(<a href="#ref-VaidisEtAl2024" role="doc-biblioref">Vaidis et al., 2024</a>, acknowledgement section)</span> identified a major problem in the coding of a key dependent variable. I reported this issue to the lead researchers, who were fortunately able to rerun the main analysis before publication. This problem would likely have gone unnoticed had so many researchers not been involved.</span></p>
+<p><span class="diff-ins" data-hunk="20">Finally, the individual medium- and long-term benefits for researchers involved in such studies should not be underestimated. As university press offices and public media outlets take note of MLSs, they are often more interested in reporting their results than those of similar but smaller studies. Likewise, because the very nature of MLSs implies greater robustness through the involvement of many laboratories, MLSs may be cited more frequently than comparable studies. However, this effect is difficult to estimate, as MLSs are often published in high-impact journals, which may itself account for their greater visibility and public exposure. Furthermore, the research networks established through MLS collaborations often remain intact after a project has been completed, leading to follow-up projects that address new research questions.</span></p>
+</section>
+<section id="multiple-conceptions-for-good-practice-studies" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-conceptions-for-good-practice-studies"><span class="diff-ins" data-hunk="21">Multiple conceptions for “good-practice” studies</span></h2>
+<p><span class="diff-ins" data-hunk="22">This experience report, based on my own involvement in an MLS, occasionally refers to different concepts of “good practice” that were combined within a single study. As depicted in <strong>?@fig-mls-concepts</strong>, I would like to conceptually disentangle these concepts for the sake of clarity.</span></p>
+<p><span class="diff-ins" data-hunk="23"><strong>MLS</strong>. Several laboratories or teams of scientists conduct the same study collaboratively. This is considered a good-practice approach because evidence for (or against) an effect is collected not just once, but multiple times, allowing researchers to assess whether a given effect is robust across laboratories.</span></p>
+<p><span class="diff-ins" data-hunk="24"><strong>Replication</strong>. A study that replicates a previous, original study, typically conducted by independent researchers. A formal distinction is commonly made between close and conceptual replications, among other types <span class="citation" data-cites="HueffmeierEtAl2016">(see <a href="#ref-HueffmeierEtAl2016" role="doc-biblioref">Hüffmeier et al., 2016</a>)</span>. This is a good-practice approach because replications (particularly close replications) provide additional evidence for or against an effect, thereby contributing to the cumulative body of scientific knowledge.</span></p>
+<p><span class="diff-ins" data-hunk="25"><img src="images/multilab_concepts.png" id="fig-mls-concepts" class="img-fluid" alt="Concepts of studies that make use of different good practices. Registered Multi-Lab Replication Studies are also known as Registered Replication Reports in some journals."></span></p>
+<p><span class="diff-ins" data-hunk="26"><strong>Registered Report.</strong> A study in which the theoretical rationale and methodology are peer-reviewed prior to data collection. Registered Reports are typically conducted in collaboration with journals, which provide in-principle acceptance following a positive Stage 1 peer review and guarantee publication regardless of the study’s results. This is a good-practice approach because it combats publication bias (i.e., the tendency to favor statistically significant findings), clearly distinguishes confirmatory from exploratory analyses, and tends to result in higher overall research quality <span class="citation" data-cites="ScheelEtAl2021 SoderbergEtAl2021">(<a href="#ref-ScheelEtAl2021" role="doc-biblioref">Scheel et al., 2021</a>; <a href="#ref-SoderbergEtAl2021" role="doc-biblioref"><span class="nocase">Soderberg et al.</span>, 2021</a>)</span>.</span></p>
+<p><span class="diff-ins" data-hunk="27"><strong>Registered Multi-Lab Replication Study.</strong> Combining these practices also combines the advantages of all three concepts. Thus, an MLS that replicates an original effect and preregisters its theoretical rationale and methodology (including hypotheses and analysis plans) safeguards itself against multiple criticisms that might arise post hoc. These include common questions such as:</span></p>
+<ul>
+<li><p><span class="diff-ins" data-hunk="28">“Is the study sufficiently powered to detect a potentially small effect?”; Answer: “Yes, as we provide a large sample drawn from multiple laboratories.”</span></p></li>
+<li><p><span class="diff-ins" data-hunk="29">“Are the theoretical rationale and experimental paradigms sound?”; Answer: “Yes, according to both our collaborators and the a priori peer review process, they were.”</span></p></li>
+<li><p><span class="diff-ins" data-hunk="30">“Does a single replication add anything new to the publication record?”; Answer: “Yes, because it draws on data from multiple laboratories and demonstrates whether the effect is truly robust across research settings.”</span></p></li>
+</ul>
+</section>
+<section id="the-process-of-an-mls" class="level2">
+<h2 class="anchored" data-anchor-id="the-process-of-an-mls"><span class="diff-ins" data-hunk="31">The process of an MLS</span></h2>
+<p><span class="diff-ins" data-hunk="32">To realize the benefits of an MLS (with or without the additional advantages of a replication study or a Registered Report), careful planning, monitoring, and active involvement of collaborators are essential. This requires substantial effort on the part of the core research team or principal investigators. The following sections outline the key steps involved; <strong>?@fig-mls-timeline</strong> gives a simplified overview.</span></p>
+<p><span class="diff-ins" data-hunk="33"><strong>The generation of a study idea.</strong> As with most ideas, research ideas may come to a researcher quite unexpectedly: perhaps in the shower, during a late-evening run in the park, over lunch with colleagues, or after reading a more or less related piece of research. Alternatively, they may emerge as a consequence of previous research that has opened up new questions. This stage is familiar to any researcher who has ever conducted a study.</span></p>
+<p><span class="diff-ins" data-hunk="34"><strong>Building a core team.</strong> Upon discussing the newly developed research idea with colleagues and deciding to conduct the study as an MLS, a core team needs to be formed. This core team should remain small – potentially two to four people may be sufficient – and should consist of researchers who feel directly invested in the project, trust one another in their respective roles, and proactively contribute to moving the study forward. Without these ingredients, the project may stall at an early stage due to a diffusion of responsibility or a lack of individual commitment. Depending on the size of the planned MLS, additional tiers of involved researchers may be established to facilitate the delegation of tasks and responsibilities.</span></p>
+<p><span class="diff-ins" data-hunk="35"><strong>Planning the hypotheses, study design and paradigm.</strong> One of the core team’s first tasks is to define the general characteristics of the planned study at an early stage. Here, the Registered Report format can be particularly useful, as it requires researchers to discuss and document their theoretical rationale, hypotheses, and methods in detail for the review process. However, even if no pre-data-collection review is planned, a suitable preregistration template can provide valuable guidance. This process helps clarify important aspects of the study, including the anticipated sample size and the planned analysis pipeline. For replication studies, this process may be somewhat more straightforward, as the original study often provides both the initial theoretical rationale and an effect size that can serve as the basis for a sample size calculation. At the same time, methodological deviations from the original study may become apparent by comparing the methods section of the original paper with that of the planned replication <span class="citation" data-cites="BrandtEtAl2014">(see, e.g., the Replication Recipe, <a href="#ref-BrandtEtAl2014" role="doc-biblioref">Brandt et al., 2014</a>)</span>.</span></p>
+<p><span class="diff-ins" data-hunk="36"><strong>Involving original authors (replications)</strong>. For MLSs that involve replications, it is often worthwhile to consider involving the original authors. However, this can be a delicate matter. On the one hand, having the original authors on board can send a positive signal, demonstrating their confidence in the project. For older or less thoroughly documented studies, they may also be able to provide important details that are absent from the published methods section but may nevertheless be relevant (e.g., whether participants were tested individually or in groups, the characteristics of the laboratory environment, or whether the convenience sample primarily consisted of students). On the other hand, if the original authors are motivated to defend their previous findings, their involvement can also lead to friction regarding methodological decisions once they have joined the team. Therefore, it is advisable to approach original authors early in the planning process and assess whether their interests are aligned with the goals of the replication before offering a collaboration on equal footing. For example, if the original authors express an interest in investigating the robustness of their effect and openly discuss the possibility of involving additional laboratories, this may indicate a genuine commitment to the project’s objectives.</span></p>
+<p><span class="diff-ins" data-hunk="37"><strong>Ethics approval, data management and documentation</strong>. The core team may also begin preparing the study’s IRB approval and establishing an appropriate repository structure for data sharing and metadata management. Securing ethical approval early in the process can be particularly beneficial, as universities differ in how they handle IRB procedures. For potential collaborators (see the next section), this means that they may either need to obtain separate approval from their own institution or be able to join the existing approval. The latter option is generally preferable, as it can facilitate a faster start to the study. Likewise, an appropriate repository structure should be established early on to support effective data management and to document decisions and workflows throughout the project. This may include the use of version-controlled documents that make changes over time transparent and traceable.</span></p>
+<p><span class="diff-ins" data-hunk="38"><strong>Finding collaborators</strong>. Once the principal study idea and design are clear to the core team, they can begin recruiting collaborators. The difficulty of this task increases with the complexity of the study design or the target population. Finding collaborators for resource-intensive studies (e.g., EEG experiments) or studies involving specific populations (e.g., infants) requires substantial resources and may therefore reduce the pool of potential collaborators. In such cases, calls for participation through networks such as the Psychological Science Accelerator or email distribution lists of major psychological societies may be necessary. For less complex studies (e.g., 15-minute online experiments), the barriers to participation are often considerably lower. My own experience suggests that particularly motivated early-career researchers from adjacent fields can often be recruited at conferences, but also at multi-day summer schools or writing retreats, where there is sufficient time to explain the project in greater detail. Again, the Registered Report format can be helpful, as the study rationale, design, and procedures are already documented and can be shared with interested researchers. From the outset, the roles of collaborators should also be clearly defined. Will they simply conduct a study that has already been prepared? Will they be involved in coordination, data analysis, and manuscript writing? And what implications will their role have for eventual co-authorship? Such role definitions can be established efficiently through survey and communication platforms (e.g., Canvas, Moodle, Slack, or similar tools) or shared spreadsheets, where all involved parties can indicate their anticipated contributions. It should also be reiterated that for exceptionally large MLSs <span class="citation" data-cites="MiskeEtAl2026 WangEtAl2021">(e.g., <a href="#ref-MiskeEtAl2026" role="doc-biblioref">Miske et al., 2026</a>; <a href="#ref-WangEtAl2021" role="doc-biblioref">Wang et al., 2021</a>)</span>, a division of labor across multiple tiers of collaborators is advisable, as a small core team alone would likely be overwhelmed by the task of coordinating hundreds of laboratories and researchers.</span></p>
+<p><span class="diff-ins" data-hunk="39"><strong>Assuring similar study conditions.</strong> One of the greatest advantages of an MLS is that a core team can usually ensure a high degree of methodological homogeneity across participating studies, often exceeding that achieved in most meta-analyses <span class="citation" data-cites="LindenHoenekopp2021">(<a href="#ref-LindenHoenekopp2021" role="doc-biblioref">Linden &amp; Hönekopp, 2021</a>)</span>. In particular, online questionnaire-based studies have the advantage of allowing highly standardized study designs. The primary challenge in such studies is that poor translations of materials into different languages may compromise data quality. Therefore, it is advisable to involve native speakers who can ensure accurate translations of the original study materials. As open-source alternatives often lag behind in usability, platforms such as Google Sheets and Google Docs are commonly used to share materials among collaborating researchers. More complex MLSs, however, particularly those requiring on-site participation, demand greater attention to minimizing unwanted sources of heterogeneity. Relevant questions may include:</span></p>
+<ul>
+<li><p><span class="diff-ins" data-hunk="40">Do the fMRI scanners used by participating laboratories provide comparable temporal and spatial resolution?</span></p></li>
+<li><p><span class="diff-ins" data-hunk="41">Do stationary and wearable eye-tracking systems produce equivalent results?</span></p></li>
+<li><p><span class="diff-ins" data-hunk="42">Do differences in illumination levels or screen sizes across laboratories affect reaction times?</span></p></li>
+</ul>
+<p><span class="diff-ins" data-hunk="43">Some of these questions may need to be addressed through extensive pilot testing, which requires additional time and resources. In certain cases, the core team may decide not to include particular laboratories if minimum requirements for methodological homogeneity are not met.</span></p>
+<p><span class="diff-ins" data-hunk="44"><strong>Individual differences in researchers’ behavior and actual resources.</strong> During the course of the project, the core team may discover differences among collaborators with regard to communication, individual effort, or simply luck in accomplishing their tasks. For example, highly motivated collaborating teams may collect their share of the agreed sample size within a few days because they are well prepared and have effective local recruitment strategies in place. Other teams, by contrast, may make several attempts to recruit participants through social media and then find themselves surprised by how difficult and time-consuming it is to reach the desired sample size. Addressing such issues is a crucial responsibility of the core team. For instance, it may brainstorm alternative recruitment strategies with the collaborating team and offer help with the data collection. Alternatively, other laboratories may be able to contribute by recruiting additional participants to compensate for shortfalls elsewhere. In any case, core teams will likely encounter such unforeseen challenges throughout the project, and these situations should be addressed in a constructive and supportive manner.</span></p>
+<p><span class="diff-ins" data-hunk="45"><strong>Post-data collection procedure.</strong> Once all data have been collected, the core team typically begins processing and analyzing the data, followed by the preparation of the manuscript (or the Stage 2 Registered Report). Because MLS datasets often require extensive analyses—after all, the involvement of multiple laboratories already necessitates multilevel or meta-analytic approaches—these steps can take considerably longer than anticipated. This is especially true when additional good-practice measures are implemented, such as thoroughly annotating analysis code, preparing variable lists and codebooks, and organizing data and material sharing within the project repository. In the case of my own MLS <span class="citation" data-cites="BrohmerEtAl2024">(<a href="#ref-BrohmerEtAl2024" role="doc-biblioref">Brohmer et al., 2024</a>)</span>, this phase took almost as long as the Stage 1 registration and data collection combined, despite the involvement of student raters who assisted with some of the tasks.</span></p>
+<p><span class="diff-ins" data-hunk="46"><strong>Team communication.</strong> As many of the aforementioned steps can be more time-consuming than initially anticipated, maintaining good communication with collaborators is particularly important. Providing updates every two to three months, describing what has been accomplished in the meantime and what is planned for the coming months, is usually perceived as informative and helps collaborators feel involved in the project. As the manuscript draft approaches completion, collaborators also appreciate being informed early so that they can reserve sufficient time to read the manuscript and provide suggestions for potential revisions. Naturally, it is the responsibility of the core team to set a deadline by which collaborators should have reviewed the manuscript. However, the team should be sufficiently forward-looking not to make this deadline overly restrictive. Depending on the length and complexity of the manuscript, a minimum review period of two to three weeks should be provided. Again, online survey and communication tools can be used to allow collaborators to indicate when they have completed their review and submitted their comments. Finally, once the manuscript has been submitted, the core team should send a final update informing collaborators that they will be notified about the manuscript’s progress when reviews are received and, ultimately, when the paper is accepted for publication.</span></p>
+<p><span class="diff-ins" data-hunk="47"><img src="images/multilab_timeline.png" id="fig-mls-timeline" class="img-fluid" alt="Simplified timeline of an MLS."></span></p>
+<p><span class="diff-ins" data-hunk="48"><strong>The aftermath</strong>. Once the MLS is published, it is unlikely to feel like “just another publication” to the core team and the involved collaborators. Instead, because an MLS typically contains much more information than a single study, its publication feels more like the completion of a comprehensive and conclusive research project that does justice to the underlying phenomenon of interest. And rightfully so: at least with regard to the research paradigm employed, the conclusions drawn from such a study are likely to be clearer and more replicable, as they are based on data from multiple laboratories and sample sizes that may be five, ten, or even one hundred times larger than those commonly found in the field. As a result, MLSs are also highly persuasive and communicable. It is therefore not surprising that they often attract the attention of science communicators, journalists, and decision-makers, who may bring their findings to a much broader audience and substantially increase their visibility.</span></p>
+</section>
+<section id="final-thoughts-and-conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="final-thoughts-and-conclusion"><span class="diff-ins" data-hunk="49">Final Thoughts and Conclusion</span></h2>
+<p><span class="diff-ins" data-hunk="50">MLSs require careful planning and considerable time to conduct. This is likely one reason why researchers in the social and behavioral sciences do not engage in them more frequently, despite the availability of infrastructures that did not exist less than a generation ago. As discussed throughout this article, these concerns are not unfounded, as committing to an MLS requires substantial time and resources. However, motivated researchers should not be deterred by the organizational effort involved. Instead, the procedural steps outlined here can serve as a practical guide for effective planning and for avoiding common pitfalls. Moreover, conducting such a project with a team of equally committed collaborators can help sustain motivation over the months or even years that such studies often require.</span></p>
+<p><span class="diff-ins" data-hunk="51">In my view, managing an MLS represents the ultimate opportunity to collaboratively organize and socially coordinate a scientific study in the spirit envisioned by Merton <span class="citation" data-cites="Merton1942">(<a href="#ref-Merton1942" role="doc-biblioref">1942</a>)</span>. Yet its value still appears to be underappreciated, much like that of many other forms of good-practice research in science. It is often only through firsthand experience that the benefits of such studies become fully apparent. Once experienced, they tend to shift attention away from the often unhealthy incentives of the academic publishing system—which frequently reward quantity and novelty—and toward the production of robust, cumulative scientific knowledge.</span></p>
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-BaumgartnerEtAl2023" class="csl-entry" role="listitem">
+Baumgartner, H. A., Alessandroni, N., Byers-Heinlein, K., Frank, M. C., Hamlin, J. K., Soderstrom, M., Voelkel, J. G., Willer, R., Yuen, F., &amp; Coles, N. A. (2023). <span class="nocase">How to build up big team science: a practical guide for large-scale collaborations</span>. <em>Royal Society Open Science</em>, <em>10</em>(6). <a href="https://doi.org/10.1098/rsos.230235">https://doi.org/10.1098/rsos.230235</a>
+</div>
+<div id="ref-BrandtEtAl2014" class="csl-entry" role="listitem">
+Brandt, M. J., IJzerman, H., Dijksterhuis, A., Farach, F. J., Geller, J., Giner-Sorolla, R., &amp; Van’t Veer, A. (2014). The replication recipe: What makes for a convincing replication? <em>Journal of Experimental Social Psychology</em>, <em>50</em>, 217–224. <a href="https://doi.org/10.1016/j.jesp.2013.10.005">https://doi.org/10.1016/j.jesp.2013.10.005</a>
+</div>
+<div id="ref-BrohmerEtAl2024" class="csl-entry" role="listitem">
+Brohmer, H., Hofer, G., Bauch, S. A., Beitner, J., Berkessel, J. B., Corcoran, K., Garcia, D., Gruber, F. M., Giuliani, F., Jauk, E., Krammer, G., Malkoc, S., Metzler, H., Mües, H. M., Otto, K., Rahal, R.-M., Salwender, M., Sczesny, S., Stahlberg, D., … Athenstaedt, U. (2024). <span class="nocase">Effects of the Generic Masculine and Its Alternatives in Germanophone Countries: A Multi-Lab Replication and Extension of Stahlberg, Sczesny, and Braun (2001)</span>. <em>International Review of Social Psychology</em>, <em>37</em>(1). <a href="https://doi.org/10.5334/irsp.522">https://doi.org/10.5334/irsp.522</a>
+</div>
+<div id="ref-ButtonEtAl2013" class="csl-entry" role="listitem">
+<span class="nocase">Button, K., Ioannidis, J., Mokrysz, C., et al.</span> (2013). Power failure: Why small sample size undermines the reliability of neuroscience. <em>Nature Reviews Neuroscience</em>, <em>14</em>, 365–376. <a href="https://doi.org/10.1038/nrn3475">https://doi.org/10.1038/nrn3475</a>
+</div>
+<div id="ref-ByersHeinleinEtAl2020" class="csl-entry" role="listitem">
+Byers-Heinlein, K., Bergmann, C., Davies, C., Frank, M. C., Hamlin, J. K., Kline, M., Kominsky, J. F., Kosie, J. E., Lew-Williams, C., Liu, L., Mastroberardino, M., Singh, L., Waddell, C. P. G., Zettersten, M., &amp; Soderstrom, M. (2020). <span class="nocase">Building a collaborative psychological science: Lessons learned from ManyBabies 1.</span> <em>Canadian Psychology / Psychologie Canadienne</em>, <em>61</em>(4), 349–363. <a href="https://doi.org/10.1037/cap0000216">https://doi.org/10.1037/cap0000216</a>
+</div>
+<div id="ref-CamererEtAl2018" class="csl-entry" role="listitem">
+Camerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Nave, G., Nosek, B. A., Pfeiffer, T., Altmejd, A., Buttrick, N., Chan, T., Chen, Y., Forsell, E., Gampa, A., Heikensten, E., Hummer, L., Imai, T., … Wu, H. (2018). <span class="nocase">Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015</span>. <em>Nature Human Behaviour</em>, <em>2</em>(9), 637–644. <a href="https://doi.org/10.1038/s41562-018-0399-z">https://doi.org/10.1038/s41562-018-0399-z</a>
+</div>
+<div id="ref-ForscherEtAl2023" class="csl-entry" role="listitem">
+Forscher, P. S., Wagenmakers, E.-J., Coles, N. A., Silan, M. A., Dutra, N., Basnight-Brown, D., &amp; IJzerman, H. (2023). <span class="nocase">The Benefits, Barriers, and Risks of Big-Team Science</span>. <em>Perspectives on Psychological Science</em>, <em>18</em>(3), 607–623. <a href="https://doi.org/10.1177/17456916221082970">https://doi.org/10.1177/17456916221082970</a>
+</div>
+<div id="ref-HueffmeierEtAl2016" class="csl-entry" role="listitem">
+Hüffmeier, J., Mazei, J., &amp; Schultze, T. (2016). Reconceptualizing replication as a sequence of different studies: A replication typology. <em>Journal of Experimental Social Psychology</em>, <em>66</em>, 81–92. <a href="https://doi.org/10.1016/j.jesp.2015.09.009">https://doi.org/10.1016/j.jesp.2015.09.009</a>
+</div>
+<div id="ref-KleinEtAl2014" class="csl-entry" role="listitem">
+Klein, R. A., Ratliff, K. A., Vianello, M., Adams Jr, R. B., Bahník, Š., Bernstein, M. J., &amp; Nosek, B. A. (2014). Investigating variation in replicability. <em>Social Psychology</em>. <a href="https://doi.org/10.1027/1864-9335/a000178">https://doi.org/10.1027/1864-9335/a000178</a>
+</div>
+<div id="ref-LindenHoenekopp2021" class="csl-entry" role="listitem">
+Linden, A. H., &amp; Hönekopp, J. (2021). <span class="nocase">Heterogeneity of Research Results: A New Perspective From Which to Assess and Promote Progress in Psychological Science</span>. <em>Perspectives on Psychological Science</em>, <em>16</em>(2), 358–376. <a href="https://doi.org/10.1177/1745691620964193">https://doi.org/10.1177/1745691620964193</a>
+</div>
+<div id="ref-Merton1942" class="csl-entry" role="listitem">
+Merton, R. K. (1942). A note on science and democracy. <em>Journal of Legal &amp; Political Sociology</em>, <em>1</em>, 115–126.
+</div>
+<div id="ref-MiskeEtAl2026" class="csl-entry" role="listitem">
+Miske, O., Abatayo, A. L., Daley, M., Dirzo, M., Fox, N., Haber, N., Hahn, K. M., Struhl, M. K., Mawhinney, B., Silverstein, P., Stankov, T., Tyner, A. H., Adamkovič, M., Alzahawi, S., Anafinova, S., Awtrey, E., Axxe, E., Bailey, J., Bakker, B. N., … Errington, T. M. (2026). <span class="nocase">Investigating the reproducibility of the social and behavioural sciences</span>. <em>Nature</em>, <em>652</em>(8108), 126–134. <a href="https://doi.org/10.1038/s41586-026-10203-5">https://doi.org/10.1038/s41586-026-10203-5</a>
+</div>
+<div id="ref-NatureEditorial2025" class="csl-entry" role="listitem">
+Nature. (2025). <span class="nocase">Make science more collegial: why the time for <span>“adversarial collaboration”</span> has come</span>. <em>Nature</em>, <em>641</em>(8062), 281–282. <a href="https://doi.org/10.1038/d41586-025-01379-3">https://doi.org/10.1038/d41586-025-01379-3</a>
+</div>
+<div id="ref-NieuwlandEtAl2018" class="csl-entry" role="listitem">
+Nieuwland, M. S., Politzer-Ahles, S., Heyselaar, E., Segaert, K., Darley, E., Kazanina, N., Von Grebmer Zu Wolfsthurn, S., Bartolozzi, F., Kogan, V., Ito, A., Mézière, D., Barr, D. J., Rousselet, G. A., Ferguson, H. J., Busch-Moreno, S., Fu, X., Tuomainen, J., Kulakova, E., Husband, E. M., … Huettig, F. (2018). <span class="nocase">Large-scale replication study reveals a limit on probabilistic prediction in language comprehension</span>. <em>eLife</em>, <em>7</em>. <a href="https://doi.org/10.7554/elife.33468">https://doi.org/10.7554/elife.33468</a>
+</div>
+<div id="ref-NosekErrington2020b" class="csl-entry" role="listitem">
+Nosek, B. A., &amp; Errington, T. M. (2020). <span class="nocase">The best time to argue about what a replication means? Before you do it</span>. <em>Nature</em>, <em>583</em>(7817), 518–520. <a href="https://doi.org/10.1038/d41586-020-02142-6">https://doi.org/10.1038/d41586-020-02142-6</a>
+</div>
+<div id="ref-OpenScienceCollab2015" class="csl-entry" role="listitem">
+Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. <em>Science</em>, <em>349</em>(6251), aac4716. <a href="https://doi.org/10.1126/science.aac4716">https://doi.org/10.1126/science.aac4716</a>
+</div>
+<div id="ref-ScheelEtAl2021" class="csl-entry" role="listitem">
+Scheel, A. M., Schijen, M. R. M. J., &amp; Lakens, D. (2021). <span class="nocase">An Excess of Positive Results: Comparing the Standard Psychology Literature With Registered Reports</span>. <em>Advances in Methods and Practices in Psychological Science</em>, <em>4</em>(2). <a href="https://doi.org/10.1177/25152459211007467">https://doi.org/10.1177/25152459211007467</a>
+</div>
+<div id="ref-SimonsEtAl2014" class="csl-entry" role="listitem">
+Simons, D. J., Holcombe, A. O., &amp; Spellman, B. A. (2014). <span class="nocase">An Introduction to Registered Replication Reports at &lt;i&gt;Perspectives on Psychological Science&lt;/i&gt;</span>. <em>Perspectives on Psychological Science</em>, <em>9</em>(5), 552–555. <a href="https://doi.org/10.1177/1745691614543974">https://doi.org/10.1177/1745691614543974</a>
+</div>
+<div id="ref-SoderbergEtAl2021" class="csl-entry" role="listitem">
+<span class="nocase">Soderberg, C. K., Errington, T. M., Schiavone, S. R., et al.</span> (2021). Initial evidence of research quality of registered reports compared with the standard publishing model. <em>Nature Human Behaviour</em>, <em>5</em>, 990–997. <a href="https://doi.org/10.1038/s41562-021-01142-4">https://doi.org/10.1038/s41562-021-01142-4</a>
+</div>
+<div id="ref-VaidisEtAl2026" class="csl-entry" role="listitem">
+Vaidis, D. C., Miranda, J. F., Buchanan, E. M., Yang, Y. F., Kowal, M., Schmidt, K., Topor, M., Misiak, M., Miller, R., Protzko, J., Gjoneska, B., Miller, J. K., Exner, A., Azevedo, F., Paruzel-Czachura, M., Mushtaq, F., Oliveira, C., Wagge, J. R., De Moor, D., … Pronizius, E. (2026). <span class="nocase">The Advantage of Big Team Science: Lessons Learned From Cognitive Science</span>. <em>Collabra: Psychology</em>, <em>12</em>(1). <a href="https://doi.org/10.1525/collabra.160129">https://doi.org/10.1525/collabra.160129</a>
+</div>
+<div id="ref-VaidisEtAl2024" class="csl-entry" role="listitem">
+Vaidis, D. C., Sleegers, W. W. A., Leeuwen, F. van, DeMarree, K. G., Sætrevik, B., Ross, R. M., Schmidt, K., Protzko, J., Morvinski, C., Ghasemi, O., Roberts, A. J., Stone, J., Bran, A., Gourdon-Kanhukamwe, A., Gunsoy, C., Moussaoui, L. S., Smith, A. R., Nugier, A., Fayant, M.-P., … Priolo, D. (2024). <span class="nocase">A Multilab Replication of the Induced-Compliance Paradigm of Cognitive Dissonance</span>. <em>Advances in Methods and Practices in Psychological Science</em>, <em>7</em>(1). <a href="https://doi.org/10.1177/25152459231213375">https://doi.org/10.1177/25152459231213375</a>
+</div>
+<div id="ref-WangEtAl2021" class="csl-entry" role="listitem">
+Wang, K., Goldenberg, A., Dorison, C. A., Miller, J. K., Uusberg, A., Lerner, J. S., Gross, J. J., Agesin, B. B., Bernardo, M., Campos, O., Eudave, L., Grzech, K., Ozery, D. H., Jackson, E. A., Garcia, E. O. L., Drexler, S. M., Jurković, A. P., Rana, K., Wilson, J. P., … Moshontz, H. (2021). <span class="nocase">A multi-country test of brief reappraisal interventions on emotions during the COVID-19 pandemic</span>. <em>Nature Human Behaviour</em>, <em>5</em>(8), 1089–1110. <a href="https://doi.org/10.1038/s41562-021-01173-x">https://doi.org/10.1038/s41562-021-01173-x</a>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>These estimates, despite being informed, should be seen as anecdotal.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script>
+// In-chapter change navigation, driven by the review shell via postMessage.
+(function () {
+  var SEL = ".diff-ins, .diff-del, .diff-ins-block, .diff-del-block";
+  var current = -1;
+
+  function visibleMarks() {
+    return Array.prototype.filter.call(document.querySelectorAll(SEL), function (el) {
+      return el.offsetParent !== null || el.getClientRects().length > 0;
+    });
+  }
+
+  // One entry per hunk (a hunk may consist of a deletion and an insertion).
+  function hunks() {
+    var seen = Object.create(null);
+    var out = [];
+    visibleMarks().forEach(function (el) {
+      var id = el.getAttribute("data-hunk") || "";
+      if (id && seen[id]) return;
+      if (id) seen[id] = true;
+      out.push(el);
+    });
+    return out;
+  }
+
+  function report() {
+    parent.postMessage(
+      { type: "diff:ready", total: hunks().length, index: current },
+      "*"
+    );
+  }
+
+  function go(target) {
+    var list = hunks();
+    if (!list.length) return;
+    if (target < 0) target = list.length - 1;
+    if (target >= list.length) target = 0;
+    current = target;
+    var el = list[current];
+    document.querySelectorAll(".diff-current").forEach(function (n) {
+      n.classList.remove("diff-current");
+    });
+    var group = el.getAttribute("data-hunk");
+    (group
+      ? document.querySelectorAll('[data-hunk="' + group + '"]')
+      : [el]
+    ).forEach(function (n) {
+      n.classList.add("diff-current");
+    });
+    // explicit scroll: smooth scrollIntoView is unreliable inside an unfocused iframe
+    var top = window.scrollY + el.getBoundingClientRect().top - window.innerHeight * 0.3;
+    var near = Math.abs(top - window.scrollY) < 1500;
+    window.scrollTo({ top: Math.max(top, 0), behavior: near ? "smooth" : "auto" });
+    parent.postMessage(
+      { type: "diff:position", total: list.length, index: current },
+      "*"
+    );
+  }
+
+  window.addEventListener("message", function (e) {
+    var msg = e.data || {};
+    if (msg.type === "diff:next") go(current + 1);
+    else if (msg.type === "diff:prev") go(current - 1);
+    else if (msg.type === "diff:first") go(0);
+    else if (msg.type === "diff:deletions") {
+      document.body.classList.toggle("hide-deletions", !msg.show);
+      current = -1;
+      report();
+    } else if (msg.type === "diff:query") report();
+  });
+
+  // keep keyboard shortcuts working while the iframe has focus
+  document.addEventListener("keydown", function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var tag = (e.target.tagName || "").toLowerCase();
+    if (tag === "input" || tag === "textarea") return;
+    if (e.key === "n" || e.key === "j") { go(current + 1); e.preventDefault(); }
+    else if (e.key === "p" || e.key === "k") { go(current - 1); e.preventDefault(); }
+    else parent.postMessage({ type: "diff:key", key: e.key }, "*");
+  });
+
+  if (document.readyState === "complete") report();
+  else window.addEventListener("load", report);
+})();
+
+</script>
+</body></html>
