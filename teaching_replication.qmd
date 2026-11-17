@@ -1,12 +1,12 @@
 ---
-title: "Teaching Replication"
-subtitle: "Mentoring Student Replications"
+title: "Mentoring Student Replications"
 author:
   - name: "Jordan R. Wagge"
     orcid: "0000-0002-5105-2084"
     affiliations:
       - name: "School of Psychology, Avila University, USA"
   - name: "Lisa M. Willoughby"
+    orcid: "0000-0002-2785-7560"
     affiliations:
       - name: "Department of Psychology, Saint Louis University, USA"
 ---
