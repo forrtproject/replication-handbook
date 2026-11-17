@@ -1,0 +1,248 @@
+---
+title: "Teaching Replication"
+subtitle: "Mentoring Student Replications"
+author:
+  - name: "Jordan R. Wagge"
+    orcid: "0000-0002-5105-2084"
+    affiliations:
+      - name: "School of Psychology, Avila University, USA"
+  - name: "Lisa M. Willoughby"
+    affiliations:
+      - name: "Department of Psychology, Saint Louis University, USA"
+---
+
+::: {.callout-tip icon="false"}
+**Key takeaways**
+
+Mentored replications are a good option for student projects: the study design and materials already exist and have been vetted by peer review, so the workload for mentors is lower than for a novel project, while students still learn the full research process. This chapter gives a step-by-step plan for mentoring a replication with students: selecting a feasible study, contacting the original authors, determining the sample size, planning with or without extension hypotheses, analyzing and interpreting results with careful language, and sharing the work through presentations and open science platforms. A checklist summarizes the steps for each phase.
+
+*After this chapter, you will know:*
+
+-   How does feasibility change when a replication is conducted with students?
+
+-   How can mentors plan a replication project and support students' learning goals?
+
+-   How should students analyze, interpret, and share replication results?
+:::
+
+Replication is a hallmark of scientific progress, and yet replication work itself is not incentivized properly in science [@NosekEtAl2012] and therefore is not done to the extent it likely should be [@MakelEtAl2012]. In recent years, there have been calls in the field for students to engage in replication work [@Quintana2021] and for instructors and researchers to recognize the value of replication as pedagogy [@FrankSaxe2012]. Given that time and workload demands are frequently cited barriers to instructors' participation in undergraduate research mentoring [@Ferguson2023], replication research presents workload-related advantages because of the low requirement related to the development of study design and materials. Additionally, the value in applying replication frameworks with students cannot be disregarded, particularly when one considers how student-conceived projects often lack rigor in their methodological approaches [e.g., @GraheEtAl2012; @WaggeEtAl2023]. Because replications replicate methodologies that have been vetted by peer review, the resulting work will likely mirror the level of quality expected in the discipline.
+
+Given these potential benefits of mentored replications to students, instructors, and the field, an instructor might find themselves ready to commit to mentoring a replication and in search of a starting point for doing so. In this chapter, we walk through some important considerations for mentoring students through replication studies within psychology: selecting a study, contacting original authors for materials, considering potential extensions, analyzing the outcomes of replications, and interpreting and presenting those outcomes. Instructors from other disciplines may find the discussion broadly useful and adapt pieces of our recommendations to fit within the constraints of their field. The goal of the chapter is for psychology instructors to finish reading it with a step-by-step plan for initiating and mentoring a replication study with students, and we conclude with a checklist (@tbl-mentor-checklist) consolidating these steps. This checklist expands on the [more general checklist](appendix_checklist.qmd) presented in the appendix of this handbook to provide more guidance for the mentor/mentee context within a lab or semester.
+
+## Selecting a Study to Replicate
+
+In recent years, several papers have suggested criteria for choosing what studies to replicate [e.g., @IsagerEtAl2023; @PittelkowEtAl2023], as does [Chapter 3 of this handbook](choosing_study.qmd); however, when selecting studies to replicate with students, the "feasibility" criterion might shift to prioritize what is most feasible *with students* - not just for what an undergraduate researcher can reasonably and ethically take on, but also for time constraints considering what can be done within a maximum of a few semesters. @tbl-selection summarizes some of the key practical considerations to make when selecting a study for a mentored replication.
+
+Fortunately, in the field of psychology, the Collaborative Replications and Education Project [CREP, @WaggeEtAl2019] is one of the few organizations [for review of others, see @Wagge2023] that selects studies for students to replicate, along with providing crucial elements to help researchers get started, such as study materials and sample protocols. Studies are selected by collating the ten empirical papers from ten different "flagship" journals in psychology that have been cited the most three years prior to selection; those studies are then coded for feasibility, and the leadership team picks the most feasible studies that complement the existing menu of studies to replicate so that students have a range of options to choose from. At any given time, CREP typically has between 6-8 studies to choose from on the menu, and new studies join that list every 12 - 18 months. An updated list of available studies can be found in the Open Science Framework (OSF) project for CREP: [https://osf.io/flaue/wiki?wiki=6auhv](https://osf.io/flaue/wiki?wiki=6auhv). Because both of the authors of this chapter have experience mentoring projects both within and outside of the CREP framework, the rest of the chapter discusses replication mentorship generally but often refers back to "lessons learned" from within the CREP framework that may be helpful for anyone who is mentoring replication research.
+
+"Feasibility" can be defined in a few ways for undergraduate students. For CREP, the guidance for coders is that: 1) the studies be able to be completed within the time constraints of a 16-week semester (ruling out most longitudinal work), 2) the studies should not require equipment or software that is unavailable to most students (ruling out most psychophysiological work), and 3) the studies should not require participants from vulnerable populations (ruling out children and clinical populations). If the study also involves complex modeling or statistical analyses, this is also considered. This limits the pool of potential candidates quite a bit. In any given year, the pool of 100 studies typically gets narrowed down to 8 - 10 studies that are deemed "feasible enough" to be replicated, which gets further narrowed down by the leadership team to 1-3 studies. Importantly, the 100 studies are often coded by undergraduate students or recent graduates who have some experience with CREP, but sometimes studies that appear feasible on the surface slip through to the pool of final candidates, and the leadership team's perspectives are important when this happens. Over the years since CREP began selecting studies in 2013, the leadership team has also refined its understanding of what students (and their instructors) will consider feasible. For example, some early studies required Matlab or ePrime, and most students do not have access or expertise to use these products.
+
+| Level | Considerations |
+|:---|:---|
+| Study | Complexity of theories and concepts; Complexity of study design; Complexity of analyses; Availability of materials; Relevance to current needs and interests |
+| Institution/Lab | Regulatory support (e.g., IRB, IACUC); Access to sampling units (human participants, animal, specimens); Research and/or travel funds; Software; Hardware; Space |
+| Mentor | Interest in study; Expertise; Workload commitment; Access to mentor support (e.g., graduate students, seasoned undergraduate students, experts); Learning outcomes (see @tbl-outcomes) |
+| Student | Interest in study; Existing knowledge and skills; Motivation to acquire new knowledge and skills; Available time commitment and competing priorities; Affordability (college credit, travel, materials); Educational goals (see @tbl-outcomes) |
+
+: Practical considerations during the study selection process. IRB: Institutional Review Board; IACUC: Institutional Animal Care and Use Committee. {#tbl-selection tbl-colwidths="[16,84]"}
+
+In addition to practical considerations, broader educational goals for engaging in replication research may influence the study selection process. One may ask: What purposes does the replication research process serve for the student? We have identified several possible aims, and present these in @tbl-outcomes. These outcomes are presented in clusters, along with information about which goals, aims, or outcomes they might be associated with from the Characteristics of Excellence in Undergraduate Research (COEUR) produced by the Council for Undergraduate Research (CUR) [@BlockusEtAl2024], the International Collaboration on Undergraduate Psychology Outcomes [@ICUPO2025], and the American Psychological Association (APA) Guidelines for Undergraduate Research 3.0 [@APA2023]. Importantly, many of the outcomes are sure to be met through any replication study (e.g., "develop tolerance for obstacles and ambiguity in the research process"), while students may identify specific studies that help them meet specific outcomes (e.g., a student wanting to improve their understanding of structural equation modeling might select a study that employs this type of analysis).
+
+| Cluster | Outcome | ICUPO | COEUR | APA 3.0 |
+|:---|:---|:---|:---|:---|
+| Disciplinary Knowledge & Methodological Reasoning | Conduct a comprehensive review of existing literature | 5.1 | 3.3 | 2.2 |
+|  | Enhance specialized disciplinary knowledge | 1.1 | 9.1.1 | 1.1, 1.2 |
+|  | Evaluate the strengths and weaknesses of different methodological approaches | 2.1 | 9.1.1 | 2.2 |
+|  | Evaluate the evidentiary value of published findings | 5.1 | 9.1.1 | 2.4 |
+|  | Develop information literacy | 5.1 | 3.3 | 2.2 |
+| Technical & analytic skills | Learn specific technical skills, such as laboratory or field techniques or data coding | 2.2 | 9.2.2 | 5.5 |
+|  | Hone existing skills (e.g., data analysis, data visualization) | 2.2 | 9.2.2 | 2.4 |
+|  | Build reproducible analysis documents (e.g., code, syntax) | 2.2, 6.3 | 9.2.2 | 4.4, 5.5 |
+|  | Conduct and interpret a priori power analyses | 2.2 | 9.2.2 | 2.4 |
+|  | Develop tolerance for obstacles and ambiguity in the research process |  | 8.2, 8.3 | 2.2 |
+| Research Processes, Ethics, and Open Science | Develop understanding of research process aspects not previously known (e.g., IRB, protocols, biohazard transport) | 2.2, 3.2 | 3.6 | 3.1 |
+|  | Appreciate ethical considerations for various research practices | 3.2 | 9.2.1 | 3.1 |
+|  | Preregister hypotheses and analysis plans; distinguish planned from exploratory analyses | 2.3 | 9.2.2 | 3.1 |
+|  | Share materials, data, and code publicly (as appropriate) with documentation | 2.3 | 8.3 | 3.1 |
+|  | Practice transparent reporting, including deviations from preregistered plans | 2.2, 2.3 | 7.1 | 3.1 |
+| Communication, Collaboration, & Cultural Responsiveness | Strengthen academic writing skills | 6.1 | 7.1 | 4.2 |
+|  | Present research findings to different audiences | 6.1 | 7.1, 7.2, 7.3, 7.4 | 4.2 |
+|  | Engage in team collaboration and/or team management | 6.2 | 8.5 | 4.1 |
+|  | Work within a distributed, multi-site collaboration (CREP) | 6.2, 6.3 | 8.5 | 5.4 |
+|  | Evaluate whether findings generalize across cultural contexts, and adapt materials/procedures responsively for new populations | 4.1, 4.2 | 9.2.1, 9.2.2 | 2.3 |
+| Identity, Self-Knowledge, & Professional Development | Use research experience to explore fit within a specific research career field or subfield | 7.3 | 8.1, 8.2, 8.3 | 5.6 |
+|  | Express intellectual creativity by asking new questions | 5.2 | 8.3 | 2.1 |
+|  | Develop greater understanding of one’s own strengths and weaknesses | 7.1 | 8.3 | 5.1 |
+|  | Develop sense of belongingness and self-efficacy in research spaces | 7.1 | 8.4, 8.6.3 | 3.2 |
+|  | Demonstrate intellectual humility in the interpretation of replication findings | 2.3, 7.1 | 9.2.1 | 2.1 |
+|  | Develop a professional identity through an authentic contribution to the scholarly record | 7.3 | 8.3 | 5.6 |
+
+: Potential learning outcomes to consider when selecting a study to replicate, with aligned goals, outcomes and characteristics identified by external bodies (ICUPO, COEUR, APA 3.0). COEUR characteristics are institutional or programmatic; the COEUR column identifies characteristics of programs that may support the listed outcome for students completing research projects, including replication projects. {#tbl-outcomes tbl-colwidths="[20,46,10,10,14]"}
+
+## Contacting the Original Authors
+
+Even if your target study's original materials are available online, we recommend contacting the original authors as an essential piece of the process (see the section on [collaborating and consulting with the original authors](execution_replications.qmd#collaborating-and-consulting-with-the-original-authors) in the chapter on executing replications for a more detailed discussion of communicating with the original authors). Contacting original authors can lead to helpful conversations about the nature of the replication, potential moderating variables, and suggestions for meaningful extensions. The original author is going to be the best expert on the work that you are attempting to replicate, and that expertise is valuable. However - there may be potential benefit to students when they do *not* contact the original author; we discuss these below.
+
+In the context of teaching, modeling or encouraging communication with scholars in a field is a valuable thing for students to observe or experience. We (the two authors of this text) have had different experiences contacting original authors: one of us leads a lab that conducts replications and often has not had luck reaching out, while her students have had more luck; the other has directed the CREP for several years and has never *not* heard back from an original author. Sometimes it does take a bit longer because corresponding authors' email addresses have changed, someone is on leave and sending autoreplies, or our e-mails have gone to spam mailboxes.
+
+The success of CREP in achieving communication with original study authors is likely due to the systematic approach used over the years. Typically, we reach out to the corresponding author first, followed by the first author (if different), then the last author, and then the second and third authors (and so on) until we have a response from someone, typically waiting around a week before reaching out to the next person. Most often, the corresponding author replies quickly. In the e-mails that CREP sends, we are careful to explain our selection process and highlight that we think students will be excited to do this type of research, so that authors will not interpret our replication work as antagonistic, or that we are doing this work because we do not believe the original effect is robust.
+
+When reaching out, CREP also asks if instructors have any suggestions for extending the research, such as potential moderating variables. We may also ask them for their opinion on the stimuli; for example, when replicating a study that used stimuli related to the 2016 US Presidential election, we asked if the original author believed we would benefit from updated stimuli. We have found that authors have generally been excited that their work is being replicated, supportive of our work, and quick to provide guidance and suggestions for how students can build on this work.
+
+For the author who has not had as much success (\~10% of authors responding to either faculty or students), communication has been conducted in a non-systematic manner and often under significant time constraints driven by academic schedules. As a result, the author has at times opted to abandon these pursuits in favor of others with materials readily available or, if there are sufficient methodological details described in the original report, reconstruct study materials to the best of the research teams' abilities. This latter approach can be used as an educational experience, highlighting the value of open science practices, such as pre-registration, and meeting authorship roles, such as corresponding authors' responsibilities to inquiries.
+
+There may also be another "silver lining" of not being in communication with the original author; students who attempt to piece together their materials and methods without access to them will quickly learn that the "replication recipe" is often incomplete given only what is in the paper itself. This is an important lesson not only for students to see the limitations of Method sections in papers, but also as motivation for their future descriptions to be as detailed as possible. In fact, even when authors have shared their materials, it might be a helpful exercise to have students piece together the methodology on their own before sharing the details with them; this way, they can see the gaps between their methods and the original methods.
+
+## Determining Sample Size
+
+When conducting any study with students, it is important to conduct an *a priori* power analysis. An a priori power analysis is a statistical calculation that determines the minimum number of participants needed in order to detect an effect of a specified size, assuming the effect exists. In replication studies, determining effect size is easier because a published study already reports a specific effect size. This reported effect size is what you are replicating. One approach is to assume the original reported effect size is true and plan your replication accordingly. Another approach is the "small telescopes" method [@Simonsohn2015]. The "small telescopes" approach holds that a small telescope cannot detect faint, distant light, just as a study with too small a sample cannot detect small effects; therefore, if a replication uncovers a small effect that would have gone undetected in the original study due to its sample size, this suggests the original findings may be spurious. The recommendation provided by this approach is to aim for at least 2.5 times the original sample size; the section on [sample size determination](execution_replications.qmd#sample-size-determination) in the chapter on executing replications outlines the rationale behind the small telescopes approach in more detail
+
+## Planning the Research With or Without Extension Hypotheses
+
+Here, we highlight several practices that we have found worthwhile to prioritize during the planning phase that have strengthened our mentoring efforts when preparing for direct replication studies or one that may involve asking questions beyond the original study, also known as extension hypotheses. For direct replications, the approach is fairly straight-forward as the original study is simply being mirrored. In either case, we have found that students often underestimate the workload involved in conducting research (to be fair, sometimes we do that too). While replication research may require little work with respect to study design, especially when study materials are readily accessible, those involved may incorrectly assume that initiating a replication project similarly requires little work.
+
+We recommend establishing a clear, yet flexible, plan early in the mentoring process with students to be an essential part of establishing a strong collaborative understanding of the workload demands expected for the duration of the project from the outset. The plan should reflect alignment around shared desired learning outcomes (see @tbl-outcomes) and estimated effort, along with key project milestones. In course-based undergraduate research experiences (CUREs), such information is often built into a syllabus [e.g., @BrownEtAl2016]. Finally, for research involving group effort, we recommend including information relevant to various roles students might hold, such as PI, project manager, lab assistant, and the like. A sample two-semester plan used by one author is provided at the end of this chapter (@sec-year-plan) and in addition to offering the student a navigational map, it has the utility of outlining workload demands for the mentor as well.
+
+While some extension hypotheses (e.g., using a different population to the original study; testing generalizability) do not require the consideration of new variables or introduction of additional measures, some of them will. Either way, we found that the inclusion of extension hypotheses to be of high value because they provide students with spaces to pursue new questions and ideas, presenting an exciting endeavor supportive of students' sense of ownership in the research process, an element identified as important to student experiences in research [@ZouEtAl2023]. Additionally, some programs or courses require some sort of "novelty" or student-led hypotheses for their projects, and an extension hypothesis on a replication project satisfies this requirement.
+
+When working with a student interested in developing extension hypotheses, we found it worthwhile to invest effort in ensuring students understand that any new hypothesis asked must be aligned with the original study. Novice researchers often propose new questions without full consideration of their logical connection with the original work. Developing coherently aligned extension hypotheses can require significant mentoring effort, especially early in the process, but we have found that investing in this process has clear pay-offs, resulting in smoother operations and better research outcomes. A set of reflective questions to help students ground their extension hypotheses in the original study may be found in the box below.
+
+::: {#nte-extension-questions .callout-note appearance="minimal"}
+## Some reflective questions to help students develop extension hypotheses
+
+1. What aspect of the original study did you find most interesting?
+2. Why do you think the original study is worth replicating?
+3. What (if any) extension hypothesis would you like to ask?
+4. How does the proposed hypothesis relate to the original study findings?
+5. Is this an interesting extension hypothesis for any study, or is it specific to this study?
+6. Have others addressed the extension hypothesis question or something similar?
+:::
+
+Moreover, although a strong logistical plan is essential, we recommend mentors to assess their own readiness to support students' learning and growth. Mentor approaches will naturally vary based on individual dispositions, students' needs, and project demands. To maintain a healthy eye on student development, we encourage incorporating opportunities for students to pause, check in, and reflect on their personal and professional gains at least once during, if not throughout, the research process. The University of Minnesota's CARES framework (Competence, Autonomy, Relatedness, Equity, and Structure; Clinical and Translational Science Institute, n.d.) for mentoring offers a practical structure that research mentors may readily use. Their free online training modules, including one focused on undergraduate research mentoring, are recommended.
+
+Finally, the last step in planning a replication we recommend is completing a preregistration. There are many types of preregistrations available through OSF.io and aspredicted.org, among other public websites. The Open Science Framework (OSF) even offers registrations specific to replications; instructions and templates can be found here: [https://help.osf.io/article/330-welcome-to-registrations](https://help.osf.io/article/330-welcome-to-registrations) [@COS2026]. Of course pre-registration instills open science values with students, but it also can serve as an archive that students (and their mentors) may find useful in the future.
+
+## Analyzing a Replication
+
+Once you have completed a replication, it needs to be analyzed (see the [analysis section](execution_replications.qmd#analysis) of the chapter on executing replications for a discussion on replication analyses in general). Guiding students through this process and coaching them in how to interpret and talk about replication analyses can be sensitive, and this process deserves attention and careful mentoring. The first step in conducting analyses is to run the same analyses as the original paper, preferably using their analysis script, if it is available. You may also consider conducting a different type of analysis if you and your students decide that the original analyses were not the best or most appropriate to answer the research question - if you do conduct different analyses, these should ideally be preregistered. If not, be transparent in your reporting to model to students that you can diverge from your plan as long as you are clear about why you did it, and don't limit the reporting to only certain analyses.
+
+The larger question that looms is how to interpret your replication analyses in the context of the original findings. If the original authors had a *p* value of .03, and yours was .06, is this a failure to replicate? We would caution against framing it this way with the students. Instead, we encourage comparing confidence intervals and effect sizes, both informally in discussion and statistically by conducting tests of equivalence. Anderson and Maxwell [-@AndersonMaxwell2016] walk through the issues in interpreting replications through the lens of statistical significance, and provide guidance for researchers who seek to determine whether their evidence is consistent or inconsistent with the original effect. Lakens and colleagues [-@LakensEtAl2018] also provide a tutorial on conducting tests of equivalence, and equivalence testing packages called TOSTER (standing for "two one-sided tests equivalence testing") exist for statistical software, including R [@Caldwell2025].
+
+Regardless of whether you conduct a test of equivalence, we encourage you to guide students in using careful language when discussing "successes" and "failures" in replicating effects, with the hope that this will also help instill in them a nuanced sense of statistical reasoning and null hypothesis statistical testing. It is more helpful to talk about differences in effect sizes or confidence intervals than it might be to simply refer to differences in statistical significance, which can vary based on sample size or other measurement characteristics. Students should be very careful in how they interpret their own failure to replicate a published effect; this can happen for a variety of reasons, and jumping to a conclusion that the effect was erroneous in the original publication is something we want them to avoid. Even when a meta-analysis for direct replications suggests that an effect can not be consistently replicated, we cannot conclude that the original effect was erroneous. This is a good time to remind students that research findings are cumulative, and it is important to examine the weight of the evidence when judging whether effects are robust. The results of statistical analyses following a replication attempt should not be framed as errors on the part of the original study or the replication, but rather, additional evidence that can help inform our understanding of the effect.
+
+## Disseminating the Work: Presentations, Reports, and Open Practices
+
+Including opportunities for students to share the outcomes of their research beyond the laboratory or classroom can enrich the overall replication research experience. Along with supporting professional skills development [e.g., @Little2020], preparing conference presentations and sharing study information through open science platforms encourages students to engage with their projects more holistically by critically evaluating the rationale, methodology, analytic decisions, and broader implications of the work. Such experiences, particularly presentations, may also foster students' professional identity development, including increasing research self-efficacy [@HelmBailey2013].
+
+In our experience, these benefits are most salient when students share their work beyond their class or lab, or even their home institution. With respect to conference presentations, financial and other constraints can limit access. The reader may find that, as we have in the midwestern region of the United States (see @tbl-conferences), there are conference opportunities that vary in accessibility and when travel is not feasible, opportunities to present virtually can be an accessible alternative. Virtual conferences that have low registration costs have been gaining in popularity; CREP often offers a free, virtual Summer CREPCON conference where students can present their work from any replication study they completed, and groups like the [Society for the Improvement of Psychological Science (SIPS)](https://improvingpsych.org/previous-sips-meetings/) and the [Big Team Science Conference (BTS)](https://bigteamscienceconference.github.io/) also regularly offer virtual conferences with low or no cost for student attendees. Any of these virtual conferences would be good places to submit and present replication work.
+
+While the information presented thus far may be applied broadly to undergraduate research experiences, our observation is that presenting replication research at conferences has unique advantages. For one, students often have meaningful interactions with others because replication research naturally invites engagement with others who are familiar with the original study. Additionally, students involved in crowd-sourced replication efforts, such as CREP, may find themselves connecting with peers from other institutions working with the same study, creating unique opportunities to build one's professional network.
+
+We also strongly encourage mentors and their mentees to utilize resources like the Open Science Framework (osf.io) or Zenodo to preregister their research, share their materials, and then post their data and results when they have completed their work. The benefit of doing this is not only to build competencies through practicing good, open, and transparent scientific practices, but also that students can include the URLs or DOIs for these projects on their CVs or résumés easily to share their work with future mentors or employers. Most important to the field and the science, though, doing this makes the details of the research and its findings available to future researchers who are interested in the effects, including meta-analytic researchers. In fact, independent OSF CREP projects have been included in an external meta-analysis [@LehmannEtAl2018], and it's likely that more will be included in the future. Posting data and results online, even if not included as part of a peer-reviewed publication, helps make a dent in the "file drawer effect" [@Rosenthal1979], which occurs when unpublished results sit somewhere that is inaccessible to other researchers interested in the effect.
+
+| Type of Conference | Primary Presenter Audience | Relative Financial Cost | Networking Opportunities | Exposure to Current Research | Professional Development |
+|:---|:---|:---|:---|:---|:---|
+| In-house conference | Students | Low | Low | Low | High |
+| Regional teaching conference | Students | Moderate | Moderate | Low-to- moderate | High |
+| Regional professional conference | Students & researchers | Moderate- to-High (depends on host city) | High | High | High |
+| National professional conference | Students & researchers | Moderate- to-High (depends on host city) | High | High | High |
+| International professional conference | Students & researchers | High | Moderate- to-High | High | High |
+
+: Different levels of in-person conference opportunities for undergraduate students. {#tbl-conferences tbl-colwidths="[22,14,16,16,16,16]"}
+
+## Conclusion
+
+We strongly recommend that instructors and research mentors consider replication studies a primary option for student projects. We have both found that replication studies can be work, but in many ways are a lighter "lift" (compared to supervising a more traditional or novel research project) for mentors while remaining (and perhaps even exceeding other types of projects in being) meaningful. Replication is an underperformed step in the scientific process. Through replications, students are exposed to the most cutting-edge methods in the field employed by experts, while having opportunities to engage in the process creatively by forming their own hypotheses through extensions. Additionally, by engaging in open science best practices, including registration and data sharing, students (and their mentors) become contributors to the broader scientific enterprise. In this chapter, we provided specific recommendations based on our experiences supervising student replication projects and working within multi-lab replication site administration. @tbl-mentor-checklist below summarizes the steps we recommend taking in a checklist format during each phase of the research. It is our hope that these recommendations and steps will help encourage you to step into the world of mentoring replications; we find it truly rewarding to know that we are teaching, doing research, and improving the field at the same time.
+
+| Phase | Focus | Checklist item |
+|:---|:---|:---|
+| Selecting a Study | Study-level feasibility | Can the study be completed within your time frame (e.g., one 16-week semester)? Rule out most longitudinal designs. |
+|  | Study-level feasibility | Are the theories, study design, and analyses at a complexity level the student can handle or productively stretch toward? |
+|  | Study-level feasibility | Are the original materials available, or obtainable from the authors? |
+|  | Study-level feasibility | Does the study avoid equipment or software students lack access to (e.g., MatLab, ePrime, psychophysiological equipment)? |
+|  | Study-level feasibility | Does the study avoid vulnerable populations (children, clinical samples)? |
+|  | Study-level feasibility | Consider a pre-vetted option: CREP maintains a menu of 6–8 studies already coded for feasibility, with materials and sample protocols. |
+|  | Institution/lab-level feasibility | Confirm regulatory support (IRB, IACUC) and a realistic approval timeline. |
+|  | Institution/lab-level feasibility | Confirm access to sampling units (participant pool, animals, specimens, relevant data sets), software, hardware, and space. |
+|  | Institution/lab-level feasibility | Identify research and/or travel funds if needed. |
+|  | Mentor-level fit | Are you genuinely interested in the study, and is it within (or near) your expertise? |
+|  | Mentor-level fit | Have you honestly estimated your workload commitment? |
+|  | Mentor-level fit | Do you have mentoring support to draw on (graduate students, seasoned undergraduates, outside experts)? |
+|  | Student-level fit | Has the student expressed interest in the study itself, not just the topic area? |
+|  | Student-level fit | Have you inventoried their existing knowledge and skills, and their motivation to acquire new ones? |
+|  | Student-level fit | Have you discussed available time, competing priorities, and affordability (college credit, travel, materials)? |
+|  | Learning outcomes | Identify which outcomes this project should serve (see @tbl-outcomes) |
+|  | Learning outcomes | If the student has a specific skill goal, confirm the selected study actually exercises it |
+| Contact the Original Authors |  | Reach out even if materials are publicly available — it is respectful and can yield insight on moderators and extensions. |
+|  |  | Follow the contact sequence: corresponding author → first author → last author → remaining authors, waiting about one week between attempts. |
+|  |  | Frame the email as educational and non-antagonistic: explain the selection process and student enthusiasm for the work. |
+|  |  | Ask for materials, suggestions for extensions or moderating variables, and opinions on whether stimuli need updating. |
+|  |  | If no response (roughly 10% of cases): pivot to a study with available materials, or recreate materials from the paper’s details — and use the experience to teach why open science practices matter. |
+| Determine Sample Size |  | Conduct an a priori power analysis before collecting any data. |
+|  |  | Choose an approach: power to the original reported effect size, or the “small telescopes” benchmark [d₃₃, the effect the original study had 33% power to detect, @Simonsohn2015]. |
+|  |  | If using small telescopes, target approximately 2.5× the original sample size for 80% power. |
+|  |  | If your achievable sample falls short of 2.5×, plan to acknowledge this limitation explicitly in reporting; the data still contribute to meta-analyses. |
+| Plan the Project |  | Build a clear but flexible written plan early: shared learning outcomes, estimated effort, and key project milestones. |
+|  |  | Correct the workload misconception up front — “no study design needed” does not mean “little work.” |
+|  |  | For course-based experiences (CUREs), embed the plan in the syllabus. |
+|  |  | For team projects, define student roles (PI, project manager, lab assistant, and the like). |
+|  |  | Schedule regular mentor–student check-ins for the duration of the project. |
+|  | If adding extension hypotheses | Verify the extension is logically aligned with the original study, not a bolted-on new question. |
+|  | If adding extension hypotheses | Budget substantial mentoring time for extension development early in the process. |
+|  | If adding extension hypotheses | Use the reflective questions from Figure 1: What interested you most? Why is the study worth replicating? How does the proposed hypothesis relate to the original findings? Is it study-specific or generic? Has anyone addressed it already? |
+|  | If adding extension hypotheses | Check whether the student’s program requires “novelty” — an extension hypothesis satisfies this requirement. |
+|  | Preregister | Complete a preregistration before data collection. OSF offers replication-specific registration templates; AsPredicted is an alternative. |
+| Analysis |  | Run the same analyses as the original paper, using the original analysis script if available. |
+|  |  | If running different or better-suited analyses: preregister them, or transparently report the deviation and its rationale — and report all analyses, not a selected subset. |
+|  |  | Compare confidence intervals and effect sizes, not just p-values. |
+|  |  | Consider formal equivalence testing (tutorial by @LakensEtAl2018; TOSTER package for R and other software). |
+|  |  | Coach careful language: avoid “failure to replicate” framing, avoid concluding the original effect was erroneous, and frame results as additional cumulative evidence about the effect. |
+| Dissemination |  | Identify a presentation venue matched to budget and goals: in-house symposium, regional teaching conference, regional or national professional conference, or free/low-cost virtual options (CREPCON, SIPS, PSA). |
+|  |  | Prepare students for the distinctive social dynamics: audiences familiar with the original study and, for CREP projects, peers at other institutions running the same study. |
+|  |  | Post materials, data, and results on OSF — even without a journal publication, this is a form of dissemination, combats the file-drawer effect, and feeds future meta-analyses. |
+|  |  | Have students add the project URL or DOI to their CV or résumé. |
+
+: A checklist for mentored student replications. {#tbl-mentor-checklist tbl-colwidths="[14,20,66]"}
+
+## Sample Two-Semester Plan {#sec-year-plan}
+
+@tbl-year-plan shows the timeline used by one of the authors for a two-semester mentored replication project, and @tbl-skills-preview a skills preview that mentors and students can complete together at the start.
+
+| Month | Major milestones | Key research activities | Student | Graduate TA | Faculty |
+|:---|:---|:---|:---|:---|:---|
+| May | Establish interest with faculty | Planning | Meet with faculty: Discuss possible directions, schedule summer meetings | NA | Meet and discuss ideas. Find a way forward that includes students’ interests and career aspirations. |
+| June | Refine extension hypothesis | Planning | Meet with faculty: original study; Meet with faculty: logical connection with original study | NA | Talk through original study with student. Ensure they have a firm understanding. Then discuss how extension hypothesis fits |
+| July | IRB protocol submission | IRB protocol preparation and study preparation | Meet with faculty: work on completing sections of the IRB; Meet with faculty: develop any data collection components (e.g., Qualtrics) | NA | Work with student and complete IRB. Submit by the end of July. |
+| August | Ensure all study components are ready; Prepare for team training | Prepare to launch study | Meet with faculty and TA | Learn about the projects; Set up 30 min weekly meetings | Obtain IRB review.; Meet with TA for orientation and expectations; Assign peer mentoring teams |
+| September | Train team and assign roles | Data collection commences | Create training plan with TA; Read MPA submission guidelines; Abstract draft 1 with TA review | Support student training plans; Work with student on abstract; Determine team schedule (group meetings and individual testing) | Discuss plan for abstract preparation and offer resources/examples.; Work with TA on scheduling and establishing regular meeting times |
+| October | Develop MPA abstract | Data collection continues | Recruit MPA co-authors from team; Abstract drafts continue; Start grant preparations | 2 drafts of abstract before faculty review; Help student draft grant submissions | Edit draft of abstract; Edit grant submissions |
+| November | Submit MPA abstract; Submit Internal Foundation grant; Submit CUR funding | Data collection continues | Work with team to ensure data collection, scheduling, and other operations moving smoothly; MPA co-authors to be given abstract draft access | Finalize MPA abstract; Finalize grant submission(s) | Finalize MPA abstract; Finalize grant submission(s) |
+| December | No milestones | Data collection continues | Report total number consented (Fall semester) | Work with students for total number. | Document total number |
+| January | Submit Psi Chi Travel Award | Data collection continues | Work with MPA co-authors and TA for weekly 1 hour co-writing sessions for MPA prep | Meet weekly with MPA group for co-writing sessions | Meet with teams for the new semester |
+| February | Develop first draft of presentation | Training new lab members; Data collection continues | Work with returning students to train new lab members; MPA presentation should be nearly finished with results section pending | Meet weekly with MPA group for co-writing sessions; Sketch data analysis plan and build out in R or whatever platform. | Join one co-writing session at the end of February to see how things are; Work with TA on analytic plan |
+| March | Continue drafting presentation; Start data analyses | Data collection continues | Work with TA and faculty on data analysis plan | Work with faculty and student on data analysis; Work with student on data interpretation and discussion | Work on data analysis for presentation; Work with TA, specifically, on analyses and results |
+| April | Present at MPA | Data collection continues Finalize presentation; Present at MPA | Print poster or otherwise finalize presentation; Prepare presentation and practice twice before conference | Work with student to schedule practice sessions with CUBB lab | Support final steps toward presentation |
+| May | Wrap Up |  | Report total number consented (Spring semester) | Work with student for total number. | Document total number |
+
+: Sample two-semester plan for a mentored replication project (used by one of the authors). {#tbl-year-plan tbl-colwidths="[8,15,14,23,17,23]"}
+
+| Activity | Priority | Confidence |
+|:---|:---|:---|
+| Using academic databases to find articles | Low ... High | Low ... High |
+| Obtaining full PDFs through the University library system | Low ... High | Low ... High |
+| Reading and understanding research articles | Low ... High | Low ... High |
+| General expectations around research conduct and ethics | Low ... High | Low ... High |
+| Scheduling participants | Low ... High | Low ... High |
+| Scheduling regular research team meetings | Low ... High | Low ... High |
+| Communicating with research team | Low ... High | Low ... High |
+| Identifying when to ask for help and when to work independently | Low ... High | Low ... High |
+| Data entry and data management | Low ... High | Low ... High |
+| Developing and executing an analysis plan to test hypotheses | Low ... High | Low ... High |
+| Developing graphs and charts for presentation | Low ... High | Low ... High |
+| Academic writing for grant applications | Low ... High | Low ... High |
+| Academic writing for presentation | Low ... High | Low ... High |
+| Responding to research team emails in a timely way (e.g., 24 hours) | Low ... High | Low ... High |
+| Allowing others to take on leadership roles where appropriate | Low ... High | Low ... High |
+| Maintaining momentum over the course of two semesters | Low ... High | Low ... High |
+
+: Skills preview. For each activity, indicate where you feel highly confident and where you feel less confident about doing the following independently or with little help. {#tbl-skills-preview tbl-colwidths="[64,18,18]"}

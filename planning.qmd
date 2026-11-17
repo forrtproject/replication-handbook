@@ -18,7 +18,7 @@ Before conducting a replication, reproduction should be assessed by attempting t
 
 Planning depends on whether the focus is on a certain method or a theory, that is whether the replication will be close or conceptual. @tbl-rep-types provides an overview of reproduction and replication types, or more generally “repetitive research” [@Schoch2023], drawn from different resources [e.g., @DreberJohannesson2024; @HueffmeierEtAl2016; @CortinaEtAl2023]. The decision between these types is the first step in planning.
 
-In addition, the formation of the replication team is important, as replications can take substantial resources. Notably, repetitive research has successfully been conducted collaboratively with graduate and undergraduate students [e.g., @BoyceEtAl2024; @HawkinsEtAl2018; @JekelEtAl2020; @MoreauWiebels2023] and we recommend the use of replication studies to engage students of different levels in conducting and publishing research.
+In addition, the formation of the replication team is important, as replications can take substantial resources. Notably, repetitive research has successfully been conducted collaboratively with graduate and undergraduate students [e.g., @BoyceEtAl2024; @HawkinsEtAl2018; @JekelEtAl2020; @MoreauWiebels2023] and we recommend the use of replication studies to engage students of different levels in conducting and publishing research (see [Teaching Replication](teaching_replication.qmd) for a step-by-step guide to mentoring student replications).
 
 | Type | Description | Goals |
 |------------------------|------------------------|------------------------|
