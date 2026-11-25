@@ -277,14 +277,14 @@
   }
  },
  "78": {
-  "head": "ed389d3e14163787a55ec4dc7f652849458bc481",
+  "head": "4126d2e21f33c1d10a4c54a5490b68f74dc5bc1a",
   "tool": "9d514d406092",
   "entry": {
    "number": 78,
    "title": "Add chapters on computational literary studies, multi-lab studies and mentoring student replications",
    "url": "https://github.com/forrtproject/replication-handbook/pull/78",
    "author": "LukasRoeseler",
-   "updated": "2026-11-17",
+   "updated": "2026-11-25",
    "branch": "content/new-chapters",
    "chapters": [
     {
